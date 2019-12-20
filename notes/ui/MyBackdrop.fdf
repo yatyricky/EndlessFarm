@@ -1,0 +1,19 @@
+Frame "BACKDROP" "MyBackdropTile" {
+    //DecorateFileNames,
+    BackdropTileBackground, //Fills the space with the background texture
+    BackdropBackground  "ReplaceableTextures\CommandButtons\BTNHeroPaladin.blp",
+
+    BackdropCornerFlags "UL|UR|BL|BR|T|L|B|R",
+    BackdropCornerSize  0.0125,
+    BackdropBackgroundSize  0.02, //in tile mode, size of each tile
+    BackdropBackgroundInsets 0.005 0.005 0.005 0.005,
+    BackdropEdgeFile  "UI\Widgets\ToolTips\Human\human-tooltip-border.blp",
+}
+
+Frame "BACKDROP" "MyBackdrop" {
+    BackdropBackground  "ReplaceableTextures\CommandButtons\BTNHeroPaladin.blp",
+    BackdropCornerFlags "UL|UR|BL|BR|T|L|B|R",
+    BackdropCornerSize  0.0125,
+    BackdropBackgroundInsets 0.005 0.005 0.005 0.005,
+    BackdropEdgeFile  "UI\Widgets\ToolTips\Human\human-tooltip-border.blp",
+}

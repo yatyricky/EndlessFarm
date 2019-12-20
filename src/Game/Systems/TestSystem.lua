@@ -11,7 +11,6 @@ function TestSystem:Start()
 end
 
 function TestSystem:Update(dt)
-    log("TestSystem:Update " .. dt)
 end
 
 return TestSystem

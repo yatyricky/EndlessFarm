@@ -1,0 +1,29 @@
+// https://www.hiveworkshop.com/threads/ui-what-are-backdrops.315967/
+
+function LoadToc takes string s returns nothing
+    if BlzLoadTOCFile(s) then
+        call BJDebugMsg("Loaded: "+s)
+    else
+        call BJDebugMsg("Failed to Load: "+s)
+    endif    
+endfunction
+
+function CreateBackdrops takes nothing returns nothing
+    //Create the big face
+    local framehandle fh = BlzCreateFrame("MyBackdrop", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0),0, 0)
+    call BlzFrameSetSize(fh, 0.1, 0.1)
+    call BlzFrameSetAbsPoint(fh, FRAMEPOINT_CENTER, 0.4, 0.3)
+    
+    //Create the tile faces
+    set fh = BlzCreateFrame("MyBackdropTile", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0),0, 0)
+    call BlzFrameSetSize(fh, 0.1, 0.1)
+    call BlzFrameSetAbsPoint(fh, FRAMEPOINT_CENTER, 0.2, 0.3)
+endfunction
+
+//===========================================================================
+function InitTrig_Backdrop takes nothing returns nothing
+    set gg_trg_Backdrop = CreateTrigger(  )
+    call TriggerRegisterTimerEventSingle( gg_trg_Backdrop, 1.00 )
+    call TriggerAddAction( gg_trg_Backdrop, function CreateBackdrops )
+    call LoadToc("war3mapimported\\mybackdrop.toc") //Loads the custom toc file
+endfunction
