@@ -35,14 +35,15 @@ function t_tojson(t, indent)
         end
         local so = tostring(o)
         if to == "function" then
-            local info = debug.getinfo(o, "S")
+            return '"' .. so .. '"'
+            -- local info = debug.getinfo(o, "S")
             -- info.name is nil because o is not a calling level
-            if info.what == "C" then
-                return '"' .. so .. ", C function" .. '"'
-            else
-                -- the information is defined through lines
-                return '"' .. so .. ", defined in (" .. info.linedefined .. "-" .. info.lastlinedefined .. ")" .. info.source .. '"'
-            end
+            -- if info.what == "C" then
+            --     return '"' .. so .. ", C function" .. '"'
+            -- else
+            --     -- the information is defined through lines
+            --     return '"' .. so .. ", defined in (" .. info.linedefined .. "-" .. info.lastlinedefined .. ")" .. info.source .. '"'
+            -- end
         else
             return so
         end

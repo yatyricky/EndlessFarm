@@ -4,7 +4,7 @@ local EventCenter = require("Game/EventCenter")
 local SpellCastSystem = class("SpellCastSystem", System)
 
 function SpellCastSystem:Awake()
-    EventCenter.SpellCast.AddListener(self.OnSpellCast, self)
+    EventCenter.SpellCast:AddListener(self.OnSpellCast, self)
 end
 
 function SpellCastSystem:OnSpellCast(unit, ability)

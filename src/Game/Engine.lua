@@ -1,3 +1,4 @@
+local Time = require("Time")
 local Timer = require("Timer")
 local World = require("Game/World")
 
@@ -12,9 +13,12 @@ function Engine.Start()
     world:Awake()
     world:Start()
 
-    local timer = Timer.New(0.001, -1, function (delta)
-        world:Update(delta)
-    end)
+    local time = Time.GetTime()
+    local timer = Timer.New(0.01666667, -1, function ()
+        local curr = Time.GetTime()
+        world:Update(curr - time)
+        time = curr
+    end):Start()
 end
 
 return Engine
