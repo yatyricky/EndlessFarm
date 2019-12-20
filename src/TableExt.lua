@@ -55,7 +55,7 @@ function t_tojson(t, indent)
         cached = cached or {}
         local str = tostring(t)
         if cached[str] then
-            return '"(cyclic ref ' .. str .. ')"'
+            return '"_ ref ' .. str .. '"'
         end
         cached[str] = true
         local sb = "{"
@@ -66,22 +66,110 @@ function t_tojson(t, indent)
         local oindent = indent or ""
         local nindent = lindent and idt .. oindent or nil
         local colonw = lindent and " " or ""
-        local kvs = {}
-        kvs[#kvs + 1] = idt .. '"__id__":' .. colonw .. '"' .. str .. '"'
+        sb = sb .. idt .. '"_ ":' .. colonw .. '"' .. str .. '"'
         for k, v in pairs(t) do
-            kvs[#kvs + 1] = idt .. '"' .. tostring(k) .. '":' .. colonw .. parseTable(v, nindent, lindent, cached)
-        end
-        if lindent then
-            sb = sb .. t_join(kvs, ",\n")
-        else
-            sb = sb .. t_join(kvs, ",")
+            if lindent then
+                sb = sb .. ",\n"
+            else
+                sb = sb .. ","
+            end
+            local ks
+            if type(k) == "number" then
+                ks = "_ " .. k
+            else
+                ks = tostring(k)
+            end
+            sb = sb .. idt .. '"' .. ks .. '":' .. colonw .. parseTable(v, nindent, lindent, cached)
         end
         if lindent then
             sb = sb .. "\n" .. (pindent or "")
         end
         sb = sb .. "}"
-        cached[str] = false
+        -- cached[str] = false
         return sb
     end
     return parseTable(t, indent)
 end
+
+---@generic K
+---@generic v
+---@generic T
+---@param data table<K, V> | V[]
+---@param opts { where: (fun(k: K, v: V): boolean), select: (fun(k: K, v: V): T), any: (fun(k: K, v: V): boolean), all: (fun(k: K, v: V): boolean), asList: boolean }
+---@return table<K, V> | T[] | boolean
+function t_query(data, opts)
+    opts = opts or {}
+    local asList = opts.asList
+    local where = opts.where
+    local select = opts.select
+    local any = opts.any
+    local all = opts.all
+    local returnTable = select or (any == nil and all == nil)
+    local ret = {}
+    local key
+    local value
+    for k, v in pairs(data) do
+        if where then
+            if where(k, v) then
+                if returnTable then
+                    if asList then
+                        key = #ret + 1
+                    else
+                        key = k
+                    end
+                    if select then
+                        value = select(k, v)
+                    else
+                        value = v
+                    end
+                    ret[key] = value
+                else
+                    if any then
+                        if any(k, v) then
+                            return true
+                        end
+                    elseif all then
+                        if not all(k, v) then
+                            return false
+                        end
+                    end
+                end
+            end
+        else
+            if returnTable then
+                if asList then
+                    key = #ret + 1
+                else
+                    key = k
+                end
+                if select then
+                    value = select(k, v)
+                else
+                    value = v
+                end
+                ret[key] = value
+            else
+                if any then
+                    if any(k, v) then
+                        return true
+                    end
+                elseif all then
+                    if not all(k, v) then
+                        return false
+                    end
+                end
+            end
+        end
+    end
+    if returnTable then
+        return ret
+    else
+        if any then
+            return false
+        elseif all then
+            return true
+        end
+    end
+end
+
+t_insert = table.insert

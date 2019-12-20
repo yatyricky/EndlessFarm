@@ -64,8 +64,7 @@ end
 ----------------
 __modules["Main"] = { inited = false, cached = false, loader = function(...)
 ---- START Main.lua ----
-require("class")
-require("clone")
+require("GlobalFuncs")
 require("TableExt")
 local Timer = require("Timer")
 
@@ -87,8 +86,26 @@ end):Start()
 ---- END Main.lua ----
  end}
 ----------------
-__modules["class"] = { inited = false, cached = false, loader = function(...)
----- START class.lua ----
+__modules["GlobalFuncs"] = { inited = false, cached = false, loader = function(...)
+---- START GlobalFuncs.lua ----
+function clone(object)
+    local lookup_table = {}
+    local function _copy(object)
+        if type(object) ~= "table" then
+            return object
+        elseif lookup_table[object] then
+            return lookup_table[object]
+        end
+        local new_table = {}
+        lookup_table[object] = new_table
+        for key, value in pairs(object) do
+            new_table[_copy(key)] = _copy(value)
+        end
+        return setmetatable(new_table, getmetatable(object))
+    end
+    return _copy(object)
+end
+
 ---@param classname string
 ---@param super class
 function class(classname, super)
@@ -138,30 +155,13 @@ function class(classname, super)
     return cls
 end
 
----- END class.lua ----
- end}
-----------------
-__modules["clone"] = { inited = false, cached = false, loader = function(...)
----- START clone.lua ----
-function clone(object)
-    local lookup_table = {}
-    local function _copy(object)
-        if type(object) ~= "table" then
-            return object
-        elseif lookup_table[object] then
-            return lookup_table[object]
-        end
-        local new_table = {}
-        lookup_table[object] = new_table
-        for key, value in pairs(object) do
-            new_table[_copy(key)] = _copy(value)
-        end
-        return setmetatable(new_table, getmetatable(object))
+function bindfunc(func, context)
+    return function(...)
+        return func(context, ...)
     end
-    return _copy(object)
 end
 
----- END clone.lua ----
+---- END GlobalFuncs.lua ----
  end}
 ----------------
 __modules["TableExt"] = { inited = false, cached = false, loader = function(...)
@@ -276,9 +276,7 @@ end
 
 function Timer:Start()
     print("Timer start")
-    self.updater = function ()
-        self:Update()
-    end
+    self.updater = bindfunc(self.Update, self)
     TimerStart(self.nTimer, self.interval, self.loop ~= 1, self.updater)
 end
 

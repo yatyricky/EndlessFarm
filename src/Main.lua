@@ -1,19 +1,9 @@
-require("class")
-require("clone")
+-- require("GlobalFuncs")
 require("TableExt")
-local Timer = require("Timer")
-
-local Test = class("Test")
-
-function Test:Constructor()
-    
+-- local Time = require("Time")
+-- local Engine = require("Game/Engine")
+-- Time.Init()
+-- Engine.Start()
+if 0 then
+    print(true)
 end
-
-function Test:Run()
-    
-end
-
-print("start of program")
-local timer = Timer.New(1, 5, function ()
-    print("called")
-end):Start()

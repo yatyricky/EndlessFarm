@@ -15,9 +15,7 @@ end
 
 function Timer:Start()
     print("Timer start")
-    self.updater = function ()
-        self:Update()
-    end
+    self.updater = bindfunc(self.Update, self)
     TimerStart(self.nTimer, self.interval, self.loop ~= 1, self.updater)
 end
 
