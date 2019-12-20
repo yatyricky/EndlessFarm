@@ -1,16 +1,19 @@
-local Query = require("Query")
+require("class")
+require("clone")
+require("TableExt")
+local Timer = require("Timer")
 
-local datas = {
-    15,
-    50,
-    66
-}
-local res = Query(datas, {
-    where = function(k, v)
-        return v < 20
-    end
-})
+local Test = class("Test")
 
-for index, value in ipairs(res) do
-    print(value)
+function Test:Constructor()
+    
 end
+
+function Test:Run()
+    
+end
+
+print("start of program")
+local timer = Timer.New(1, 5, function ()
+    print("called")
+end):Start()

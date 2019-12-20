@@ -1,68 +1,87 @@
-function table.show(t, name, indent)
-    local cart  -- a container
-    local autoref  -- for self references
-
-    -- (RiciLake) returns true if the table is empty
-    local function isemptytable(t)
-        return next(t) == nil
+---@generic T
+---@param t T[]
+---@param delimeter string
+---@param formatter fun(elem: T): string default=tostring(T)
+---@return string
+function t_join(t, delimeter, formatter)
+    local res = ""
+    for i = 1, #t do
+        if formatter then
+            res = res .. formatter(t[i])
+        else
+            res = res .. tostring(t[i])
+        end
+        if i < #t then
+            res = res .. delimeter
+        end
     end
+    return res
+end
 
-    local function basicSerialize(o)
+---@param t table
+---@return bool
+function t_isempty(t)
+    return next(t) == nil
+end
+
+---@param t table
+---@param indent string
+---@return string
+function t_tojson(t, indent)
+    local function parsePrimitive(o)
+        local to = type(o)
+        if to == "string" then
+            return '"' .. o .. '"'
+        end
         local so = tostring(o)
-        if type(o) == "function" then
+        if to == "function" then
             local info = debug.getinfo(o, "S")
             -- info.name is nil because o is not a calling level
             if info.what == "C" then
-                return string.format("%q", so .. ", C function")
+                return '"' .. so .. ", C function" .. '"'
             else
                 -- the information is defined through lines
-                return string.format("%q", so .. ", defined in (" .. info.linedefined .. "-" .. info.lastlinedefined .. ")" .. info.source)
+                return '"' .. so .. ", defined in (" .. info.linedefined .. "-" .. info.lastlinedefined .. ")" .. info.source .. '"'
             end
-        elseif type(o) == "number" or type(o) == "boolean" then
+        else
             return so
-        else
-            return string.format("%q", so)
         end
     end
 
-    local function addtocart(value, name, indent, saved, field)
-        indent = indent or ""
-        saved = saved or {}
-        field = field or name
-
-        cart = cart .. indent .. field
-
-        if type(value) ~= "table" then
-            cart = cart .. " = " .. basicSerialize(value) .. ";\n"
-        else
-            if saved[value] then
-                cart = cart .. " = {}; -- " .. saved[value] .. " (self reference)\n"
-                autoref = autoref .. name .. " = " .. saved[value] .. ";\n"
-            else
-                saved[value] = name
-
-                if isemptytable(value) then
-                    cart = cart .. " = {};\n"
-                else
-                    cart = cart .. " = {\n"
-                    for k, v in pairs(value) do
-                        k = basicSerialize(k)
-                        local fname = string.format("%s[%s]", name, k)
-                        field = string.format("[%s]", k)
-                        -- three spaces between levels
-                        addtocart(v, fname, indent .. "   ", saved, field)
-                    end
-                    cart = cart .. indent .. "};\n"
-                end
-            end
+    local function parseTable(t, lindent, pindent, cached)
+        if type(t) ~= "table" then
+            return parsePrimitive(t)
         end
+        cached = cached or {}
+        local str = tostring(t)
+        if cached[str] then
+            return '"(cyclic ref ' .. str .. ')"'
+        end
+        cached[str] = true
+        local sb = "{"
+        if lindent then
+            sb = sb .. "\n"
+        end
+        local idt = lindent or ""
+        local oindent = indent or ""
+        local nindent = lindent and idt .. oindent or nil
+        local colonw = lindent and " " or ""
+        local kvs = {}
+        kvs[#kvs + 1] = idt .. '"__id__":' .. colonw .. '"' .. str .. '"'
+        for k, v in pairs(t) do
+            kvs[#kvs + 1] = idt .. '"' .. tostring(k) .. '":' .. colonw .. parseTable(v, nindent, lindent, cached)
+        end
+        if lindent then
+            sb = sb .. t_join(kvs, ",\n")
+        else
+            sb = sb .. t_join(kvs, ",")
+        end
+        if lindent then
+            sb = sb .. "\n" .. (pindent or "")
+        end
+        sb = sb .. "}"
+        cached[str] = false
+        return sb
     end
-
-    name = name or "__unnamed__"
-    if type(t) ~= "table" then
-        return name .. " = " .. basicSerialize(t)
-    end
-    cart, autoref = "", ""
-    addtocart(t, name, indent)
-    return cart .. autoref
+    return parseTable(t, indent)
 end
