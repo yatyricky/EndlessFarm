@@ -1,0 +1,5 @@
+require("src/Math/MathExt")
+print(math.clamp(10, 1, 5))
+print(math.clamp(10, 11, 15))
+print(math.clamp(10, 10, 20))
+print(math.clamp(10, 0, 10))

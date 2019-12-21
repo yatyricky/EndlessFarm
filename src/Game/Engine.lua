@@ -8,6 +8,7 @@ function Engine.Start()
     local world = World.New()
 
     world:Add(require("Game/Systems/TestSystem").New())
+    world:Add(require("Game/Systems/CreateUnitSystem").New())
     world:Add(require("Game/Systems/SpellCastSystem").New())
 
     world:Awake()
