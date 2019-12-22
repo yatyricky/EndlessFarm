@@ -1,0 +1,120 @@
+﻿STRING 1
+// Abilities: A000 (Life 00001), Name (Name)
+{
+Life 00001
+}
+
+STRING 2
+// Abilities: A001 (Life 00002), Name (Name)
+{
+Life 00002
+}
+
+STRING 3
+// Abilities: A002 (Life 00004), Name (Name)
+{
+Life 00004
+}
+
+STRING 4
+// Abilities: A003 (Life 00008), Name (Name)
+{
+Life 00008
+}
+
+STRING 5
+// Abilities: A004 (Life 00010), Name (Name)
+{
+Life 00010
+}
+
+STRING 6
+// Abilities: A005 (Life 00020), Name (Name)
+{
+Life 00020
+}
+
+STRING 7
+// Abilities: A006 (Life 00040), Name (Name)
+{
+Life 00040
+}
+
+STRING 8
+// Abilities: A007 (Life 00080), Name (Name)
+{
+Life 00080
+}
+
+STRING 9
+// Abilities: A008 (Life 00100), Name (Name)
+{
+Life 00100
+}
+
+STRING 10
+// Abilities: A009 (Life 00200), Name (Name)
+{
+Life 00200
+}
+
+STRING 11
+// Abilities: A00A (Life 00400), Name (Name)
+{
+Life 00400
+}
+
+STRING 12
+// Abilities: A00B (Life 00800), Name (Name)
+{
+Life 00800
+}
+
+STRING 13
+// Abilities: A00C (Life 01000), Name (Name)
+{
+Life 01000
+}
+
+STRING 14
+// Abilities: A00D (Life 02000), Name (Name)
+{
+Life 02000
+}
+
+STRING 15
+// Abilities: A00E (Life 04000), Name (Name)
+{
+Life 04000
+}
+
+STRING 16
+// Abilities: A00F (Life 08000), Name (Name)
+{
+Life 08000
+}
+
+STRING 17
+// Abilities: A00G (Life 10000), Name (Name)
+{
+Life 10000
+}
+
+STRING 18
+// Abilities: A00H (Life 20000), Name (Name)
+{
+Life 20000
+}
+
+STRING 19
+// Abilities: A00I (Life 40000), Name (Name)
+{
+Life 40000
+}
+
+STRING 20
+// Abilities: A00J (Life 80000), Name (Name)
+{
+Life 80000
+}
+
