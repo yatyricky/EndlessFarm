@@ -12,7 +12,7 @@ function Unit:Constructor(utid, n_unit)
     self.attrSet = {}
     self.attrRet = {}
 
-    self:_InitAttribute(UnitAttr.PhyxPower, nil, function()
+    self:_InitAttribute(UnitAttr.PhyxPower, nil, function(value)
         -- ModUnitAP(self.n_unit, num) todo
     end, function()
         local config = self.config
@@ -116,7 +116,12 @@ function Unit:Constructor(utid, n_unit)
     self:_InitWithConfig()
 end
 
-function Unit:_InitAttribute(attr, getter, setter, retter)
+---@param attr UnitAttr
+---@param getter fun(): float
+---@param setter fun(val: float): void
+---@param retter fun(): float
+---@param modder fun(val: float, pct: boolean): void
+function Unit:_InitAttribute(attr, getter, setter, retter, modder)
     self.attrs[attr] = 0
     getter = getter or function()
         return self.attrs[attr]
@@ -125,6 +130,9 @@ function Unit:_InitAttribute(attr, getter, setter, retter)
         self.attrs[attr] = value
     end
     retter = retter or getter
+    modder = modder or function (val, pct)
+        logwarn("modder unimplemented " .. attr)
+    end
     self.attrGet = getter
     self.attrSet = setter
     self.attrRet = retter
