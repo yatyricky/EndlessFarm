@@ -17,7 +17,7 @@ end
 
 ---@return { h: int, m: int, s: float }
 function Time.GetTimeHMS()
-    local ct = GetGameTime()
+    local ct = Time.GetTime()
     local t = {}
     local intct = math.floor(ct)
     ct = ct - intct

@@ -99,13 +99,43 @@ end
 ---@param opts { where: (fun(k: K, v: V): boolean), select: (fun(k: K, v: V): T), any: (fun(k: K, v: V): boolean), all: (fun(k: K, v: V): boolean), asList: boolean }
 ---@return table<K, V> | T[] | boolean
 function t_query(data, opts)
+    -- parse opts
     opts = opts or {}
-    local asList = opts.asList
-    local where = opts.where
     local select = opts.select
+    local where = opts.where
     local any = opts.any
     local all = opts.all
-    local returnTable = select or (any == nil and all == nil)
+    local sort = opts.sort
+    local asList = opts.asList or (sort ~= nil)
+
+    local bst = nil
+    local function bstAdd(data)
+        local newNode = { v = data, l = nil, r = nil }
+        if bst == nil then
+            bst = newNode
+        else
+            local cursor = bst
+            local prev
+            local isl = true
+            while cursor ~= nil do
+                prev = cursor
+                if sort(data, cursor.v) then
+                    cursor = cursor.l
+                    isl = true
+                else
+                    cursor = cursor.r
+                    isl = false
+                end
+            end
+            if isl then
+                prev.l = newNode
+            else
+                prev.r = newNode
+            end
+        end
+    end
+
+    local returnTable = select or (any == nil and all == nil) -- return type is table or bool
     local ret = {}
     local key
     local value
@@ -122,6 +152,9 @@ function t_query(data, opts)
                         value = select(k, v)
                     else
                         value = v
+                    end
+                    if sort then
+                        bstAdd(value)
                     end
                     ret[key] = value
                 else
@@ -148,6 +181,9 @@ function t_query(data, opts)
                 else
                     value = v
                 end
+                if sort then
+                    bstAdd(value)
+                end
                 ret[key] = value
             else
                 if any then
@@ -163,7 +199,21 @@ function t_query(data, opts)
         end
     end
     if returnTable then
-        return ret
+        if sort then
+            local obst = {}
+            local function bstOut(node)
+                if node == nil then
+                    return
+                end
+                bstOut(node.l)
+                obst[#obst + 1] = node.v
+                bstOut(node.r)
+            end
+            bstOut(bst)
+            return obst
+        else
+            return ret
+        end
     else
         if any then
             return false
@@ -174,3 +224,17 @@ function t_query(data, opts)
 end
 
 t_insert = table.insert
+
+---@param str string
+---@param sep string
+---@return string[]
+function s_split(str, sep)
+    if sep == nil then
+        sep = "%s"
+    end
+    local t = {}
+    for str in string.gmatch(str, "([^" .. sep .. "]+)") do
+        t_insert(t, str)
+    end
+    return t
+end

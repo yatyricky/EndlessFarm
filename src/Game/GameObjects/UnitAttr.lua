@@ -1,45 +1,56 @@
+local IDGenerator = require("Common/IDGenerator")
+
+local gen = IDGenerator.New()
+
 ---@class UnitAttr
+---str = hp
+---agi = dodge
+---int = mp
 local UnitAttr = {
-    PhyxPower = 1,
-    SpellPower = 2,
+    PowerMin = gen:Next(),
+    PowerMax = gen:Next(),
+    BasePowerMin = gen:Next(),
+    BasePowerMax = gen:Next(),
+    PowerPercent = gen:Next(),
     --- 0 ~ 1.0 1 agi = 0.0025 critic
-    PhyxCrit = 3,
-    --- 0 ~ 1.0 1 int = 0.003 critic
-    SpellCrit = 4,
+    CritRate = gen:Next(),
     --- -oo ~ +oo
-    PhyxSpeed = 5,
-    --- 0 ~ +oo 1 int = 0.002 haste
-    SpellCDR = 6,
+    AttackSpeed = gen:Next(),
     --- 0.25 ~ 1.00
-    AttackRate = 7,
+    AttackRate = gen:Next(),
+    --- 0 ~ +oo 1 int = 0.002 haste
+    CDR = gen:Next(),
     --- 0 ~ +oo
-    DamageDealt = 8,
-    --- 0 ~ 0.75 1 str = 0.002 block
-    ParryRate = 9,
+    DamageDealt = gen:Next(),
+    HealDealt = gen:Next(),
     --- 0 ~ 0.75 1 agi = 0.004 dodge
-    DodgeRate = 10,
+    DodgeRate = gen:Next(),
     --- 0 ~ + oo
-    PhyxTaken = 11,
+    PhyxResist = gen:Next(),
+    PhyxDef = gen:Next(),
     --- 0 ~ + oo
-    SpellTaken = 12,
+    SpellResist = gen:Next(),
+    SpellDef = gen:Next(),
     --- 0 ~ + oo
-    PhyxCritTaken = 13,
+    PhyxCritTaken = gen:Next(),
     --- 0 ~ + oo
-    SpellCritTaken = 14,
+    SpellCritTaken = gen:Next(),
     --- 0 ~ + oo
-    DamageTaken = 15,
-    Strength = 16,
-    Agility = 17,
-    Intelligence = 18,
-    Life = 19,
-    Mana = 20,
-    LifeRegen = 21,
+    DamageTaken = gen:Next(),
+    Strength = gen:Next(),
+    Agility = gen:Next(),
+    Intelligence = gen:Next(),
+    Life = gen:Next(),
+    BaseLife = gen:Next(),
+    Mana = gen:Next(),
+    BaseMana = gen:Next(),
+    LifeRegen = gen:Next(),
     --- 0 ~ +oo 1 int = 0.03 regen
-    ManaRegen = 22,
-    Speed = 23,
-    Absorb = 24,
-    LifeLeech = 25,
-    ManaLeech = 26,
+    ManaRegen = gen:Next(),
+    Speed = gen:Next(),
+    Absorb = gen:Next(),
+    LifeLeech = gen:Next(),
+    ManaLeech = gen:Next(),
 }
 
 return UnitAttr
