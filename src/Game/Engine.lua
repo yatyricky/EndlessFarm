@@ -8,6 +8,7 @@ function Engine.Start()
     local world = World.New()
 
     world:Add(require("Game/Systems/TestSystem").New())
+    world:Add(require("Game/Systems/InputSystem").New())
     world:Add(require("Game/Systems/CreateUnitSystem").New())
     world:Add(require("Game/Systems/SpellCastSystem").New())
 
@@ -20,6 +21,8 @@ function Engine.Start()
         world:Update(curr - time)
         time = curr
     end):Start()
+
+    Engine.world = world
 end
 
 return Engine

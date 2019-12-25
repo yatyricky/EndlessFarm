@@ -10,7 +10,7 @@ function Timer.Update()
         this.callback()
     end
     this.cloop = this.cloop - 1
-    if this.cloop <= 0 then
+    if this.cloop <= 0 and this.loop ~= -1 then
         Timer.Destroy(this)
     end
 end
