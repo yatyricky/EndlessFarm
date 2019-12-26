@@ -7,11 +7,16 @@ local gen = IDGenerator.New()
 ---agi = dodge
 ---int = mp
 local UnitAttr = {
-    PowerMin = gen:Next(),
-    PowerMax = gen:Next(),
-    BasePowerMin = gen:Next(),
-    BasePowerMax = gen:Next(),
-    PowerPercent = gen:Next(),
+    -- basic --
+    Strength = gen:Next(),
+    Agility = gen:Next(),
+    Intelligence = gen:Next(),
+    Life = gen:Next(),
+    Mana = gen:Next(),
+    -- offensive --
+    Power = gen:Next(),
+    --- 0 ~ +oo
+    DamageDealt = gen:Next(),
     --- 0 ~ 1.0 1 agi = 0.0025 critic
     CritRate = gen:Next(),
     --- -oo ~ +oo
@@ -20,9 +25,7 @@ local UnitAttr = {
     AttackRate = gen:Next(),
     --- 0 ~ +oo 1 int = 0.002 haste
     CDR = gen:Next(),
-    --- 0 ~ +oo
-    DamageDealt = gen:Next(),
-    HealDealt = gen:Next(),
+    -- defensive --
     --- 0 ~ 0.75 1 agi = 0.004 dodge
     DodgeRate = gen:Next(),
     --- 0 ~ + oo
@@ -37,13 +40,7 @@ local UnitAttr = {
     SpellCritTaken = gen:Next(),
     --- 0 ~ + oo
     DamageTaken = gen:Next(),
-    Strength = gen:Next(),
-    Agility = gen:Next(),
-    Intelligence = gen:Next(),
-    Life = gen:Next(),
-    BaseLife = gen:Next(),
-    Mana = gen:Next(),
-    BaseMana = gen:Next(),
+    -- utility --
     LifeRegen = gen:Next(),
     --- 0 ~ +oo 1 int = 0.03 regen
     ManaRegen = gen:Next(),

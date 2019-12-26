@@ -1,19 +1,23 @@
 const fs = require("fs")
 const readline = require("readline")
 
+const whichFile = process.argv[2]
+
 const ri = readline.createInterface({
-    input: fs.createReadStream("native/common.j"),
+    input: fs.createReadStream("native/" + whichFile + ".j"),
 });
 
-const output = [
-    "---@class handle"
-]
+const output = []
+
+if (whichFile === "common") {
+    output.push("---@class handle")
+}
 
 const luaKeywords = ["end"]
 
 const reg_type = new RegExp(/type[ \t]+(\w+)[ \t]+extends[ \t]+(\w+)[ \t]*(\/\/[\t ]*(.*))?/gm)
-const reg_func = new RegExp(/(constant[ \t]+)?native[ \t]+(\w+)[ \t]+takes[ \t]+([\w \t,]+)[ \t]+returns[ \t]+(\w+)[ \t]*(\/\/[\t ]*(.*))?/gm)
-const reg_expr = new RegExp(/constant[ \t]+(\w+)[ \t]+(\w+)[ \t]*=[ \t]*([\w\(\)'*$]+)[ \t]*(\/\/[\t ]*(.*))?/gm)
+const reg_func = new RegExp(/(constant[ \t]+)?(native|function)[ \t]+(\w+)[ \t]+takes[ \t]+([\w \t,]+)[ \t]+returns[ \t]+(\w+)[ \t]*(\/\/[\t ]*(.*))?/gm)
+const reg_expr = new RegExp(/constant[ \t]+(\w+)[ \t]+(\w+)[ \t]*=[ \t]*([\w\(\)'*$ \+\.]+)[ \t]*(\/\/[\t ]*(.*))?/gm)
 
 /**
  * @param {string} text 
@@ -52,14 +56,14 @@ ri.on("line", function (line) {
         const r = extract(line, reg_type, 4)
         output.push(`---@class ${r[0]} : ${r[1]}` + (r[3] ? " " + r[3] : ""))
     } else if (line.match(reg_func)) {
-        const r = extract(line, reg_func, 6)
+        const r = extract(line, reg_func, 7)
         output.push("\n")
-        if (r[5]) {
-            output.push("---" + r[5])
+        if (r[6]) {
+            output.push("---" + r[6])
         }
         const argNames = []
-        if (r[2] !== "nothing") {
-            const args = r[2].split(",")
+        if (r[3] !== "nothing") {
+            const args = r[3].split(",")
             for (let i = 0; i < args.length; i++) {
                 const ps = args[i].trim().split(/[ \t]+/)
                 const argName = q(ps[1])
@@ -67,21 +71,21 @@ ri.on("line", function (line) {
                 argNames.push(argName)
             }
         }
-        output.push("---@return " + (r[3] === "nothing" ? "void" : r[3]))
-        output.push(`function ${r[1]}(${argNames.join(", ")}) end`)
+        output.push("---@return " + (r[4] === "nothing" ? "void" : r[4]))
+        output.push(`function ${r[2]}(${argNames.join(", ")}) end`)
     } else if (line.match(reg_expr)) {
         const r = extract(line, reg_expr, 5)
         output.push("\n")
         if (r[4]) {
             output.push("---" + r[4])
         }
-        output.push("---" + r[2])
-        output.push(`${r[1]} = ${q(r[2])} ---@type ${r[0]}`)
+        output.push("---" + r[2].trim())
+        output.push(`${r[1]} = ${q(r[2]).trim()} ---@type ${r[0]}`)
     } else {
-        console.log(line)
+        // console.log(line)
     }
 });
 
 ri.on("close", function () {
-    fs.writeFileSync("native/common.lua", output.join("\n"))
+    fs.writeFileSync("native/" + whichFile + ".lua", output.join("\n"))
 })

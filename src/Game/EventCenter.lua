@@ -1,14 +1,10 @@
+local IDGenerator = require("Common/IDGenerator")
 local Event = require("Event")
 
-local id = 0
-
-local function GetId()
-    id = id + 1
-    return id
-end
+local id = IDGenerator.New()
 
 return {
     ---@param data { unit: unit, ability: int }
-    SpellCast = Event.New(GetId()),
-    Keyboard = Event.New(GetId()),
+    SpellCast = Event.New(id:Next()),
+    Keyboard = Event.New(id:Next()),
 }

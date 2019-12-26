@@ -1,17 +1,21 @@
 local Time = require("Time")
 
-function log(...)
+local function stdoutWith(level, ...)
     local sb = ""
     for _, v in pairs({...}) do
         sb = sb .. " " .. t_tojson(v)
     end
-    print(Time.GetTime() .. "[I]:" .. sb)
+    BJDebugMsg(Time.GetTime() .. "[" .. level .. "]:" .. sb)
+end
+
+function log(...)
+    stdoutWith("I")
 end
 
 function logwarn(...)
-    print(Time.GetTime() .. "[W]:", ...)
+    stdoutWith("W")
 end
 
 function logerror(...)
-    print(Time.GetTime() .. "[E]:", ...)
+    stdoutWith("E")
 end

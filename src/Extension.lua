@@ -1,3 +1,21 @@
+n_floor = math.floor
+n_min = math.min
+n_max = math.max
+
+---@param n number
+---@param a number
+---@param b number
+---@return number
+function n_clamp(n, a, b)
+    return n_min(n_max(n, a), b)
+end
+
+---@param n number
+---@return number
+function n_round(n)
+    return n_floor(n + 0.5)
+end
+
 ---@generic T
 ---@param t T[]
 ---@param delimeter string

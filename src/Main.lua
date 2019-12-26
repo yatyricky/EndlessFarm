@@ -1,7 +1,7 @@
 require("Extension")
 require("Game/Configs/Const")
-require("Math/MathExt")
 require("GlobalFuncs")
 require("Logger")
 require("Time").Init()
+require("Locale/Locale").Init("EN")
 require("Game/Engine").Start()
