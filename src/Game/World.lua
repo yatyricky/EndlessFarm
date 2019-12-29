@@ -1,3 +1,5 @@
+local Time = require("Time")
+
 local World = class("World")
 
 function World:Constructor()
@@ -6,7 +8,7 @@ end
 
 function World:Init()
     self.systems = {} ---@type System[]
-    self.time = 0 ---@type float
+    self.time = Time.GetTime() ---@type float
     self.frame = 0 ---@type int
 end
 
@@ -28,9 +30,10 @@ function World:Start()
 end
 
 ---@param delta float in seconds
-function World:Update(delta)
+function World:Update(now)
     self.frame = self.frame + 1
-    self.time = self.time + delta
+    local delta = now - self.time
+    self.time = now
     for _, v in pairs(self.systems) do
         v:Update(delta)
     end

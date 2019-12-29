@@ -6,23 +6,19 @@ local Engine = {}
 
 function Engine.Start()
     local world = World.New()
+    Engine.world = world
 
     world:Add(require("Game/Systems/TestSystem").New())
     world:Add(require("Game/Systems/InputSystem").New())
     world:Add(require("Game/Systems/CreateUnitSystem").New())
-    world:Add(require("Game/Systems/SpellCastSystem").New())
+    -- world:Add(require("Game/Systems/SpellCastSystem").New())
 
     world:Awake()
     world:Start()
 
-    local time = Time.GetTime()
     local timer = Timer.New(0.01666667, -1, function ()
-        local curr = Time.GetTime()
-        world:Update(curr - time)
-        time = curr
+        world:Update(Time.GetTime())
     end):Start()
-
-    Engine.world = world
 end
 
 return Engine

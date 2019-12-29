@@ -18,3 +18,435 @@ STRING 4
 Life 00008
 }
 
+STRING 5
+// Abilities: A000 (AttrStr 00001), Name (Name)
+{
+AttrStr 00001
+}
+
+STRING 6
+// Abilities: A001 (AttrStr 00002), Name (Name)
+{
+AttrStr 00002
+}
+
+STRING 7
+// Abilities: A002 (AttrStr 00004), Name (Name)
+{
+AttrStr 00004
+}
+
+STRING 8
+// Abilities: A003 (AttrStr 00008), Name (Name)
+{
+AttrStr 00008
+}
+
+STRING 9
+// Abilities: A004 (AttrStr 00010), Name (Name)
+{
+AttrStr 00010
+}
+
+STRING 10
+// Abilities: A005 (AttrStr 00020), Name (Name)
+{
+AttrStr 00020
+}
+
+STRING 11
+// Abilities: A006 (AttrStr 00040), Name (Name)
+{
+AttrStr 00040
+}
+
+STRING 12
+// Abilities: A007 (AttrStr 00080), Name (Name)
+{
+AttrStr 00080
+}
+
+STRING 13
+// Abilities: A008 (AttrStr 00100), Name (Name)
+{
+AttrStr 00100
+}
+
+STRING 14
+// Abilities: A009 (AttrStr 00200), Name (Name)
+{
+AttrStr 00200
+}
+
+STRING 15
+// Abilities: A00A (AttrStr 00400), Name (Name)
+{
+AttrStr 00400
+}
+
+STRING 16
+// Abilities: A00B (AttrStr 00800), Name (Name)
+{
+AttrStr 00800
+}
+
+STRING 21
+// Abilities: A00G (AttrLife 10000), Name (Name)
+{
+AttrLife 10000
+}
+
+STRING 22
+// Abilities: A00H (AttrLife 20000), Name (Name)
+{
+AttrLife 20000
+}
+
+STRING 23
+// Abilities: A00I (AttrLife 00001), Name (Name)
+{
+AttrLife 00001
+}
+
+STRING 24
+// Abilities: A00J (AttrLife 80000), Name (Name)
+{
+AttrLife 80000
+}
+
+STRING 25
+// Abilities: A00K (AttrLife 08000), Name (Name)
+{
+AttrLife 08000
+}
+
+STRING 26
+// Abilities: A00L (AttrLife 04000), Name (Name)
+{
+AttrLife 04000
+}
+
+STRING 27
+// Abilities: A00M (AttrLife 02000), Name (Name)
+{
+AttrLife 02000
+}
+
+STRING 28
+// Abilities: A00N (AttrLife 01000), Name (Name)
+{
+AttrLife 01000
+}
+
+STRING 29
+// Abilities: A00O (AttrLife 00800), Name (Name)
+{
+AttrLife 00800
+}
+
+STRING 30
+// Abilities: A00P (AttrLife 00400), Name (Name)
+{
+AttrLife 00400
+}
+
+STRING 31
+// Abilities: A00Q (AttrLife 00200), Name (Name)
+{
+AttrLife 00200
+}
+
+STRING 32
+// Abilities: A00R (AttrLife 00100), Name (Name)
+{
+AttrLife 00100
+}
+
+STRING 33
+// Abilities: A00S (AttrLife 00080), Name (Name)
+{
+AttrLife 00080
+}
+
+STRING 34
+// Abilities: A00T (AttrLife 00040), Name (Name)
+{
+AttrLife 00040
+}
+
+STRING 35
+// Abilities: A00U (AttrLife 00020), Name (Name)
+{
+AttrLife 00020
+}
+
+STRING 36
+// Abilities: A00V (AttrLife 00010), Name (Name)
+{
+AttrLife 00010
+}
+
+STRING 37
+// Abilities: A00W (AttrLife 00008), Name (Name)
+{
+AttrLife 00008
+}
+
+STRING 38
+// Abilities: A00X (AttrLife 00004), Name (Name)
+{
+AttrLife 00004
+}
+
+STRING 39
+// Abilities: A00Y (AttrLife 00002), Name (Name)
+{
+AttrLife 00002
+}
+
+STRING 40
+// Abilities: A00Z (AttrLife 40000), Name (Name)
+{
+AttrLife 40000
+}
+
+STRING 41
+// Abilities: A010 (AttrMana 00002), Name (Name)
+{
+AttrMana 00002
+}
+
+STRING 42
+// Abilities: A011 (AttrMana 00004), Name (Name)
+{
+AttrMana 00004
+}
+
+STRING 43
+// Abilities: A012 (AttrMana 00008), Name (Name)
+{
+AttrMana 00008
+}
+
+STRING 44
+// Abilities: A013 (AttrMana 00010), Name (Name)
+{
+AttrMana 00010
+}
+
+STRING 45
+// Abilities: A014 (AttrMana 00020), Name (Name)
+{
+AttrMana 00020
+}
+
+STRING 46
+// Abilities: A015 (AttrMana 08000), Name (Name)
+{
+AttrMana 08000
+}
+
+STRING 47
+// Abilities: A016 (AttrMana 00001), Name (Name)
+{
+AttrMana 00001
+}
+
+STRING 48
+// Abilities: A017 (AttrMana 00080), Name (Name)
+{
+AttrMana 00080
+}
+
+STRING 49
+// Abilities: A018 (AttrMana 00100), Name (Name)
+{
+AttrMana 00100
+}
+
+STRING 50
+// Abilities: A019 (AttrMana 00200), Name (Name)
+{
+AttrMana 00200
+}
+
+STRING 51
+// Abilities: A01A (AttrMana 00400), Name (Name)
+{
+AttrMana 00400
+}
+
+STRING 52
+// Abilities: A01B (AttrMana 00800), Name (Name)
+{
+AttrMana 00800
+}
+
+STRING 53
+// Abilities: A01C (AttrMana 01000), Name (Name)
+{
+AttrMana 01000
+}
+
+STRING 54
+// Abilities: A01D (AttrMana 02000), Name (Name)
+{
+AttrMana 02000
+}
+
+STRING 55
+// Abilities: A01E (AttrMana 04000), Name (Name)
+{
+AttrMana 04000
+}
+
+STRING 56
+// Abilities: A01F (AttrMana 00040), Name (Name)
+{
+AttrMana 00040
+}
+
+STRING 73
+// Abilities: A00C (AttrAgi +00800), Name (Name)
+{
+AttrAgi +00800
+}
+
+STRING 74
+// Abilities: A00D (AttrAgi +00400), Name (Name)
+{
+AttrAgi +00400
+}
+
+STRING 75
+// Abilities: A00E (AttrAgi +00200), Name (Name)
+{
+AttrAgi +00200
+}
+
+STRING 76
+// Abilities: A00F (AttrAgi +00100), Name (Name)
+{
+AttrAgi +00100
+}
+
+STRING 77
+// Abilities: A01G (AttrAgi +00080), Name (Name)
+{
+AttrAgi +00080
+}
+
+STRING 78
+// Abilities: A01H (AttrAgi +00040), Name (Name)
+{
+AttrAgi +00040
+}
+
+STRING 79
+// Abilities: A01I (AttrAgi +00020), Name (Name)
+{
+AttrAgi +00020
+}
+
+STRING 80
+// Abilities: A01J (AttrAgi +00010), Name (Name)
+{
+AttrAgi +00010
+}
+
+STRING 81
+// Abilities: A01K (AttrAgi +00008), Name (Name)
+{
+AttrAgi +00008
+}
+
+STRING 82
+// Abilities: A01L (AttrAgi +00004), Name (Name)
+{
+AttrAgi +00004
+}
+
+STRING 83
+// Abilities: A01M (AttrAgi +00002), Name (Name)
+{
+AttrAgi +00002
+}
+
+STRING 84
+// Abilities: A01N (AttrAgi +00001), Name (Name)
+{
+AttrAgi +00001
+}
+
+STRING 85
+// Abilities: A01O (AttrInt +00400), Name (Name)
+{
+AttrInt +00400
+}
+
+STRING 86
+// Abilities: A01P (AttrInt +00001), Name (Name)
+{
+AttrInt +00001
+}
+
+STRING 87
+// Abilities: A01Q (AttrInt +00002), Name (Name)
+{
+AttrInt +00002
+}
+
+STRING 88
+// Abilities: A01R (AttrInt +00004), Name (Name)
+{
+AttrInt +00004
+}
+
+STRING 89
+// Abilities: A01S (AttrInt +00008), Name (Name)
+{
+AttrInt +00008
+}
+
+STRING 90
+// Abilities: A01T (AttrInt +00010), Name (Name)
+{
+AttrInt +00010
+}
+
+STRING 91
+// Abilities: A01U (AttrInt +00020), Name (Name)
+{
+AttrInt +00020
+}
+
+STRING 92
+// Abilities: A01V (AttrInt +00040), Name (Name)
+{
+AttrInt +00040
+}
+
+STRING 93
+// Abilities: A01W (AttrInt +00080), Name (Name)
+{
+AttrInt +00080
+}
+
+STRING 94
+// Abilities: A01X (AttrInt +00100), Name (Name)
+{
+AttrInt +00100
+}
+
+STRING 95
+// Abilities: A01Y (AttrInt +00200), Name (Name)
+{
+AttrInt +00200
+}
+
+STRING 96
+// Abilities: A01Z (AttrInt +00800), Name (Name)
+{
+AttrInt +00800
+}
+

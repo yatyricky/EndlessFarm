@@ -9,13 +9,13 @@ local function stdoutWith(level, ...)
 end
 
 function log(...)
-    stdoutWith("I")
+    stdoutWith("I", ...)
 end
 
 function logwarn(...)
-    stdoutWith("W")
+    stdoutWith("W", ...)
 end
 
 function logerror(...)
-    stdoutWith("E")
+    stdoutWith("E", ...)
 end

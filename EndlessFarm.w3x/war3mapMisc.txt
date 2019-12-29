@@ -1,0 +1,9 @@
+[Misc]
+AgiAttackSpeedBonus=0.0
+AgiDefenseBase=0.0
+AgiDefenseBonus=0.0
+IntManaBonus=10.0
+IntRegenBonus=0.0
+StrHitPointBonus=10.0
+StrRegenBonus=0.0
+

@@ -1,8 +1,63 @@
-local UnitConfig = {}
+---@type table<int, UnitConfigItem>
+local UnitConfig = {
+    [UTID_BLADE_MASTER] = {
+        UTID = UTID_BLADE_MASTER,
+        PrimAtt = ATT_STR,
+        Str = 15,
+        Agi = 10,
+        Int = 5,
+        HP = 700,
+        MP = 50,
+        ATK1 = 50,
+        ATK2 = 100,
+        Def = 0.1,
+        SDef = 1,
+        Dodge = 0.25,
+        Crit = 0.1,
+        Career = CAREER_TYPE_DPS,
+    },
+    [UTID_DEMON_HUNTER] = {
+        UTID = UTID_DEMON_HUNTER,
+        PrimAtt = ATT_AGI,
+        Str = 9,
+        Agi = 12,
+        Int = 9,
+        HP = 600,
+        MP = 300,
+        ATK1 = 30,
+        ATK2 = 100,
+        Def = 0.15,
+        SDef = 1,
+        Dodge = 0.25,
+        Crit = 0.1,
+        Career = CAREER_TYPE_DPS,
+    },
+    [UTID_ARCHMAGE] = {
+        UTID = UTID_ARCHMAGE,
+        PrimAtt = ATT_INT,
+        Str = 7,
+        Agi = 5,
+        Int = 18,
+        HP = 600,
+        MP = 600,
+        ATK1 = 20,
+        ATK2 = 40,
+        Def = 0.05,
+        SDef = 1,
+        Dodge = 0.25,
+        Crit = 0.1,
+        Career = CAREER_TYPE_DPS,
+    },
+}
 
----@class UnitConfig
+return UnitConfig
+
+---@class UnitConfigItem
 ---@field UTID int
----@field MainAtt int
+---@field PrimAtt int
+---@field Str int
+---@field Agi int
+---@field Int int
 ---@field HP int
 ---@field MP int
 ---@field ATK1 int
@@ -12,26 +67,3 @@ local UnitConfig = {}
 ---@field Dodge float
 ---@field Crit float
 ---@field Career int
-
----@type UnitConfig[]
-UnitConfig.DB = {
-    { UTID = UTID_BLADE_MASTER , MainAtt = ATT_STR, HP = 3000  , MP = 200, ATK1 = 50  , ATK2 = 100  , Def = 0.1, SDef = 1 , Dodge = 0.25    ,  Crit = 0.1    , Career = CAREER_TYPE_DPS   },
-}
-
-local ref = {}
-for _, v in pairs(UnitConfig.DB) do
-    ref[v.UTID] = v
-end
----@type table<int, UnitConfig>
-UnitConfig.ById = setmetatable(ref, {
-    __index = function(t, k)
-        local v = rawget(t, k)
-        if v then
-            return v
-        else
-            logerror("id not found " .. k)
-        end
-    end
-})
-
-return UnitConfig

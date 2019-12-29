@@ -5,15 +5,23 @@ local UnitAttr = require("Game/GameObjects/UnitAttr")
 local AttrAbilities = {
     [UnitAttr.Strength] = {
         neg = {},
-        pos = { 'A000', 'A001', 'A002', 'A003', 'A004', 'A005', 'A006', 'A007', 'A008', 'A009', 'A00A', 'A00B', 'A00C' }
+        pos = { 'A000', 'A001', 'A002', 'A003', 'A004', 'A005', 'A006', 'A007', 'A008', 'A009', 'A00A', 'A00B' }
     },
     [UnitAttr.Agility] = {
         neg = {},
-        pos = { 'A000', 'A001', 'A002', 'A003', 'A004', 'A005', 'A006', 'A007', 'A008', 'A009', 'A00A', 'A00B', 'A00C' }
+        pos = { 'A01N', 'A01M', 'A01L', 'A01K', 'A01J', 'A01I', 'A01H', 'A01G', 'A00F', 'A00E', 'A00D', 'A00C' }
     },
     [UnitAttr.Intelligence] = {
         neg = {},
-        pos = { 'A000', 'A001', 'A002', 'A003', 'A004', 'A005', 'A006', 'A007', 'A008', 'A009', 'A00A', 'A00B', 'A00C' }
+        pos = { 'A01P', 'A01Q', 'A01R', 'A01S', 'A01T', 'A01U', 'A01V', 'A01W', 'A01X', 'A01Y', 'A01O', 'A01Z' }
+    },
+    [UnitAttr.Life] = {
+        neg = {},
+        pos = { 'A00I', 'A00Y', 'A00X', 'A00W', 'A00V', 'A00U', 'A00T', 'A00S', 'A00R', 'A00Q', 'A00P', 'A00O', 'A00N', 'A00M', 'A00L', 'A00K', 'A00G', 'A00H', 'A00Z', 'A00J' }
+    },
+    [UnitAttr.Mana] = {
+        neg = {},
+        pos = { 'A016', 'A010', 'A011', 'A012', 'A013', 'A014', 'A01F', 'A017', 'A018', 'A019', 'A01A', 'A01B', 'A01C', 'A01D', 'A01E', 'A015' }
     },
 }
 
@@ -21,7 +29,7 @@ local Unit = class("Unit") ---@class Unit
 
 function Unit:Constructor(utid, n_unit)
     self.n_unit = n_unit
-    self.config = UnitConfig.ById[utid]
+    self.config = UnitConfig[utid]
 
     self.attrs = {}
     self.attrGet = {}
@@ -32,33 +40,34 @@ function Unit:Constructor(utid, n_unit)
     self.skillList = {}
 
     self:_InitAttribute(UnitAttr.Strength, nil, function(value)
-        self.attrs[UnitAttr.Strength] = value
         self:_SetNativeAttr(UnitAttr.Strength, value)
+        self.attrs[UnitAttr.Strength] = value
     end, function(isBase)
+        log("get hero str", isBase)
         return GetHeroStr(self.n_unit, not isBase)
     end, function(value)
+        self:_SetNativeAttr(UnitAttr.Strength, self.attrs[UnitAttr.Strength] + value)
         self.attrs[UnitAttr.Strength] = self.attrs[UnitAttr.Strength] + value
-        self:_SetNativeAttr(UnitAttr.Strength, self.attrs[UnitAttr.Strength])
     end)
 
     self:_InitAttribute(UnitAttr.Agility, nil, function(value)
-        self.attrs[UnitAttr.Agility] = value
         self:_SetNativeAttr(UnitAttr.Agility, value)
+        self.attrs[UnitAttr.Agility] = value
     end, function(isBase)
         return GetHeroAgi(self.n_unit, not isBase)
     end, function(value)
+        self:_SetNativeAttr(UnitAttr.Agility, self.attrs[UnitAttr.Agility] + value)
         self.attrs[UnitAttr.Agility] = self.attrs[UnitAttr.Agility] + value
-        self:_SetNativeAttr(UnitAttr.Agility, self.attrs[UnitAttr.Agility])
     end)
 
     self:_InitAttribute(UnitAttr.Intelligence, nil, function(value)
-        self.attrs[UnitAttr.Intelligence] = value
         self:_SetNativeAttr(UnitAttr.Intelligence, value)
+        self.attrs[UnitAttr.Intelligence] = value
     end, function(isBase)
         return GetHeroInt(self.n_unit, not isBase)
     end, function(value)
+        self:_SetNativeAttr(UnitAttr.Intelligence, self.attrs[UnitAttr.Intelligence] + value)
         self.attrs[UnitAttr.Intelligence] = self.attrs[UnitAttr.Intelligence] + value
-        self:_SetNativeAttr(UnitAttr.Intelligence, self.attrs[UnitAttr.Intelligence])
     end)
 
     self:_InitAttribute(UnitAttr.Life, function(isBase)
@@ -68,8 +77,8 @@ function Unit:Constructor(utid, n_unit)
             return self.attrs[UnitAttr.Life]
         end
     end, function(value)
-        self.attrs[UnitAttr.Life] = value
-        self:_SetNativeAttr(UnitAttr.Life, self.attrs[UnitAttr.Life] - 1)
+        self:_SetNativeAttr(UnitAttr.Life, value - 1)
+        self.attrs[UnitAttr.Life] = value - 1
     end, function (isBase)
         if isBase then
             return self.config.HP + GetHeroStr(self.n_unit, true) * 10
@@ -77,8 +86,8 @@ function Unit:Constructor(utid, n_unit)
             return GetUnitState(self.n_unit, UNIT_STATE_MAX_LIFE)
         end
     end, function (value)
+        self:_SetNativeAttr(UnitAttr.Life, self.attrs[UnitAttr.Life] + value)
         self.attrs[UnitAttr.Life] = self.attrs[UnitAttr.Life] + value
-        self:_SetNativeAttr(UnitAttr.Life, self.attrs[UnitAttr.Life] - 1)
     end)
 
     self:_InitAttribute(UnitAttr.Mana, function(isBase)
@@ -88,8 +97,8 @@ function Unit:Constructor(utid, n_unit)
             return self.attrs[UnitAttr.Mana]
         end
     end, function(value)
+        self:_SetNativeAttr(UnitAttr.Mana, value)
         self.attrs[UnitAttr.Mana] = value
-        self:_SetNativeAttr(UnitAttr.Mana, self.attrs[UnitAttr.Mana])
     end, function(isBase)
         if isBase then
             return self.config.MP + GetHeroInt(self.n_unit, true) * 10
@@ -97,20 +106,20 @@ function Unit:Constructor(utid, n_unit)
             return GetUnitState(self.n_unit, UNIT_STATE_MAX_MANA)
         end
     end, function (value)
+        self:_SetNativeAttr(UnitAttr.Mana, self.attrs[UnitAttr.Mana] + value)
         self.attrs[UnitAttr.Mana] = self.attrs[UnitAttr.Mana] + value
-        self:_SetNativeAttr(UnitAttr.Mana, self.attrs[UnitAttr.Mana])
     end)
 
     self:_InitAttribute(UnitAttr.Power, nil, function(value)
+        self:_SetNativeAttr(UnitAttr.Power, value)
         self.attrs[UnitAttr.Power] = value
-        self:_SetNativeAttr(UnitAttr.Power, self.attrs[UnitAttr.Power])
     end, function()
         local config = self.config
         local atk = self.attrs[UnitAttr.Power] + math.random(config.ATK1, config.ATK2)
-        return atk + self:GetMainAttrValue()
+        return atk + self:GetPrimaryAttrValue()
     end, function (value)
+        self:_SetNativeAttr(UnitAttr.Power, self.attrs[UnitAttr.Power] + value)
         self.attrs[UnitAttr.Power] = self.attrs[UnitAttr.Power] + value
-        self:_SetNativeAttr(UnitAttr.Power, self.attrs[UnitAttr.Power])
     end)
 
     self:_InitAttribute(UnitAttr.DamageDealt, nil, nil, function()
@@ -122,18 +131,18 @@ function Unit:Constructor(utid, n_unit)
     end)
 
     self:_InitAttribute(UnitAttr.AttackSpeed, nil, function(value)
-        self.attrs[UnitAttr.AttackSpeed] = value
         self:_SetNativeAttr(UnitAttr.AttackSpeed, n_round(value * 100))
+        self.attrs[UnitAttr.AttackSpeed] = value
     end, nil, function (value)
+        self:_SetNativeAttr(UnitAttr.AttackSpeed, n_round((self.attrs[UnitAttr.AttackSpeed] + value) * 100))
         self.attrs[UnitAttr.AttackSpeed] = self.attrs[UnitAttr.AttackSpeed] + value
-        self:_SetNativeAttr(UnitAttr.AttackSpeed, n_round(self.attrs[UnitAttr.AttackSpeed] * 100))
     end)
 
     self:_InitAttribute(UnitAttr.AttackRate, nil, nil, function()
         return n_clamp(self.attrs[UnitAttr.AttackRate], 0.25, 1)
     end, nil)
 
-    self:_InitAttribute(UnitAttr.SpellCDR, nil, function()
+    self:_InitAttribute(UnitAttr.CDR, nil, function()
         -- todo
     end, nil)
 
@@ -149,11 +158,11 @@ function Unit:Constructor(utid, n_unit)
             return self.config.Def + self.attrs[UnitAttr.PhyxResist]
         end
     end, function (value)
+        self:_SetNativeAttr(UnitAttr.PhyxResist, n_round(value * 100))
         self.attrs[UnitAttr.PhyxResist] = value
-        self:_SetNativeAttr(UnitAttr.PhyxResist, n_round(self.attrs[UnitAttr.PhyxResist] * 100))
     end, nil, function (value)
+        self:_SetNativeAttr(UnitAttr.PhyxResist, n_round((self.attrs[UnitAttr.PhyxResist] + value) * 100))
         self.attrs[UnitAttr.PhyxResist] = self.attrs[UnitAttr.PhyxResist] + value
-        self:_SetNativeAttr(UnitAttr.PhyxResist, n_round(self.attrs[UnitAttr.PhyxResist] * 100))
     end)
 
     self:_InitAttribute(UnitAttr.PhyxDef, nil, nil, nil, nil)
@@ -198,10 +207,7 @@ end
 ---@param attr UnitAttr
 ---@param value int
 function Unit:_SetNativeAttr(attr, value)
-    local prev = self:GetAttr(attr)
-    if prev == value then return end
-    self:SetAttr(attr, value)
-    -- log("$VAR$ of " + GetUnitNameEx(u) +" is set to " + I2S(amount))
+    if self.attrs[attr] == value then return end
     local u = self.n_unit
     local conf = AttrAbilities[attr]
     local neg = conf.neg
@@ -273,7 +279,19 @@ function Unit:_InitAttribute(attr, getter, setter, retter, modder)
 end
 
 function Unit:_InitWithConfig()
-
+    local u = self.n_unit
+    local config = self.config
+    SetHeroStr(u, config.Str, true)
+    SetHeroAgi(u, config.Agi, true)
+    SetHeroInt(u, config.Int, true)
+    BlzSetUnitMaxMana(u, config.Int * 10)
+    self:SetAttr(UnitAttr.Mana, config.MP)
+    BlzSetUnitMaxHP(u, 1 + config.Str * 10)
+    self:SetAttr(UnitAttr.Life, config.HP)
+    BlzSetUnitBaseDamage(u, config.ATK1 - 1 + self:GetPrimaryAttrValue(), 0)
+    BlzSetUnitDiceNumber(u, 1, 0)
+    BlzSetUnitDiceSides(u, config.ATK2 - config.ATK1 + 1, 0)
+    BlzSetUnitArmor(u, n_round(config.Def * 100))
 end
 
 ---@param attr UnitAttr
@@ -291,7 +309,7 @@ end
 ---@param attr UnitAttr
 ---@return float
 function Unit:ReturnAttr(attr, ...)
-    self.attrRet[attr](...)
+    return self.attrRet[attr](...)
 end
 
 function Unit:ModAttr(attr, value)
@@ -299,19 +317,19 @@ function Unit:ModAttr(attr, value)
 end
 
 ---@return int
-function Unit:GetMainAttrValue()
-    if self.unitConfig.mainAtt == ATT_STR then
+function Unit:GetPrimaryAttrValue()
+    if self.config.PrimAtt == ATT_STR then
         return GetHeroStr(self.n_unit, true)
-    elseif self.unitConfig.mainAttribute == ATT_AGI then
+    elseif self.config.PrimAtt == ATT_AGI then
         return GetHeroAgi(self.n_unit, true)
-    elseif self.unitConfig.mainAttribute == ATT_INT then
+    elseif self.config.PrimAtt == ATT_INT then
         return GetHeroInt(self.n_unit, true)
     end
     return 0
 end
 
 function Unit:ReturnPhyxPowerMax()
-    return self.config.ATK2 + self:GetMainAttrValue()
+    return self.config.ATK2 + self:GetPrimaryAttrValue()
 end
 
 -- function Unit:GetDropValue()
