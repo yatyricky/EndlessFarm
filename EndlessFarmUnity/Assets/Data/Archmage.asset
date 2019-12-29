@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a9296e6e4bda054d80e4e59daa5b87d, type: 3}
+  m_Name: Archmage
+  m_EditorClassIdentifier: 
+  Fields:
+  - Name: UTID
+    Type: 1
+    sValue: Hjai
+    iValue: 0
+    fValue: 0
+  - Name: PrimAtt
+    Type: 5
+    sValue: 
+    iValue: 3
+    fValue: 0
+  - Name: Str
+    Type: 0
+    sValue: 
+    iValue: 7
+    fValue: 0
+  - Name: Agi
+    Type: 0
+    sValue: 
+    iValue: 5
+    fValue: 0
+  - Name: Int
+    Type: 0
+    sValue: 
+    iValue: 18
+    fValue: 0
+  - Name: HP
+    Type: 0
+    sValue: 
+    iValue: 600
+    fValue: 0
+  - Name: MP
+    Type: 0
+    sValue: 
+    iValue: 600
+    fValue: 0
+  - Name: ATK1
+    Type: 0
+    sValue: 
+    iValue: 20
+    fValue: 0
+  - Name: ATK2
+    Type: 0
+    sValue: 
+    iValue: 40
+    fValue: 0
+  - Name: Def
+    Type: 3
+    sValue: 
+    iValue: 1
+    fValue: 0.05
+  - Name: SDef
+    Type: 3
+    sValue: 1
+    iValue: 0
+    fValue: 0.3
+  - Name: Dodge
+    Type: 3
+    sValue: 
+    iValue: 0
+    fValue: 0.1
+  - Name: Crit
+    Type: 3
+    sValue: 
+    iValue: 0
+    fValue: 0.03
+  - Name: Career
+    Type: 4
+    sValue: 
+    iValue: 4
+    fValue: 0
