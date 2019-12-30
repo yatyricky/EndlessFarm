@@ -16,7 +16,7 @@ class Test {
         this.name = name;
     }
 
-    public fire(): void{
+    public fire(): void {
         this.tm.Start();
     }
 

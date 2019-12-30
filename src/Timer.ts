@@ -24,15 +24,12 @@ export class Timer {
     private nTimer: timer;
 
     public constructor(interval: float, loop: int, callback: () => void) {
-        Logger.Log("I believe");
         this.interval = interval;
         this.loop = loop;
         this.cloop = loop;
         this.callback = callback;
         this.nTimer = CreateTimer();
-        Logger.Log("here");
         Timer.refs[tostring(this.nTimer)] = this;
-        Logger.Log("fucked");
     }
 
     public Start(): Timer {

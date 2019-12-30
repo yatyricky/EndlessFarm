@@ -34,17 +34,6 @@ Vector2.__eq = function(a, b)
     return ((a.x - b.x) ^ 2 + (a.y - b.y) ^ 2) < 9.999999e-11
 end
 
----@param x float
----@param y float
----@return Vector2
-function Vector2.New(x, y)
-    return setmetatable({ x = x or 0, y = y or 0 }, Vector2)
-end
-
-function Vector2:ToString()
-    return string.format("(%f,%f)", self.x, self.y)
-end
-
 function Vector2.Normalize(v)
     local x = v.x
     local y = v.y
@@ -163,6 +152,17 @@ end
 
 function Vector2.Scale(a, b)
     return setmetatable({ x = a.x * b.x, y = a.y * b.y }, Vector2)
+end
+
+---@param x float
+---@param y float
+---@return Vector2
+function Vector2.New(x, y)
+    return setmetatable({ x = x or 0, y = y or 0 }, Vector2)
+end
+
+function Vector2:ToString()
+    return string.format("(%f,%f)", self.x, self.y)
 end
 
 function Vector2:Set(x, y)
