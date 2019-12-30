@@ -10,10 +10,15 @@ const ri = readline.createInterface({
 const output = []
 
 if (whichFile === "common") {
-    output.push("---@class handle")
+    output.push("declare type nothing = void;")
+    output.push("declare type integer = number;")
+    output.push("declare type real = number;")
+    output.push("declare type int = integer;")
+    output.push("declare type float = real;")
+    output.push("declare type code = () => void;")
+    output.push("")
+    output.push("declare class handle { }")
 }
-
-const luaKeywords = ["end"]
 
 const reg_type = new RegExp(/type[ \t]+(\w+)[ \t]+extends[ \t]+(\w+)[ \t]*(\/\/[\t ]*(.*))?/gm)
 const reg_func = new RegExp(/(constant[ \t]+)?(native|function)[ \t]+(\w+)[ \t]+takes[ \t]+([\w \t,]+)[ \t]+returns[ \t]+(\w+)[ \t]*(\/\/[\t ]*(.*))?/gm)
@@ -23,9 +28,6 @@ const reg_expr = new RegExp(/constant[ \t]+(\w+)[ \t]+(\w+)[ \t]*=[ \t]*([\w\(\)
  * @param {string} text 
  */
 function q(text) {
-    if (luaKeywords.indexOf(text) !== -1) {
-        return text + "_"
-    }
     if (text.indexOf("$") !== -1) {
         const res = text.match(/\$[0-9A-F]+/)
         return text.replace(/\$[0-9A-F]+/, "\"" + res[0] + "\"")
@@ -54,38 +56,44 @@ ri.on("line", function (line) {
         // do nothing
     } else if (line.match(reg_type)) {
         const r = extract(line, reg_type, 4)
-        output.push(`---@class ${r[0]} : ${r[1]}` + (r[3] ? " " + r[3] : ""))
+        if (r[3]) {
+            output.push(`/** ${r[3]} */`)
+        }
+        output.push(`declare class ${r[0]} extends ${r[1]} { }`)
     } else if (line.match(reg_func)) {
         const r = extract(line, reg_func, 7)
-        output.push("\n")
+        output.push("")
+        output.push("/**")
         if (r[6]) {
-            output.push("---" + r[6])
+            output.push(` * ${r[6]}`)
         }
-        const argNames = []
+        const argList = [{ name: "this", type: "void" }]
         if (r[3] !== "nothing") {
             const args = r[3].split(",")
             for (let i = 0; i < args.length; i++) {
                 const ps = args[i].trim().split(/[ \t]+/)
                 const argName = q(ps[1])
-                output.push(`---@param ${argName} ${ps[0]}`)
-                argNames.push(argName)
+                output.push(` * @param ${argName} ${ps[0]}`)
+                argList.push({ name: argName, type: ps[0] })
             }
         }
-        output.push("---@return " + (r[4] === "nothing" ? "void" : r[4]))
-        output.push(`function ${r[2]}(${argNames.join(", ")}) end`)
+        output.push(" */")
+        output.push(`declare function ${r[2]}(${argList.map((e) => e.name + ": " + e.type).join(", ")}): ${r[4]};`);
     } else if (line.match(reg_expr)) {
         const r = extract(line, reg_expr, 5)
-        output.push("\n")
+        output.push("")
+        output.push("/**")
         if (r[4]) {
-            output.push("---" + r[4])
+            output.push(" * " + r[4])
         }
-        output.push("---" + r[2].trim())
-        output.push(`${r[1]} = ${q(r[2]).trim()} ---@type ${r[0]}`)
+        output.push(" * " + r[2].trim())
+        output.push(" */")
+        output.push(`declare const ${r[1]}: ${r[0]}`)
     } else {
         // console.log(line)
     }
 });
 
 ri.on("close", function () {
-    fs.writeFileSync("native/" + whichFile + ".lua", output.join("\n"))
+    fs.writeFileSync("native/" + whichFile + ".d.ts", output.join("\n"))
 })

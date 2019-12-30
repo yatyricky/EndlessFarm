@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yatyricky/EndlessFarm/issues"
   },
-  "homepage": "https://github.com/yatyricky/EndlessFarm#readme"
+  "homepage": "https://github.com/yatyricky/EndlessFarm#readme",
+  "devDependencies": {
+    "luamin": "^1.0.4"
+  }
 }

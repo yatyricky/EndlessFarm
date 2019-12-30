@@ -59,3 +59,6 @@ EndlessFarmUnity/sysinfo.txt
 
 # Crashlytics generated file
 EndlessFarmUnity/crashlytics-build.properties
+
+# nodejs
+node_modules
