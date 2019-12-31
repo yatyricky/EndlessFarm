@@ -1,22 +1,28 @@
-ATT_STR = 1
-ATT_AGI = 2
-ATT_INT = 3
-ATT_NON = 4
-
-CAREER_TYPE_TANK = 1
-CAREER_TYPE_HEALER = 2
-CAREER_TYPE_DPS = 4
-CAREER_TYPE_MINION = 8
-CAREER_TYPE_BOSS = 16
-CAREER_TYPE_CREEP = 32
-
-PLAYER_AID = {
-    { Q = 'A0A0', W = 'A0A1', E = 'A0A2', R = 'A0A3', D = 'A0A4', F = 'A0A4' }
+export enum AttributeType {
+    STR = 1,
+    AGI = 2,
+    INT = 3,
+    NON = 4,
 }
 
-UTID_BLADE_MASTER = 'Obla'
-UTID_PALADIN = 'Hpla'
-UTID_DARK_RANGER = 'Nbrn'
-UTID_DEMON_HUNTER = 'Edem'
-UTID_ARCHMAGE = 'Hjai'
-UTID_WARLOCK = 'Ogld'
+export enum CareerType {
+    TANK = 1,
+    HEALER = 2,
+    DPS = 4,
+    MINION = 8,
+    BOSS = 16,
+    CREEP = 32,
+}
+
+export const PlayerAID = [
+    { Q: "$A0A0", W: "$A0A1", E: "$A0A2", R: "$A0A3", D: "$A0A4", F: "$A0A4" },
+];
+
+export const UTID = {
+    BladeMaster: "$Obla",
+    Paladin: "$Hpla",
+    DarkRanger: "$Nbrn",
+    DemonHunter: "$Edem",
+    Archmage: "$Hjai",
+    Warlock: "$Ogld",
+};

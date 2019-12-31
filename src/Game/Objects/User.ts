@@ -1,11 +1,9 @@
-local User = class("User")
+export class User {
+    public static GetUser(id: int): User {
+        return new User(); // todo
+    }
 
----@param id int player id 0-23
----@return User
-function User.GetUser(id)
-end
-
-function User:Constructor()
-end
-
-return User
+    public constructor() {
+        //
+    }
+}

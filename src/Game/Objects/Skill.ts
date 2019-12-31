@@ -1,6 +1,3 @@
-local Skill = class("Skill")
+export class Skill {
 
-function Skill:Constructor()
-end
-
-return Skill
+}

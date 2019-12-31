@@ -1,3 +1,5 @@
+import { Vector2 } from "../../Math/Vector2";
+
 local Vector2 = require("Math/Vector2")
 local Unit = require("Game/GameObjects/Unit")
 local UnitAttr = require("Game/GameObjects/UnitAttr")

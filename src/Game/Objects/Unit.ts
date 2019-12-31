@@ -1,338 +1,350 @@
-local UnitConfig = require("Game/Configs/UnitConfig")
-local UnitAttr = require("Game/GameObjects/UnitAttr")
+import { UnitConfig, IUnitConfigItem } from "../Configs/UnitConfig";
+import { UnitAttr } from "./UnitAttr";
+import { Skill } from "./Skill";
+import { Logger } from "../../Logger";
 
----@type table<int, { pos: int[], neg: int[] }>
-local AttrAbilities = {
-    [UnitAttr.Strength] = {
-        neg = {},
-        pos = { 'A000', 'A001', 'A002', 'A003', 'A004', 'A005', 'A006', 'A007', 'A008', 'A009', 'A00A', 'A00B' }
+const AttrAbilities: { [key: number]: { neg: string[]; pos: string[]; } } = {
+    [UnitAttr.Strength]: {
+        neg: [],
+        pos: ["$A000", "$A001", "$A002", "$A003", "$A004", "$A005", "$A006", "$A007", "$A008", "$A009", "$A00A", "$A00B"]
     },
-    [UnitAttr.Agility] = {
-        neg = {},
-        pos = { 'A01N', 'A01M', 'A01L', 'A01K', 'A01J', 'A01I', 'A01H', 'A01G', 'A00F', 'A00E', 'A00D', 'A00C' }
+    [UnitAttr.Agility]: {
+        neg: [],
+        pos: ["$A01N", "$A01M", "$A01L", "$A01K", "$A01J", "$A01I", "$A01H", "$A01G", "$A00F", "$A00E", "$A00D", "$A00C"]
     },
-    [UnitAttr.Intelligence] = {
-        neg = {},
-        pos = { 'A01P', 'A01Q', 'A01R', 'A01S', 'A01T', 'A01U', 'A01V', 'A01W', 'A01X', 'A01Y', 'A01O', 'A01Z' }
+    [UnitAttr.Intelligence]: {
+        neg: [],
+        pos: ["$A01P", "$A01Q", "$A01R", "$A01S", "$A01T", "$A01U", "$A01V", "$A01W", "$A01X", "$A01Y", "$A01O", "$A01Z"]
     },
-    [UnitAttr.Life] = {
-        neg = {},
-        pos = { 'A00I', 'A00Y', 'A00X', 'A00W', 'A00V', 'A00U', 'A00T', 'A00S', 'A00R', 'A00Q', 'A00P', 'A00O', 'A00N', 'A00M', 'A00L', 'A00K', 'A00G', 'A00H', 'A00Z', 'A00J' }
+    [UnitAttr.Life]: {
+        neg: [],
+        pos: ["$A00I", "$A00Y", "$A00X", "$A00W", "$A00V", "$A00U", "$A00T", "$A00S", "$A00R", "$A00Q", "$A00P", "$A00O", "$A00N", "$A00M", "$A00L", "$A00K", "$A00G", "$A00H", "$A00Z", "$A00J"]
     },
-    [UnitAttr.Mana] = {
-        neg = {},
-        pos = { 'A016', 'A010', 'A011', 'A012', 'A013', 'A014', 'A01F', 'A017', 'A018', 'A019', 'A01A', 'A01B', 'A01C', 'A01D', 'A01E', 'A015' }
+    [UnitAttr.Mana]: {
+        neg: [],
+        pos: ["$A016", "$A010", "$A011", "$A012", "$A013", "$A014", "$A01F", "$A017", "$A018", "$A019", "$A01A", "$A01B", "$A01C", "$A01D", "$A01E", "$A015"]
     },
 }
 
-local Unit = class("Unit") ---@class Unit
+export class Unit {
 
-function Unit:Constructor(utid, n_unit)
-    self.n_unit = n_unit
-    self.config = UnitConfig[utid]
+    private nUnit: unit;
+    private config: IUnitConfigItem;
+    private attrs: { [key: number]: float };
+    private attrGet: { [key: number]: (isBase: boolean) => float };
+    private attrSet: { [key: number]: (value: float) => void };
+    private attrRet: { [key: number]: (isBase: boolean) => float };
+    private attrMod: { [key: number]: (value: float) => void };
+    private skillList: Skill[];
 
-    self.attrs = {}
-    self.attrGet = {}
-    self.attrSet = {}
-    self.attrRet = {}
-    self.attrMod = {}
+    public constructor(utid: string, nUnit: unit) {
+        this.nUnit = nUnit
+        this.config = UnitConfig[utid]
 
-    self.skillList = {}
+        this.attrs = {}
+        this.attrGet = {}
+        this.attrSet = {}
+        this.attrRet = {}
+        this.attrMod = {}
 
-    self:_InitAttribute(UnitAttr.Strength, nil, function(value)
-        self:_SetNativeAttr(UnitAttr.Strength, value)
-        self.attrs[UnitAttr.Strength] = value
-    end, function(isBase)
-        log("get hero str", isBase)
-        return GetHeroStr(self.n_unit, not isBase)
-    end, function(value)
-        self:_SetNativeAttr(UnitAttr.Strength, self.attrs[UnitAttr.Strength] + value)
-        self.attrs[UnitAttr.Strength] = self.attrs[UnitAttr.Strength] + value
-    end)
+        this.skillList = [];
 
-    self:_InitAttribute(UnitAttr.Agility, nil, function(value)
-        self:_SetNativeAttr(UnitAttr.Agility, value)
-        self.attrs[UnitAttr.Agility] = value
-    end, function(isBase)
-        return GetHeroAgi(self.n_unit, not isBase)
-    end, function(value)
-        self:_SetNativeAttr(UnitAttr.Agility, self.attrs[UnitAttr.Agility] + value)
-        self.attrs[UnitAttr.Agility] = self.attrs[UnitAttr.Agility] + value
-    end)
+        this._InitAttribute(UnitAttr.Strength, null, (value: float) => {
+            this._SetNativeAttr(UnitAttr.Strength, value)
+            this.attrs[UnitAttr.Strength] = value
+        }, (isBase: boolean) => {
+            Logger.Log("get hero str", isBase)
+            return GetHeroStr(this.nUnit, !isBase)
+        }, (value: float) => {
+            this._SetNativeAttr(UnitAttr.Strength, this.attrs[UnitAttr.Strength] + value)
+            this.attrs[UnitAttr.Strength] = this.attrs[UnitAttr.Strength] + value
+        })
 
-    self:_InitAttribute(UnitAttr.Intelligence, nil, function(value)
-        self:_SetNativeAttr(UnitAttr.Intelligence, value)
-        self.attrs[UnitAttr.Intelligence] = value
-    end, function(isBase)
-        return GetHeroInt(self.n_unit, not isBase)
-    end, function(value)
-        self:_SetNativeAttr(UnitAttr.Intelligence, self.attrs[UnitAttr.Intelligence] + value)
-        self.attrs[UnitAttr.Intelligence] = self.attrs[UnitAttr.Intelligence] + value
-    end)
+        this._InitAttribute(UnitAttr.Agility, null, (value: float) => {
+            this._SetNativeAttr(UnitAttr.Agility, value)
+            this.attrs[UnitAttr.Agility] = value
+        }, (isBase) => {
+            return GetHeroAgi(this.nUnit, !isBase)
+        }, (value) => {
+            this._SetNativeAttr(UnitAttr.Agility, this.attrs[UnitAttr.Agility] + value)
+            this.attrs[UnitAttr.Agility] = this.attrs[UnitAttr.Agility] + value
+        })
 
-    self:_InitAttribute(UnitAttr.Life, function(isBase)
-        if isBase then
-            return self.config.HP
-        else
-            return self.attrs[UnitAttr.Life]
-        end
-    end, function(value)
-        self:_SetNativeAttr(UnitAttr.Life, value - 1)
-        self.attrs[UnitAttr.Life] = value - 1
-    end, function (isBase)
-        if isBase then
-            return self.config.HP + GetHeroStr(self.n_unit, true) * 10
-        else
-            return GetUnitState(self.n_unit, UNIT_STATE_MAX_LIFE)
-        end
-    end, function (value)
-        self:_SetNativeAttr(UnitAttr.Life, self.attrs[UnitAttr.Life] + value)
-        self.attrs[UnitAttr.Life] = self.attrs[UnitAttr.Life] + value
-    end)
+        this._InitAttribute(UnitAttr.Intelligence, null, (value) => {
+            this._SetNativeAttr(UnitAttr.Intelligence, value)
+            this.attrs[UnitAttr.Intelligence] = value
+        }, (isBase) => {
+            return GetHeroInt(this.nUnit, !isBase)
+        }, (value) => {
+            this._SetNativeAttr(UnitAttr.Intelligence, this.attrs[UnitAttr.Intelligence] + value)
+            this.attrs[UnitAttr.Intelligence] = this.attrs[UnitAttr.Intelligence] + value
+        })
 
-    self:_InitAttribute(UnitAttr.Mana, function(isBase)
-        if isBase then
-            return self.config.MP
-        else
-            return self.attrs[UnitAttr.Mana]
-        end
-    end, function(value)
-        self:_SetNativeAttr(UnitAttr.Mana, value)
-        self.attrs[UnitAttr.Mana] = value
-    end, function(isBase)
-        if isBase then
-            return self.config.MP + GetHeroInt(self.n_unit, true) * 10
-        else
-            return GetUnitState(self.n_unit, UNIT_STATE_MAX_MANA)
-        end
-    end, function (value)
-        self:_SetNativeAttr(UnitAttr.Mana, self.attrs[UnitAttr.Mana] + value)
-        self.attrs[UnitAttr.Mana] = self.attrs[UnitAttr.Mana] + value
-    end)
+        this._InitAttribute(UnitAttr.Life, (isBase) => {
+            if isBase {
+                return this.config.HP
+            } else {
+                return this.attrs[UnitAttr.Life]
+            }
+        }, (value) => {
+            this._SetNativeAttr(UnitAttr.Life, value - 1)
+            this.attrs[UnitAttr.Life] = value - 1
+        }, (isBase) => {
+            if isBase {
+                return this.config.HP + GetHeroStr(this.nUnit, true) * 10
+            } else {
+                return GetUnitState(this.nUnit, UNIT_STATE_MAX_LIFE)
+            }
+        }, (value) => {
+            this._SetNativeAttr(UnitAttr.Life, this.attrs[UnitAttr.Life] + value)
+            this.attrs[UnitAttr.Life] = this.attrs[UnitAttr.Life] + value
+        })
 
-    self:_InitAttribute(UnitAttr.Power, nil, function(value)
-        self:_SetNativeAttr(UnitAttr.Power, value)
-        self.attrs[UnitAttr.Power] = value
-    end, function()
-        local config = self.config
-        local atk = self.attrs[UnitAttr.Power] + math.random(config.ATK1, config.ATK2)
-        return atk + self:GetPrimaryAttrValue()
-    end, function (value)
-        self:_SetNativeAttr(UnitAttr.Power, self.attrs[UnitAttr.Power] + value)
-        self.attrs[UnitAttr.Power] = self.attrs[UnitAttr.Power] + value
-    end)
+        this._InitAttribute(UnitAttr.Mana, (isBase) => {
+            if isBase {
+                return this.config.MP
+            } else {
+                return this.attrs[UnitAttr.Mana]
+            }
+        }, (value) => {
+            this._SetNativeAttr(UnitAttr.Mana, value)
+            this.attrs[UnitAttr.Mana] = value
+        }, (isBase) => {
+            if isBase {
+                return this.config.MP + GetHeroInt(this.nUnit, true) * 10
+            } else {
+                return GetUnitState(this.nUnit, UNIT_STATE_MAX_MANA)
+            }
+        }, (value) => {
+            this._SetNativeAttr(UnitAttr.Mana, this.attrs[UnitAttr.Mana] + value)
+            this.attrs[UnitAttr.Mana] = this.attrs[UnitAttr.Mana] + value
+        })
 
-    self:_InitAttribute(UnitAttr.DamageDealt, nil, nil, function()
-        return n_max(self.attrs[UnitAttr.DamageDealt], 0)
-    end, nil)
+        this._InitAttribute(UnitAttr.Power, null, (value) => {
+            this._SetNativeAttr(UnitAttr.Power, value)
+            this.attrs[UnitAttr.Power] = value
+        }, () => {
+            const config = this.config
+            const atk = this.attrs[UnitAttr.Power] + math.random(config.ATK1, config.ATK2)
+            return atk + this.GetPrimaryAttrValue()
+        }, (value) => {
+            this._SetNativeAttr(UnitAttr.Power, this.attrs[UnitAttr.Power] + value)
+            this.attrs[UnitAttr.Power] = this.attrs[UnitAttr.Power] + value
+        })
 
-    self:_InitAttribute(UnitAttr.CritRate, nil, nil, function()
-        return n_min(self.attrs[UnitAttr.CritRate], 1)
-    end)
+        this._InitAttribute(UnitAttr.DamageDealt, null, null, () => {
+            return n_max(this.attrs[UnitAttr.DamageDealt], 0)
+        }, null)
 
-    self:_InitAttribute(UnitAttr.AttackSpeed, nil, function(value)
-        self:_SetNativeAttr(UnitAttr.AttackSpeed, n_round(value * 100))
-        self.attrs[UnitAttr.AttackSpeed] = value
-    end, nil, function (value)
-        self:_SetNativeAttr(UnitAttr.AttackSpeed, n_round((self.attrs[UnitAttr.AttackSpeed] + value) * 100))
-        self.attrs[UnitAttr.AttackSpeed] = self.attrs[UnitAttr.AttackSpeed] + value
-    end)
+        this._InitAttribute(UnitAttr.CritRate, null, null, () => {
+            return n_min(this.attrs[UnitAttr.CritRate], 1)
+        })
 
-    self:_InitAttribute(UnitAttr.AttackRate, nil, nil, function()
-        return n_clamp(self.attrs[UnitAttr.AttackRate], 0.25, 1)
-    end, nil)
+        this._InitAttribute(UnitAttr.AttackSpeed, null, (value) => {
+            this._SetNativeAttr(UnitAttr.AttackSpeed, n_round(value * 100))
+            this.attrs[UnitAttr.AttackSpeed] = value
+        }, null, (value) => {
+            this._SetNativeAttr(UnitAttr.AttackSpeed, n_round((this.attrs[UnitAttr.AttackSpeed] + value) * 100))
+            this.attrs[UnitAttr.AttackSpeed] = this.attrs[UnitAttr.AttackSpeed] + value
+        })
 
-    self:_InitAttribute(UnitAttr.CDR, nil, function()
-        -- todo
-    end, nil)
+        this._InitAttribute(UnitAttr.AttackRate, null, null, () => {
+            return n_clamp(this.attrs[UnitAttr.AttackRate], 0.25, 1)
+        }, null)
 
-    self:_InitAttribute(UnitAttr.DodgeRate, nil, nil, function()
-        local ret = self.attrs[UnitAttr.DodgeRate] + GetHeroAgi(self.n_unit, true) * 0.002
-        return n_min(ret, 0.75)
-    end)
+        this._InitAttribute(UnitAttr.CDR, null, () => {
+            --todo
+        }, null)
 
-    self:_InitAttribute(UnitAttr.PhyxResist, function (isBase)
-        if isBase then
-            return self.config.Def
-        else
-            return self.config.Def + self.attrs[UnitAttr.PhyxResist]
-        end
-    end, function (value)
-        self:_SetNativeAttr(UnitAttr.PhyxResist, n_round(value * 100))
-        self.attrs[UnitAttr.PhyxResist] = value
-    end, nil, function (value)
-        self:_SetNativeAttr(UnitAttr.PhyxResist, n_round((self.attrs[UnitAttr.PhyxResist] + value) * 100))
-        self.attrs[UnitAttr.PhyxResist] = self.attrs[UnitAttr.PhyxResist] + value
-    end)
+        this._InitAttribute(UnitAttr.DodgeRate, null, null, () => {
+            const ret = this.attrs[UnitAttr.DodgeRate] + GetHeroAgi(this.nUnit, true) * 0.002
+            return n_min(ret, 0.75)
+        })
 
-    self:_InitAttribute(UnitAttr.PhyxDef, nil, nil, nil, nil)
+        this._InitAttribute(UnitAttr.PhyxResist, (isBase) => {
+            if isBase {
+                return this.config.Def
+            } else {
+                return this.config.Def + this.attrs[UnitAttr.PhyxResist]
+            }
+        }, (value) => {
+            this._SetNativeAttr(UnitAttr.PhyxResist, n_round(value * 100))
+            this.attrs[UnitAttr.PhyxResist] = value
+        }, null, (value) => {
+            this._SetNativeAttr(UnitAttr.PhyxResist, n_round((this.attrs[UnitAttr.PhyxResist] + value) * 100))
+            this.attrs[UnitAttr.PhyxResist] = this.attrs[UnitAttr.PhyxResist] + value
+        })
 
-    self:_InitAttribute(UnitAttr.SpellResist, nil, nil, nil, nil)
+        this._InitAttribute(UnitAttr.PhyxDef, null, null, null, null)
 
-    self:_InitAttribute(UnitAttr.SpellDef, nil, nil, nil, nil)
+        this._InitAttribute(UnitAttr.SpellResist, null, null, null, null)
 
-    self:_InitAttribute(UnitAttr.PhyxCritTaken, nil, nil, nil, nil)
+        this._InitAttribute(UnitAttr.SpellDef, null, null, null, null)
 
-    self:_InitAttribute(UnitAttr.SpellCritTaken, nil, nil, nil, nil)
+        this._InitAttribute(UnitAttr.PhyxCritTaken, null, null, null, null)
 
-    self:_InitAttribute(UnitAttr.DamageTaken, nil, nil, function()
-        return n_max(self.attrs[UnitAttr.DamageTaken], 0)
-    end, nil)
+        this._InitAttribute(UnitAttr.SpellCritTaken, null, null, null, null)
 
-    self:_InitAttribute(UnitAttr.LifeRegen, nil, nil, nil, nil)
+        this._InitAttribute(UnitAttr.DamageTaken, null, null, () => {
+            return n_max(this.attrs[UnitAttr.DamageTaken], 0)
+        }, null)
 
-    self:_InitAttribute(UnitAttr.ManaRegen, nil, nil, nil, nil)
+        this._InitAttribute(UnitAttr.LifeRegen, null, null, null, null)
 
-    self:_InitAttribute(UnitAttr.Speed, function()
-        return GetUnitMoveSpeed(self.n_unit)
-    end, function(value)
-        --  integer spd
-        --  self.speed += mod
-        --  spd = self.speed
-        --  if (spd > 522) themspd = 522end
-        --  if (spd < 0) themspd = 0end
-        --  SetUnitMoveSpeed(self.n_unit, spd) todo
-    end, nil)
+        this._InitAttribute(UnitAttr.ManaRegen, null, null, null, null)
 
-    self:_InitAttribute(UnitAttr.Absorb, nil, nil, nil)
+        //         this._InitAttribute(UnitAttr.Speed, () => {
+        //             return GetUnitMoveSpeed(this.nUnit)
+        //         }, (value) => {
+        //             // --integer spd
+        //             // --this.speed += mod
+        //             // --spd = this.speed
+        //             // --  if (spd > 522) themspd = 522
+        //         }
+        // --  if (spd < 0) themspd = 0
+        //     }
+        // --SetUnitMoveSpeed(this.nUnit, spd) todo
+        // }, null)
 
-    self:_InitAttribute(UnitAttr.LifeLeech, nil, nil, nil)
+        this._InitAttribute(UnitAttr.Absorb, null, null, null)
 
-    self:_InitAttribute(UnitAttr.ManaLeech, nil, nil, nil)
+        this._InitAttribute(UnitAttr.LifeLeech, null, null, null)
 
-    self:_InitWithConfig()
-end
+        this._InitAttribute(UnitAttr.ManaLeech, null, null, null)
 
----@param n_unit unit
----@param attr UnitAttr
----@param value int
-function Unit:_SetNativeAttr(attr, value)
-    if self.attrs[attr] == value then return end
-    local u = self.n_unit
-    local conf = AttrAbilities[attr]
-    local neg = conf.neg
-    local pos = conf.pos
-    -- validation
-    value = n_clamp(value, 2 ^ #neg - 1, 2 ^ #pos - 1)
+        this._InitWithConfig()
+    }
 
-    local function removeAll(what)
+    // ---@param nUnit unit
+    // ---@param attr UnitAttr
+    // ---@param value int
+    private _SetNativeAttr(attr, value) {
+        if this.attrs[attr] == value { return }
+        const u = this.nUnit
+        const conf = AttrAbilities[attr]
+        const neg = conf.neg
+        const pos = conf.pos
+        --validation
+        value = n_clamp(value, 2 ^ #neg - 1, 2 ^ #pos - 1)
+
+        const removeAll(what)
         for i = 1, #what do
-            local e = what[i]
-            if GetUnitAbilityLevel(u, e) > 0 then
-                UnitRemoveAbility(u, e)
-            end
-        end
-    end
+            const e = what[i]
+            if GetUnitAbilityLevel(u, e) > 0 {
+            UnitRemoveAbility(u, e)
+        }
+    }
+}
 
-    local function addAbs(what, v)
-        local it = 1
-        for i = 1, #what do
-            local e = what[i]
-            local should = BlzBitAnd(v, it) == it
-            local has = GetUnitAbilityLevel(u, e) > 0
-            if should and not has then
-                UnitAddAbility(u, e)
-                UnitMakeAbilityPermanent(u, true, e)
-            end
-            if not should and has then
-                UnitRemoveAbility(u, e)
-            end
-            it = it * 2
-        end
-    end
+const addAbs(what, v)
+const it = 1
+for i = 1, #what do
+    const e = what[i]
+            const should = BlzBitAnd(v, it) == it
+const has = GetUnitAbilityLevel(u, e) > 0
+if should and! has {
+    UnitAddAbility(u, e)
+    UnitMakeAbilityPermanent(u, true, e)
+}
+if !should and has {
+    UnitRemoveAbility(u, e)
+}
+it = it * 2
+}
+}
 
-    if value == 0 then
-        removeAll(neg)
+if value == 0 {
+    removeAll(neg)
+    removeAll(pos)
+} else {
+    if value < 0 {
         removeAll(pos)
-    else
-        if value < 0 then
-            removeAll(pos)
-            addAbs(neg, math.abs(value))
-        else
-            removeAll(neg)
-            addAbs(pos, value)
-        end
-    end
-end
+        addAbs(neg, math.abs(value))
+    } else {
+        removeAll(neg)
+        addAbs(pos, value)
+    }
+}
+}
 
 ---@param attr UnitAttr
 ---@param getter fun(): float
 ---@param setter fun(val: float): void
----@param retter fun(): float
+    ---@param retter fun(): float
 ---@param modder fun(val: float): void
-function Unit:_InitAttribute(attr, getter, setter, retter, modder)
-    self.attrs[attr] = 0
-    getter = getter or function()
-        return self.attrs[attr]
-    end
-    setter = setter or function(value)
-        self.attrs[attr] = value
-    end
-    retter = retter or getter
-    modder = modder or function(value)
-        setter(getter() + value)
-    end
-    self.attrGet[attr] = getter
-    self.attrSet[attr] = setter
-    self.attrRet[attr] = retter
-    self.attrMod[attr] = modder
-end
+    Unit: _InitAttribute(attr, getter, setter, retter, modder)
+this.attrs[attr] = 0
+getter = getter or()
+return this.attrs[attr]
+}
+setter = setter or(value)
+this.attrs[attr] = value
+}
+retter = retter or getter
+modder = modder or(value)
+setter(getter() + value)
+}
+this.attrGet[attr] = getter
+this.attrSet[attr] = setter
+this.attrRet[attr] = retter
+this.attrMod[attr] = modder
+}
 
-function Unit:_InitWithConfig()
-    local u = self.n_unit
-    local config = self.config
-    SetHeroStr(u, config.Str, true)
-    SetHeroAgi(u, config.Agi, true)
-    SetHeroInt(u, config.Int, true)
-    BlzSetUnitMaxMana(u, config.Int * 10)
-    self:SetAttr(UnitAttr.Mana, config.MP)
-    BlzSetUnitMaxHP(u, 1 + config.Str * 10)
-    self:SetAttr(UnitAttr.Life, config.HP)
-    BlzSetUnitBaseDamage(u, config.ATK1 - 1 + self:GetPrimaryAttrValue(), 0)
-    BlzSetUnitDiceNumber(u, 1, 0)
-    BlzSetUnitDiceSides(u, config.ATK2 - config.ATK1 + 1, 0)
-    BlzSetUnitArmor(u, n_round(config.Def * 100))
-end
+Unit: _InitWithConfig()
+const u = this.nUnit
+const config = this.config
+SetHeroStr(u, config.Str, true)
+SetHeroAgi(u, config.Agi, true)
+SetHeroInt(u, config.Int, true)
+BlzSetUnitMaxMana(u, config.Int * 10)
+this.SetAttr(UnitAttr.Mana, config.MP)
+BlzSetUnitMaxHP(u, 1 + config.Str * 10)
+this.SetAttr(UnitAttr.Life, config.HP)
+BlzSetUnitBaseDamage(u, config.ATK1 - 1 + this.GetPrimaryAttrValue(), 0)
+BlzSetUnitDiceNumber(u, 1, 0)
+BlzSetUnitDiceSides(u, config.ATK2 - config.ATK1 + 1, 0)
+BlzSetUnitArmor(u, n_round(config.Def * 100))
+}
 
 ---@param attr UnitAttr
 ---@return float
-function Unit:GetAttr(attr, ...)
-    return self.attrGet[attr](...)
-end
+Unit: GetAttr(attr, ...)
+return this.attrGet[attr](...)
+}
 
 ---@param attr UnitAttr
 ---@param value float
-function Unit:SetAttr(attr, value)
-    self.attrSet[attr](value)
-end
+Unit: SetAttr(attr, value)
+this.attrSet[attr](value)
+}
 
 ---@param attr UnitAttr
 ---@return float
-function Unit:ReturnAttr(attr, ...)
-    return self.attrRet[attr](...)
-end
+Unit: ReturnAttr(attr, ...)
+return this.attrRet[attr](...)
+}
 
-function Unit:ModAttr(attr, value)
-    self.attrMod[attr](value)
-end
+Unit: ModAttr(attr, value)
+this.attrMod[attr](value)
+}
 
 ---@return int
-function Unit:GetPrimaryAttrValue()
-    if self.config.PrimAtt == ATT_STR then
-        return GetHeroStr(self.n_unit, true)
-    elseif self.config.PrimAtt == ATT_AGI then
-        return GetHeroAgi(self.n_unit, true)
-    elseif self.config.PrimAtt == ATT_INT then
-        return GetHeroInt(self.n_unit, true)
-    end
-    return 0
-end
+Unit: GetPrimaryAttrValue()
+if this.config.PrimAtt == ATT_STR {
+    return GetHeroStr(this.nUnit, true)
+    elseif this.config.PrimAtt == ATT_AGI {
+        return GetHeroAgi(this.nUnit, true)
+        elseif this.config.PrimAtt == ATT_INT {
+            return GetHeroInt(this.nUnit, true)
+        }
+        return 0
+    }
 
-function Unit:ReturnPhyxPowerMax()
-    return self.config.ATK2 + self:GetPrimaryAttrValue()
-end
+    Unit: ReturnPhyxPowerMax()
+    return this.config.ATK2 + this.GetPrimaryAttrValue()
+}
 
--- function Unit:GetDropValue()
---     -- return R2I(GetUnitState(self.n_unit, UNIT_STATE_MAX_LIFE) + GetUnitState(self.n_unit, UNIT_STATE_MAX_MANA))
--- end
-return Unit
+--Unit: GetDropValue()
+--     -- return R2I(GetUnitState(this.nUnit, UNIT_STATE_MAX_LIFE) + GetUnitState(this.nUnit, UNIT_STATE_MAX_MANA))
+--}
+}

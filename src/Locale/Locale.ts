@@ -1,21 +1,33 @@
-local Locale = {}
+import { Logger } from "../Logger";
+import { EN } from "./EN";
+import { ZHCN } from "./ZHCN";
 
-function Locale.Init(lang)
-    if lang == "EN" then
-        Locale.lang = require("Locale/EN")
-    elseif lang == "ZHCN" then
-        Locale.lang = require("Locale/EN")
-    end
-end
+type LangCode = "EN" | "ZHCN";
 
-function Locale.S(key)
-    local ret = Locale.lang[key]
-    if ret then
-        return ret
-    else
-        logerror("Lang undefined " .. key)
-        return ""
-    end
-end
+interface ILocale {
+    [key: string]: string;
+}
 
-return Locale
+export class Locale {
+
+    public static Init(lang: LangCode): void {
+        if (lang === "EN") {
+            Locale.lang = EN;
+        } else if (lang === "ZHCN") {
+            Locale.lang = ZHCN;
+        }
+    }
+
+    public static S(key: string): string {
+        const ret = Locale.lang[key];
+        if (ret) {
+            return ret;
+        } else {
+            Logger.Error("Lang undefined " + key);
+            return "";
+        }
+    }
+
+    private static lang: ILocale;
+
+}
