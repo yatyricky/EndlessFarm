@@ -1,16 +1,18 @@
+/** @noSelfInFile */
+
 export function Stringify(obj: any): string {
     return "";
 }
 
-export function NLerp(this: void, a: number, b: number, t: number): number {
+export function NLerp(a: number, b: number, t: number): number {
     return a + (b - a) * t;
 }
 
-export function NClamp(this: void, n: number, min: number, max: number): number {
+export function NClamp(n: number, min: number, max: number): number {
     return Math.min(Math.max(min, n), max);
 }
 
-export function NRound(this: void, n: number): int {
+export function NRound(n: number): int {
     return Math.floor(n + 0.5);
 }
 

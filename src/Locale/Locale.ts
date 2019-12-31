@@ -8,9 +8,10 @@ interface ILocale {
     [key: string]: string;
 }
 
+/** @noSelf */
 export class Locale {
 
-    public static Init(this: void, lang: LangCode): void {
+    public static Init(lang: LangCode): void {
         if (lang === "EN") {
             Locale.lang = EN;
         } else if (lang === "ZHCN") {
@@ -18,7 +19,7 @@ export class Locale {
         }
     }
 
-    public static S(this: void, key: string): string {
+    public static S(key: string): string {
         const ret = Locale.lang[key];
         if (ret) {
             return ret;

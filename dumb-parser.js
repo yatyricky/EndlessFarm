@@ -7,7 +7,7 @@ const ri = readline.createInterface({
     input: fs.createReadStream("native/" + whichFile + ".jass"),
 });
 
-const output = []
+const output = ["/** @noSelfInFile **/"]
 
 if (whichFile === "common") {
     output.push("declare type nothing = void;")
@@ -67,7 +67,7 @@ ri.on("line", function (line) {
         if (r[6]) {
             output.push(` * ${r[6]}`)
         }
-        const argList = [{ name: "this", type: "void" }]
+        const argList = []
         if (r[3] !== "nothing") {
             const args = r[3].split(",")
             for (let i = 0; i < args.length; i++) {

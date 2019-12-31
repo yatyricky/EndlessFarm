@@ -71,7 +71,11 @@ function injectWC3(outLua, wc3path, mode) {
 }
 
 // ts to lua
-child.execSync(".\\node_modules\\.bin\\tstl -p .\\tsconfig.json")
+try {
+    child.execSync(".\\node_modules\\.bin\\tstl -p .\\tsconfig.json", { stdio: "inherit" })
+} catch (error) {
+    process.exit(1);
+}
 logger.success("Ts to Lua success")
 
 // inject

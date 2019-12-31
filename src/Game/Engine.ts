@@ -4,11 +4,12 @@ import { CreateUnitSystem } from "./Systems/CreateUnitSystem";
 import { TestSystem } from "./Systems/TestSystem";
 import { World } from "./World";
 
+/** @noSelf */
 export class Engine {
 
     public static world: World;
 
-    public static Start(this: void): void {
+    public static Start(): void {
         const world = new World();
         Engine.world = world;
 

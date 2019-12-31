@@ -1,3 +1,4 @@
+/** @noSelfInFile **/
 declare type nothing = void;
 declare type integer = number;
 declare type real = number;
@@ -147,481 +148,481 @@ declare class pathingflag extends handle { }
 /**
  * @param i
  */
-declare function ConvertRace(this: void, i: integer): race;
+declare function ConvertRace(i: integer): race;
 
 /**
  * @param i
  */
-declare function ConvertAllianceType(this: void, i: integer): alliancetype;
+declare function ConvertAllianceType(i: integer): alliancetype;
 
 /**
  * @param i
  */
-declare function ConvertRacePref(this: void, i: integer): racepreference;
+declare function ConvertRacePref(i: integer): racepreference;
 
 /**
  * @param i
  */
-declare function ConvertIGameState(this: void, i: integer): igamestate;
+declare function ConvertIGameState(i: integer): igamestate;
 
 /**
  * @param i
  */
-declare function ConvertFGameState(this: void, i: integer): fgamestate;
+declare function ConvertFGameState(i: integer): fgamestate;
 
 /**
  * @param i
  */
-declare function ConvertPlayerState(this: void, i: integer): playerstate;
+declare function ConvertPlayerState(i: integer): playerstate;
 
 /**
  * @param i
  */
-declare function ConvertPlayerScore(this: void, i: integer): playerscore;
+declare function ConvertPlayerScore(i: integer): playerscore;
 
 /**
  * @param i
  */
-declare function ConvertPlayerGameResult(this: void, i: integer): playergameresult;
+declare function ConvertPlayerGameResult(i: integer): playergameresult;
 
 /**
  * @param i
  */
-declare function ConvertUnitState(this: void, i: integer): unitstate;
+declare function ConvertUnitState(i: integer): unitstate;
 
 /**
  * @param i
  */
-declare function ConvertAIDifficulty(this: void, i: integer): aidifficulty;
+declare function ConvertAIDifficulty(i: integer): aidifficulty;
 
 /**
  * @param i
  */
-declare function ConvertGameEvent(this: void, i: integer): gameevent;
+declare function ConvertGameEvent(i: integer): gameevent;
 
 /**
  * @param i
  */
-declare function ConvertPlayerEvent(this: void, i: integer): playerevent;
+declare function ConvertPlayerEvent(i: integer): playerevent;
 
 /**
  * @param i
  */
-declare function ConvertPlayerUnitEvent(this: void, i: integer): playerunitevent;
+declare function ConvertPlayerUnitEvent(i: integer): playerunitevent;
 
 /**
  * @param i
  */
-declare function ConvertWidgetEvent(this: void, i: integer): widgetevent;
+declare function ConvertWidgetEvent(i: integer): widgetevent;
 
 /**
  * @param i
  */
-declare function ConvertDialogEvent(this: void, i: integer): dialogevent;
+declare function ConvertDialogEvent(i: integer): dialogevent;
 
 /**
  * @param i
  */
-declare function ConvertUnitEvent(this: void, i: integer): unitevent;
+declare function ConvertUnitEvent(i: integer): unitevent;
 
 /**
  * @param i
  */
-declare function ConvertLimitOp(this: void, i: integer): limitop;
+declare function ConvertLimitOp(i: integer): limitop;
 
 /**
  * @param i
  */
-declare function ConvertUnitType(this: void, i: integer): unittype;
+declare function ConvertUnitType(i: integer): unittype;
 
 /**
  * @param i
  */
-declare function ConvertGameSpeed(this: void, i: integer): gamespeed;
+declare function ConvertGameSpeed(i: integer): gamespeed;
 
 /**
  * @param i
  */
-declare function ConvertPlacement(this: void, i: integer): placement;
+declare function ConvertPlacement(i: integer): placement;
 
 /**
  * @param i
  */
-declare function ConvertStartLocPrio(this: void, i: integer): startlocprio;
+declare function ConvertStartLocPrio(i: integer): startlocprio;
 
 /**
  * @param i
  */
-declare function ConvertGameDifficulty(this: void, i: integer): gamedifficulty;
+declare function ConvertGameDifficulty(i: integer): gamedifficulty;
 
 /**
  * @param i
  */
-declare function ConvertGameType(this: void, i: integer): gametype;
+declare function ConvertGameType(i: integer): gametype;
 
 /**
  * @param i
  */
-declare function ConvertMapFlag(this: void, i: integer): mapflag;
+declare function ConvertMapFlag(i: integer): mapflag;
 
 /**
  * @param i
  */
-declare function ConvertMapVisibility(this: void, i: integer): mapvisibility;
+declare function ConvertMapVisibility(i: integer): mapvisibility;
 
 /**
  * @param i
  */
-declare function ConvertMapSetting(this: void, i: integer): mapsetting;
+declare function ConvertMapSetting(i: integer): mapsetting;
 
 /**
  * @param i
  */
-declare function ConvertMapDensity(this: void, i: integer): mapdensity;
+declare function ConvertMapDensity(i: integer): mapdensity;
 
 /**
  * @param i
  */
-declare function ConvertMapControl(this: void, i: integer): mapcontrol;
+declare function ConvertMapControl(i: integer): mapcontrol;
 
 /**
  * @param i
  */
-declare function ConvertPlayerColor(this: void, i: integer): playercolor;
+declare function ConvertPlayerColor(i: integer): playercolor;
 
 /**
  * @param i
  */
-declare function ConvertPlayerSlotState(this: void, i: integer): playerslotstate;
+declare function ConvertPlayerSlotState(i: integer): playerslotstate;
 
 /**
  * @param i
  */
-declare function ConvertVolumeGroup(this: void, i: integer): volumegroup;
+declare function ConvertVolumeGroup(i: integer): volumegroup;
 
 /**
  * @param i
  */
-declare function ConvertCameraField(this: void, i: integer): camerafield;
+declare function ConvertCameraField(i: integer): camerafield;
 
 /**
  * @param i
  */
-declare function ConvertBlendMode(this: void, i: integer): blendmode;
+declare function ConvertBlendMode(i: integer): blendmode;
 
 /**
  * @param i
  */
-declare function ConvertRarityControl(this: void, i: integer): raritycontrol;
+declare function ConvertRarityControl(i: integer): raritycontrol;
 
 /**
  * @param i
  */
-declare function ConvertTexMapFlags(this: void, i: integer): texmapflags;
+declare function ConvertTexMapFlags(i: integer): texmapflags;
 
 /**
  * @param i
  */
-declare function ConvertFogState(this: void, i: integer): fogstate;
+declare function ConvertFogState(i: integer): fogstate;
 
 /**
  * @param i
  */
-declare function ConvertEffectType(this: void, i: integer): effecttype;
+declare function ConvertEffectType(i: integer): effecttype;
 
 /**
  * @param i
  */
-declare function ConvertVersion(this: void, i: integer): version;
+declare function ConvertVersion(i: integer): version;
 
 /**
  * @param i
  */
-declare function ConvertItemType(this: void, i: integer): itemtype;
+declare function ConvertItemType(i: integer): itemtype;
 
 /**
  * @param i
  */
-declare function ConvertAttackType(this: void, i: integer): attacktype;
+declare function ConvertAttackType(i: integer): attacktype;
 
 /**
  * @param i
  */
-declare function ConvertDamageType(this: void, i: integer): damagetype;
+declare function ConvertDamageType(i: integer): damagetype;
 
 /**
  * @param i
  */
-declare function ConvertWeaponType(this: void, i: integer): weapontype;
+declare function ConvertWeaponType(i: integer): weapontype;
 
 /**
  * @param i
  */
-declare function ConvertSoundType(this: void, i: integer): soundtype;
+declare function ConvertSoundType(i: integer): soundtype;
 
 /**
  * @param i
  */
-declare function ConvertPathingType(this: void, i: integer): pathingtype;
+declare function ConvertPathingType(i: integer): pathingtype;
 
 /**
  * @param i
  */
-declare function ConvertMouseButtonType(this: void, i: integer): mousebuttontype;
+declare function ConvertMouseButtonType(i: integer): mousebuttontype;
 
 /**
  * @param i
  */
-declare function ConvertAnimType(this: void, i: integer): animtype;
+declare function ConvertAnimType(i: integer): animtype;
 
 /**
  * @param i
  */
-declare function ConvertSubAnimType(this: void, i: integer): subanimtype;
+declare function ConvertSubAnimType(i: integer): subanimtype;
 
 /**
  * @param i
  */
-declare function ConvertOriginFrameType(this: void, i: integer): originframetype;
+declare function ConvertOriginFrameType(i: integer): originframetype;
 
 /**
  * @param i
  */
-declare function ConvertFramePointType(this: void, i: integer): framepointtype;
+declare function ConvertFramePointType(i: integer): framepointtype;
 
 /**
  * @param i
  */
-declare function ConvertTextAlignType(this: void, i: integer): textaligntype;
+declare function ConvertTextAlignType(i: integer): textaligntype;
 
 /**
  * @param i
  */
-declare function ConvertFrameEventType(this: void, i: integer): frameeventtype;
+declare function ConvertFrameEventType(i: integer): frameeventtype;
 
 /**
  * @param i
  */
-declare function ConvertOsKeyType(this: void, i: integer): oskeytype;
+declare function ConvertOsKeyType(i: integer): oskeytype;
 
 /**
  * @param i
  */
-declare function ConvertAbilityIntegerField(this: void, i: integer): abilityintegerfield;
+declare function ConvertAbilityIntegerField(i: integer): abilityintegerfield;
 
 /**
  * @param i
  */
-declare function ConvertAbilityRealField(this: void, i: integer): abilityrealfield;
+declare function ConvertAbilityRealField(i: integer): abilityrealfield;
 
 /**
  * @param i
  */
-declare function ConvertAbilityBooleanField(this: void, i: integer): abilitybooleanfield;
+declare function ConvertAbilityBooleanField(i: integer): abilitybooleanfield;
 
 /**
  * @param i
  */
-declare function ConvertAbilityStringField(this: void, i: integer): abilitystringfield;
+declare function ConvertAbilityStringField(i: integer): abilitystringfield;
 
 /**
  * @param i
  */
-declare function ConvertAbilityIntegerLevelField(this: void, i: integer): abilityintegerlevelfield;
+declare function ConvertAbilityIntegerLevelField(i: integer): abilityintegerlevelfield;
 
 /**
  * @param i
  */
-declare function ConvertAbilityRealLevelField(this: void, i: integer): abilityreallevelfield;
+declare function ConvertAbilityRealLevelField(i: integer): abilityreallevelfield;
 
 /**
  * @param i
  */
-declare function ConvertAbilityBooleanLevelField(this: void, i: integer): abilitybooleanlevelfield;
+declare function ConvertAbilityBooleanLevelField(i: integer): abilitybooleanlevelfield;
 
 /**
  * @param i
  */
-declare function ConvertAbilityStringLevelField(this: void, i: integer): abilitystringlevelfield;
+declare function ConvertAbilityStringLevelField(i: integer): abilitystringlevelfield;
 
 /**
  * @param i
  */
-declare function ConvertAbilityIntegerLevelArrayField(this: void, i: integer): abilityintegerlevelarrayfield;
+declare function ConvertAbilityIntegerLevelArrayField(i: integer): abilityintegerlevelarrayfield;
 
 /**
  * @param i
  */
-declare function ConvertAbilityRealLevelArrayField(this: void, i: integer): abilityreallevelarrayfield;
+declare function ConvertAbilityRealLevelArrayField(i: integer): abilityreallevelarrayfield;
 
 /**
  * @param i
  */
-declare function ConvertAbilityBooleanLevelArrayField(this: void, i: integer): abilitybooleanlevelarrayfield;
+declare function ConvertAbilityBooleanLevelArrayField(i: integer): abilitybooleanlevelarrayfield;
 
 /**
  * @param i
  */
-declare function ConvertAbilityStringLevelArrayField(this: void, i: integer): abilitystringlevelarrayfield;
+declare function ConvertAbilityStringLevelArrayField(i: integer): abilitystringlevelarrayfield;
 
 /**
  * @param i
  */
-declare function ConvertUnitIntegerField(this: void, i: integer): unitintegerfield;
+declare function ConvertUnitIntegerField(i: integer): unitintegerfield;
 
 /**
  * @param i
  */
-declare function ConvertUnitRealField(this: void, i: integer): unitrealfield;
+declare function ConvertUnitRealField(i: integer): unitrealfield;
 
 /**
  * @param i
  */
-declare function ConvertUnitBooleanField(this: void, i: integer): unitbooleanfield;
+declare function ConvertUnitBooleanField(i: integer): unitbooleanfield;
 
 /**
  * @param i
  */
-declare function ConvertUnitStringField(this: void, i: integer): unitstringfield;
+declare function ConvertUnitStringField(i: integer): unitstringfield;
 
 /**
  * @param i
  */
-declare function ConvertUnitWeaponIntegerField(this: void, i: integer): unitweaponintegerfield;
+declare function ConvertUnitWeaponIntegerField(i: integer): unitweaponintegerfield;
 
 /**
  * @param i
  */
-declare function ConvertUnitWeaponRealField(this: void, i: integer): unitweaponrealfield;
+declare function ConvertUnitWeaponRealField(i: integer): unitweaponrealfield;
 
 /**
  * @param i
  */
-declare function ConvertUnitWeaponBooleanField(this: void, i: integer): unitweaponbooleanfield;
+declare function ConvertUnitWeaponBooleanField(i: integer): unitweaponbooleanfield;
 
 /**
  * @param i
  */
-declare function ConvertUnitWeaponStringField(this: void, i: integer): unitweaponstringfield;
+declare function ConvertUnitWeaponStringField(i: integer): unitweaponstringfield;
 
 /**
  * @param i
  */
-declare function ConvertItemIntegerField(this: void, i: integer): itemintegerfield;
+declare function ConvertItemIntegerField(i: integer): itemintegerfield;
 
 /**
  * @param i
  */
-declare function ConvertItemRealField(this: void, i: integer): itemrealfield;
+declare function ConvertItemRealField(i: integer): itemrealfield;
 
 /**
  * @param i
  */
-declare function ConvertItemBooleanField(this: void, i: integer): itembooleanfield;
+declare function ConvertItemBooleanField(i: integer): itembooleanfield;
 
 /**
  * @param i
  */
-declare function ConvertItemStringField(this: void, i: integer): itemstringfield;
+declare function ConvertItemStringField(i: integer): itemstringfield;
 
 /**
  * @param i
  */
-declare function ConvertMoveType(this: void, i: integer): movetype;
+declare function ConvertMoveType(i: integer): movetype;
 
 /**
  * @param i
  */
-declare function ConvertTargetFlag(this: void, i: integer): targetflag;
+declare function ConvertTargetFlag(i: integer): targetflag;
 
 /**
  * @param i
  */
-declare function ConvertArmorType(this: void, i: integer): armortype;
+declare function ConvertArmorType(i: integer): armortype;
 
 /**
  * @param i
  */
-declare function ConvertHeroAttribute(this: void, i: integer): heroattribute;
+declare function ConvertHeroAttribute(i: integer): heroattribute;
 
 /**
  * @param i
  */
-declare function ConvertDefenseType(this: void, i: integer): defensetype;
+declare function ConvertDefenseType(i: integer): defensetype;
 
 /**
  * @param i
  */
-declare function ConvertRegenType(this: void, i: integer): regentype;
+declare function ConvertRegenType(i: integer): regentype;
 
 /**
  * @param i
  */
-declare function ConvertUnitCategory(this: void, i: integer): unitcategory;
+declare function ConvertUnitCategory(i: integer): unitcategory;
 
 /**
  * @param i
  */
-declare function ConvertPathingFlag(this: void, i: integer): pathingflag;
+declare function ConvertPathingFlag(i: integer): pathingflag;
 
 /**
  * @param orderIdString
  */
-declare function OrderId(this: void, orderIdString: string): integer;
+declare function OrderId(orderIdString: string): integer;
 
 /**
  * @param orderId
  */
-declare function OrderId2String(this: void, orderId: integer): string;
+declare function OrderId2String(orderId: integer): string;
 
 /**
  * @param unitIdString
  */
-declare function UnitId(this: void, unitIdString: string): integer;
+declare function UnitId(unitIdString: string): integer;
 
 /**
  * @param unitId
  */
-declare function UnitId2String(this: void, unitId: integer): string;
+declare function UnitId2String(unitId: integer): string;
 
 /**
  * @param abilityIdString
  */
-declare function AbilityId(this: void, abilityIdString: string): integer;
+declare function AbilityId(abilityIdString: string): integer;
 
 /**
  * @param abilityId
  */
-declare function AbilityId2String(this: void, abilityId: integer): string;
+declare function AbilityId2String(abilityId: integer): string;
 
 /**
  * @param objectId
  */
-declare function GetObjectName(this: void, objectId: integer): string;
+declare function GetObjectName(objectId: integer): string;
 
 /**
  */
-declare function GetBJMaxPlayers(this: void): integer;
+declare function GetBJMaxPlayers(): integer;
 
 /**
  */
-declare function GetBJPlayerNeutralVictim(this: void): integer;
+declare function GetBJPlayerNeutralVictim(): integer;
 
 /**
  */
-declare function GetBJPlayerNeutralExtra(this: void): integer;
+declare function GetBJPlayerNeutralExtra(): integer;
 
 /**
  */
-declare function GetBJMaxPlayerSlots(this: void): integer;
+declare function GetBJMaxPlayerSlots(): integer;
 
 /**
  */
-declare function GetPlayerNeutralPassive(this: void): integer;
+declare function GetPlayerNeutralPassive(): integer;
 
 /**
  */
-declare function GetPlayerNeutralAggressive(this: void): integer;
+declare function GetPlayerNeutralAggressive(): integer;
 
 /**
  * false
@@ -8993,173 +8994,173 @@ declare const PATHING_FLAG_UNITEMPLACABLE: pathingflag
 /**
  * @param degrees
  */
-declare function Deg2Rad(this: void, degrees: real): real;
+declare function Deg2Rad(degrees: real): real;
 
 /**
  * @param radians
  */
-declare function Rad2Deg(this: void, radians: real): real;
+declare function Rad2Deg(radians: real): real;
 
 /**
  * @param radians
  */
-declare function Sin(this: void, radians: real): real;
+declare function Sin(radians: real): real;
 
 /**
  * @param radians
  */
-declare function Cos(this: void, radians: real): real;
+declare function Cos(radians: real): real;
 
 /**
  * @param radians
  */
-declare function Tan(this: void, radians: real): real;
+declare function Tan(radians: real): real;
 
 /**
  * @param y
  */
-declare function Asin(this: void, y: real): real;
+declare function Asin(y: real): real;
 
 /**
  * @param x
  */
-declare function Acos(this: void, x: real): real;
+declare function Acos(x: real): real;
 
 /**
  * @param x
  */
-declare function Atan(this: void, x: real): real;
+declare function Atan(x: real): real;
 
 /**
  * @param y
  * @param x
  */
-declare function Atan2(this: void, y: real, x: real): real;
+declare function Atan2(y: real, x: real): real;
 
 /**
  * @param x
  */
-declare function SquareRoot(this: void, x: real): real;
+declare function SquareRoot(x: real): real;
 
 /**
  * @param x
  * @param power
  */
-declare function Pow(this: void, x: real, power: real): real;
+declare function Pow(x: real, power: real): real;
 
 /**
  * @param i
  */
-declare function I2R(this: void, i: integer): real;
+declare function I2R(i: integer): real;
 
 /**
  * @param r
  */
-declare function R2I(this: void, r: real): integer;
+declare function R2I(r: real): integer;
 
 /**
  * @param i
  */
-declare function I2S(this: void, i: integer): string;
+declare function I2S(i: integer): string;
 
 /**
  * @param r
  */
-declare function R2S(this: void, r: real): string;
+declare function R2S(r: real): string;
 
 /**
  * @param r
  * @param width
  * @param precision
  */
-declare function R2SW(this: void, r: real, width: integer, precision: integer): string;
+declare function R2SW(r: real, width: integer, precision: integer): string;
 
 /**
  * @param s
  */
-declare function S2I(this: void, s: string): integer;
+declare function S2I(s: string): integer;
 
 /**
  * @param s
  */
-declare function S2R(this: void, s: string): real;
+declare function S2R(s: string): real;
 
 /**
  * @param h
  */
-declare function GetHandleId(this: void, h: handle): integer;
+declare function GetHandleId(h: handle): integer;
 
 /**
  * @param source
  * @param start
  * @param end
  */
-declare function SubString(this: void, source: string, start: integer, end: integer): string;
+declare function SubString(source: string, start: integer, end: integer): string;
 
 /**
  * @param s
  */
-declare function StringLength(this: void, s: string): integer;
+declare function StringLength(s: string): integer;
 
 /**
  * @param source
  * @param upper
  */
-declare function StringCase(this: void, source: string, upper: boolean): string;
+declare function StringCase(source: string, upper: boolean): string;
 
 /**
  * @param s
  */
-declare function StringHash(this: void, s: string): integer;
+declare function StringHash(s: string): integer;
 
 /**
  * @param source
  */
-declare function GetLocalizedString(this: void, source: string): string;
+declare function GetLocalizedString(source: string): string;
 
 /**
  * @param source
  */
-declare function GetLocalizedHotkey(this: void, source: string): integer;
+declare function GetLocalizedHotkey(source: string): integer;
 
 /**
  * @param name
  */
-declare function SetMapName(this: void, name: string): nothing;
+declare function SetMapName(name: string): nothing;
 
 /**
  * @param description
  */
-declare function SetMapDescription(this: void, description: string): nothing;
+declare function SetMapDescription(description: string): nothing;
 
 /**
  * @param teamcount
  */
-declare function SetTeams(this: void, teamcount: integer): nothing;
+declare function SetTeams(teamcount: integer): nothing;
 
 /**
  * @param playercount
  */
-declare function SetPlayers(this: void, playercount: integer): nothing;
+declare function SetPlayers(playercount: integer): nothing;
 
 /**
  * @param whichStartLoc
  * @param x
  * @param y
  */
-declare function DefineStartLocation(this: void, whichStartLoc: integer, x: real, y: real): nothing;
+declare function DefineStartLocation(whichStartLoc: integer, x: real, y: real): nothing;
 
 /**
  * @param whichStartLoc
  * @param whichLocation
  */
-declare function DefineStartLocationLoc(this: void, whichStartLoc: integer, whichLocation: location): nothing;
+declare function DefineStartLocationLoc(whichStartLoc: integer, whichLocation: location): nothing;
 
 /**
  * @param whichStartLoc
  * @param prioSlotCount
  */
-declare function SetStartLocPrioCount(this: void, whichStartLoc: integer, prioSlotCount: integer): nothing;
+declare function SetStartLocPrioCount(whichStartLoc: integer, prioSlotCount: integer): nothing;
 
 /**
  * @param whichStartLoc
@@ -9167,137 +9168,137 @@ declare function SetStartLocPrioCount(this: void, whichStartLoc: integer, prioSl
  * @param otherStartLocIndex
  * @param priority
  */
-declare function SetStartLocPrio(this: void, whichStartLoc: integer, prioSlotIndex: integer, otherStartLocIndex: integer, priority: startlocprio): nothing;
+declare function SetStartLocPrio(whichStartLoc: integer, prioSlotIndex: integer, otherStartLocIndex: integer, priority: startlocprio): nothing;
 
 /**
  * @param whichStartLoc
  * @param prioSlotIndex
  */
-declare function GetStartLocPrioSlot(this: void, whichStartLoc: integer, prioSlotIndex: integer): integer;
+declare function GetStartLocPrioSlot(whichStartLoc: integer, prioSlotIndex: integer): integer;
 
 /**
  * @param whichStartLoc
  * @param prioSlotIndex
  */
-declare function GetStartLocPrio(this: void, whichStartLoc: integer, prioSlotIndex: integer): startlocprio;
+declare function GetStartLocPrio(whichStartLoc: integer, prioSlotIndex: integer): startlocprio;
 
 /**
  * @param whichGameType
  * @param value
  */
-declare function SetGameTypeSupported(this: void, whichGameType: gametype, value: boolean): nothing;
+declare function SetGameTypeSupported(whichGameType: gametype, value: boolean): nothing;
 
 /**
  * @param whichMapFlag
  * @param value
  */
-declare function SetMapFlag(this: void, whichMapFlag: mapflag, value: boolean): nothing;
+declare function SetMapFlag(whichMapFlag: mapflag, value: boolean): nothing;
 
 /**
  * @param whichPlacementType
  */
-declare function SetGamePlacement(this: void, whichPlacementType: placement): nothing;
+declare function SetGamePlacement(whichPlacementType: placement): nothing;
 
 /**
  * @param whichspeed
  */
-declare function SetGameSpeed(this: void, whichspeed: gamespeed): nothing;
+declare function SetGameSpeed(whichspeed: gamespeed): nothing;
 
 /**
  * @param whichdifficulty
  */
-declare function SetGameDifficulty(this: void, whichdifficulty: gamedifficulty): nothing;
+declare function SetGameDifficulty(whichdifficulty: gamedifficulty): nothing;
 
 /**
  * @param whichdensity
  */
-declare function SetResourceDensity(this: void, whichdensity: mapdensity): nothing;
+declare function SetResourceDensity(whichdensity: mapdensity): nothing;
 
 /**
  * @param whichdensity
  */
-declare function SetCreatureDensity(this: void, whichdensity: mapdensity): nothing;
+declare function SetCreatureDensity(whichdensity: mapdensity): nothing;
 
 /**
  */
-declare function GetTeams(this: void): integer;
+declare function GetTeams(): integer;
 
 /**
  */
-declare function GetPlayers(this: void): integer;
+declare function GetPlayers(): integer;
 
 /**
  * @param whichGameType
  */
-declare function IsGameTypeSupported(this: void, whichGameType: gametype): boolean;
+declare function IsGameTypeSupported(whichGameType: gametype): boolean;
 
 /**
  */
-declare function GetGameTypeSelected(this: void): gametype;
+declare function GetGameTypeSelected(): gametype;
 
 /**
  * @param whichMapFlag
  */
-declare function IsMapFlagSet(this: void, whichMapFlag: mapflag): boolean;
+declare function IsMapFlagSet(whichMapFlag: mapflag): boolean;
 
 /**
  */
-declare function GetGamePlacement(this: void): placement;
+declare function GetGamePlacement(): placement;
 
 /**
  */
-declare function GetGameSpeed(this: void): gamespeed;
+declare function GetGameSpeed(): gamespeed;
 
 /**
  */
-declare function GetGameDifficulty(this: void): gamedifficulty;
+declare function GetGameDifficulty(): gamedifficulty;
 
 /**
  */
-declare function GetResourceDensity(this: void): mapdensity;
+declare function GetResourceDensity(): mapdensity;
 
 /**
  */
-declare function GetCreatureDensity(this: void): mapdensity;
-
-/**
- * @param whichStartLocation
- */
-declare function GetStartLocationX(this: void, whichStartLocation: integer): real;
+declare function GetCreatureDensity(): mapdensity;
 
 /**
  * @param whichStartLocation
  */
-declare function GetStartLocationY(this: void, whichStartLocation: integer): real;
+declare function GetStartLocationX(whichStartLocation: integer): real;
 
 /**
  * @param whichStartLocation
  */
-declare function GetStartLocationLoc(this: void, whichStartLocation: integer): location;
+declare function GetStartLocationY(whichStartLocation: integer): real;
+
+/**
+ * @param whichStartLocation
+ */
+declare function GetStartLocationLoc(whichStartLocation: integer): location;
 
 /**
  * @param whichPlayer
  * @param whichTeam
  */
-declare function SetPlayerTeam(this: void, whichPlayer: player, whichTeam: integer): nothing;
+declare function SetPlayerTeam(whichPlayer: player, whichTeam: integer): nothing;
 
 /**
  * @param whichPlayer
  * @param startLocIndex
  */
-declare function SetPlayerStartLocation(this: void, whichPlayer: player, startLocIndex: integer): nothing;
+declare function SetPlayerStartLocation(whichPlayer: player, startLocIndex: integer): nothing;
 
 /**
  * @param whichPlayer
  * @param startLocIndex
  */
-declare function ForcePlayerStartLocation(this: void, whichPlayer: player, startLocIndex: integer): nothing;
+declare function ForcePlayerStartLocation(whichPlayer: player, startLocIndex: integer): nothing;
 
 /**
  * @param whichPlayer
  * @param color
  */
-declare function SetPlayerColor(this: void, whichPlayer: player, color: playercolor): nothing;
+declare function SetPlayerColor(whichPlayer: player, color: playercolor): nothing;
 
 /**
  * @param sourcePlayer
@@ -9305,7 +9306,7 @@ declare function SetPlayerColor(this: void, whichPlayer: player, color: playerco
  * @param whichAllianceSetting
  * @param value
  */
-declare function SetPlayerAlliance(this: void, sourcePlayer: player, otherPlayer: player, whichAllianceSetting: alliancetype, value: boolean): nothing;
+declare function SetPlayerAlliance(sourcePlayer: player, otherPlayer: player, whichAllianceSetting: alliancetype, value: boolean): nothing;
 
 /**
  * @param sourcePlayer
@@ -9313,94 +9314,94 @@ declare function SetPlayerAlliance(this: void, sourcePlayer: player, otherPlayer
  * @param whichResource
  * @param rate
  */
-declare function SetPlayerTaxRate(this: void, sourcePlayer: player, otherPlayer: player, whichResource: playerstate, rate: integer): nothing;
+declare function SetPlayerTaxRate(sourcePlayer: player, otherPlayer: player, whichResource: playerstate, rate: integer): nothing;
 
 /**
  * @param whichPlayer
  * @param whichRacePreference
  */
-declare function SetPlayerRacePreference(this: void, whichPlayer: player, whichRacePreference: racepreference): nothing;
+declare function SetPlayerRacePreference(whichPlayer: player, whichRacePreference: racepreference): nothing;
 
 /**
  * @param whichPlayer
  * @param value
  */
-declare function SetPlayerRaceSelectable(this: void, whichPlayer: player, value: boolean): nothing;
+declare function SetPlayerRaceSelectable(whichPlayer: player, value: boolean): nothing;
 
 /**
  * @param whichPlayer
  * @param controlType
  */
-declare function SetPlayerController(this: void, whichPlayer: player, controlType: mapcontrol): nothing;
+declare function SetPlayerController(whichPlayer: player, controlType: mapcontrol): nothing;
 
 /**
  * @param whichPlayer
  * @param name
  */
-declare function SetPlayerName(this: void, whichPlayer: player, name: string): nothing;
+declare function SetPlayerName(whichPlayer: player, name: string): nothing;
 
 /**
  * @param whichPlayer
  * @param flag
  */
-declare function SetPlayerOnScoreScreen(this: void, whichPlayer: player, flag: boolean): nothing;
+declare function SetPlayerOnScoreScreen(whichPlayer: player, flag: boolean): nothing;
 
 /**
  * @param whichPlayer
  */
-declare function GetPlayerTeam(this: void, whichPlayer: player): integer;
+declare function GetPlayerTeam(whichPlayer: player): integer;
 
 /**
  * @param whichPlayer
  */
-declare function GetPlayerStartLocation(this: void, whichPlayer: player): integer;
+declare function GetPlayerStartLocation(whichPlayer: player): integer;
 
 /**
  * @param whichPlayer
  */
-declare function GetPlayerColor(this: void, whichPlayer: player): playercolor;
+declare function GetPlayerColor(whichPlayer: player): playercolor;
 
 /**
  * @param whichPlayer
  */
-declare function GetPlayerSelectable(this: void, whichPlayer: player): boolean;
+declare function GetPlayerSelectable(whichPlayer: player): boolean;
 
 /**
  * @param whichPlayer
  */
-declare function GetPlayerController(this: void, whichPlayer: player): mapcontrol;
+declare function GetPlayerController(whichPlayer: player): mapcontrol;
 
 /**
  * @param whichPlayer
  */
-declare function GetPlayerSlotState(this: void, whichPlayer: player): playerslotstate;
+declare function GetPlayerSlotState(whichPlayer: player): playerslotstate;
 
 /**
  * @param sourcePlayer
  * @param otherPlayer
  * @param whichResource
  */
-declare function GetPlayerTaxRate(this: void, sourcePlayer: player, otherPlayer: player, whichResource: playerstate): integer;
+declare function GetPlayerTaxRate(sourcePlayer: player, otherPlayer: player, whichResource: playerstate): integer;
 
 /**
  * @param whichPlayer
  * @param pref
  */
-declare function IsPlayerRacePrefSet(this: void, whichPlayer: player, pref: racepreference): boolean;
+declare function IsPlayerRacePrefSet(whichPlayer: player, pref: racepreference): boolean;
 
 /**
  * @param whichPlayer
  */
-declare function GetPlayerName(this: void, whichPlayer: player): string;
+declare function GetPlayerName(whichPlayer: player): string;
 
 /**
  */
-declare function CreateTimer(this: void): timer;
+declare function CreateTimer(): timer;
 
 /**
  * @param whichTimer
  */
-declare function DestroyTimer(this: void, whichTimer: timer): nothing;
+declare function DestroyTimer(whichTimer: timer): nothing;
 
 /**
  * @param whichTimer
@@ -9408,99 +9409,99 @@ declare function DestroyTimer(this: void, whichTimer: timer): nothing;
  * @param periodic
  * @param handlerFunc
  */
-declare function TimerStart(this: void, whichTimer: timer, timeout: real, periodic: boolean, handlerFunc: code): nothing;
+declare function TimerStart(whichTimer: timer, timeout: real, periodic: boolean, handlerFunc: code): nothing;
 
 /**
  * @param whichTimer
  */
-declare function TimerGetElapsed(this: void, whichTimer: timer): real;
+declare function TimerGetElapsed(whichTimer: timer): real;
 
 /**
  * @param whichTimer
  */
-declare function TimerGetRemaining(this: void, whichTimer: timer): real;
+declare function TimerGetRemaining(whichTimer: timer): real;
 
 /**
  * @param whichTimer
  */
-declare function TimerGetTimeout(this: void, whichTimer: timer): real;
+declare function TimerGetTimeout(whichTimer: timer): real;
 
 /**
  * @param whichTimer
  */
-declare function PauseTimer(this: void, whichTimer: timer): nothing;
+declare function PauseTimer(whichTimer: timer): nothing;
 
 /**
  * @param whichTimer
  */
-declare function ResumeTimer(this: void, whichTimer: timer): nothing;
+declare function ResumeTimer(whichTimer: timer): nothing;
 
 /**
  */
-declare function GetExpiredTimer(this: void): timer;
+declare function GetExpiredTimer(): timer;
 
 /**
  */
-declare function CreateGroup(this: void): group;
+declare function CreateGroup(): group;
 
 /**
  * @param whichGroup
  */
-declare function DestroyGroup(this: void, whichGroup: group): nothing;
-
-/**
- * @param whichGroup
- * @param whichUnit
- */
-declare function GroupAddUnit(this: void, whichGroup: group, whichUnit: unit): boolean;
+declare function DestroyGroup(whichGroup: group): nothing;
 
 /**
  * @param whichGroup
  * @param whichUnit
  */
-declare function GroupRemoveUnit(this: void, whichGroup: group, whichUnit: unit): boolean;
+declare function GroupAddUnit(whichGroup: group, whichUnit: unit): boolean;
+
+/**
+ * @param whichGroup
+ * @param whichUnit
+ */
+declare function GroupRemoveUnit(whichGroup: group, whichUnit: unit): boolean;
 
 /**
  * @param whichGroup
  * @param addGroup
  */
-declare function BlzGroupAddGroupFast(this: void, whichGroup: group, addGroup: group): integer;
+declare function BlzGroupAddGroupFast(whichGroup: group, addGroup: group): integer;
 
 /**
  * @param whichGroup
  * @param removeGroup
  */
-declare function BlzGroupRemoveGroupFast(this: void, whichGroup: group, removeGroup: group): integer;
+declare function BlzGroupRemoveGroupFast(whichGroup: group, removeGroup: group): integer;
 
 /**
  * @param whichGroup
  */
-declare function GroupClear(this: void, whichGroup: group): nothing;
+declare function GroupClear(whichGroup: group): nothing;
 
 /**
  * @param whichGroup
  */
-declare function BlzGroupGetSize(this: void, whichGroup: group): integer;
+declare function BlzGroupGetSize(whichGroup: group): integer;
 
 /**
  * @param whichGroup
  * @param index
  */
-declare function BlzGroupUnitAt(this: void, whichGroup: group, index: integer): unit;
+declare function BlzGroupUnitAt(whichGroup: group, index: integer): unit;
 
 /**
  * @param whichGroup
  * @param unitname
  * @param filter
  */
-declare function GroupEnumUnitsOfType(this: void, whichGroup: group, unitname: string, filter: boolexpr): nothing;
+declare function GroupEnumUnitsOfType(whichGroup: group, unitname: string, filter: boolexpr): nothing;
 
 /**
  * @param whichGroup
  * @param whichPlayer
  * @param filter
  */
-declare function GroupEnumUnitsOfPlayer(this: void, whichGroup: group, whichPlayer: player, filter: boolexpr): nothing;
+declare function GroupEnumUnitsOfPlayer(whichGroup: group, whichPlayer: player, filter: boolexpr): nothing;
 
 /**
  * @param whichGroup
@@ -9508,14 +9509,14 @@ declare function GroupEnumUnitsOfPlayer(this: void, whichGroup: group, whichPlay
  * @param filter
  * @param countLimit
  */
-declare function GroupEnumUnitsOfTypeCounted(this: void, whichGroup: group, unitname: string, filter: boolexpr, countLimit: integer): nothing;
+declare function GroupEnumUnitsOfTypeCounted(whichGroup: group, unitname: string, filter: boolexpr, countLimit: integer): nothing;
 
 /**
  * @param whichGroup
  * @param r
  * @param filter
  */
-declare function GroupEnumUnitsInRect(this: void, whichGroup: group, r: rect, filter: boolexpr): nothing;
+declare function GroupEnumUnitsInRect(whichGroup: group, r: rect, filter: boolexpr): nothing;
 
 /**
  * @param whichGroup
@@ -9523,7 +9524,7 @@ declare function GroupEnumUnitsInRect(this: void, whichGroup: group, r: rect, fi
  * @param filter
  * @param countLimit
  */
-declare function GroupEnumUnitsInRectCounted(this: void, whichGroup: group, r: rect, filter: boolexpr, countLimit: integer): nothing;
+declare function GroupEnumUnitsInRectCounted(whichGroup: group, r: rect, filter: boolexpr, countLimit: integer): nothing;
 
 /**
  * @param whichGroup
@@ -9532,7 +9533,7 @@ declare function GroupEnumUnitsInRectCounted(this: void, whichGroup: group, r: r
  * @param radius
  * @param filter
  */
-declare function GroupEnumUnitsInRange(this: void, whichGroup: group, x: real, y: real, radius: real, filter: boolexpr): nothing;
+declare function GroupEnumUnitsInRange(whichGroup: group, x: real, y: real, radius: real, filter: boolexpr): nothing;
 
 /**
  * @param whichGroup
@@ -9540,7 +9541,7 @@ declare function GroupEnumUnitsInRange(this: void, whichGroup: group, x: real, y
  * @param radius
  * @param filter
  */
-declare function GroupEnumUnitsInRangeOfLoc(this: void, whichGroup: group, whichLocation: location, radius: real, filter: boolexpr): nothing;
+declare function GroupEnumUnitsInRangeOfLoc(whichGroup: group, whichLocation: location, radius: real, filter: boolexpr): nothing;
 
 /**
  * @param whichGroup
@@ -9550,7 +9551,7 @@ declare function GroupEnumUnitsInRangeOfLoc(this: void, whichGroup: group, which
  * @param filter
  * @param countLimit
  */
-declare function GroupEnumUnitsInRangeCounted(this: void, whichGroup: group, x: real, y: real, radius: real, filter: boolexpr, countLimit: integer): nothing;
+declare function GroupEnumUnitsInRangeCounted(whichGroup: group, x: real, y: real, radius: real, filter: boolexpr, countLimit: integer): nothing;
 
 /**
  * @param whichGroup
@@ -9559,41 +9560,26 @@ declare function GroupEnumUnitsInRangeCounted(this: void, whichGroup: group, x: 
  * @param filter
  * @param countLimit
  */
-declare function GroupEnumUnitsInRangeOfLocCounted(this: void, whichGroup: group, whichLocation: location, radius: real, filter: boolexpr, countLimit: integer): nothing;
+declare function GroupEnumUnitsInRangeOfLocCounted(whichGroup: group, whichLocation: location, radius: real, filter: boolexpr, countLimit: integer): nothing;
 
 /**
  * @param whichGroup
  * @param whichPlayer
  * @param filter
  */
-declare function GroupEnumUnitsSelected(this: void, whichGroup: group, whichPlayer: player, filter: boolexpr): nothing;
+declare function GroupEnumUnitsSelected(whichGroup: group, whichPlayer: player, filter: boolexpr): nothing;
 
 /**
  * @param whichGroup
  * @param order
  */
-declare function GroupImmediateOrder(this: void, whichGroup: group, order: string): boolean;
+declare function GroupImmediateOrder(whichGroup: group, order: string): boolean;
 
 /**
  * @param whichGroup
  * @param order
  */
-declare function GroupImmediateOrderById(this: void, whichGroup: group, order: integer): boolean;
-
-/**
- * @param whichGroup
- * @param order
- * @param x
- * @param y
- */
-declare function GroupPointOrder(this: void, whichGroup: group, order: string, x: real, y: real): boolean;
-
-/**
- * @param whichGroup
- * @param order
- * @param whichLocation
- */
-declare function GroupPointOrderLoc(this: void, whichGroup: group, order: string, whichLocation: location): boolean;
+declare function GroupImmediateOrderById(whichGroup: group, order: integer): boolean;
 
 /**
  * @param whichGroup
@@ -9601,104 +9587,119 @@ declare function GroupPointOrderLoc(this: void, whichGroup: group, order: string
  * @param x
  * @param y
  */
-declare function GroupPointOrderById(this: void, whichGroup: group, order: integer, x: real, y: real): boolean;
+declare function GroupPointOrder(whichGroup: group, order: string, x: real, y: real): boolean;
 
 /**
  * @param whichGroup
  * @param order
  * @param whichLocation
  */
-declare function GroupPointOrderByIdLoc(this: void, whichGroup: group, order: integer, whichLocation: location): boolean;
+declare function GroupPointOrderLoc(whichGroup: group, order: string, whichLocation: location): boolean;
+
+/**
+ * @param whichGroup
+ * @param order
+ * @param x
+ * @param y
+ */
+declare function GroupPointOrderById(whichGroup: group, order: integer, x: real, y: real): boolean;
+
+/**
+ * @param whichGroup
+ * @param order
+ * @param whichLocation
+ */
+declare function GroupPointOrderByIdLoc(whichGroup: group, order: integer, whichLocation: location): boolean;
 
 /**
  * @param whichGroup
  * @param order
  * @param targetWidget
  */
-declare function GroupTargetOrder(this: void, whichGroup: group, order: string, targetWidget: widget): boolean;
+declare function GroupTargetOrder(whichGroup: group, order: string, targetWidget: widget): boolean;
 
 /**
  * @param whichGroup
  * @param order
  * @param targetWidget
  */
-declare function GroupTargetOrderById(this: void, whichGroup: group, order: integer, targetWidget: widget): boolean;
+declare function GroupTargetOrderById(whichGroup: group, order: integer, targetWidget: widget): boolean;
 
 /**
  * @param whichGroup
  * @param callback
  */
-declare function ForGroup(this: void, whichGroup: group, callback: code): nothing;
+declare function ForGroup(whichGroup: group, callback: code): nothing;
 
 /**
  * @param whichGroup
  */
-declare function FirstOfGroup(this: void, whichGroup: group): unit;
+declare function FirstOfGroup(whichGroup: group): unit;
 
 /**
  */
-declare function CreateForce(this: void): force;
-
-/**
- * @param whichForce
- */
-declare function DestroyForce(this: void, whichForce: force): nothing;
+declare function CreateForce(): force;
 
 /**
  * @param whichForce
- * @param whichPlayer
  */
-declare function ForceAddPlayer(this: void, whichForce: force, whichPlayer: player): nothing;
+declare function DestroyForce(whichForce: force): nothing;
 
 /**
  * @param whichForce
  * @param whichPlayer
  */
-declare function ForceRemovePlayer(this: void, whichForce: force, whichPlayer: player): nothing;
+declare function ForceAddPlayer(whichForce: force, whichPlayer: player): nothing;
 
 /**
  * @param whichForce
  * @param whichPlayer
  */
-declare function BlzForceHasPlayer(this: void, whichForce: force, whichPlayer: player): boolean;
+declare function ForceRemovePlayer(whichForce: force, whichPlayer: player): nothing;
+
+/**
+ * @param whichForce
+ * @param whichPlayer
+ */
+declare function BlzForceHasPlayer(whichForce: force, whichPlayer: player): boolean;
 
 /**
  * @param whichForce
  */
-declare function ForceClear(this: void, whichForce: force): nothing;
+declare function ForceClear(whichForce: force): nothing;
 
 /**
  * @param whichForce
  * @param filter
  */
-declare function ForceEnumPlayers(this: void, whichForce: force, filter: boolexpr): nothing;
+declare function ForceEnumPlayers(whichForce: force, filter: boolexpr): nothing;
 
 /**
  * @param whichForce
  * @param filter
  * @param countLimit
  */
-declare function ForceEnumPlayersCounted(this: void, whichForce: force, filter: boolexpr, countLimit: integer): nothing;
+declare function ForceEnumPlayersCounted(whichForce: force, filter: boolexpr, countLimit: integer): nothing;
 
 /**
  * @param whichForce
  * @param whichPlayer
  * @param filter
  */
-declare function ForceEnumAllies(this: void, whichForce: force, whichPlayer: player, filter: boolexpr): nothing;
+declare function ForceEnumAllies(whichForce: force, whichPlayer: player, filter: boolexpr): nothing;
 
 /**
  * @param whichForce
  * @param whichPlayer
  * @param filter
  */
-declare function ForceEnumEnemies(this: void, whichForce: force, whichPlayer: player, filter: boolexpr): nothing;
+declare function ForceEnumEnemies(whichForce: force, whichPlayer: player, filter: boolexpr): nothing;
 
 /**
  * @param whichForce
  * @param callback
  */
-declare function ForForce(this: void, whichForce: force, callback: code): nothing;
+declare function ForForce(whichForce: force, callback: code): nothing;
 
 /**
  * @param minx
@@ -9706,18 +9707,18 @@ declare function ForForce(this: void, whichForce: force, callback: code): nothin
  * @param maxx
  * @param maxy
  */
-declare function Rect(this: void, minx: real, miny: real, maxx: real, maxy: real): rect;
+declare function Rect(minx: real, miny: real, maxx: real, maxy: real): rect;
 
 /**
  * @param min
  * @param max
  */
-declare function RectFromLoc(this: void, min: location, max: location): rect;
+declare function RectFromLoc(min: location, max: location): rect;
 
 /**
  * @param whichRect
  */
-declare function RemoveRect(this: void, whichRect: rect): nothing;
+declare function RemoveRect(whichRect: rect): nothing;
 
 /**
  * @param whichRect
@@ -9726,297 +9727,297 @@ declare function RemoveRect(this: void, whichRect: rect): nothing;
  * @param maxx
  * @param maxy
  */
-declare function SetRect(this: void, whichRect: rect, minx: real, miny: real, maxx: real, maxy: real): nothing;
+declare function SetRect(whichRect: rect, minx: real, miny: real, maxx: real, maxy: real): nothing;
 
 /**
  * @param whichRect
  * @param min
  * @param max
  */
-declare function SetRectFromLoc(this: void, whichRect: rect, min: location, max: location): nothing;
+declare function SetRectFromLoc(whichRect: rect, min: location, max: location): nothing;
 
 /**
  * @param whichRect
  * @param newCenterX
  * @param newCenterY
  */
-declare function MoveRectTo(this: void, whichRect: rect, newCenterX: real, newCenterY: real): nothing;
+declare function MoveRectTo(whichRect: rect, newCenterX: real, newCenterY: real): nothing;
 
 /**
  * @param whichRect
  * @param newCenterLoc
  */
-declare function MoveRectToLoc(this: void, whichRect: rect, newCenterLoc: location): nothing;
+declare function MoveRectToLoc(whichRect: rect, newCenterLoc: location): nothing;
 
 /**
  * @param whichRect
  */
-declare function GetRectCenterX(this: void, whichRect: rect): real;
+declare function GetRectCenterX(whichRect: rect): real;
 
 /**
  * @param whichRect
  */
-declare function GetRectCenterY(this: void, whichRect: rect): real;
+declare function GetRectCenterY(whichRect: rect): real;
 
 /**
  * @param whichRect
  */
-declare function GetRectMinX(this: void, whichRect: rect): real;
+declare function GetRectMinX(whichRect: rect): real;
 
 /**
  * @param whichRect
  */
-declare function GetRectMinY(this: void, whichRect: rect): real;
+declare function GetRectMinY(whichRect: rect): real;
 
 /**
  * @param whichRect
  */
-declare function GetRectMaxX(this: void, whichRect: rect): real;
+declare function GetRectMaxX(whichRect: rect): real;
 
 /**
  * @param whichRect
  */
-declare function GetRectMaxY(this: void, whichRect: rect): real;
+declare function GetRectMaxY(whichRect: rect): real;
 
 /**
  */
-declare function CreateRegion(this: void): region;
+declare function CreateRegion(): region;
 
 /**
  * @param whichRegion
  */
-declare function RemoveRegion(this: void, whichRegion: region): nothing;
+declare function RemoveRegion(whichRegion: region): nothing;
 
 /**
  * @param whichRegion
  * @param r
  */
-declare function RegionAddRect(this: void, whichRegion: region, r: rect): nothing;
+declare function RegionAddRect(whichRegion: region, r: rect): nothing;
 
 /**
  * @param whichRegion
  * @param r
  */
-declare function RegionClearRect(this: void, whichRegion: region, r: rect): nothing;
+declare function RegionClearRect(whichRegion: region, r: rect): nothing;
 
 /**
  * @param whichRegion
  * @param x
  * @param y
  */
-declare function RegionAddCell(this: void, whichRegion: region, x: real, y: real): nothing;
+declare function RegionAddCell(whichRegion: region, x: real, y: real): nothing;
 
 /**
  * @param whichRegion
  * @param whichLocation
  */
-declare function RegionAddCellAtLoc(this: void, whichRegion: region, whichLocation: location): nothing;
+declare function RegionAddCellAtLoc(whichRegion: region, whichLocation: location): nothing;
 
 /**
  * @param whichRegion
  * @param x
  * @param y
  */
-declare function RegionClearCell(this: void, whichRegion: region, x: real, y: real): nothing;
+declare function RegionClearCell(whichRegion: region, x: real, y: real): nothing;
 
 /**
  * @param whichRegion
  * @param whichLocation
  */
-declare function RegionClearCellAtLoc(this: void, whichRegion: region, whichLocation: location): nothing;
+declare function RegionClearCellAtLoc(whichRegion: region, whichLocation: location): nothing;
 
 /**
  * @param x
  * @param y
  */
-declare function Location(this: void, x: real, y: real): location;
+declare function Location(x: real, y: real): location;
 
 /**
  * @param whichLocation
  */
-declare function RemoveLocation(this: void, whichLocation: location): nothing;
+declare function RemoveLocation(whichLocation: location): nothing;
 
 /**
  * @param whichLocation
  * @param newX
  * @param newY
  */
-declare function MoveLocation(this: void, whichLocation: location, newX: real, newY: real): nothing;
+declare function MoveLocation(whichLocation: location, newX: real, newY: real): nothing;
 
 /**
  * @param whichLocation
  */
-declare function GetLocationX(this: void, whichLocation: location): real;
+declare function GetLocationX(whichLocation: location): real;
 
 /**
  * @param whichLocation
  */
-declare function GetLocationY(this: void, whichLocation: location): real;
+declare function GetLocationY(whichLocation: location): real;
 
 /**
  * @param whichLocation
  */
-declare function GetLocationZ(this: void, whichLocation: location): real;
+declare function GetLocationZ(whichLocation: location): real;
 
 /**
  * @param whichRegion
  * @param whichUnit
  */
-declare function IsUnitInRegion(this: void, whichRegion: region, whichUnit: unit): boolean;
+declare function IsUnitInRegion(whichRegion: region, whichUnit: unit): boolean;
 
 /**
  * @param whichRegion
  * @param x
  * @param y
  */
-declare function IsPointInRegion(this: void, whichRegion: region, x: real, y: real): boolean;
+declare function IsPointInRegion(whichRegion: region, x: real, y: real): boolean;
 
 /**
  * @param whichRegion
  * @param whichLocation
  */
-declare function IsLocationInRegion(this: void, whichRegion: region, whichLocation: location): boolean;
+declare function IsLocationInRegion(whichRegion: region, whichLocation: location): boolean;
 
 /**
  */
-declare function GetWorldBounds(this: void): rect;
+declare function GetWorldBounds(): rect;
 
 /**
  */
-declare function CreateTrigger(this: void): trigger;
-
-/**
- * @param whichTrigger
- */
-declare function DestroyTrigger(this: void, whichTrigger: trigger): nothing;
+declare function CreateTrigger(): trigger;
 
 /**
  * @param whichTrigger
  */
-declare function ResetTrigger(this: void, whichTrigger: trigger): nothing;
+declare function DestroyTrigger(whichTrigger: trigger): nothing;
 
 /**
  * @param whichTrigger
  */
-declare function EnableTrigger(this: void, whichTrigger: trigger): nothing;
+declare function ResetTrigger(whichTrigger: trigger): nothing;
 
 /**
  * @param whichTrigger
  */
-declare function DisableTrigger(this: void, whichTrigger: trigger): nothing;
+declare function EnableTrigger(whichTrigger: trigger): nothing;
 
 /**
  * @param whichTrigger
  */
-declare function IsTriggerEnabled(this: void, whichTrigger: trigger): boolean;
+declare function DisableTrigger(whichTrigger: trigger): nothing;
+
+/**
+ * @param whichTrigger
+ */
+declare function IsTriggerEnabled(whichTrigger: trigger): boolean;
 
 /**
  * @param whichTrigger
  * @param flag
  */
-declare function TriggerWaitOnSleeps(this: void, whichTrigger: trigger, flag: boolean): nothing;
+declare function TriggerWaitOnSleeps(whichTrigger: trigger, flag: boolean): nothing;
 
 /**
  * @param whichTrigger
  */
-declare function IsTriggerWaitOnSleeps(this: void, whichTrigger: trigger): boolean;
+declare function IsTriggerWaitOnSleeps(whichTrigger: trigger): boolean;
 
 /**
  */
-declare function GetFilterUnit(this: void): unit;
+declare function GetFilterUnit(): unit;
 
 /**
  */
-declare function GetEnumUnit(this: void): unit;
+declare function GetEnumUnit(): unit;
 
 /**
  */
-declare function GetFilterDestructable(this: void): destructable;
+declare function GetFilterDestructable(): destructable;
 
 /**
  */
-declare function GetEnumDestructable(this: void): destructable;
+declare function GetEnumDestructable(): destructable;
 
 /**
  */
-declare function GetFilterItem(this: void): item;
+declare function GetFilterItem(): item;
 
 /**
  */
-declare function GetEnumItem(this: void): item;
+declare function GetEnumItem(): item;
 
 /**
  */
-declare function GetFilterPlayer(this: void): player;
+declare function GetFilterPlayer(): player;
 
 /**
  */
-declare function GetEnumPlayer(this: void): player;
+declare function GetEnumPlayer(): player;
 
 /**
  */
-declare function GetTriggeringTrigger(this: void): trigger;
+declare function GetTriggeringTrigger(): trigger;
 
 /**
  */
-declare function GetTriggerEventId(this: void): eventid;
-
-/**
- * @param whichTrigger
- */
-declare function GetTriggerEvalCount(this: void, whichTrigger: trigger): integer;
+declare function GetTriggerEventId(): eventid;
 
 /**
  * @param whichTrigger
  */
-declare function GetTriggerExecCount(this: void, whichTrigger: trigger): integer;
+declare function GetTriggerEvalCount(whichTrigger: trigger): integer;
+
+/**
+ * @param whichTrigger
+ */
+declare function GetTriggerExecCount(whichTrigger: trigger): integer;
 
 /**
  * @param funcName
  */
-declare function ExecuteFunc(this: void, funcName: string): nothing;
+declare function ExecuteFunc(funcName: string): nothing;
 
 /**
  * @param operandA
  * @param operandB
  */
-declare function And(this: void, operandA: boolexpr, operandB: boolexpr): boolexpr;
+declare function And(operandA: boolexpr, operandB: boolexpr): boolexpr;
 
 /**
  * @param operandA
  * @param operandB
  */
-declare function Or(this: void, operandA: boolexpr, operandB: boolexpr): boolexpr;
+declare function Or(operandA: boolexpr, operandB: boolexpr): boolexpr;
 
 /**
  * @param operand
  */
-declare function Not(this: void, operand: boolexpr): boolexpr;
+declare function Not(operand: boolexpr): boolexpr;
 
 /**
  * @param func
  */
-declare function Condition(this: void, func: code): conditionfunc;
+declare function Condition(func: code): conditionfunc;
 
 /**
  * @param c
  */
-declare function DestroyCondition(this: void, c: conditionfunc): nothing;
+declare function DestroyCondition(c: conditionfunc): nothing;
 
 /**
  * @param func
  */
-declare function Filter(this: void, func: code): filterfunc;
+declare function Filter(func: code): filterfunc;
 
 /**
  * @param f
  */
-declare function DestroyFilter(this: void, f: filterfunc): nothing;
+declare function DestroyFilter(f: filterfunc): nothing;
 
 /**
  * @param e
  */
-declare function DestroyBoolExpr(this: void, e: boolexpr): nothing;
+declare function DestroyBoolExpr(e: boolexpr): nothing;
 
 /**
  * @param whichTrigger
@@ -10024,20 +10025,20 @@ declare function DestroyBoolExpr(this: void, e: boolexpr): nothing;
  * @param opcode
  * @param limitval
  */
-declare function TriggerRegisterVariableEvent(this: void, whichTrigger: trigger, varName: string, opcode: limitop, limitval: real): event;
+declare function TriggerRegisterVariableEvent(whichTrigger: trigger, varName: string, opcode: limitop, limitval: real): event;
 
 /**
  * @param whichTrigger
  * @param timeout
  * @param periodic
  */
-declare function TriggerRegisterTimerEvent(this: void, whichTrigger: trigger, timeout: real, periodic: boolean): event;
+declare function TriggerRegisterTimerEvent(whichTrigger: trigger, timeout: real, periodic: boolean): event;
 
 /**
  * @param whichTrigger
  * @param t
  */
-declare function TriggerRegisterTimerExpireEvent(this: void, whichTrigger: trigger, t: timer): event;
+declare function TriggerRegisterTimerExpireEvent(whichTrigger: trigger, t: timer): event;
 
 /**
  * @param whichTrigger
@@ -10045,115 +10046,115 @@ declare function TriggerRegisterTimerExpireEvent(this: void, whichTrigger: trigg
  * @param opcode
  * @param limitval
  */
-declare function TriggerRegisterGameStateEvent(this: void, whichTrigger: trigger, whichState: gamestate, opcode: limitop, limitval: real): event;
+declare function TriggerRegisterGameStateEvent(whichTrigger: trigger, whichState: gamestate, opcode: limitop, limitval: real): event;
 
 /**
  * @param whichTrigger
  * @param whichDialog
  */
-declare function TriggerRegisterDialogEvent(this: void, whichTrigger: trigger, whichDialog: dialog): event;
+declare function TriggerRegisterDialogEvent(whichTrigger: trigger, whichDialog: dialog): event;
 
 /**
  * @param whichTrigger
  * @param whichButton
  */
-declare function TriggerRegisterDialogButtonEvent(this: void, whichTrigger: trigger, whichButton: button): event;
+declare function TriggerRegisterDialogButtonEvent(whichTrigger: trigger, whichButton: button): event;
 
 /**
  */
-declare function GetEventGameState(this: void): gamestate;
+declare function GetEventGameState(): gamestate;
 
 /**
  * @param whichTrigger
  * @param whichGameEvent
  */
-declare function TriggerRegisterGameEvent(this: void, whichTrigger: trigger, whichGameEvent: gameevent): event;
+declare function TriggerRegisterGameEvent(whichTrigger: trigger, whichGameEvent: gameevent): event;
 
 /**
  */
-declare function GetWinningPlayer(this: void): player;
-
-/**
- * @param whichTrigger
- * @param whichRegion
- * @param filter
- */
-declare function TriggerRegisterEnterRegion(this: void, whichTrigger: trigger, whichRegion: region, filter: boolexpr): event;
-
-/**
- */
-declare function GetTriggeringRegion(this: void): region;
-
-/**
- */
-declare function GetEnteringUnit(this: void): unit;
+declare function GetWinningPlayer(): player;
 
 /**
  * @param whichTrigger
  * @param whichRegion
  * @param filter
  */
-declare function TriggerRegisterLeaveRegion(this: void, whichTrigger: trigger, whichRegion: region, filter: boolexpr): event;
+declare function TriggerRegisterEnterRegion(whichTrigger: trigger, whichRegion: region, filter: boolexpr): event;
 
 /**
  */
-declare function GetLeavingUnit(this: void): unit;
+declare function GetTriggeringRegion(): region;
+
+/**
+ */
+declare function GetEnteringUnit(): unit;
+
+/**
+ * @param whichTrigger
+ * @param whichRegion
+ * @param filter
+ */
+declare function TriggerRegisterLeaveRegion(whichTrigger: trigger, whichRegion: region, filter: boolexpr): event;
+
+/**
+ */
+declare function GetLeavingUnit(): unit;
 
 /**
  * @param whichTrigger
  * @param t
  */
-declare function TriggerRegisterTrackableHitEvent(this: void, whichTrigger: trigger, t: trackable): event;
+declare function TriggerRegisterTrackableHitEvent(whichTrigger: trigger, t: trackable): event;
 
 /**
  * @param whichTrigger
  * @param t
  */
-declare function TriggerRegisterTrackableTrackEvent(this: void, whichTrigger: trigger, t: trackable): event;
+declare function TriggerRegisterTrackableTrackEvent(whichTrigger: trigger, t: trackable): event;
 
 /**
  */
-declare function GetTriggeringTrackable(this: void): trackable;
+declare function GetTriggeringTrackable(): trackable;
 
 /**
  */
-declare function GetClickedButton(this: void): button;
+declare function GetClickedButton(): button;
 
 /**
  */
-declare function GetClickedDialog(this: void): dialog;
+declare function GetClickedDialog(): dialog;
 
 /**
  */
-declare function GetTournamentFinishSoonTimeRemaining(this: void): real;
+declare function GetTournamentFinishSoonTimeRemaining(): real;
 
 /**
  */
-declare function GetTournamentFinishNowRule(this: void): integer;
+declare function GetTournamentFinishNowRule(): integer;
 
 /**
  */
-declare function GetTournamentFinishNowPlayer(this: void): player;
+declare function GetTournamentFinishNowPlayer(): player;
 
 /**
  * @param whichPlayer
  */
-declare function GetTournamentScore(this: void, whichPlayer: player): integer;
+declare function GetTournamentScore(whichPlayer: player): integer;
 
 /**
  */
-declare function GetSaveBasicFilename(this: void): string;
+declare function GetSaveBasicFilename(): string;
 
 /**
  * @param whichTrigger
  * @param whichPlayer
  * @param whichPlayerEvent
  */
-declare function TriggerRegisterPlayerEvent(this: void, whichTrigger: trigger, whichPlayer: player, whichPlayerEvent: playerevent): event;
+declare function TriggerRegisterPlayerEvent(whichTrigger: trigger, whichPlayer: player, whichPlayerEvent: playerevent): event;
 
 /**
  */
-declare function GetTriggerPlayer(this: void): player;
+declare function GetTriggerPlayer(): player;
 
 /**
  * @param whichTrigger
@@ -10161,210 +10162,210 @@ declare function GetTriggerPlayer(this: void): player;
  * @param whichPlayerUnitEvent
  * @param filter
  */
-declare function TriggerRegisterPlayerUnitEvent(this: void, whichTrigger: trigger, whichPlayer: player, whichPlayerUnitEvent: playerunitevent, filter: boolexpr): event;
+declare function TriggerRegisterPlayerUnitEvent(whichTrigger: trigger, whichPlayer: player, whichPlayerUnitEvent: playerunitevent, filter: boolexpr): event;
 
 /**
  */
-declare function GetLevelingUnit(this: void): unit;
+declare function GetLevelingUnit(): unit;
 
 /**
  */
-declare function GetLearningUnit(this: void): unit;
+declare function GetLearningUnit(): unit;
 
 /**
  */
-declare function GetLearnedSkill(this: void): integer;
+declare function GetLearnedSkill(): integer;
 
 /**
  */
-declare function GetLearnedSkillLevel(this: void): integer;
+declare function GetLearnedSkillLevel(): integer;
 
 /**
  */
-declare function GetRevivableUnit(this: void): unit;
+declare function GetRevivableUnit(): unit;
 
 /**
  */
-declare function GetRevivingUnit(this: void): unit;
+declare function GetRevivingUnit(): unit;
 
 /**
  */
-declare function GetAttacker(this: void): unit;
+declare function GetAttacker(): unit;
 
 /**
  */
-declare function GetRescuer(this: void): unit;
+declare function GetRescuer(): unit;
 
 /**
  */
-declare function GetDyingUnit(this: void): unit;
+declare function GetDyingUnit(): unit;
 
 /**
  */
-declare function GetKillingUnit(this: void): unit;
+declare function GetKillingUnit(): unit;
 
 /**
  */
-declare function GetDecayingUnit(this: void): unit;
+declare function GetDecayingUnit(): unit;
 
 /**
  */
-declare function GetConstructingStructure(this: void): unit;
+declare function GetConstructingStructure(): unit;
 
 /**
  */
-declare function GetCancelledStructure(this: void): unit;
+declare function GetCancelledStructure(): unit;
 
 /**
  */
-declare function GetConstructedStructure(this: void): unit;
+declare function GetConstructedStructure(): unit;
 
 /**
  */
-declare function GetResearchingUnit(this: void): unit;
+declare function GetResearchingUnit(): unit;
 
 /**
  */
-declare function GetResearched(this: void): integer;
+declare function GetResearched(): integer;
 
 /**
  */
-declare function GetTrainedUnitType(this: void): integer;
+declare function GetTrainedUnitType(): integer;
 
 /**
  */
-declare function GetTrainedUnit(this: void): unit;
+declare function GetTrainedUnit(): unit;
 
 /**
  */
-declare function GetDetectedUnit(this: void): unit;
+declare function GetDetectedUnit(): unit;
 
 /**
  */
-declare function GetSummoningUnit(this: void): unit;
+declare function GetSummoningUnit(): unit;
 
 /**
  */
-declare function GetSummonedUnit(this: void): unit;
+declare function GetSummonedUnit(): unit;
 
 /**
  */
-declare function GetTransportUnit(this: void): unit;
+declare function GetTransportUnit(): unit;
 
 /**
  */
-declare function GetLoadedUnit(this: void): unit;
+declare function GetLoadedUnit(): unit;
 
 /**
  */
-declare function GetSellingUnit(this: void): unit;
+declare function GetSellingUnit(): unit;
 
 /**
  */
-declare function GetSoldUnit(this: void): unit;
+declare function GetSoldUnit(): unit;
 
 /**
  */
-declare function GetBuyingUnit(this: void): unit;
+declare function GetBuyingUnit(): unit;
 
 /**
  */
-declare function GetSoldItem(this: void): item;
+declare function GetSoldItem(): item;
 
 /**
  */
-declare function GetChangingUnit(this: void): unit;
+declare function GetChangingUnit(): unit;
 
 /**
  */
-declare function GetChangingUnitPrevOwner(this: void): player;
+declare function GetChangingUnitPrevOwner(): player;
 
 /**
  */
-declare function GetManipulatingUnit(this: void): unit;
+declare function GetManipulatingUnit(): unit;
 
 /**
  */
-declare function GetManipulatedItem(this: void): item;
+declare function GetManipulatedItem(): item;
 
 /**
  */
-declare function GetOrderedUnit(this: void): unit;
+declare function GetOrderedUnit(): unit;
 
 /**
  */
-declare function GetIssuedOrderId(this: void): integer;
+declare function GetIssuedOrderId(): integer;
 
 /**
  */
-declare function GetOrderPointX(this: void): real;
+declare function GetOrderPointX(): real;
 
 /**
  */
-declare function GetOrderPointY(this: void): real;
+declare function GetOrderPointY(): real;
 
 /**
  */
-declare function GetOrderPointLoc(this: void): location;
+declare function GetOrderPointLoc(): location;
 
 /**
  */
-declare function GetOrderTarget(this: void): widget;
+declare function GetOrderTarget(): widget;
 
 /**
  */
-declare function GetOrderTargetDestructable(this: void): destructable;
+declare function GetOrderTargetDestructable(): destructable;
 
 /**
  */
-declare function GetOrderTargetItem(this: void): item;
+declare function GetOrderTargetItem(): item;
 
 /**
  */
-declare function GetOrderTargetUnit(this: void): unit;
+declare function GetOrderTargetUnit(): unit;
 
 /**
  */
-declare function GetSpellAbilityUnit(this: void): unit;
+declare function GetSpellAbilityUnit(): unit;
 
 /**
  */
-declare function GetSpellAbilityId(this: void): integer;
+declare function GetSpellAbilityId(): integer;
 
 /**
  */
-declare function GetSpellAbility(this: void): ability;
+declare function GetSpellAbility(): ability;
 
 /**
  */
-declare function GetSpellTargetLoc(this: void): location;
+declare function GetSpellTargetLoc(): location;
 
 /**
  */
-declare function GetSpellTargetX(this: void): real;
+declare function GetSpellTargetX(): real;
 
 /**
  */
-declare function GetSpellTargetY(this: void): real;
+declare function GetSpellTargetY(): real;
 
 /**
  */
-declare function GetSpellTargetDestructable(this: void): destructable;
+declare function GetSpellTargetDestructable(): destructable;
 
 /**
  */
-declare function GetSpellTargetItem(this: void): item;
+declare function GetSpellTargetItem(): item;
 
 /**
  */
-declare function GetSpellTargetUnit(this: void): unit;
+declare function GetSpellTargetUnit(): unit;
 
 /**
  * @param whichTrigger
  * @param whichPlayer
  * @param whichAlliance
  */
-declare function TriggerRegisterPlayerAllianceChange(this: void, whichTrigger: trigger, whichPlayer: player, whichAlliance: alliancetype): event;
+declare function TriggerRegisterPlayerAllianceChange(whichTrigger: trigger, whichPlayer: player, whichAlliance: alliancetype): event;
 
 /**
  * @param whichTrigger
@@ -10373,11 +10374,11 @@ declare function TriggerRegisterPlayerAllianceChange(this: void, whichTrigger: t
  * @param opcode
  * @param limitval
  */
-declare function TriggerRegisterPlayerStateEvent(this: void, whichTrigger: trigger, whichPlayer: player, whichState: playerstate, opcode: limitop, limitval: real): event;
+declare function TriggerRegisterPlayerStateEvent(whichTrigger: trigger, whichPlayer: player, whichState: playerstate, opcode: limitop, limitval: real): event;
 
 /**
  */
-declare function GetEventPlayerState(this: void): playerstate;
+declare function GetEventPlayerState(): playerstate;
 
 /**
  * @param whichTrigger
@@ -10385,25 +10386,25 @@ declare function GetEventPlayerState(this: void): playerstate;
  * @param chatMessageToDetect
  * @param exactMatchOnly
  */
-declare function TriggerRegisterPlayerChatEvent(this: void, whichTrigger: trigger, whichPlayer: player, chatMessageToDetect: string, exactMatchOnly: boolean): event;
+declare function TriggerRegisterPlayerChatEvent(whichTrigger: trigger, whichPlayer: player, chatMessageToDetect: string, exactMatchOnly: boolean): event;
 
 /**
  */
-declare function GetEventPlayerChatString(this: void): string;
+declare function GetEventPlayerChatString(): string;
 
 /**
  */
-declare function GetEventPlayerChatStringMatched(this: void): string;
+declare function GetEventPlayerChatStringMatched(): string;
 
 /**
  * @param whichTrigger
  * @param whichWidget
  */
-declare function TriggerRegisterDeathEvent(this: void, whichTrigger: trigger, whichWidget: widget): event;
+declare function TriggerRegisterDeathEvent(whichTrigger: trigger, whichWidget: widget): event;
 
 /**
  */
-declare function GetTriggerUnit(this: void): unit;
+declare function GetTriggerUnit(): unit;
 
 /**
  * @param whichTrigger
@@ -10412,30 +10413,30 @@ declare function GetTriggerUnit(this: void): unit;
  * @param opcode
  * @param limitval
  */
-declare function TriggerRegisterUnitStateEvent(this: void, whichTrigger: trigger, whichUnit: unit, whichState: unitstate, opcode: limitop, limitval: real): event;
+declare function TriggerRegisterUnitStateEvent(whichTrigger: trigger, whichUnit: unit, whichState: unitstate, opcode: limitop, limitval: real): event;
 
 /**
  */
-declare function GetEventUnitState(this: void): unitstate;
+declare function GetEventUnitState(): unitstate;
 
 /**
  * @param whichTrigger
  * @param whichUnit
  * @param whichEvent
  */
-declare function TriggerRegisterUnitEvent(this: void, whichTrigger: trigger, whichUnit: unit, whichEvent: unitevent): event;
+declare function TriggerRegisterUnitEvent(whichTrigger: trigger, whichUnit: unit, whichEvent: unitevent): event;
 
 /**
  */
-declare function GetEventDamage(this: void): real;
+declare function GetEventDamage(): real;
 
 /**
  */
-declare function GetEventDamageSource(this: void): unit;
+declare function GetEventDamageSource(): unit;
 
 /**
  */
-declare function GetEventDetectingPlayer(this: void): player;
+declare function GetEventDetectingPlayer(): player;
 
 /**
  * @param whichTrigger
@@ -10443,11 +10444,11 @@ declare function GetEventDetectingPlayer(this: void): player;
  * @param whichEvent
  * @param filter
  */
-declare function TriggerRegisterFilterUnitEvent(this: void, whichTrigger: trigger, whichUnit: unit, whichEvent: unitevent, filter: boolexpr): event;
+declare function TriggerRegisterFilterUnitEvent(whichTrigger: trigger, whichUnit: unit, whichEvent: unitevent, filter: boolexpr): event;
 
 /**
  */
-declare function GetEventTargetUnit(this: void): unit;
+declare function GetEventTargetUnit(): unit;
 
 /**
  * @param whichTrigger
@@ -10455,100 +10456,100 @@ declare function GetEventTargetUnit(this: void): unit;
  * @param range
  * @param filter
  */
-declare function TriggerRegisterUnitInRange(this: void, whichTrigger: trigger, whichUnit: unit, range: real, filter: boolexpr): event;
+declare function TriggerRegisterUnitInRange(whichTrigger: trigger, whichUnit: unit, range: real, filter: boolexpr): event;
 
 /**
  * @param whichTrigger
  * @param condition
  */
-declare function TriggerAddCondition(this: void, whichTrigger: trigger, condition: boolexpr): triggercondition;
+declare function TriggerAddCondition(whichTrigger: trigger, condition: boolexpr): triggercondition;
 
 /**
  * @param whichTrigger
  * @param whichCondition
  */
-declare function TriggerRemoveCondition(this: void, whichTrigger: trigger, whichCondition: triggercondition): nothing;
+declare function TriggerRemoveCondition(whichTrigger: trigger, whichCondition: triggercondition): nothing;
 
 /**
  * @param whichTrigger
  */
-declare function TriggerClearConditions(this: void, whichTrigger: trigger): nothing;
+declare function TriggerClearConditions(whichTrigger: trigger): nothing;
 
 /**
  * @param whichTrigger
  * @param actionFunc
  */
-declare function TriggerAddAction(this: void, whichTrigger: trigger, actionFunc: code): triggeraction;
+declare function TriggerAddAction(whichTrigger: trigger, actionFunc: code): triggeraction;
 
 /**
  * @param whichTrigger
  * @param whichAction
  */
-declare function TriggerRemoveAction(this: void, whichTrigger: trigger, whichAction: triggeraction): nothing;
+declare function TriggerRemoveAction(whichTrigger: trigger, whichAction: triggeraction): nothing;
 
 /**
  * @param whichTrigger
  */
-declare function TriggerClearActions(this: void, whichTrigger: trigger): nothing;
+declare function TriggerClearActions(whichTrigger: trigger): nothing;
 
 /**
  * @param timeout
  */
-declare function TriggerSleepAction(this: void, timeout: real): nothing;
+declare function TriggerSleepAction(timeout: real): nothing;
 
 /**
  * @param s
  * @param offset
  */
-declare function TriggerWaitForSound(this: void, s: sound, offset: real): nothing;
+declare function TriggerWaitForSound(s: sound, offset: real): nothing;
 
 /**
  * @param whichTrigger
  */
-declare function TriggerEvaluate(this: void, whichTrigger: trigger): boolean;
+declare function TriggerEvaluate(whichTrigger: trigger): boolean;
 
 /**
  * @param whichTrigger
  */
-declare function TriggerExecute(this: void, whichTrigger: trigger): nothing;
+declare function TriggerExecute(whichTrigger: trigger): nothing;
 
 /**
  * @param whichTrigger
  */
-declare function TriggerExecuteWait(this: void, whichTrigger: trigger): nothing;
+declare function TriggerExecuteWait(whichTrigger: trigger): nothing;
 
 /**
  */
-declare function TriggerSyncStart(this: void): nothing;
+declare function TriggerSyncStart(): nothing;
 
 /**
  */
-declare function TriggerSyncReady(this: void): nothing;
+declare function TriggerSyncReady(): nothing;
 
 /**
  * @param whichWidget
  */
-declare function GetWidgetLife(this: void, whichWidget: widget): real;
+declare function GetWidgetLife(whichWidget: widget): real;
 
 /**
  * @param whichWidget
  * @param newLife
  */
-declare function SetWidgetLife(this: void, whichWidget: widget, newLife: real): nothing;
+declare function SetWidgetLife(whichWidget: widget, newLife: real): nothing;
 
 /**
  * @param whichWidget
  */
-declare function GetWidgetX(this: void, whichWidget: widget): real;
+declare function GetWidgetX(whichWidget: widget): real;
 
 /**
  * @param whichWidget
  */
-declare function GetWidgetY(this: void, whichWidget: widget): real;
+declare function GetWidgetY(whichWidget: widget): real;
 
 /**
  */
-declare function GetTriggerWidget(this: void): widget;
+declare function GetTriggerWidget(): widget;
 
 /**
  * @param objectid
@@ -10558,7 +10559,7 @@ declare function GetTriggerWidget(this: void): widget;
  * @param scale
  * @param variation
  */
-declare function CreateDestructable(this: void, objectid: integer, x: real, y: real, face: real, scale: real, variation: integer): destructable;
+declare function CreateDestructable(objectid: integer, x: real, y: real, face: real, scale: real, variation: integer): destructable;
 
 /**
  * @param objectid
@@ -10569,7 +10570,7 @@ declare function CreateDestructable(this: void, objectid: integer, x: real, y: r
  * @param scale
  * @param variation
  */
-declare function CreateDestructableZ(this: void, objectid: integer, x: real, y: real, z: real, face: real, scale: real, variation: integer): destructable;
+declare function CreateDestructableZ(objectid: integer, x: real, y: real, z: real, face: real, scale: real, variation: integer): destructable;
 
 /**
  * @param objectid
@@ -10579,7 +10580,7 @@ declare function CreateDestructableZ(this: void, objectid: integer, x: real, y: 
  * @param scale
  * @param variation
  */
-declare function CreateDeadDestructable(this: void, objectid: integer, x: real, y: real, face: real, scale: real, variation: integer): destructable;
+declare function CreateDeadDestructable(objectid: integer, x: real, y: real, face: real, scale: real, variation: integer): destructable;
 
 /**
  * @param objectid
@@ -10590,294 +10591,294 @@ declare function CreateDeadDestructable(this: void, objectid: integer, x: real, 
  * @param scale
  * @param variation
  */
-declare function CreateDeadDestructableZ(this: void, objectid: integer, x: real, y: real, z: real, face: real, scale: real, variation: integer): destructable;
+declare function CreateDeadDestructableZ(objectid: integer, x: real, y: real, z: real, face: real, scale: real, variation: integer): destructable;
 
 /**
  * @param d
  */
-declare function RemoveDestructable(this: void, d: destructable): nothing;
+declare function RemoveDestructable(d: destructable): nothing;
 
 /**
  * @param d
  */
-declare function KillDestructable(this: void, d: destructable): nothing;
+declare function KillDestructable(d: destructable): nothing;
 
 /**
  * @param d
  * @param flag
  */
-declare function SetDestructableInvulnerable(this: void, d: destructable, flag: boolean): nothing;
+declare function SetDestructableInvulnerable(d: destructable, flag: boolean): nothing;
 
 /**
  * @param d
  */
-declare function IsDestructableInvulnerable(this: void, d: destructable): boolean;
+declare function IsDestructableInvulnerable(d: destructable): boolean;
 
 /**
  * @param r
  * @param filter
  * @param actionFunc
  */
-declare function EnumDestructablesInRect(this: void, r: rect, filter: boolexpr, actionFunc: code): nothing;
+declare function EnumDestructablesInRect(r: rect, filter: boolexpr, actionFunc: code): nothing;
 
 /**
  * @param d
  */
-declare function GetDestructableTypeId(this: void, d: destructable): integer;
+declare function GetDestructableTypeId(d: destructable): integer;
 
 /**
  * @param d
  */
-declare function GetDestructableX(this: void, d: destructable): real;
+declare function GetDestructableX(d: destructable): real;
 
 /**
  * @param d
  */
-declare function GetDestructableY(this: void, d: destructable): real;
+declare function GetDestructableY(d: destructable): real;
 
 /**
  * @param d
  * @param life
  */
-declare function SetDestructableLife(this: void, d: destructable, life: real): nothing;
+declare function SetDestructableLife(d: destructable, life: real): nothing;
 
 /**
  * @param d
  */
-declare function GetDestructableLife(this: void, d: destructable): real;
+declare function GetDestructableLife(d: destructable): real;
 
 /**
  * @param d
  * @param max
  */
-declare function SetDestructableMaxLife(this: void, d: destructable, max: real): nothing;
+declare function SetDestructableMaxLife(d: destructable, max: real): nothing;
 
 /**
  * @param d
  */
-declare function GetDestructableMaxLife(this: void, d: destructable): real;
+declare function GetDestructableMaxLife(d: destructable): real;
 
 /**
  * @param d
  * @param life
  * @param birth
  */
-declare function DestructableRestoreLife(this: void, d: destructable, life: real, birth: boolean): nothing;
+declare function DestructableRestoreLife(d: destructable, life: real, birth: boolean): nothing;
 
 /**
  * @param d
  * @param whichAnimation
  */
-declare function QueueDestructableAnimation(this: void, d: destructable, whichAnimation: string): nothing;
+declare function QueueDestructableAnimation(d: destructable, whichAnimation: string): nothing;
 
 /**
  * @param d
  * @param whichAnimation
  */
-declare function SetDestructableAnimation(this: void, d: destructable, whichAnimation: string): nothing;
+declare function SetDestructableAnimation(d: destructable, whichAnimation: string): nothing;
 
 /**
  * @param d
  * @param speedFactor
  */
-declare function SetDestructableAnimationSpeed(this: void, d: destructable, speedFactor: real): nothing;
+declare function SetDestructableAnimationSpeed(d: destructable, speedFactor: real): nothing;
 
 /**
  * @param d
  * @param flag
  */
-declare function ShowDestructable(this: void, d: destructable, flag: boolean): nothing;
+declare function ShowDestructable(d: destructable, flag: boolean): nothing;
 
 /**
  * @param d
  */
-declare function GetDestructableOccluderHeight(this: void, d: destructable): real;
+declare function GetDestructableOccluderHeight(d: destructable): real;
 
 /**
  * @param d
  * @param height
  */
-declare function SetDestructableOccluderHeight(this: void, d: destructable, height: real): nothing;
+declare function SetDestructableOccluderHeight(d: destructable, height: real): nothing;
 
 /**
  * @param d
  */
-declare function GetDestructableName(this: void, d: destructable): string;
+declare function GetDestructableName(d: destructable): string;
 
 /**
  */
-declare function GetTriggerDestructable(this: void): destructable;
+declare function GetTriggerDestructable(): destructable;
 
 /**
  * @param itemid
  * @param x
  * @param y
  */
-declare function CreateItem(this: void, itemid: integer, x: real, y: real): item;
+declare function CreateItem(itemid: integer, x: real, y: real): item;
 
 /**
  * @param whichItem
  */
-declare function RemoveItem(this: void, whichItem: item): nothing;
+declare function RemoveItem(whichItem: item): nothing;
 
 /**
  * @param whichItem
  */
-declare function GetItemPlayer(this: void, whichItem: item): player;
+declare function GetItemPlayer(whichItem: item): player;
 
 /**
  * @param i
  */
-declare function GetItemTypeId(this: void, i: item): integer;
+declare function GetItemTypeId(i: item): integer;
 
 /**
  * @param i
  */
-declare function GetItemX(this: void, i: item): real;
+declare function GetItemX(i: item): real;
 
 /**
  * @param i
  */
-declare function GetItemY(this: void, i: item): real;
+declare function GetItemY(i: item): real;
 
 /**
  * @param i
  * @param x
  * @param y
  */
-declare function SetItemPosition(this: void, i: item, x: real, y: real): nothing;
+declare function SetItemPosition(i: item, x: real, y: real): nothing;
 
 /**
  * @param whichItem
  * @param flag
  */
-declare function SetItemDropOnDeath(this: void, whichItem: item, flag: boolean): nothing;
+declare function SetItemDropOnDeath(whichItem: item, flag: boolean): nothing;
 
 /**
  * @param i
  * @param flag
  */
-declare function SetItemDroppable(this: void, i: item, flag: boolean): nothing;
+declare function SetItemDroppable(i: item, flag: boolean): nothing;
 
 /**
  * @param i
  * @param flag
  */
-declare function SetItemPawnable(this: void, i: item, flag: boolean): nothing;
+declare function SetItemPawnable(i: item, flag: boolean): nothing;
 
 /**
  * @param whichItem
  * @param whichPlayer
  * @param changeColor
  */
-declare function SetItemPlayer(this: void, whichItem: item, whichPlayer: player, changeColor: boolean): nothing;
+declare function SetItemPlayer(whichItem: item, whichPlayer: player, changeColor: boolean): nothing;
 
 /**
  * @param whichItem
  * @param flag
  */
-declare function SetItemInvulnerable(this: void, whichItem: item, flag: boolean): nothing;
+declare function SetItemInvulnerable(whichItem: item, flag: boolean): nothing;
 
 /**
  * @param whichItem
  */
-declare function IsItemInvulnerable(this: void, whichItem: item): boolean;
+declare function IsItemInvulnerable(whichItem: item): boolean;
 
 /**
  * @param whichItem
  * @param show
  */
-declare function SetItemVisible(this: void, whichItem: item, show: boolean): nothing;
+declare function SetItemVisible(whichItem: item, show: boolean): nothing;
 
 /**
  * @param whichItem
  */
-declare function IsItemVisible(this: void, whichItem: item): boolean;
+declare function IsItemVisible(whichItem: item): boolean;
 
 /**
  * @param whichItem
  */
-declare function IsItemOwned(this: void, whichItem: item): boolean;
+declare function IsItemOwned(whichItem: item): boolean;
 
 /**
  * @param whichItem
  */
-declare function IsItemPowerup(this: void, whichItem: item): boolean;
+declare function IsItemPowerup(whichItem: item): boolean;
 
 /**
  * @param whichItem
  */
-declare function IsItemSellable(this: void, whichItem: item): boolean;
+declare function IsItemSellable(whichItem: item): boolean;
 
 /**
  * @param whichItem
  */
-declare function IsItemPawnable(this: void, whichItem: item): boolean;
+declare function IsItemPawnable(whichItem: item): boolean;
 
 /**
  * @param itemId
  */
-declare function IsItemIdPowerup(this: void, itemId: integer): boolean;
+declare function IsItemIdPowerup(itemId: integer): boolean;
 
 /**
  * @param itemId
  */
-declare function IsItemIdSellable(this: void, itemId: integer): boolean;
+declare function IsItemIdSellable(itemId: integer): boolean;
 
 /**
  * @param itemId
  */
-declare function IsItemIdPawnable(this: void, itemId: integer): boolean;
+declare function IsItemIdPawnable(itemId: integer): boolean;
 
 /**
  * @param r
  * @param filter
  * @param actionFunc
  */
-declare function EnumItemsInRect(this: void, r: rect, filter: boolexpr, actionFunc: code): nothing;
+declare function EnumItemsInRect(r: rect, filter: boolexpr, actionFunc: code): nothing;
 
 /**
  * @param whichItem
  */
-declare function GetItemLevel(this: void, whichItem: item): integer;
+declare function GetItemLevel(whichItem: item): integer;
 
 /**
  * @param whichItem
  */
-declare function GetItemType(this: void, whichItem: item): itemtype;
+declare function GetItemType(whichItem: item): itemtype;
 
 /**
  * @param whichItem
  * @param unitId
  */
-declare function SetItemDropID(this: void, whichItem: item, unitId: integer): nothing;
+declare function SetItemDropID(whichItem: item, unitId: integer): nothing;
 
 /**
  * @param whichItem
  */
-declare function GetItemName(this: void, whichItem: item): string;
+declare function GetItemName(whichItem: item): string;
 
 /**
  * @param whichItem
  */
-declare function GetItemCharges(this: void, whichItem: item): integer;
+declare function GetItemCharges(whichItem: item): integer;
 
 /**
  * @param whichItem
  * @param charges
  */
-declare function SetItemCharges(this: void, whichItem: item, charges: integer): nothing;
+declare function SetItemCharges(whichItem: item, charges: integer): nothing;
 
 /**
  * @param whichItem
  */
-declare function GetItemUserData(this: void, whichItem: item): integer;
+declare function GetItemUserData(whichItem: item): integer;
 
 /**
  * @param whichItem
  * @param data
  */
-declare function SetItemUserData(this: void, whichItem: item, data: integer): nothing;
+declare function SetItemUserData(whichItem: item, data: integer): nothing;
 
 /**
  * @param id
@@ -10886,7 +10887,7 @@ declare function SetItemUserData(this: void, whichItem: item, data: integer): no
  * @param y
  * @param face
  */
-declare function CreateUnit(this: void, id: player, unitid: integer, x: real, y: real, face: real): unit;
+declare function CreateUnit(id: player, unitid: integer, x: real, y: real, face: real): unit;
 
 /**
  * @param whichPlayer
@@ -10895,7 +10896,7 @@ declare function CreateUnit(this: void, id: player, unitid: integer, x: real, y:
  * @param y
  * @param face
  */
-declare function CreateUnitByName(this: void, whichPlayer: player, unitname: string, x: real, y: real, face: real): unit;
+declare function CreateUnitByName(whichPlayer: player, unitname: string, x: real, y: real, face: real): unit;
 
 /**
  * @param id
@@ -10903,7 +10904,7 @@ declare function CreateUnitByName(this: void, whichPlayer: player, unitname: str
  * @param whichLocation
  * @param face
  */
-declare function CreateUnitAtLoc(this: void, id: player, unitid: integer, whichLocation: location, face: real): unit;
+declare function CreateUnitAtLoc(id: player, unitid: integer, whichLocation: location, face: real): unit;
 
 /**
  * @param id
@@ -10911,7 +10912,7 @@ declare function CreateUnitAtLoc(this: void, id: player, unitid: integer, whichL
  * @param whichLocation
  * @param face
  */
-declare function CreateUnitAtLocByName(this: void, id: player, unitname: string, whichLocation: location, face: real): unit;
+declare function CreateUnitAtLocByName(id: player, unitname: string, whichLocation: location, face: real): unit;
 
 /**
  * @param whichPlayer
@@ -10920,158 +10921,158 @@ declare function CreateUnitAtLocByName(this: void, id: player, unitname: string,
  * @param y
  * @param face
  */
-declare function CreateCorpse(this: void, whichPlayer: player, unitid: integer, x: real, y: real, face: real): unit;
+declare function CreateCorpse(whichPlayer: player, unitid: integer, x: real, y: real, face: real): unit;
 
 /**
  * @param whichUnit
  */
-declare function KillUnit(this: void, whichUnit: unit): nothing;
+declare function KillUnit(whichUnit: unit): nothing;
 
 /**
  * @param whichUnit
  */
-declare function RemoveUnit(this: void, whichUnit: unit): nothing;
+declare function RemoveUnit(whichUnit: unit): nothing;
 
 /**
  * @param whichUnit
  * @param show
  */
-declare function ShowUnit(this: void, whichUnit: unit, show: boolean): nothing;
+declare function ShowUnit(whichUnit: unit, show: boolean): nothing;
 
 /**
  * @param whichUnit
  * @param whichUnitState
  * @param newVal
  */
-declare function SetUnitState(this: void, whichUnit: unit, whichUnitState: unitstate, newVal: real): nothing;
+declare function SetUnitState(whichUnit: unit, whichUnitState: unitstate, newVal: real): nothing;
 
 /**
  * @param whichUnit
  * @param newX
  */
-declare function SetUnitX(this: void, whichUnit: unit, newX: real): nothing;
+declare function SetUnitX(whichUnit: unit, newX: real): nothing;
 
 /**
  * @param whichUnit
  * @param newY
  */
-declare function SetUnitY(this: void, whichUnit: unit, newY: real): nothing;
+declare function SetUnitY(whichUnit: unit, newY: real): nothing;
 
 /**
  * @param whichUnit
  * @param newX
  * @param newY
  */
-declare function SetUnitPosition(this: void, whichUnit: unit, newX: real, newY: real): nothing;
+declare function SetUnitPosition(whichUnit: unit, newX: real, newY: real): nothing;
 
 /**
  * @param whichUnit
  * @param whichLocation
  */
-declare function SetUnitPositionLoc(this: void, whichUnit: unit, whichLocation: location): nothing;
+declare function SetUnitPositionLoc(whichUnit: unit, whichLocation: location): nothing;
 
 /**
  * @param whichUnit
  * @param facingAngle
  */
-declare function SetUnitFacing(this: void, whichUnit: unit, facingAngle: real): nothing;
+declare function SetUnitFacing(whichUnit: unit, facingAngle: real): nothing;
 
 /**
  * @param whichUnit
  * @param facingAngle
  * @param duration
  */
-declare function SetUnitFacingTimed(this: void, whichUnit: unit, facingAngle: real, duration: real): nothing;
+declare function SetUnitFacingTimed(whichUnit: unit, facingAngle: real, duration: real): nothing;
 
 /**
  * @param whichUnit
  * @param newSpeed
  */
-declare function SetUnitMoveSpeed(this: void, whichUnit: unit, newSpeed: real): nothing;
+declare function SetUnitMoveSpeed(whichUnit: unit, newSpeed: real): nothing;
 
 /**
  * @param whichUnit
  * @param newHeight
  * @param rate
  */
-declare function SetUnitFlyHeight(this: void, whichUnit: unit, newHeight: real, rate: real): nothing;
+declare function SetUnitFlyHeight(whichUnit: unit, newHeight: real, rate: real): nothing;
 
 /**
  * @param whichUnit
  * @param newTurnSpeed
  */
-declare function SetUnitTurnSpeed(this: void, whichUnit: unit, newTurnSpeed: real): nothing;
+declare function SetUnitTurnSpeed(whichUnit: unit, newTurnSpeed: real): nothing;
 
 /**
  * @param whichUnit
  * @param newPropWindowAngle
  */
-declare function SetUnitPropWindow(this: void, whichUnit: unit, newPropWindowAngle: real): nothing;
+declare function SetUnitPropWindow(whichUnit: unit, newPropWindowAngle: real): nothing;
 
 /**
  * @param whichUnit
  * @param newAcquireRange
  */
-declare function SetUnitAcquireRange(this: void, whichUnit: unit, newAcquireRange: real): nothing;
+declare function SetUnitAcquireRange(whichUnit: unit, newAcquireRange: real): nothing;
 
 /**
  * @param whichUnit
  * @param creepGuard
  */
-declare function SetUnitCreepGuard(this: void, whichUnit: unit, creepGuard: boolean): nothing;
+declare function SetUnitCreepGuard(whichUnit: unit, creepGuard: boolean): nothing;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitAcquireRange(this: void, whichUnit: unit): real;
+declare function GetUnitAcquireRange(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitTurnSpeed(this: void, whichUnit: unit): real;
+declare function GetUnitTurnSpeed(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitPropWindow(this: void, whichUnit: unit): real;
+declare function GetUnitPropWindow(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitFlyHeight(this: void, whichUnit: unit): real;
+declare function GetUnitFlyHeight(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitDefaultAcquireRange(this: void, whichUnit: unit): real;
+declare function GetUnitDefaultAcquireRange(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitDefaultTurnSpeed(this: void, whichUnit: unit): real;
+declare function GetUnitDefaultTurnSpeed(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitDefaultPropWindow(this: void, whichUnit: unit): real;
+declare function GetUnitDefaultPropWindow(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitDefaultFlyHeight(this: void, whichUnit: unit): real;
+declare function GetUnitDefaultFlyHeight(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  * @param whichPlayer
  * @param changeColor
  */
-declare function SetUnitOwner(this: void, whichUnit: unit, whichPlayer: player, changeColor: boolean): nothing;
+declare function SetUnitOwner(whichUnit: unit, whichPlayer: player, changeColor: boolean): nothing;
 
 /**
  * @param whichUnit
  * @param whichColor
  */
-declare function SetUnitColor(this: void, whichUnit: unit, whichColor: playercolor): nothing;
+declare function SetUnitColor(whichUnit: unit, whichColor: playercolor): nothing;
 
 /**
  * @param whichUnit
@@ -11079,19 +11080,19 @@ declare function SetUnitColor(this: void, whichUnit: unit, whichColor: playercol
  * @param scaleY
  * @param scaleZ
  */
-declare function SetUnitScale(this: void, whichUnit: unit, scaleX: real, scaleY: real, scaleZ: real): nothing;
+declare function SetUnitScale(whichUnit: unit, scaleX: real, scaleY: real, scaleZ: real): nothing;
 
 /**
  * @param whichUnit
  * @param timeScale
  */
-declare function SetUnitTimeScale(this: void, whichUnit: unit, timeScale: real): nothing;
+declare function SetUnitTimeScale(whichUnit: unit, timeScale: real): nothing;
 
 /**
  * @param whichUnit
  * @param blendTime
  */
-declare function SetUnitBlendTime(this: void, whichUnit: unit, blendTime: real): nothing;
+declare function SetUnitBlendTime(whichUnit: unit, blendTime: real): nothing;
 
 /**
  * @param whichUnit
@@ -11100,39 +11101,39 @@ declare function SetUnitBlendTime(this: void, whichUnit: unit, blendTime: real):
  * @param blue
  * @param alpha
  */
-declare function SetUnitVertexColor(this: void, whichUnit: unit, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function SetUnitVertexColor(whichUnit: unit, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param whichUnit
  * @param whichAnimation
  */
-declare function QueueUnitAnimation(this: void, whichUnit: unit, whichAnimation: string): nothing;
+declare function QueueUnitAnimation(whichUnit: unit, whichAnimation: string): nothing;
 
 /**
  * @param whichUnit
  * @param whichAnimation
  */
-declare function SetUnitAnimation(this: void, whichUnit: unit, whichAnimation: string): nothing;
+declare function SetUnitAnimation(whichUnit: unit, whichAnimation: string): nothing;
 
 /**
  * @param whichUnit
  * @param whichAnimation
  */
-declare function SetUnitAnimationByIndex(this: void, whichUnit: unit, whichAnimation: integer): nothing;
+declare function SetUnitAnimationByIndex(whichUnit: unit, whichAnimation: integer): nothing;
 
 /**
  * @param whichUnit
  * @param whichAnimation
  * @param rarity
  */
-declare function SetUnitAnimationWithRarity(this: void, whichUnit: unit, whichAnimation: string, rarity: raritycontrol): nothing;
+declare function SetUnitAnimationWithRarity(whichUnit: unit, whichAnimation: string, rarity: raritycontrol): nothing;
 
 /**
  * @param whichUnit
  * @param animProperties
  * @param add
  */
-declare function AddUnitAnimationProperties(this: void, whichUnit: unit, animProperties: string, add: boolean): nothing;
+declare function AddUnitAnimationProperties(whichUnit: unit, animProperties: string, add: boolean): nothing;
 
 /**
  * @param whichUnit
@@ -11142,164 +11143,164 @@ declare function AddUnitAnimationProperties(this: void, whichUnit: unit, animPro
  * @param offsetY
  * @param offsetZ
  */
-declare function SetUnitLookAt(this: void, whichUnit: unit, whichBone: string, lookAtTarget: unit, offsetX: real, offsetY: real, offsetZ: real): nothing;
+declare function SetUnitLookAt(whichUnit: unit, whichBone: string, lookAtTarget: unit, offsetX: real, offsetY: real, offsetZ: real): nothing;
 
 /**
  * @param whichUnit
  */
-declare function ResetUnitLookAt(this: void, whichUnit: unit): nothing;
+declare function ResetUnitLookAt(whichUnit: unit): nothing;
 
 /**
  * @param whichUnit
  * @param byWhichPlayer
  * @param flag
  */
-declare function SetUnitRescuable(this: void, whichUnit: unit, byWhichPlayer: player, flag: boolean): nothing;
+declare function SetUnitRescuable(whichUnit: unit, byWhichPlayer: player, flag: boolean): nothing;
 
 /**
  * @param whichUnit
  * @param range
  */
-declare function SetUnitRescueRange(this: void, whichUnit: unit, range: real): nothing;
+declare function SetUnitRescueRange(whichUnit: unit, range: real): nothing;
 
 /**
  * @param whichHero
  * @param newStr
  * @param permanent
  */
-declare function SetHeroStr(this: void, whichHero: unit, newStr: integer, permanent: boolean): nothing;
+declare function SetHeroStr(whichHero: unit, newStr: integer, permanent: boolean): nothing;
 
 /**
  * @param whichHero
  * @param newAgi
  * @param permanent
  */
-declare function SetHeroAgi(this: void, whichHero: unit, newAgi: integer, permanent: boolean): nothing;
+declare function SetHeroAgi(whichHero: unit, newAgi: integer, permanent: boolean): nothing;
 
 /**
  * @param whichHero
  * @param newInt
  * @param permanent
  */
-declare function SetHeroInt(this: void, whichHero: unit, newInt: integer, permanent: boolean): nothing;
+declare function SetHeroInt(whichHero: unit, newInt: integer, permanent: boolean): nothing;
 
 /**
  * @param whichHero
  * @param includeBonuses
  */
-declare function GetHeroStr(this: void, whichHero: unit, includeBonuses: boolean): integer;
+declare function GetHeroStr(whichHero: unit, includeBonuses: boolean): integer;
 
 /**
  * @param whichHero
  * @param includeBonuses
  */
-declare function GetHeroAgi(this: void, whichHero: unit, includeBonuses: boolean): integer;
+declare function GetHeroAgi(whichHero: unit, includeBonuses: boolean): integer;
 
 /**
  * @param whichHero
  * @param includeBonuses
  */
-declare function GetHeroInt(this: void, whichHero: unit, includeBonuses: boolean): integer;
+declare function GetHeroInt(whichHero: unit, includeBonuses: boolean): integer;
 
 /**
  * @param whichHero
  * @param howManyLevels
  */
-declare function UnitStripHeroLevel(this: void, whichHero: unit, howManyLevels: integer): boolean;
+declare function UnitStripHeroLevel(whichHero: unit, howManyLevels: integer): boolean;
 
 /**
  * @param whichHero
  */
-declare function GetHeroXP(this: void, whichHero: unit): integer;
+declare function GetHeroXP(whichHero: unit): integer;
 
 /**
  * @param whichHero
  * @param newXpVal
  * @param showEyeCandy
  */
-declare function SetHeroXP(this: void, whichHero: unit, newXpVal: integer, showEyeCandy: boolean): nothing;
+declare function SetHeroXP(whichHero: unit, newXpVal: integer, showEyeCandy: boolean): nothing;
 
 /**
  * @param whichHero
  */
-declare function GetHeroSkillPoints(this: void, whichHero: unit): integer;
+declare function GetHeroSkillPoints(whichHero: unit): integer;
 
 /**
  * @param whichHero
  * @param skillPointDelta
  */
-declare function UnitModifySkillPoints(this: void, whichHero: unit, skillPointDelta: integer): boolean;
+declare function UnitModifySkillPoints(whichHero: unit, skillPointDelta: integer): boolean;
 
 /**
  * @param whichHero
  * @param xpToAdd
  * @param showEyeCandy
  */
-declare function AddHeroXP(this: void, whichHero: unit, xpToAdd: integer, showEyeCandy: boolean): nothing;
+declare function AddHeroXP(whichHero: unit, xpToAdd: integer, showEyeCandy: boolean): nothing;
 
 /**
  * @param whichHero
  * @param level
  * @param showEyeCandy
  */
-declare function SetHeroLevel(this: void, whichHero: unit, level: integer, showEyeCandy: boolean): nothing;
+declare function SetHeroLevel(whichHero: unit, level: integer, showEyeCandy: boolean): nothing;
 
 /**
  * @param whichHero
  */
-declare function GetHeroLevel(this: void, whichHero: unit): integer;
+declare function GetHeroLevel(whichHero: unit): integer;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitLevel(this: void, whichUnit: unit): integer;
+declare function GetUnitLevel(whichUnit: unit): integer;
 
 /**
  * @param whichHero
  */
-declare function GetHeroProperName(this: void, whichHero: unit): string;
+declare function GetHeroProperName(whichHero: unit): string;
 
 /**
  * @param whichHero
  * @param flag
  */
-declare function SuspendHeroXP(this: void, whichHero: unit, flag: boolean): nothing;
+declare function SuspendHeroXP(whichHero: unit, flag: boolean): nothing;
 
 /**
  * @param whichHero
  */
-declare function IsSuspendedXP(this: void, whichHero: unit): boolean;
+declare function IsSuspendedXP(whichHero: unit): boolean;
 
 /**
  * @param whichHero
  * @param abilcode
  */
-declare function SelectHeroSkill(this: void, whichHero: unit, abilcode: integer): nothing;
+declare function SelectHeroSkill(whichHero: unit, abilcode: integer): nothing;
 
 /**
  * @param whichUnit
  * @param abilcode
  */
-declare function GetUnitAbilityLevel(this: void, whichUnit: unit, abilcode: integer): integer;
+declare function GetUnitAbilityLevel(whichUnit: unit, abilcode: integer): integer;
 
 /**
  * @param whichUnit
  * @param abilcode
  */
-declare function DecUnitAbilityLevel(this: void, whichUnit: unit, abilcode: integer): integer;
+declare function DecUnitAbilityLevel(whichUnit: unit, abilcode: integer): integer;
 
 /**
  * @param whichUnit
  * @param abilcode
  */
-declare function IncUnitAbilityLevel(this: void, whichUnit: unit, abilcode: integer): integer;
+declare function IncUnitAbilityLevel(whichUnit: unit, abilcode: integer): integer;
 
 /**
  * @param whichUnit
  * @param abilcode
  * @param level
  */
-declare function SetUnitAbilityLevel(this: void, whichUnit: unit, abilcode: integer, level: integer): integer;
+declare function SetUnitAbilityLevel(whichUnit: unit, abilcode: integer, level: integer): integer;
 
 /**
  * @param whichHero
@@ -11307,111 +11308,111 @@ declare function SetUnitAbilityLevel(this: void, whichUnit: unit, abilcode: inte
  * @param y
  * @param doEyecandy
  */
-declare function ReviveHero(this: void, whichHero: unit, x: real, y: real, doEyecandy: boolean): boolean;
+declare function ReviveHero(whichHero: unit, x: real, y: real, doEyecandy: boolean): boolean;
 
 /**
  * @param whichHero
  * @param loc
  * @param doEyecandy
  */
-declare function ReviveHeroLoc(this: void, whichHero: unit, loc: location, doEyecandy: boolean): boolean;
+declare function ReviveHeroLoc(whichHero: unit, loc: location, doEyecandy: boolean): boolean;
 
 /**
  * @param whichUnit
  * @param exploded
  */
-declare function SetUnitExploded(this: void, whichUnit: unit, exploded: boolean): nothing;
+declare function SetUnitExploded(whichUnit: unit, exploded: boolean): nothing;
 
 /**
  * @param whichUnit
  * @param flag
  */
-declare function SetUnitInvulnerable(this: void, whichUnit: unit, flag: boolean): nothing;
+declare function SetUnitInvulnerable(whichUnit: unit, flag: boolean): nothing;
 
 /**
  * @param whichUnit
  * @param flag
  */
-declare function PauseUnit(this: void, whichUnit: unit, flag: boolean): nothing;
+declare function PauseUnit(whichUnit: unit, flag: boolean): nothing;
 
 /**
  * @param whichHero
  */
-declare function IsUnitPaused(this: void, whichHero: unit): boolean;
+declare function IsUnitPaused(whichHero: unit): boolean;
 
 /**
  * @param whichUnit
  * @param flag
  */
-declare function SetUnitPathing(this: void, whichUnit: unit, flag: boolean): nothing;
+declare function SetUnitPathing(whichUnit: unit, flag: boolean): nothing;
 
 /**
  */
-declare function ClearSelection(this: void): nothing;
+declare function ClearSelection(): nothing;
 
 /**
  * @param whichUnit
  * @param flag
  */
-declare function SelectUnit(this: void, whichUnit: unit, flag: boolean): nothing;
+declare function SelectUnit(whichUnit: unit, flag: boolean): nothing;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitPointValue(this: void, whichUnit: unit): integer;
+declare function GetUnitPointValue(whichUnit: unit): integer;
 
 /**
  * @param unitType
  */
-declare function GetUnitPointValueByType(this: void, unitType: integer): integer;
+declare function GetUnitPointValueByType(unitType: integer): integer;
 
 /**
  * @param whichUnit
  * @param whichItem
  */
-declare function UnitAddItem(this: void, whichUnit: unit, whichItem: item): boolean;
+declare function UnitAddItem(whichUnit: unit, whichItem: item): boolean;
 
 /**
  * @param whichUnit
  * @param itemId
  */
-declare function UnitAddItemById(this: void, whichUnit: unit, itemId: integer): item;
+declare function UnitAddItemById(whichUnit: unit, itemId: integer): item;
 
 /**
  * @param whichUnit
  * @param itemId
  * @param itemSlot
  */
-declare function UnitAddItemToSlotById(this: void, whichUnit: unit, itemId: integer, itemSlot: integer): boolean;
+declare function UnitAddItemToSlotById(whichUnit: unit, itemId: integer, itemSlot: integer): boolean;
 
 /**
  * @param whichUnit
  * @param whichItem
  */
-declare function UnitRemoveItem(this: void, whichUnit: unit, whichItem: item): nothing;
+declare function UnitRemoveItem(whichUnit: unit, whichItem: item): nothing;
 
 /**
  * @param whichUnit
  * @param itemSlot
  */
-declare function UnitRemoveItemFromSlot(this: void, whichUnit: unit, itemSlot: integer): item;
+declare function UnitRemoveItemFromSlot(whichUnit: unit, itemSlot: integer): item;
 
 /**
  * @param whichUnit
  * @param whichItem
  */
-declare function UnitHasItem(this: void, whichUnit: unit, whichItem: item): boolean;
+declare function UnitHasItem(whichUnit: unit, whichItem: item): boolean;
 
 /**
  * @param whichUnit
  * @param itemSlot
  */
-declare function UnitItemInSlot(this: void, whichUnit: unit, itemSlot: integer): item;
+declare function UnitItemInSlot(whichUnit: unit, itemSlot: integer): item;
 
 /**
  * @param whichUnit
  */
-declare function UnitInventorySize(this: void, whichUnit: unit): integer;
+declare function UnitInventorySize(whichUnit: unit): integer;
 
 /**
  * @param whichUnit
@@ -11419,27 +11420,27 @@ declare function UnitInventorySize(this: void, whichUnit: unit): integer;
  * @param x
  * @param y
  */
-declare function UnitDropItemPoint(this: void, whichUnit: unit, whichItem: item, x: real, y: real): boolean;
+declare function UnitDropItemPoint(whichUnit: unit, whichItem: item, x: real, y: real): boolean;
 
 /**
  * @param whichUnit
  * @param whichItem
  * @param slot
  */
-declare function UnitDropItemSlot(this: void, whichUnit: unit, whichItem: item, slot: integer): boolean;
+declare function UnitDropItemSlot(whichUnit: unit, whichItem: item, slot: integer): boolean;
 
 /**
  * @param whichUnit
  * @param whichItem
  * @param target
  */
-declare function UnitDropItemTarget(this: void, whichUnit: unit, whichItem: item, target: widget): boolean;
+declare function UnitDropItemTarget(whichUnit: unit, whichItem: item, target: widget): boolean;
 
 /**
  * @param whichUnit
  * @param whichItem
  */
-declare function UnitUseItem(this: void, whichUnit: unit, whichItem: item): boolean;
+declare function UnitUseItem(whichUnit: unit, whichItem: item): boolean;
 
 /**
  * @param whichUnit
@@ -11447,202 +11448,202 @@ declare function UnitUseItem(this: void, whichUnit: unit, whichItem: item): bool
  * @param x
  * @param y
  */
-declare function UnitUseItemPoint(this: void, whichUnit: unit, whichItem: item, x: real, y: real): boolean;
+declare function UnitUseItemPoint(whichUnit: unit, whichItem: item, x: real, y: real): boolean;
 
 /**
  * @param whichUnit
  * @param whichItem
  * @param target
  */
-declare function UnitUseItemTarget(this: void, whichUnit: unit, whichItem: item, target: widget): boolean;
+declare function UnitUseItemTarget(whichUnit: unit, whichItem: item, target: widget): boolean;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitX(this: void, whichUnit: unit): real;
+declare function GetUnitX(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitY(this: void, whichUnit: unit): real;
+declare function GetUnitY(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitLoc(this: void, whichUnit: unit): location;
+declare function GetUnitLoc(whichUnit: unit): location;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitFacing(this: void, whichUnit: unit): real;
+declare function GetUnitFacing(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitMoveSpeed(this: void, whichUnit: unit): real;
+declare function GetUnitMoveSpeed(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitDefaultMoveSpeed(this: void, whichUnit: unit): real;
+declare function GetUnitDefaultMoveSpeed(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  * @param whichUnitState
  */
-declare function GetUnitState(this: void, whichUnit: unit, whichUnitState: unitstate): real;
+declare function GetUnitState(whichUnit: unit, whichUnitState: unitstate): real;
 
 /**
  * @param whichUnit
  */
-declare function GetOwningPlayer(this: void, whichUnit: unit): player;
+declare function GetOwningPlayer(whichUnit: unit): player;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitTypeId(this: void, whichUnit: unit): integer;
+declare function GetUnitTypeId(whichUnit: unit): integer;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitRace(this: void, whichUnit: unit): race;
+declare function GetUnitRace(whichUnit: unit): race;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitName(this: void, whichUnit: unit): string;
+declare function GetUnitName(whichUnit: unit): string;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitFoodUsed(this: void, whichUnit: unit): integer;
+declare function GetUnitFoodUsed(whichUnit: unit): integer;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitFoodMade(this: void, whichUnit: unit): integer;
+declare function GetUnitFoodMade(whichUnit: unit): integer;
 
 /**
  * @param unitId
  */
-declare function GetFoodMade(this: void, unitId: integer): integer;
+declare function GetFoodMade(unitId: integer): integer;
 
 /**
  * @param unitId
  */
-declare function GetFoodUsed(this: void, unitId: integer): integer;
+declare function GetFoodUsed(unitId: integer): integer;
 
 /**
  * @param whichUnit
  * @param useFood
  */
-declare function SetUnitUseFood(this: void, whichUnit: unit, useFood: boolean): nothing;
+declare function SetUnitUseFood(whichUnit: unit, useFood: boolean): nothing;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitRallyPoint(this: void, whichUnit: unit): location;
+declare function GetUnitRallyPoint(whichUnit: unit): location;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitRallyUnit(this: void, whichUnit: unit): unit;
+declare function GetUnitRallyUnit(whichUnit: unit): unit;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitRallyDestructable(this: void, whichUnit: unit): destructable;
+declare function GetUnitRallyDestructable(whichUnit: unit): destructable;
 
 /**
  * @param whichUnit
  * @param whichGroup
  */
-declare function IsUnitInGroup(this: void, whichUnit: unit, whichGroup: group): boolean;
+declare function IsUnitInGroup(whichUnit: unit, whichGroup: group): boolean;
 
 /**
  * @param whichUnit
  * @param whichForce
  */
-declare function IsUnitInForce(this: void, whichUnit: unit, whichForce: force): boolean;
+declare function IsUnitInForce(whichUnit: unit, whichForce: force): boolean;
 
 /**
  * @param whichUnit
  * @param whichPlayer
  */
-declare function IsUnitOwnedByPlayer(this: void, whichUnit: unit, whichPlayer: player): boolean;
+declare function IsUnitOwnedByPlayer(whichUnit: unit, whichPlayer: player): boolean;
 
 /**
  * @param whichUnit
  * @param whichPlayer
  */
-declare function IsUnitAlly(this: void, whichUnit: unit, whichPlayer: player): boolean;
+declare function IsUnitAlly(whichUnit: unit, whichPlayer: player): boolean;
 
 /**
  * @param whichUnit
  * @param whichPlayer
  */
-declare function IsUnitEnemy(this: void, whichUnit: unit, whichPlayer: player): boolean;
+declare function IsUnitEnemy(whichUnit: unit, whichPlayer: player): boolean;
 
 /**
  * @param whichUnit
  * @param whichPlayer
  */
-declare function IsUnitVisible(this: void, whichUnit: unit, whichPlayer: player): boolean;
+declare function IsUnitVisible(whichUnit: unit, whichPlayer: player): boolean;
 
 /**
  * @param whichUnit
  * @param whichPlayer
  */
-declare function IsUnitDetected(this: void, whichUnit: unit, whichPlayer: player): boolean;
+declare function IsUnitDetected(whichUnit: unit, whichPlayer: player): boolean;
 
 /**
  * @param whichUnit
  * @param whichPlayer
  */
-declare function IsUnitInvisible(this: void, whichUnit: unit, whichPlayer: player): boolean;
+declare function IsUnitInvisible(whichUnit: unit, whichPlayer: player): boolean;
 
 /**
  * @param whichUnit
  * @param whichPlayer
  */
-declare function IsUnitFogged(this: void, whichUnit: unit, whichPlayer: player): boolean;
+declare function IsUnitFogged(whichUnit: unit, whichPlayer: player): boolean;
 
 /**
  * @param whichUnit
  * @param whichPlayer
  */
-declare function IsUnitMasked(this: void, whichUnit: unit, whichPlayer: player): boolean;
+declare function IsUnitMasked(whichUnit: unit, whichPlayer: player): boolean;
 
 /**
  * @param whichUnit
  * @param whichPlayer
  */
-declare function IsUnitSelected(this: void, whichUnit: unit, whichPlayer: player): boolean;
+declare function IsUnitSelected(whichUnit: unit, whichPlayer: player): boolean;
 
 /**
  * @param whichUnit
  * @param whichRace
  */
-declare function IsUnitRace(this: void, whichUnit: unit, whichRace: race): boolean;
+declare function IsUnitRace(whichUnit: unit, whichRace: race): boolean;
 
 /**
  * @param whichUnit
  * @param whichUnitType
  */
-declare function IsUnitType(this: void, whichUnit: unit, whichUnitType: unittype): boolean;
+declare function IsUnitType(whichUnit: unit, whichUnitType: unittype): boolean;
 
 /**
  * @param whichUnit
  * @param whichSpecifiedUnit
  */
-declare function IsUnit(this: void, whichUnit: unit, whichSpecifiedUnit: unit): boolean;
+declare function IsUnit(whichUnit: unit, whichSpecifiedUnit: unit): boolean;
 
 /**
  * @param whichUnit
  * @param otherUnit
  * @param distance
  */
-declare function IsUnitInRange(this: void, whichUnit: unit, otherUnit: unit, distance: real): boolean;
+declare function IsUnitInRange(whichUnit: unit, otherUnit: unit, distance: real): boolean;
 
 /**
  * @param whichUnit
@@ -11650,109 +11651,97 @@ declare function IsUnitInRange(this: void, whichUnit: unit, otherUnit: unit, dis
  * @param y
  * @param distance
  */
-declare function IsUnitInRangeXY(this: void, whichUnit: unit, x: real, y: real, distance: real): boolean;
+declare function IsUnitInRangeXY(whichUnit: unit, x: real, y: real, distance: real): boolean;
 
 /**
  * @param whichUnit
  * @param whichLocation
  * @param distance
  */
-declare function IsUnitInRangeLoc(this: void, whichUnit: unit, whichLocation: location, distance: real): boolean;
+declare function IsUnitInRangeLoc(whichUnit: unit, whichLocation: location, distance: real): boolean;
 
 /**
  * @param whichUnit
  */
-declare function IsUnitHidden(this: void, whichUnit: unit): boolean;
+declare function IsUnitHidden(whichUnit: unit): boolean;
 
 /**
  * @param whichUnit
  */
-declare function IsUnitIllusion(this: void, whichUnit: unit): boolean;
+declare function IsUnitIllusion(whichUnit: unit): boolean;
 
 /**
  * @param whichUnit
  * @param whichTransport
  */
-declare function IsUnitInTransport(this: void, whichUnit: unit, whichTransport: unit): boolean;
+declare function IsUnitInTransport(whichUnit: unit, whichTransport: unit): boolean;
 
 /**
  * @param whichUnit
  */
-declare function IsUnitLoaded(this: void, whichUnit: unit): boolean;
+declare function IsUnitLoaded(whichUnit: unit): boolean;
 
 /**
  * @param unitId
  */
-declare function IsHeroUnitId(this: void, unitId: integer): boolean;
+declare function IsHeroUnitId(unitId: integer): boolean;
 
 /**
  * @param unitId
  * @param whichUnitType
  */
-declare function IsUnitIdType(this: void, unitId: integer, whichUnitType: unittype): boolean;
+declare function IsUnitIdType(unitId: integer, whichUnitType: unittype): boolean;
 
 /**
  * @param whichUnit
  * @param whichPlayer
  * @param share
  */
-declare function UnitShareVision(this: void, whichUnit: unit, whichPlayer: player, share: boolean): nothing;
+declare function UnitShareVision(whichUnit: unit, whichPlayer: player, share: boolean): nothing;
 
 /**
  * @param whichUnit
  * @param suspend
  */
-declare function UnitSuspendDecay(this: void, whichUnit: unit, suspend: boolean): nothing;
+declare function UnitSuspendDecay(whichUnit: unit, suspend: boolean): nothing;
 
 /**
  * @param whichUnit
  * @param whichUnitType
  */
-declare function UnitAddType(this: void, whichUnit: unit, whichUnitType: unittype): boolean;
+declare function UnitAddType(whichUnit: unit, whichUnitType: unittype): boolean;
 
 /**
  * @param whichUnit
  * @param whichUnitType
  */
-declare function UnitRemoveType(this: void, whichUnit: unit, whichUnitType: unittype): boolean;
+declare function UnitRemoveType(whichUnit: unit, whichUnitType: unittype): boolean;
 
 /**
  * @param whichUnit
  * @param abilityId
  */
-declare function UnitAddAbility(this: void, whichUnit: unit, abilityId: integer): boolean;
+declare function UnitAddAbility(whichUnit: unit, abilityId: integer): boolean;
 
 /**
  * @param whichUnit
  * @param abilityId
  */
-declare function UnitRemoveAbility(this: void, whichUnit: unit, abilityId: integer): boolean;
+declare function UnitRemoveAbility(whichUnit: unit, abilityId: integer): boolean;
 
 /**
  * @param whichUnit
  * @param permanent
  * @param abilityId
  */
-declare function UnitMakeAbilityPermanent(this: void, whichUnit: unit, permanent: boolean, abilityId: integer): boolean;
+declare function UnitMakeAbilityPermanent(whichUnit: unit, permanent: boolean, abilityId: integer): boolean;
 
 /**
  * @param whichUnit
  * @param removePositive
  * @param removeNegative
  */
-declare function UnitRemoveBuffs(this: void, whichUnit: unit, removePositive: boolean, removeNegative: boolean): nothing;
-
-/**
- * @param whichUnit
- * @param removePositive
- * @param removeNegative
- * @param magic
- * @param physical
- * @param timedLife
- * @param aura
- * @param autoDispel
- */
-declare function UnitRemoveBuffsEx(this: void, whichUnit: unit, removePositive: boolean, removeNegative: boolean, magic: boolean, physical: boolean, timedLife: boolean, aura: boolean, autoDispel: boolean): nothing;
+declare function UnitRemoveBuffs(whichUnit: unit, removePositive: boolean, removeNegative: boolean): nothing;
 
 /**
  * @param whichUnit
@@ -11764,7 +11753,7 @@ declare function UnitRemoveBuffsEx(this: void, whichUnit: unit, removePositive: 
  * @param aura
  * @param autoDispel
  */
-declare function UnitHasBuffsEx(this: void, whichUnit: unit, removePositive: boolean, removeNegative: boolean, magic: boolean, physical: boolean, timedLife: boolean, aura: boolean, autoDispel: boolean): boolean;
+declare function UnitRemoveBuffsEx(whichUnit: unit, removePositive: boolean, removeNegative: boolean, magic: boolean, physical: boolean, timedLife: boolean, aura: boolean, autoDispel: boolean): nothing;
 
 /**
  * @param whichUnit
@@ -11776,86 +11765,98 @@ declare function UnitHasBuffsEx(this: void, whichUnit: unit, removePositive: boo
  * @param aura
  * @param autoDispel
  */
-declare function UnitCountBuffsEx(this: void, whichUnit: unit, removePositive: boolean, removeNegative: boolean, magic: boolean, physical: boolean, timedLife: boolean, aura: boolean, autoDispel: boolean): integer;
+declare function UnitHasBuffsEx(whichUnit: unit, removePositive: boolean, removeNegative: boolean, magic: boolean, physical: boolean, timedLife: boolean, aura: boolean, autoDispel: boolean): boolean;
+
+/**
+ * @param whichUnit
+ * @param removePositive
+ * @param removeNegative
+ * @param magic
+ * @param physical
+ * @param timedLife
+ * @param aura
+ * @param autoDispel
+ */
+declare function UnitCountBuffsEx(whichUnit: unit, removePositive: boolean, removeNegative: boolean, magic: boolean, physical: boolean, timedLife: boolean, aura: boolean, autoDispel: boolean): integer;
 
 /**
  * @param whichUnit
  * @param add
  */
-declare function UnitAddSleep(this: void, whichUnit: unit, add: boolean): nothing;
+declare function UnitAddSleep(whichUnit: unit, add: boolean): nothing;
 
 /**
  * @param whichUnit
  */
-declare function UnitCanSleep(this: void, whichUnit: unit): boolean;
+declare function UnitCanSleep(whichUnit: unit): boolean;
 
 /**
  * @param whichUnit
  * @param add
  */
-declare function UnitAddSleepPerm(this: void, whichUnit: unit, add: boolean): nothing;
+declare function UnitAddSleepPerm(whichUnit: unit, add: boolean): nothing;
 
 /**
  * @param whichUnit
  */
-declare function UnitCanSleepPerm(this: void, whichUnit: unit): boolean;
+declare function UnitCanSleepPerm(whichUnit: unit): boolean;
 
 /**
  * @param whichUnit
  */
-declare function UnitIsSleeping(this: void, whichUnit: unit): boolean;
+declare function UnitIsSleeping(whichUnit: unit): boolean;
 
 /**
  * @param whichUnit
  */
-declare function UnitWakeUp(this: void, whichUnit: unit): nothing;
+declare function UnitWakeUp(whichUnit: unit): nothing;
 
 /**
  * @param whichUnit
  * @param buffId
  * @param duration
  */
-declare function UnitApplyTimedLife(this: void, whichUnit: unit, buffId: integer, duration: real): nothing;
+declare function UnitApplyTimedLife(whichUnit: unit, buffId: integer, duration: real): nothing;
 
 /**
  * @param whichUnit
  * @param flag
  */
-declare function UnitIgnoreAlarm(this: void, whichUnit: unit, flag: boolean): boolean;
+declare function UnitIgnoreAlarm(whichUnit: unit, flag: boolean): boolean;
 
 /**
  * @param whichUnit
  */
-declare function UnitIgnoreAlarmToggled(this: void, whichUnit: unit): boolean;
+declare function UnitIgnoreAlarmToggled(whichUnit: unit): boolean;
 
 /**
  * @param whichUnit
  */
-declare function UnitResetCooldown(this: void, whichUnit: unit): nothing;
+declare function UnitResetCooldown(whichUnit: unit): nothing;
 
 /**
  * @param whichUnit
  * @param constructionPercentage
  */
-declare function UnitSetConstructionProgress(this: void, whichUnit: unit, constructionPercentage: integer): nothing;
+declare function UnitSetConstructionProgress(whichUnit: unit, constructionPercentage: integer): nothing;
 
 /**
  * @param whichUnit
  * @param upgradePercentage
  */
-declare function UnitSetUpgradeProgress(this: void, whichUnit: unit, upgradePercentage: integer): nothing;
+declare function UnitSetUpgradeProgress(whichUnit: unit, upgradePercentage: integer): nothing;
 
 /**
  * @param whichUnit
  * @param flag
  */
-declare function UnitPauseTimedLife(this: void, whichUnit: unit, flag: boolean): nothing;
+declare function UnitPauseTimedLife(whichUnit: unit, flag: boolean): nothing;
 
 /**
  * @param whichUnit
  * @param flag
  */
-declare function UnitSetUsesAltIcon(this: void, whichUnit: unit, flag: boolean): nothing;
+declare function UnitSetUsesAltIcon(whichUnit: unit, flag: boolean): nothing;
 
 /**
  * @param whichUnit
@@ -11870,7 +11871,7 @@ declare function UnitSetUsesAltIcon(this: void, whichUnit: unit, flag: boolean):
  * @param damageType
  * @param weaponType
  */
-declare function UnitDamagePoint(this: void, whichUnit: unit, delay: real, radius: real, x: real, y: real, amount: real, attack: boolean, ranged: boolean, attackType: attacktype, damageType: damagetype, weaponType: weapontype): boolean;
+declare function UnitDamagePoint(whichUnit: unit, delay: real, radius: real, x: real, y: real, amount: real, attack: boolean, ranged: boolean, attackType: attacktype, damageType: damagetype, weaponType: weapontype): boolean;
 
 /**
  * @param whichUnit
@@ -11882,19 +11883,19 @@ declare function UnitDamagePoint(this: void, whichUnit: unit, delay: real, radiu
  * @param damageType
  * @param weaponType
  */
-declare function UnitDamageTarget(this: void, whichUnit: unit, target: widget, amount: real, attack: boolean, ranged: boolean, attackType: attacktype, damageType: damagetype, weaponType: weapontype): boolean;
+declare function UnitDamageTarget(whichUnit: unit, target: widget, amount: real, attack: boolean, ranged: boolean, attackType: attacktype, damageType: damagetype, weaponType: weapontype): boolean;
 
 /**
  * @param whichUnit
  * @param order
  */
-declare function IssueImmediateOrder(this: void, whichUnit: unit, order: string): boolean;
+declare function IssueImmediateOrder(whichUnit: unit, order: string): boolean;
 
 /**
  * @param whichUnit
  * @param order
  */
-declare function IssueImmediateOrderById(this: void, whichUnit: unit, order: integer): boolean;
+declare function IssueImmediateOrderById(whichUnit: unit, order: integer): boolean;
 
 /**
  * @param whichUnit
@@ -11902,14 +11903,14 @@ declare function IssueImmediateOrderById(this: void, whichUnit: unit, order: int
  * @param x
  * @param y
  */
-declare function IssuePointOrder(this: void, whichUnit: unit, order: string, x: real, y: real): boolean;
+declare function IssuePointOrder(whichUnit: unit, order: string, x: real, y: real): boolean;
 
 /**
  * @param whichUnit
  * @param order
  * @param whichLocation
  */
-declare function IssuePointOrderLoc(this: void, whichUnit: unit, order: string, whichLocation: location): boolean;
+declare function IssuePointOrderLoc(whichUnit: unit, order: string, whichLocation: location): boolean;
 
 /**
  * @param whichUnit
@@ -11917,28 +11918,28 @@ declare function IssuePointOrderLoc(this: void, whichUnit: unit, order: string, 
  * @param x
  * @param y
  */
-declare function IssuePointOrderById(this: void, whichUnit: unit, order: integer, x: real, y: real): boolean;
+declare function IssuePointOrderById(whichUnit: unit, order: integer, x: real, y: real): boolean;
 
 /**
  * @param whichUnit
  * @param order
  * @param whichLocation
  */
-declare function IssuePointOrderByIdLoc(this: void, whichUnit: unit, order: integer, whichLocation: location): boolean;
+declare function IssuePointOrderByIdLoc(whichUnit: unit, order: integer, whichLocation: location): boolean;
 
 /**
  * @param whichUnit
  * @param order
  * @param targetWidget
  */
-declare function IssueTargetOrder(this: void, whichUnit: unit, order: string, targetWidget: widget): boolean;
+declare function IssueTargetOrder(whichUnit: unit, order: string, targetWidget: widget): boolean;
 
 /**
  * @param whichUnit
  * @param order
  * @param targetWidget
  */
-declare function IssueTargetOrderById(this: void, whichUnit: unit, order: integer, targetWidget: widget): boolean;
+declare function IssueTargetOrderById(whichUnit: unit, order: integer, targetWidget: widget): boolean;
 
 /**
  * @param whichUnit
@@ -11947,7 +11948,7 @@ declare function IssueTargetOrderById(this: void, whichUnit: unit, order: intege
  * @param y
  * @param instantTargetWidget
  */
-declare function IssueInstantPointOrder(this: void, whichUnit: unit, order: string, x: real, y: real, instantTargetWidget: widget): boolean;
+declare function IssueInstantPointOrder(whichUnit: unit, order: string, x: real, y: real, instantTargetWidget: widget): boolean;
 
 /**
  * @param whichUnit
@@ -11956,7 +11957,7 @@ declare function IssueInstantPointOrder(this: void, whichUnit: unit, order: stri
  * @param y
  * @param instantTargetWidget
  */
-declare function IssueInstantPointOrderById(this: void, whichUnit: unit, order: integer, x: real, y: real, instantTargetWidget: widget): boolean;
+declare function IssueInstantPointOrderById(whichUnit: unit, order: integer, x: real, y: real, instantTargetWidget: widget): boolean;
 
 /**
  * @param whichUnit
@@ -11964,7 +11965,7 @@ declare function IssueInstantPointOrderById(this: void, whichUnit: unit, order: 
  * @param targetWidget
  * @param instantTargetWidget
  */
-declare function IssueInstantTargetOrder(this: void, whichUnit: unit, order: string, targetWidget: widget, instantTargetWidget: widget): boolean;
+declare function IssueInstantTargetOrder(whichUnit: unit, order: string, targetWidget: widget, instantTargetWidget: widget): boolean;
 
 /**
  * @param whichUnit
@@ -11972,7 +11973,7 @@ declare function IssueInstantTargetOrder(this: void, whichUnit: unit, order: str
  * @param targetWidget
  * @param instantTargetWidget
  */
-declare function IssueInstantTargetOrderById(this: void, whichUnit: unit, order: integer, targetWidget: widget, instantTargetWidget: widget): boolean;
+declare function IssueInstantTargetOrderById(whichUnit: unit, order: integer, targetWidget: widget, instantTargetWidget: widget): boolean;
 
 /**
  * @param whichPeon
@@ -11980,7 +11981,7 @@ declare function IssueInstantTargetOrderById(this: void, whichUnit: unit, order:
  * @param x
  * @param y
  */
-declare function IssueBuildOrder(this: void, whichPeon: unit, unitToBuild: string, x: real, y: real): boolean;
+declare function IssueBuildOrder(whichPeon: unit, unitToBuild: string, x: real, y: real): boolean;
 
 /**
  * @param whichPeon
@@ -11988,21 +11989,21 @@ declare function IssueBuildOrder(this: void, whichPeon: unit, unitToBuild: strin
  * @param x
  * @param y
  */
-declare function IssueBuildOrderById(this: void, whichPeon: unit, unitId: integer, x: real, y: real): boolean;
+declare function IssueBuildOrderById(whichPeon: unit, unitId: integer, x: real, y: real): boolean;
 
 /**
  * @param forWhichPlayer
  * @param neutralStructure
  * @param unitToBuild
  */
-declare function IssueNeutralImmediateOrder(this: void, forWhichPlayer: player, neutralStructure: unit, unitToBuild: string): boolean;
+declare function IssueNeutralImmediateOrder(forWhichPlayer: player, neutralStructure: unit, unitToBuild: string): boolean;
 
 /**
  * @param forWhichPlayer
  * @param neutralStructure
  * @param unitId
  */
-declare function IssueNeutralImmediateOrderById(this: void, forWhichPlayer: player, neutralStructure: unit, unitId: integer): boolean;
+declare function IssueNeutralImmediateOrderById(forWhichPlayer: player, neutralStructure: unit, unitId: integer): boolean;
 
 /**
  * @param forWhichPlayer
@@ -12011,7 +12012,7 @@ declare function IssueNeutralImmediateOrderById(this: void, forWhichPlayer: play
  * @param x
  * @param y
  */
-declare function IssueNeutralPointOrder(this: void, forWhichPlayer: player, neutralStructure: unit, unitToBuild: string, x: real, y: real): boolean;
+declare function IssueNeutralPointOrder(forWhichPlayer: player, neutralStructure: unit, unitToBuild: string, x: real, y: real): boolean;
 
 /**
  * @param forWhichPlayer
@@ -12020,7 +12021,7 @@ declare function IssueNeutralPointOrder(this: void, forWhichPlayer: player, neut
  * @param x
  * @param y
  */
-declare function IssueNeutralPointOrderById(this: void, forWhichPlayer: player, neutralStructure: unit, unitId: integer, x: real, y: real): boolean;
+declare function IssueNeutralPointOrderById(forWhichPlayer: player, neutralStructure: unit, unitId: integer, x: real, y: real): boolean;
 
 /**
  * @param forWhichPlayer
@@ -12028,7 +12029,7 @@ declare function IssueNeutralPointOrderById(this: void, forWhichPlayer: player, 
  * @param unitToBuild
  * @param target
  */
-declare function IssueNeutralTargetOrder(this: void, forWhichPlayer: player, neutralStructure: unit, unitToBuild: string, target: widget): boolean;
+declare function IssueNeutralTargetOrder(forWhichPlayer: player, neutralStructure: unit, unitToBuild: string, target: widget): boolean;
 
 /**
  * @param forWhichPlayer
@@ -12036,64 +12037,64 @@ declare function IssueNeutralTargetOrder(this: void, forWhichPlayer: player, neu
  * @param unitId
  * @param target
  */
-declare function IssueNeutralTargetOrderById(this: void, forWhichPlayer: player, neutralStructure: unit, unitId: integer, target: widget): boolean;
+declare function IssueNeutralTargetOrderById(forWhichPlayer: player, neutralStructure: unit, unitId: integer, target: widget): boolean;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitCurrentOrder(this: void, whichUnit: unit): integer;
-
-/**
- * @param whichUnit
- * @param amount
- */
-declare function SetResourceAmount(this: void, whichUnit: unit, amount: integer): nothing;
+declare function GetUnitCurrentOrder(whichUnit: unit): integer;
 
 /**
  * @param whichUnit
  * @param amount
  */
-declare function AddResourceAmount(this: void, whichUnit: unit, amount: integer): nothing;
+declare function SetResourceAmount(whichUnit: unit, amount: integer): nothing;
+
+/**
+ * @param whichUnit
+ * @param amount
+ */
+declare function AddResourceAmount(whichUnit: unit, amount: integer): nothing;
 
 /**
  * @param whichUnit
  */
-declare function GetResourceAmount(this: void, whichUnit: unit): integer;
+declare function GetResourceAmount(whichUnit: unit): integer;
 
 /**
  * @param waygate
  */
-declare function WaygateGetDestinationX(this: void, waygate: unit): real;
+declare function WaygateGetDestinationX(waygate: unit): real;
 
 /**
  * @param waygate
  */
-declare function WaygateGetDestinationY(this: void, waygate: unit): real;
+declare function WaygateGetDestinationY(waygate: unit): real;
 
 /**
  * @param waygate
  * @param x
  * @param y
  */
-declare function WaygateSetDestination(this: void, waygate: unit, x: real, y: real): nothing;
+declare function WaygateSetDestination(waygate: unit, x: real, y: real): nothing;
 
 /**
  * @param waygate
  * @param activate
  */
-declare function WaygateActivate(this: void, waygate: unit, activate: boolean): nothing;
+declare function WaygateActivate(waygate: unit, activate: boolean): nothing;
 
 /**
  * @param waygate
  */
-declare function WaygateIsActive(this: void, waygate: unit): boolean;
+declare function WaygateIsActive(waygate: unit): boolean;
 
 /**
  * @param itemId
  * @param currentStock
  * @param stockMax
  */
-declare function AddItemToAllStock(this: void, itemId: integer, currentStock: integer, stockMax: integer): nothing;
+declare function AddItemToAllStock(itemId: integer, currentStock: integer, stockMax: integer): nothing;
 
 /**
  * @param whichUnit
@@ -12101,14 +12102,14 @@ declare function AddItemToAllStock(this: void, itemId: integer, currentStock: in
  * @param currentStock
  * @param stockMax
  */
-declare function AddItemToStock(this: void, whichUnit: unit, itemId: integer, currentStock: integer, stockMax: integer): nothing;
+declare function AddItemToStock(whichUnit: unit, itemId: integer, currentStock: integer, stockMax: integer): nothing;
 
 /**
  * @param unitId
  * @param currentStock
  * @param stockMax
  */
-declare function AddUnitToAllStock(this: void, unitId: integer, currentStock: integer, stockMax: integer): nothing;
+declare function AddUnitToAllStock(unitId: integer, currentStock: integer, stockMax: integer): nothing;
 
 /**
  * @param whichUnit
@@ -12116,149 +12117,149 @@ declare function AddUnitToAllStock(this: void, unitId: integer, currentStock: in
  * @param currentStock
  * @param stockMax
  */
-declare function AddUnitToStock(this: void, whichUnit: unit, unitId: integer, currentStock: integer, stockMax: integer): nothing;
+declare function AddUnitToStock(whichUnit: unit, unitId: integer, currentStock: integer, stockMax: integer): nothing;
 
 /**
  * @param itemId
  */
-declare function RemoveItemFromAllStock(this: void, itemId: integer): nothing;
+declare function RemoveItemFromAllStock(itemId: integer): nothing;
 
 /**
  * @param whichUnit
  * @param itemId
  */
-declare function RemoveItemFromStock(this: void, whichUnit: unit, itemId: integer): nothing;
+declare function RemoveItemFromStock(whichUnit: unit, itemId: integer): nothing;
 
 /**
  * @param unitId
  */
-declare function RemoveUnitFromAllStock(this: void, unitId: integer): nothing;
+declare function RemoveUnitFromAllStock(unitId: integer): nothing;
 
 /**
  * @param whichUnit
  * @param unitId
  */
-declare function RemoveUnitFromStock(this: void, whichUnit: unit, unitId: integer): nothing;
+declare function RemoveUnitFromStock(whichUnit: unit, unitId: integer): nothing;
 
 /**
  * @param slots
  */
-declare function SetAllItemTypeSlots(this: void, slots: integer): nothing;
+declare function SetAllItemTypeSlots(slots: integer): nothing;
 
 /**
  * @param slots
  */
-declare function SetAllUnitTypeSlots(this: void, slots: integer): nothing;
+declare function SetAllUnitTypeSlots(slots: integer): nothing;
 
 /**
  * @param whichUnit
  * @param slots
  */
-declare function SetItemTypeSlots(this: void, whichUnit: unit, slots: integer): nothing;
+declare function SetItemTypeSlots(whichUnit: unit, slots: integer): nothing;
 
 /**
  * @param whichUnit
  * @param slots
  */
-declare function SetUnitTypeSlots(this: void, whichUnit: unit, slots: integer): nothing;
+declare function SetUnitTypeSlots(whichUnit: unit, slots: integer): nothing;
 
 /**
  * @param whichUnit
  */
-declare function GetUnitUserData(this: void, whichUnit: unit): integer;
+declare function GetUnitUserData(whichUnit: unit): integer;
 
 /**
  * @param whichUnit
  * @param data
  */
-declare function SetUnitUserData(this: void, whichUnit: unit, data: integer): nothing;
+declare function SetUnitUserData(whichUnit: unit, data: integer): nothing;
 
 /**
  * @param number
  */
-declare function Player(this: void, number: integer): player;
+declare function Player(number: integer): player;
 
 /**
  */
-declare function GetLocalPlayer(this: void): player;
-
-/**
- * @param whichPlayer
- * @param otherPlayer
- */
-declare function IsPlayerAlly(this: void, whichPlayer: player, otherPlayer: player): boolean;
+declare function GetLocalPlayer(): player;
 
 /**
  * @param whichPlayer
  * @param otherPlayer
  */
-declare function IsPlayerEnemy(this: void, whichPlayer: player, otherPlayer: player): boolean;
+declare function IsPlayerAlly(whichPlayer: player, otherPlayer: player): boolean;
+
+/**
+ * @param whichPlayer
+ * @param otherPlayer
+ */
+declare function IsPlayerEnemy(whichPlayer: player, otherPlayer: player): boolean;
 
 /**
  * @param whichPlayer
  * @param whichForce
  */
-declare function IsPlayerInForce(this: void, whichPlayer: player, whichForce: force): boolean;
+declare function IsPlayerInForce(whichPlayer: player, whichForce: force): boolean;
 
 /**
  * @param whichPlayer
  */
-declare function IsPlayerObserver(this: void, whichPlayer: player): boolean;
-
-/**
- * @param x
- * @param y
- * @param whichPlayer
- */
-declare function IsVisibleToPlayer(this: void, x: real, y: real, whichPlayer: player): boolean;
-
-/**
- * @param whichLocation
- * @param whichPlayer
- */
-declare function IsLocationVisibleToPlayer(this: void, whichLocation: location, whichPlayer: player): boolean;
+declare function IsPlayerObserver(whichPlayer: player): boolean;
 
 /**
  * @param x
  * @param y
  * @param whichPlayer
  */
-declare function IsFoggedToPlayer(this: void, x: real, y: real, whichPlayer: player): boolean;
+declare function IsVisibleToPlayer(x: real, y: real, whichPlayer: player): boolean;
 
 /**
  * @param whichLocation
  * @param whichPlayer
  */
-declare function IsLocationFoggedToPlayer(this: void, whichLocation: location, whichPlayer: player): boolean;
+declare function IsLocationVisibleToPlayer(whichLocation: location, whichPlayer: player): boolean;
 
 /**
  * @param x
  * @param y
  * @param whichPlayer
  */
-declare function IsMaskedToPlayer(this: void, x: real, y: real, whichPlayer: player): boolean;
+declare function IsFoggedToPlayer(x: real, y: real, whichPlayer: player): boolean;
 
 /**
  * @param whichLocation
  * @param whichPlayer
  */
-declare function IsLocationMaskedToPlayer(this: void, whichLocation: location, whichPlayer: player): boolean;
+declare function IsLocationFoggedToPlayer(whichLocation: location, whichPlayer: player): boolean;
+
+/**
+ * @param x
+ * @param y
+ * @param whichPlayer
+ */
+declare function IsMaskedToPlayer(x: real, y: real, whichPlayer: player): boolean;
+
+/**
+ * @param whichLocation
+ * @param whichPlayer
+ */
+declare function IsLocationMaskedToPlayer(whichLocation: location, whichPlayer: player): boolean;
 
 /**
  * @param whichPlayer
  */
-declare function GetPlayerRace(this: void, whichPlayer: player): race;
+declare function GetPlayerRace(whichPlayer: player): race;
 
 /**
  * @param whichPlayer
  */
-declare function GetPlayerId(this: void, whichPlayer: player): integer;
+declare function GetPlayerId(whichPlayer: player): integer;
 
 /**
  * @param whichPlayer
  * @param includeIncomplete
  */
-declare function GetPlayerUnitCount(this: void, whichPlayer: player, includeIncomplete: boolean): integer;
+declare function GetPlayerUnitCount(whichPlayer: player, includeIncomplete: boolean): integer;
 
 /**
  * @param whichPlayer
@@ -12266,133 +12267,133 @@ declare function GetPlayerUnitCount(this: void, whichPlayer: player, includeInco
  * @param includeIncomplete
  * @param includeUpgrades
  */
-declare function GetPlayerTypedUnitCount(this: void, whichPlayer: player, unitName: string, includeIncomplete: boolean, includeUpgrades: boolean): integer;
+declare function GetPlayerTypedUnitCount(whichPlayer: player, unitName: string, includeIncomplete: boolean, includeUpgrades: boolean): integer;
 
 /**
  * @param whichPlayer
  * @param includeIncomplete
  */
-declare function GetPlayerStructureCount(this: void, whichPlayer: player, includeIncomplete: boolean): integer;
+declare function GetPlayerStructureCount(whichPlayer: player, includeIncomplete: boolean): integer;
 
 /**
  * @param whichPlayer
  * @param whichPlayerState
  */
-declare function GetPlayerState(this: void, whichPlayer: player, whichPlayerState: playerstate): integer;
+declare function GetPlayerState(whichPlayer: player, whichPlayerState: playerstate): integer;
 
 /**
  * @param whichPlayer
  * @param whichPlayerScore
  */
-declare function GetPlayerScore(this: void, whichPlayer: player, whichPlayerScore: playerscore): integer;
+declare function GetPlayerScore(whichPlayer: player, whichPlayerScore: playerscore): integer;
 
 /**
  * @param sourcePlayer
  * @param otherPlayer
  * @param whichAllianceSetting
  */
-declare function GetPlayerAlliance(this: void, sourcePlayer: player, otherPlayer: player, whichAllianceSetting: alliancetype): boolean;
+declare function GetPlayerAlliance(sourcePlayer: player, otherPlayer: player, whichAllianceSetting: alliancetype): boolean;
 
 /**
  * @param whichPlayer
  */
-declare function GetPlayerHandicap(this: void, whichPlayer: player): real;
+declare function GetPlayerHandicap(whichPlayer: player): real;
 
 /**
  * @param whichPlayer
  */
-declare function GetPlayerHandicapXP(this: void, whichPlayer: player): real;
-
-/**
- * @param whichPlayer
- * @param handicap
- */
-declare function SetPlayerHandicap(this: void, whichPlayer: player, handicap: real): nothing;
+declare function GetPlayerHandicapXP(whichPlayer: player): real;
 
 /**
  * @param whichPlayer
  * @param handicap
  */
-declare function SetPlayerHandicapXP(this: void, whichPlayer: player, handicap: real): nothing;
+declare function SetPlayerHandicap(whichPlayer: player, handicap: real): nothing;
+
+/**
+ * @param whichPlayer
+ * @param handicap
+ */
+declare function SetPlayerHandicapXP(whichPlayer: player, handicap: real): nothing;
 
 /**
  * @param whichPlayer
  * @param techid
  * @param maximum
  */
-declare function SetPlayerTechMaxAllowed(this: void, whichPlayer: player, techid: integer, maximum: integer): nothing;
+declare function SetPlayerTechMaxAllowed(whichPlayer: player, techid: integer, maximum: integer): nothing;
 
 /**
  * @param whichPlayer
  * @param techid
  */
-declare function GetPlayerTechMaxAllowed(this: void, whichPlayer: player, techid: integer): integer;
+declare function GetPlayerTechMaxAllowed(whichPlayer: player, techid: integer): integer;
 
 /**
  * @param whichPlayer
  * @param techid
  * @param levels
  */
-declare function AddPlayerTechResearched(this: void, whichPlayer: player, techid: integer, levels: integer): nothing;
+declare function AddPlayerTechResearched(whichPlayer: player, techid: integer, levels: integer): nothing;
 
 /**
  * @param whichPlayer
  * @param techid
  * @param setToLevel
  */
-declare function SetPlayerTechResearched(this: void, whichPlayer: player, techid: integer, setToLevel: integer): nothing;
+declare function SetPlayerTechResearched(whichPlayer: player, techid: integer, setToLevel: integer): nothing;
 
 /**
  * @param whichPlayer
  * @param techid
  * @param specificonly
  */
-declare function GetPlayerTechResearched(this: void, whichPlayer: player, techid: integer, specificonly: boolean): boolean;
+declare function GetPlayerTechResearched(whichPlayer: player, techid: integer, specificonly: boolean): boolean;
 
 /**
  * @param whichPlayer
  * @param techid
  * @param specificonly
  */
-declare function GetPlayerTechCount(this: void, whichPlayer: player, techid: integer, specificonly: boolean): integer;
+declare function GetPlayerTechCount(whichPlayer: player, techid: integer, specificonly: boolean): integer;
 
 /**
  * @param whichPlayer
  * @param newOwner
  */
-declare function SetPlayerUnitsOwner(this: void, whichPlayer: player, newOwner: integer): nothing;
+declare function SetPlayerUnitsOwner(whichPlayer: player, newOwner: integer): nothing;
 
 /**
  * @param whichPlayer
  * @param toWhichPlayers
  * @param flag
  */
-declare function CripplePlayer(this: void, whichPlayer: player, toWhichPlayers: force, flag: boolean): nothing;
+declare function CripplePlayer(whichPlayer: player, toWhichPlayers: force, flag: boolean): nothing;
 
 /**
  * @param whichPlayer
  * @param abilid
  * @param avail
  */
-declare function SetPlayerAbilityAvailable(this: void, whichPlayer: player, abilid: integer, avail: boolean): nothing;
+declare function SetPlayerAbilityAvailable(whichPlayer: player, abilid: integer, avail: boolean): nothing;
 
 /**
  * @param whichPlayer
  * @param whichPlayerState
  * @param value
  */
-declare function SetPlayerState(this: void, whichPlayer: player, whichPlayerState: playerstate, value: integer): nothing;
+declare function SetPlayerState(whichPlayer: player, whichPlayerState: playerstate, value: integer): nothing;
 
 /**
  * @param whichPlayer
  * @param gameResult
  */
-declare function RemovePlayer(this: void, whichPlayer: player, gameResult: playergameresult): nothing;
+declare function RemovePlayer(whichPlayer: player, gameResult: playergameresult): nothing;
 
 /**
  * @param whichPlayer
  */
-declare function CachePlayerHeroData(this: void, whichPlayer: player): nothing;
+declare function CachePlayerHeroData(whichPlayer: player): nothing;
 
 /**
  * @param forWhichPlayer
@@ -12400,7 +12401,7 @@ declare function CachePlayerHeroData(this: void, whichPlayer: player): nothing;
  * @param where
  * @param useSharedVision
  */
-declare function SetFogStateRect(this: void, forWhichPlayer: player, whichState: fogstate, where: rect, useSharedVision: boolean): nothing;
+declare function SetFogStateRect(forWhichPlayer: player, whichState: fogstate, where: rect, useSharedVision: boolean): nothing;
 
 /**
  * @param forWhichPlayer
@@ -12410,7 +12411,7 @@ declare function SetFogStateRect(this: void, forWhichPlayer: player, whichState:
  * @param radius
  * @param useSharedVision
  */
-declare function SetFogStateRadius(this: void, forWhichPlayer: player, whichState: fogstate, centerx: real, centerY: real, radius: real, useSharedVision: boolean): nothing;
+declare function SetFogStateRadius(forWhichPlayer: player, whichState: fogstate, centerx: real, centerY: real, radius: real, useSharedVision: boolean): nothing;
 
 /**
  * @param forWhichPlayer
@@ -12419,25 +12420,25 @@ declare function SetFogStateRadius(this: void, forWhichPlayer: player, whichStat
  * @param radius
  * @param useSharedVision
  */
-declare function SetFogStateRadiusLoc(this: void, forWhichPlayer: player, whichState: fogstate, center: location, radius: real, useSharedVision: boolean): nothing;
+declare function SetFogStateRadiusLoc(forWhichPlayer: player, whichState: fogstate, center: location, radius: real, useSharedVision: boolean): nothing;
 
 /**
  * @param enable
  */
-declare function FogMaskEnable(this: void, enable: boolean): nothing;
+declare function FogMaskEnable(enable: boolean): nothing;
 
 /**
  */
-declare function IsFogMaskEnabled(this: void): boolean;
+declare function IsFogMaskEnabled(): boolean;
 
 /**
  * @param enable
  */
-declare function FogEnable(this: void, enable: boolean): nothing;
+declare function FogEnable(enable: boolean): nothing;
 
 /**
  */
-declare function IsFogEnabled(this: void): boolean;
+declare function IsFogEnabled(): boolean;
 
 /**
  * @param forWhichPlayer
@@ -12446,7 +12447,7 @@ declare function IsFogEnabled(this: void): boolean;
  * @param useSharedVision
  * @param afterUnits
  */
-declare function CreateFogModifierRect(this: void, forWhichPlayer: player, whichState: fogstate, where: rect, useSharedVision: boolean, afterUnits: boolean): fogmodifier;
+declare function CreateFogModifierRect(forWhichPlayer: player, whichState: fogstate, where: rect, useSharedVision: boolean, afterUnits: boolean): fogmodifier;
 
 /**
  * @param forWhichPlayer
@@ -12457,7 +12458,7 @@ declare function CreateFogModifierRect(this: void, forWhichPlayer: player, which
  * @param useSharedVision
  * @param afterUnits
  */
-declare function CreateFogModifierRadius(this: void, forWhichPlayer: player, whichState: fogstate, centerx: real, centerY: real, radius: real, useSharedVision: boolean, afterUnits: boolean): fogmodifier;
+declare function CreateFogModifierRadius(forWhichPlayer: player, whichState: fogstate, centerx: real, centerY: real, radius: real, useSharedVision: boolean, afterUnits: boolean): fogmodifier;
 
 /**
  * @param forWhichPlayer
@@ -12467,210 +12468,210 @@ declare function CreateFogModifierRadius(this: void, forWhichPlayer: player, whi
  * @param useSharedVision
  * @param afterUnits
  */
-declare function CreateFogModifierRadiusLoc(this: void, forWhichPlayer: player, whichState: fogstate, center: location, radius: real, useSharedVision: boolean, afterUnits: boolean): fogmodifier;
+declare function CreateFogModifierRadiusLoc(forWhichPlayer: player, whichState: fogstate, center: location, radius: real, useSharedVision: boolean, afterUnits: boolean): fogmodifier;
 
 /**
  * @param whichFogModifier
  */
-declare function DestroyFogModifier(this: void, whichFogModifier: fogmodifier): nothing;
+declare function DestroyFogModifier(whichFogModifier: fogmodifier): nothing;
 
 /**
  * @param whichFogModifier
  */
-declare function FogModifierStart(this: void, whichFogModifier: fogmodifier): nothing;
+declare function FogModifierStart(whichFogModifier: fogmodifier): nothing;
 
 /**
  * @param whichFogModifier
  */
-declare function FogModifierStop(this: void, whichFogModifier: fogmodifier): nothing;
+declare function FogModifierStop(whichFogModifier: fogmodifier): nothing;
 
 /**
  */
-declare function VersionGet(this: void): version;
+declare function VersionGet(): version;
 
 /**
  * @param whichVersion
  */
-declare function VersionCompatible(this: void, whichVersion: version): boolean;
+declare function VersionCompatible(whichVersion: version): boolean;
 
 /**
  * @param whichVersion
  */
-declare function VersionSupported(this: void, whichVersion: version): boolean;
+declare function VersionSupported(whichVersion: version): boolean;
 
 /**
  * @param doScoreScreen
  */
-declare function EndGame(this: void, doScoreScreen: boolean): nothing;
+declare function EndGame(doScoreScreen: boolean): nothing;
 
 /**
  * @param newLevel
  * @param doScoreScreen
  */
-declare function ChangeLevel(this: void, newLevel: string, doScoreScreen: boolean): nothing;
+declare function ChangeLevel(newLevel: string, doScoreScreen: boolean): nothing;
 
 /**
  * @param doScoreScreen
  */
-declare function RestartGame(this: void, doScoreScreen: boolean): nothing;
+declare function RestartGame(doScoreScreen: boolean): nothing;
 
 /**
  */
-declare function ReloadGame(this: void): nothing;
+declare function ReloadGame(): nothing;
 
 /**
  * @param r
  */
-declare function SetCampaignMenuRace(this: void, r: race): nothing;
+declare function SetCampaignMenuRace(r: race): nothing;
 
 /**
  * @param campaignIndex
  */
-declare function SetCampaignMenuRaceEx(this: void, campaignIndex: integer): nothing;
+declare function SetCampaignMenuRaceEx(campaignIndex: integer): nothing;
 
 /**
  */
-declare function ForceCampaignSelectScreen(this: void): nothing;
+declare function ForceCampaignSelectScreen(): nothing;
 
 /**
  * @param saveFileName
  * @param doScoreScreen
  */
-declare function LoadGame(this: void, saveFileName: string, doScoreScreen: boolean): nothing;
+declare function LoadGame(saveFileName: string, doScoreScreen: boolean): nothing;
 
 /**
  * @param saveFileName
  */
-declare function SaveGame(this: void, saveFileName: string): nothing;
+declare function SaveGame(saveFileName: string): nothing;
 
 /**
  * @param sourceDirName
  * @param destDirName
  */
-declare function RenameSaveDirectory(this: void, sourceDirName: string, destDirName: string): boolean;
+declare function RenameSaveDirectory(sourceDirName: string, destDirName: string): boolean;
 
 /**
  * @param sourceDirName
  */
-declare function RemoveSaveDirectory(this: void, sourceDirName: string): boolean;
+declare function RemoveSaveDirectory(sourceDirName: string): boolean;
 
 /**
  * @param sourceSaveName
  * @param destSaveName
  */
-declare function CopySaveGame(this: void, sourceSaveName: string, destSaveName: string): boolean;
+declare function CopySaveGame(sourceSaveName: string, destSaveName: string): boolean;
 
 /**
  * @param saveName
  */
-declare function SaveGameExists(this: void, saveName: string): boolean;
+declare function SaveGameExists(saveName: string): boolean;
 
 /**
  */
-declare function SyncSelections(this: void): nothing;
+declare function SyncSelections(): nothing;
 
 /**
  * @param whichFloatGameState
  * @param value
  */
-declare function SetFloatGameState(this: void, whichFloatGameState: fgamestate, value: real): nothing;
+declare function SetFloatGameState(whichFloatGameState: fgamestate, value: real): nothing;
 
 /**
  * @param whichFloatGameState
  */
-declare function GetFloatGameState(this: void, whichFloatGameState: fgamestate): real;
+declare function GetFloatGameState(whichFloatGameState: fgamestate): real;
 
 /**
  * @param whichIntegerGameState
  * @param value
  */
-declare function SetIntegerGameState(this: void, whichIntegerGameState: igamestate, value: integer): nothing;
+declare function SetIntegerGameState(whichIntegerGameState: igamestate, value: integer): nothing;
 
 /**
  * @param whichIntegerGameState
  */
-declare function GetIntegerGameState(this: void, whichIntegerGameState: igamestate): integer;
+declare function GetIntegerGameState(whichIntegerGameState: igamestate): integer;
 
 /**
  * @param cleared
  */
-declare function SetTutorialCleared(this: void, cleared: boolean): nothing;
+declare function SetTutorialCleared(cleared: boolean): nothing;
 
 /**
  * @param campaignNumber
  * @param missionNumber
  * @param available
  */
-declare function SetMissionAvailable(this: void, campaignNumber: integer, missionNumber: integer, available: boolean): nothing;
+declare function SetMissionAvailable(campaignNumber: integer, missionNumber: integer, available: boolean): nothing;
 
 /**
  * @param campaignNumber
  * @param available
  */
-declare function SetCampaignAvailable(this: void, campaignNumber: integer, available: boolean): nothing;
+declare function SetCampaignAvailable(campaignNumber: integer, available: boolean): nothing;
 
 /**
  * @param campaignNumber
  * @param available
  */
-declare function SetOpCinematicAvailable(this: void, campaignNumber: integer, available: boolean): nothing;
+declare function SetOpCinematicAvailable(campaignNumber: integer, available: boolean): nothing;
 
 /**
  * @param campaignNumber
  * @param available
  */
-declare function SetEdCinematicAvailable(this: void, campaignNumber: integer, available: boolean): nothing;
+declare function SetEdCinematicAvailable(campaignNumber: integer, available: boolean): nothing;
 
 /**
  */
-declare function GetDefaultDifficulty(this: void): gamedifficulty;
+declare function GetDefaultDifficulty(): gamedifficulty;
 
 /**
  * @param g
  */
-declare function SetDefaultDifficulty(this: void, g: gamedifficulty): nothing;
+declare function SetDefaultDifficulty(g: gamedifficulty): nothing;
 
 /**
  * @param whichButton
  * @param visible
  */
-declare function SetCustomCampaignButtonVisible(this: void, whichButton: integer, visible: boolean): nothing;
+declare function SetCustomCampaignButtonVisible(whichButton: integer, visible: boolean): nothing;
 
 /**
  * @param whichButton
  */
-declare function GetCustomCampaignButtonVisible(this: void, whichButton: integer): boolean;
+declare function GetCustomCampaignButtonVisible(whichButton: integer): boolean;
 
 /**
  */
-declare function DoNotSaveReplay(this: void): nothing;
+declare function DoNotSaveReplay(): nothing;
 
 /**
  */
-declare function DialogCreate(this: void): dialog;
-
-/**
- * @param whichDialog
- */
-declare function DialogDestroy(this: void, whichDialog: dialog): nothing;
+declare function DialogCreate(): dialog;
 
 /**
  * @param whichDialog
  */
-declare function DialogClear(this: void, whichDialog: dialog): nothing;
+declare function DialogDestroy(whichDialog: dialog): nothing;
+
+/**
+ * @param whichDialog
+ */
+declare function DialogClear(whichDialog: dialog): nothing;
 
 /**
  * @param whichDialog
  * @param messageText
  */
-declare function DialogSetMessage(this: void, whichDialog: dialog, messageText: string): nothing;
+declare function DialogSetMessage(whichDialog: dialog, messageText: string): nothing;
 
 /**
  * @param whichDialog
  * @param buttonText
  * @param hotkey
  */
-declare function DialogAddButton(this: void, whichDialog: dialog, buttonText: string, hotkey: integer): button;
+declare function DialogAddButton(whichDialog: dialog, buttonText: string, hotkey: integer): button;
 
 /**
  * @param whichDialog
@@ -12678,28 +12679,28 @@ declare function DialogAddButton(this: void, whichDialog: dialog, buttonText: st
  * @param buttonText
  * @param hotkey
  */
-declare function DialogAddQuitButton(this: void, whichDialog: dialog, doScoreScreen: boolean, buttonText: string, hotkey: integer): button;
+declare function DialogAddQuitButton(whichDialog: dialog, doScoreScreen: boolean, buttonText: string, hotkey: integer): button;
 
 /**
  * @param whichPlayer
  * @param whichDialog
  * @param flag
  */
-declare function DialogDisplay(this: void, whichPlayer: player, whichDialog: dialog, flag: boolean): nothing;
+declare function DialogDisplay(whichPlayer: player, whichDialog: dialog, flag: boolean): nothing;
 
 /**
  */
-declare function ReloadGameCachesFromDisk(this: void): boolean;
+declare function ReloadGameCachesFromDisk(): boolean;
 
 /**
  * @param campaignFile
  */
-declare function InitGameCache(this: void, campaignFile: string): gamecache;
+declare function InitGameCache(campaignFile: string): gamecache;
 
 /**
  * @param whichCache
  */
-declare function SaveGameCache(this: void, whichCache: gamecache): boolean;
+declare function SaveGameCache(whichCache: gamecache): boolean;
 
 /**
  * @param cache
@@ -12707,7 +12708,7 @@ declare function SaveGameCache(this: void, whichCache: gamecache): boolean;
  * @param key
  * @param value
  */
-declare function StoreInteger(this: void, cache: gamecache, missionKey: string, key: string, value: integer): nothing;
+declare function StoreInteger(cache: gamecache, missionKey: string, key: string, value: integer): nothing;
 
 /**
  * @param cache
@@ -12715,7 +12716,7 @@ declare function StoreInteger(this: void, cache: gamecache, missionKey: string, 
  * @param key
  * @param value
  */
-declare function StoreReal(this: void, cache: gamecache, missionKey: string, key: string, value: real): nothing;
+declare function StoreReal(cache: gamecache, missionKey: string, key: string, value: real): nothing;
 
 /**
  * @param cache
@@ -12723,7 +12724,7 @@ declare function StoreReal(this: void, cache: gamecache, missionKey: string, key
  * @param key
  * @param value
  */
-declare function StoreBoolean(this: void, cache: gamecache, missionKey: string, key: string, value: boolean): nothing;
+declare function StoreBoolean(cache: gamecache, missionKey: string, key: string, value: boolean): nothing;
 
 /**
  * @param cache
@@ -12731,7 +12732,7 @@ declare function StoreBoolean(this: void, cache: gamecache, missionKey: string, 
  * @param key
  * @param whichUnit
  */
-declare function StoreUnit(this: void, cache: gamecache, missionKey: string, key: string, whichUnit: unit): boolean;
+declare function StoreUnit(cache: gamecache, missionKey: string, key: string, whichUnit: unit): boolean;
 
 /**
  * @param cache
@@ -12739,151 +12740,151 @@ declare function StoreUnit(this: void, cache: gamecache, missionKey: string, key
  * @param key
  * @param value
  */
-declare function StoreString(this: void, cache: gamecache, missionKey: string, key: string, value: string): boolean;
+declare function StoreString(cache: gamecache, missionKey: string, key: string, value: string): boolean;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function SyncStoredInteger(this: void, cache: gamecache, missionKey: string, key: string): nothing;
+declare function SyncStoredInteger(cache: gamecache, missionKey: string, key: string): nothing;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function SyncStoredReal(this: void, cache: gamecache, missionKey: string, key: string): nothing;
+declare function SyncStoredReal(cache: gamecache, missionKey: string, key: string): nothing;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function SyncStoredBoolean(this: void, cache: gamecache, missionKey: string, key: string): nothing;
+declare function SyncStoredBoolean(cache: gamecache, missionKey: string, key: string): nothing;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function SyncStoredUnit(this: void, cache: gamecache, missionKey: string, key: string): nothing;
+declare function SyncStoredUnit(cache: gamecache, missionKey: string, key: string): nothing;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function SyncStoredString(this: void, cache: gamecache, missionKey: string, key: string): nothing;
+declare function SyncStoredString(cache: gamecache, missionKey: string, key: string): nothing;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function HaveStoredInteger(this: void, cache: gamecache, missionKey: string, key: string): boolean;
+declare function HaveStoredInteger(cache: gamecache, missionKey: string, key: string): boolean;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function HaveStoredReal(this: void, cache: gamecache, missionKey: string, key: string): boolean;
+declare function HaveStoredReal(cache: gamecache, missionKey: string, key: string): boolean;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function HaveStoredBoolean(this: void, cache: gamecache, missionKey: string, key: string): boolean;
+declare function HaveStoredBoolean(cache: gamecache, missionKey: string, key: string): boolean;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function HaveStoredUnit(this: void, cache: gamecache, missionKey: string, key: string): boolean;
+declare function HaveStoredUnit(cache: gamecache, missionKey: string, key: string): boolean;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function HaveStoredString(this: void, cache: gamecache, missionKey: string, key: string): boolean;
+declare function HaveStoredString(cache: gamecache, missionKey: string, key: string): boolean;
 
 /**
  * @param cache
  */
-declare function FlushGameCache(this: void, cache: gamecache): nothing;
-
-/**
- * @param cache
- * @param missionKey
- */
-declare function FlushStoredMission(this: void, cache: gamecache, missionKey: string): nothing;
+declare function FlushGameCache(cache: gamecache): nothing;
 
 /**
  * @param cache
  * @param missionKey
- * @param key
  */
-declare function FlushStoredInteger(this: void, cache: gamecache, missionKey: string, key: string): nothing;
+declare function FlushStoredMission(cache: gamecache, missionKey: string): nothing;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function FlushStoredReal(this: void, cache: gamecache, missionKey: string, key: string): nothing;
+declare function FlushStoredInteger(cache: gamecache, missionKey: string, key: string): nothing;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function FlushStoredBoolean(this: void, cache: gamecache, missionKey: string, key: string): nothing;
+declare function FlushStoredReal(cache: gamecache, missionKey: string, key: string): nothing;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function FlushStoredUnit(this: void, cache: gamecache, missionKey: string, key: string): nothing;
+declare function FlushStoredBoolean(cache: gamecache, missionKey: string, key: string): nothing;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function FlushStoredString(this: void, cache: gamecache, missionKey: string, key: string): nothing;
+declare function FlushStoredUnit(cache: gamecache, missionKey: string, key: string): nothing;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function GetStoredInteger(this: void, cache: gamecache, missionKey: string, key: string): integer;
+declare function FlushStoredString(cache: gamecache, missionKey: string, key: string): nothing;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function GetStoredReal(this: void, cache: gamecache, missionKey: string, key: string): real;
+declare function GetStoredInteger(cache: gamecache, missionKey: string, key: string): integer;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function GetStoredBoolean(this: void, cache: gamecache, missionKey: string, key: string): boolean;
+declare function GetStoredReal(cache: gamecache, missionKey: string, key: string): real;
 
 /**
  * @param cache
  * @param missionKey
  * @param key
  */
-declare function GetStoredString(this: void, cache: gamecache, missionKey: string, key: string): string;
+declare function GetStoredBoolean(cache: gamecache, missionKey: string, key: string): boolean;
+
+/**
+ * @param cache
+ * @param missionKey
+ * @param key
+ */
+declare function GetStoredString(cache: gamecache, missionKey: string, key: string): string;
 
 /**
  * @param cache
@@ -12894,19 +12895,11 @@ declare function GetStoredString(this: void, cache: gamecache, missionKey: strin
  * @param y
  * @param facing
  */
-declare function RestoreUnit(this: void, cache: gamecache, missionKey: string, key: string, forWhichPlayer: player, x: real, y: real, facing: real): unit;
+declare function RestoreUnit(cache: gamecache, missionKey: string, key: string, forWhichPlayer: player, x: real, y: real, facing: real): unit;
 
 /**
  */
-declare function InitHashtable(this: void): hashtable;
-
-/**
- * @param table
- * @param parentKey
- * @param childKey
- * @param value
- */
-declare function SaveInteger(this: void, table: hashtable, parentKey: integer, childKey: integer, value: integer): nothing;
+declare function InitHashtable(): hashtable;
 
 /**
  * @param table
@@ -12914,7 +12907,7 @@ declare function SaveInteger(this: void, table: hashtable, parentKey: integer, c
  * @param childKey
  * @param value
  */
-declare function SaveReal(this: void, table: hashtable, parentKey: integer, childKey: integer, value: real): nothing;
+declare function SaveInteger(table: hashtable, parentKey: integer, childKey: integer, value: integer): nothing;
 
 /**
  * @param table
@@ -12922,7 +12915,7 @@ declare function SaveReal(this: void, table: hashtable, parentKey: integer, chil
  * @param childKey
  * @param value
  */
-declare function SaveBoolean(this: void, table: hashtable, parentKey: integer, childKey: integer, value: boolean): nothing;
+declare function SaveReal(table: hashtable, parentKey: integer, childKey: integer, value: real): nothing;
 
 /**
  * @param table
@@ -12930,7 +12923,15 @@ declare function SaveBoolean(this: void, table: hashtable, parentKey: integer, c
  * @param childKey
  * @param value
  */
-declare function SaveStr(this: void, table: hashtable, parentKey: integer, childKey: integer, value: string): boolean;
+declare function SaveBoolean(table: hashtable, parentKey: integer, childKey: integer, value: boolean): nothing;
+
+/**
+ * @param table
+ * @param parentKey
+ * @param childKey
+ * @param value
+ */
+declare function SaveStr(table: hashtable, parentKey: integer, childKey: integer, value: string): boolean;
 
 /**
  * @param table
@@ -12938,7 +12939,7 @@ declare function SaveStr(this: void, table: hashtable, parentKey: integer, child
  * @param childKey
  * @param whichPlayer
  */
-declare function SavePlayerHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichPlayer: player): boolean;
+declare function SavePlayerHandle(table: hashtable, parentKey: integer, childKey: integer, whichPlayer: player): boolean;
 
 /**
  * @param table
@@ -12946,7 +12947,7 @@ declare function SavePlayerHandle(this: void, table: hashtable, parentKey: integ
  * @param childKey
  * @param whichWidget
  */
-declare function SaveWidgetHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichWidget: widget): boolean;
+declare function SaveWidgetHandle(table: hashtable, parentKey: integer, childKey: integer, whichWidget: widget): boolean;
 
 /**
  * @param table
@@ -12954,7 +12955,7 @@ declare function SaveWidgetHandle(this: void, table: hashtable, parentKey: integ
  * @param childKey
  * @param whichDestructable
  */
-declare function SaveDestructableHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichDestructable: destructable): boolean;
+declare function SaveDestructableHandle(table: hashtable, parentKey: integer, childKey: integer, whichDestructable: destructable): boolean;
 
 /**
  * @param table
@@ -12962,7 +12963,7 @@ declare function SaveDestructableHandle(this: void, table: hashtable, parentKey:
  * @param childKey
  * @param whichItem
  */
-declare function SaveItemHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichItem: item): boolean;
+declare function SaveItemHandle(table: hashtable, parentKey: integer, childKey: integer, whichItem: item): boolean;
 
 /**
  * @param table
@@ -12970,7 +12971,7 @@ declare function SaveItemHandle(this: void, table: hashtable, parentKey: integer
  * @param childKey
  * @param whichUnit
  */
-declare function SaveUnitHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichUnit: unit): boolean;
+declare function SaveUnitHandle(table: hashtable, parentKey: integer, childKey: integer, whichUnit: unit): boolean;
 
 /**
  * @param table
@@ -12978,7 +12979,7 @@ declare function SaveUnitHandle(this: void, table: hashtable, parentKey: integer
  * @param childKey
  * @param whichAbility
  */
-declare function SaveAbilityHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichAbility: ability): boolean;
+declare function SaveAbilityHandle(table: hashtable, parentKey: integer, childKey: integer, whichAbility: ability): boolean;
 
 /**
  * @param table
@@ -12986,7 +12987,7 @@ declare function SaveAbilityHandle(this: void, table: hashtable, parentKey: inte
  * @param childKey
  * @param whichTimer
  */
-declare function SaveTimerHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichTimer: timer): boolean;
+declare function SaveTimerHandle(table: hashtable, parentKey: integer, childKey: integer, whichTimer: timer): boolean;
 
 /**
  * @param table
@@ -12994,7 +12995,7 @@ declare function SaveTimerHandle(this: void, table: hashtable, parentKey: intege
  * @param childKey
  * @param whichTrigger
  */
-declare function SaveTriggerHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichTrigger: trigger): boolean;
+declare function SaveTriggerHandle(table: hashtable, parentKey: integer, childKey: integer, whichTrigger: trigger): boolean;
 
 /**
  * @param table
@@ -13002,7 +13003,7 @@ declare function SaveTriggerHandle(this: void, table: hashtable, parentKey: inte
  * @param childKey
  * @param whichTriggercondition
  */
-declare function SaveTriggerConditionHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichTriggercondition: triggercondition): boolean;
+declare function SaveTriggerConditionHandle(table: hashtable, parentKey: integer, childKey: integer, whichTriggercondition: triggercondition): boolean;
 
 /**
  * @param table
@@ -13010,7 +13011,7 @@ declare function SaveTriggerConditionHandle(this: void, table: hashtable, parent
  * @param childKey
  * @param whichTriggeraction
  */
-declare function SaveTriggerActionHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichTriggeraction: triggeraction): boolean;
+declare function SaveTriggerActionHandle(table: hashtable, parentKey: integer, childKey: integer, whichTriggeraction: triggeraction): boolean;
 
 /**
  * @param table
@@ -13018,7 +13019,7 @@ declare function SaveTriggerActionHandle(this: void, table: hashtable, parentKey
  * @param childKey
  * @param whichEvent
  */
-declare function SaveTriggerEventHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichEvent: event): boolean;
+declare function SaveTriggerEventHandle(table: hashtable, parentKey: integer, childKey: integer, whichEvent: event): boolean;
 
 /**
  * @param table
@@ -13026,7 +13027,7 @@ declare function SaveTriggerEventHandle(this: void, table: hashtable, parentKey:
  * @param childKey
  * @param whichForce
  */
-declare function SaveForceHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichForce: force): boolean;
+declare function SaveForceHandle(table: hashtable, parentKey: integer, childKey: integer, whichForce: force): boolean;
 
 /**
  * @param table
@@ -13034,7 +13035,7 @@ declare function SaveForceHandle(this: void, table: hashtable, parentKey: intege
  * @param childKey
  * @param whichGroup
  */
-declare function SaveGroupHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichGroup: group): boolean;
+declare function SaveGroupHandle(table: hashtable, parentKey: integer, childKey: integer, whichGroup: group): boolean;
 
 /**
  * @param table
@@ -13042,7 +13043,7 @@ declare function SaveGroupHandle(this: void, table: hashtable, parentKey: intege
  * @param childKey
  * @param whichLocation
  */
-declare function SaveLocationHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichLocation: location): boolean;
+declare function SaveLocationHandle(table: hashtable, parentKey: integer, childKey: integer, whichLocation: location): boolean;
 
 /**
  * @param table
@@ -13050,7 +13051,7 @@ declare function SaveLocationHandle(this: void, table: hashtable, parentKey: int
  * @param childKey
  * @param whichRect
  */
-declare function SaveRectHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichRect: rect): boolean;
+declare function SaveRectHandle(table: hashtable, parentKey: integer, childKey: integer, whichRect: rect): boolean;
 
 /**
  * @param table
@@ -13058,7 +13059,7 @@ declare function SaveRectHandle(this: void, table: hashtable, parentKey: integer
  * @param childKey
  * @param whichBoolexpr
  */
-declare function SaveBooleanExprHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichBoolexpr: boolexpr): boolean;
+declare function SaveBooleanExprHandle(table: hashtable, parentKey: integer, childKey: integer, whichBoolexpr: boolexpr): boolean;
 
 /**
  * @param table
@@ -13066,7 +13067,7 @@ declare function SaveBooleanExprHandle(this: void, table: hashtable, parentKey: 
  * @param childKey
  * @param whichSound
  */
-declare function SaveSoundHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichSound: sound): boolean;
+declare function SaveSoundHandle(table: hashtable, parentKey: integer, childKey: integer, whichSound: sound): boolean;
 
 /**
  * @param table
@@ -13074,7 +13075,7 @@ declare function SaveSoundHandle(this: void, table: hashtable, parentKey: intege
  * @param childKey
  * @param whichEffect
  */
-declare function SaveEffectHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichEffect: effect): boolean;
+declare function SaveEffectHandle(table: hashtable, parentKey: integer, childKey: integer, whichEffect: effect): boolean;
 
 /**
  * @param table
@@ -13082,7 +13083,7 @@ declare function SaveEffectHandle(this: void, table: hashtable, parentKey: integ
  * @param childKey
  * @param whichUnitpool
  */
-declare function SaveUnitPoolHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichUnitpool: unitpool): boolean;
+declare function SaveUnitPoolHandle(table: hashtable, parentKey: integer, childKey: integer, whichUnitpool: unitpool): boolean;
 
 /**
  * @param table
@@ -13090,7 +13091,7 @@ declare function SaveUnitPoolHandle(this: void, table: hashtable, parentKey: int
  * @param childKey
  * @param whichItempool
  */
-declare function SaveItemPoolHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichItempool: itempool): boolean;
+declare function SaveItemPoolHandle(table: hashtable, parentKey: integer, childKey: integer, whichItempool: itempool): boolean;
 
 /**
  * @param table
@@ -13098,7 +13099,7 @@ declare function SaveItemPoolHandle(this: void, table: hashtable, parentKey: int
  * @param childKey
  * @param whichQuest
  */
-declare function SaveQuestHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichQuest: quest): boolean;
+declare function SaveQuestHandle(table: hashtable, parentKey: integer, childKey: integer, whichQuest: quest): boolean;
 
 /**
  * @param table
@@ -13106,7 +13107,7 @@ declare function SaveQuestHandle(this: void, table: hashtable, parentKey: intege
  * @param childKey
  * @param whichQuestitem
  */
-declare function SaveQuestItemHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichQuestitem: questitem): boolean;
+declare function SaveQuestItemHandle(table: hashtable, parentKey: integer, childKey: integer, whichQuestitem: questitem): boolean;
 
 /**
  * @param table
@@ -13114,7 +13115,7 @@ declare function SaveQuestItemHandle(this: void, table: hashtable, parentKey: in
  * @param childKey
  * @param whichDefeatcondition
  */
-declare function SaveDefeatConditionHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichDefeatcondition: defeatcondition): boolean;
+declare function SaveDefeatConditionHandle(table: hashtable, parentKey: integer, childKey: integer, whichDefeatcondition: defeatcondition): boolean;
 
 /**
  * @param table
@@ -13122,7 +13123,7 @@ declare function SaveDefeatConditionHandle(this: void, table: hashtable, parentK
  * @param childKey
  * @param whichTimerdialog
  */
-declare function SaveTimerDialogHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichTimerdialog: timerdialog): boolean;
+declare function SaveTimerDialogHandle(table: hashtable, parentKey: integer, childKey: integer, whichTimerdialog: timerdialog): boolean;
 
 /**
  * @param table
@@ -13130,7 +13131,7 @@ declare function SaveTimerDialogHandle(this: void, table: hashtable, parentKey: 
  * @param childKey
  * @param whichLeaderboard
  */
-declare function SaveLeaderboardHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichLeaderboard: leaderboard): boolean;
+declare function SaveLeaderboardHandle(table: hashtable, parentKey: integer, childKey: integer, whichLeaderboard: leaderboard): boolean;
 
 /**
  * @param table
@@ -13138,7 +13139,7 @@ declare function SaveLeaderboardHandle(this: void, table: hashtable, parentKey: 
  * @param childKey
  * @param whichMultiboard
  */
-declare function SaveMultiboardHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichMultiboard: multiboard): boolean;
+declare function SaveMultiboardHandle(table: hashtable, parentKey: integer, childKey: integer, whichMultiboard: multiboard): boolean;
 
 /**
  * @param table
@@ -13146,7 +13147,7 @@ declare function SaveMultiboardHandle(this: void, table: hashtable, parentKey: i
  * @param childKey
  * @param whichMultiboarditem
  */
-declare function SaveMultiboardItemHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichMultiboarditem: multiboarditem): boolean;
+declare function SaveMultiboardItemHandle(table: hashtable, parentKey: integer, childKey: integer, whichMultiboarditem: multiboarditem): boolean;
 
 /**
  * @param table
@@ -13154,7 +13155,7 @@ declare function SaveMultiboardItemHandle(this: void, table: hashtable, parentKe
  * @param childKey
  * @param whichTrackable
  */
-declare function SaveTrackableHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichTrackable: trackable): boolean;
+declare function SaveTrackableHandle(table: hashtable, parentKey: integer, childKey: integer, whichTrackable: trackable): boolean;
 
 /**
  * @param table
@@ -13162,7 +13163,7 @@ declare function SaveTrackableHandle(this: void, table: hashtable, parentKey: in
  * @param childKey
  * @param whichDialog
  */
-declare function SaveDialogHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichDialog: dialog): boolean;
+declare function SaveDialogHandle(table: hashtable, parentKey: integer, childKey: integer, whichDialog: dialog): boolean;
 
 /**
  * @param table
@@ -13170,7 +13171,7 @@ declare function SaveDialogHandle(this: void, table: hashtable, parentKey: integ
  * @param childKey
  * @param whichButton
  */
-declare function SaveButtonHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichButton: button): boolean;
+declare function SaveButtonHandle(table: hashtable, parentKey: integer, childKey: integer, whichButton: button): boolean;
 
 /**
  * @param table
@@ -13178,7 +13179,7 @@ declare function SaveButtonHandle(this: void, table: hashtable, parentKey: integ
  * @param childKey
  * @param whichTexttag
  */
-declare function SaveTextTagHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichTexttag: texttag): boolean;
+declare function SaveTextTagHandle(table: hashtable, parentKey: integer, childKey: integer, whichTexttag: texttag): boolean;
 
 /**
  * @param table
@@ -13186,7 +13187,7 @@ declare function SaveTextTagHandle(this: void, table: hashtable, parentKey: inte
  * @param childKey
  * @param whichLightning
  */
-declare function SaveLightningHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichLightning: lightning): boolean;
+declare function SaveLightningHandle(table: hashtable, parentKey: integer, childKey: integer, whichLightning: lightning): boolean;
 
 /**
  * @param table
@@ -13194,7 +13195,7 @@ declare function SaveLightningHandle(this: void, table: hashtable, parentKey: in
  * @param childKey
  * @param whichImage
  */
-declare function SaveImageHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichImage: image): boolean;
+declare function SaveImageHandle(table: hashtable, parentKey: integer, childKey: integer, whichImage: image): boolean;
 
 /**
  * @param table
@@ -13202,7 +13203,7 @@ declare function SaveImageHandle(this: void, table: hashtable, parentKey: intege
  * @param childKey
  * @param whichUbersplat
  */
-declare function SaveUbersplatHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichUbersplat: ubersplat): boolean;
+declare function SaveUbersplatHandle(table: hashtable, parentKey: integer, childKey: integer, whichUbersplat: ubersplat): boolean;
 
 /**
  * @param table
@@ -13210,7 +13211,7 @@ declare function SaveUbersplatHandle(this: void, table: hashtable, parentKey: in
  * @param childKey
  * @param whichRegion
  */
-declare function SaveRegionHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichRegion: region): boolean;
+declare function SaveRegionHandle(table: hashtable, parentKey: integer, childKey: integer, whichRegion: region): boolean;
 
 /**
  * @param table
@@ -13218,7 +13219,7 @@ declare function SaveRegionHandle(this: void, table: hashtable, parentKey: integ
  * @param childKey
  * @param whichFogState
  */
-declare function SaveFogStateHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichFogState: fogstate): boolean;
+declare function SaveFogStateHandle(table: hashtable, parentKey: integer, childKey: integer, whichFogState: fogstate): boolean;
 
 /**
  * @param table
@@ -13226,7 +13227,7 @@ declare function SaveFogStateHandle(this: void, table: hashtable, parentKey: int
  * @param childKey
  * @param whichFogModifier
  */
-declare function SaveFogModifierHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichFogModifier: fogmodifier): boolean;
+declare function SaveFogModifierHandle(table: hashtable, parentKey: integer, childKey: integer, whichFogModifier: fogmodifier): boolean;
 
 /**
  * @param table
@@ -13234,7 +13235,7 @@ declare function SaveFogModifierHandle(this: void, table: hashtable, parentKey: 
  * @param childKey
  * @param whichAgent
  */
-declare function SaveAgentHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichAgent: agent): boolean;
+declare function SaveAgentHandle(table: hashtable, parentKey: integer, childKey: integer, whichAgent: agent): boolean;
 
 /**
  * @param table
@@ -13242,7 +13243,7 @@ declare function SaveAgentHandle(this: void, table: hashtable, parentKey: intege
  * @param childKey
  * @param whichHashtable
  */
-declare function SaveHashtableHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichHashtable: hashtable): boolean;
+declare function SaveHashtableHandle(table: hashtable, parentKey: integer, childKey: integer, whichHashtable: hashtable): boolean;
 
 /**
  * @param table
@@ -13250,423 +13251,423 @@ declare function SaveHashtableHandle(this: void, table: hashtable, parentKey: in
  * @param childKey
  * @param whichFrameHandle
  */
-declare function SaveFrameHandle(this: void, table: hashtable, parentKey: integer, childKey: integer, whichFrameHandle: framehandle): boolean;
+declare function SaveFrameHandle(table: hashtable, parentKey: integer, childKey: integer, whichFrameHandle: framehandle): boolean;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadInteger(this: void, table: hashtable, parentKey: integer, childKey: integer): integer;
+declare function LoadInteger(table: hashtable, parentKey: integer, childKey: integer): integer;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadReal(this: void, table: hashtable, parentKey: integer, childKey: integer): real;
+declare function LoadReal(table: hashtable, parentKey: integer, childKey: integer): real;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadBoolean(this: void, table: hashtable, parentKey: integer, childKey: integer): boolean;
+declare function LoadBoolean(table: hashtable, parentKey: integer, childKey: integer): boolean;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadStr(this: void, table: hashtable, parentKey: integer, childKey: integer): string;
+declare function LoadStr(table: hashtable, parentKey: integer, childKey: integer): string;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadPlayerHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): player;
+declare function LoadPlayerHandle(table: hashtable, parentKey: integer, childKey: integer): player;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadWidgetHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): widget;
+declare function LoadWidgetHandle(table: hashtable, parentKey: integer, childKey: integer): widget;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadDestructableHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): destructable;
+declare function LoadDestructableHandle(table: hashtable, parentKey: integer, childKey: integer): destructable;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadItemHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): item;
+declare function LoadItemHandle(table: hashtable, parentKey: integer, childKey: integer): item;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadUnitHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): unit;
+declare function LoadUnitHandle(table: hashtable, parentKey: integer, childKey: integer): unit;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadAbilityHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): ability;
+declare function LoadAbilityHandle(table: hashtable, parentKey: integer, childKey: integer): ability;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadTimerHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): timer;
+declare function LoadTimerHandle(table: hashtable, parentKey: integer, childKey: integer): timer;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadTriggerHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): trigger;
+declare function LoadTriggerHandle(table: hashtable, parentKey: integer, childKey: integer): trigger;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadTriggerConditionHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): triggercondition;
+declare function LoadTriggerConditionHandle(table: hashtable, parentKey: integer, childKey: integer): triggercondition;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadTriggerActionHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): triggeraction;
+declare function LoadTriggerActionHandle(table: hashtable, parentKey: integer, childKey: integer): triggeraction;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadTriggerEventHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): event;
+declare function LoadTriggerEventHandle(table: hashtable, parentKey: integer, childKey: integer): event;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadForceHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): force;
+declare function LoadForceHandle(table: hashtable, parentKey: integer, childKey: integer): force;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadGroupHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): group;
+declare function LoadGroupHandle(table: hashtable, parentKey: integer, childKey: integer): group;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadLocationHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): location;
+declare function LoadLocationHandle(table: hashtable, parentKey: integer, childKey: integer): location;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadRectHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): rect;
+declare function LoadRectHandle(table: hashtable, parentKey: integer, childKey: integer): rect;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadBooleanExprHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): boolexpr;
+declare function LoadBooleanExprHandle(table: hashtable, parentKey: integer, childKey: integer): boolexpr;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadSoundHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): sound;
+declare function LoadSoundHandle(table: hashtable, parentKey: integer, childKey: integer): sound;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadEffectHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): effect;
+declare function LoadEffectHandle(table: hashtable, parentKey: integer, childKey: integer): effect;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadUnitPoolHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): unitpool;
+declare function LoadUnitPoolHandle(table: hashtable, parentKey: integer, childKey: integer): unitpool;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadItemPoolHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): itempool;
+declare function LoadItemPoolHandle(table: hashtable, parentKey: integer, childKey: integer): itempool;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadQuestHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): quest;
+declare function LoadQuestHandle(table: hashtable, parentKey: integer, childKey: integer): quest;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadQuestItemHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): questitem;
+declare function LoadQuestItemHandle(table: hashtable, parentKey: integer, childKey: integer): questitem;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadDefeatConditionHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): defeatcondition;
+declare function LoadDefeatConditionHandle(table: hashtable, parentKey: integer, childKey: integer): defeatcondition;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadTimerDialogHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): timerdialog;
+declare function LoadTimerDialogHandle(table: hashtable, parentKey: integer, childKey: integer): timerdialog;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadLeaderboardHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): leaderboard;
+declare function LoadLeaderboardHandle(table: hashtable, parentKey: integer, childKey: integer): leaderboard;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadMultiboardHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): multiboard;
+declare function LoadMultiboardHandle(table: hashtable, parentKey: integer, childKey: integer): multiboard;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadMultiboardItemHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): multiboarditem;
+declare function LoadMultiboardItemHandle(table: hashtable, parentKey: integer, childKey: integer): multiboarditem;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadTrackableHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): trackable;
+declare function LoadTrackableHandle(table: hashtable, parentKey: integer, childKey: integer): trackable;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadDialogHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): dialog;
+declare function LoadDialogHandle(table: hashtable, parentKey: integer, childKey: integer): dialog;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadButtonHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): button;
+declare function LoadButtonHandle(table: hashtable, parentKey: integer, childKey: integer): button;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadTextTagHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): texttag;
+declare function LoadTextTagHandle(table: hashtable, parentKey: integer, childKey: integer): texttag;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadLightningHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): lightning;
+declare function LoadLightningHandle(table: hashtable, parentKey: integer, childKey: integer): lightning;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadImageHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): image;
+declare function LoadImageHandle(table: hashtable, parentKey: integer, childKey: integer): image;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadUbersplatHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): ubersplat;
+declare function LoadUbersplatHandle(table: hashtable, parentKey: integer, childKey: integer): ubersplat;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadRegionHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): region;
+declare function LoadRegionHandle(table: hashtable, parentKey: integer, childKey: integer): region;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadFogStateHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): fogstate;
+declare function LoadFogStateHandle(table: hashtable, parentKey: integer, childKey: integer): fogstate;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadFogModifierHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): fogmodifier;
+declare function LoadFogModifierHandle(table: hashtable, parentKey: integer, childKey: integer): fogmodifier;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadHashtableHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): hashtable;
+declare function LoadHashtableHandle(table: hashtable, parentKey: integer, childKey: integer): hashtable;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function LoadFrameHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): framehandle;
+declare function LoadFrameHandle(table: hashtable, parentKey: integer, childKey: integer): framehandle;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function HaveSavedInteger(this: void, table: hashtable, parentKey: integer, childKey: integer): boolean;
+declare function HaveSavedInteger(table: hashtable, parentKey: integer, childKey: integer): boolean;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function HaveSavedReal(this: void, table: hashtable, parentKey: integer, childKey: integer): boolean;
+declare function HaveSavedReal(table: hashtable, parentKey: integer, childKey: integer): boolean;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function HaveSavedBoolean(this: void, table: hashtable, parentKey: integer, childKey: integer): boolean;
+declare function HaveSavedBoolean(table: hashtable, parentKey: integer, childKey: integer): boolean;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function HaveSavedString(this: void, table: hashtable, parentKey: integer, childKey: integer): boolean;
+declare function HaveSavedString(table: hashtable, parentKey: integer, childKey: integer): boolean;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function HaveSavedHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): boolean;
+declare function HaveSavedHandle(table: hashtable, parentKey: integer, childKey: integer): boolean;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function RemoveSavedInteger(this: void, table: hashtable, parentKey: integer, childKey: integer): nothing;
+declare function RemoveSavedInteger(table: hashtable, parentKey: integer, childKey: integer): nothing;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function RemoveSavedReal(this: void, table: hashtable, parentKey: integer, childKey: integer): nothing;
+declare function RemoveSavedReal(table: hashtable, parentKey: integer, childKey: integer): nothing;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function RemoveSavedBoolean(this: void, table: hashtable, parentKey: integer, childKey: integer): nothing;
+declare function RemoveSavedBoolean(table: hashtable, parentKey: integer, childKey: integer): nothing;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function RemoveSavedString(this: void, table: hashtable, parentKey: integer, childKey: integer): nothing;
+declare function RemoveSavedString(table: hashtable, parentKey: integer, childKey: integer): nothing;
 
 /**
  * @param table
  * @param parentKey
  * @param childKey
  */
-declare function RemoveSavedHandle(this: void, table: hashtable, parentKey: integer, childKey: integer): nothing;
+declare function RemoveSavedHandle(table: hashtable, parentKey: integer, childKey: integer): nothing;
 
 /**
  * @param table
  */
-declare function FlushParentHashtable(this: void, table: hashtable): nothing;
+declare function FlushParentHashtable(table: hashtable): nothing;
 
 /**
  * @param table
  * @param parentKey
  */
-declare function FlushChildHashtable(this: void, table: hashtable, parentKey: integer): nothing;
+declare function FlushChildHashtable(table: hashtable, parentKey: integer): nothing;
 
 /**
  * @param lowBound
  * @param highBound
  */
-declare function GetRandomInt(this: void, lowBound: integer, highBound: integer): integer;
+declare function GetRandomInt(lowBound: integer, highBound: integer): integer;
 
 /**
  * @param lowBound
  * @param highBound
  */
-declare function GetRandomReal(this: void, lowBound: real, highBound: real): real;
+declare function GetRandomReal(lowBound: real, highBound: real): real;
 
 /**
  */
-declare function CreateUnitPool(this: void): unitpool;
+declare function CreateUnitPool(): unitpool;
 
 /**
  * @param whichPool
  */
-declare function DestroyUnitPool(this: void, whichPool: unitpool): nothing;
+declare function DestroyUnitPool(whichPool: unitpool): nothing;
 
 /**
  * @param whichPool
  * @param unitId
  * @param weight
  */
-declare function UnitPoolAddUnitType(this: void, whichPool: unitpool, unitId: integer, weight: real): nothing;
+declare function UnitPoolAddUnitType(whichPool: unitpool, unitId: integer, weight: real): nothing;
 
 /**
  * @param whichPool
  * @param unitId
  */
-declare function UnitPoolRemoveUnitType(this: void, whichPool: unitpool, unitId: integer): nothing;
+declare function UnitPoolRemoveUnitType(whichPool: unitpool, unitId: integer): nothing;
 
 /**
  * @param whichPool
@@ -13675,61 +13676,61 @@ declare function UnitPoolRemoveUnitType(this: void, whichPool: unitpool, unitId:
  * @param y
  * @param facing
  */
-declare function PlaceRandomUnit(this: void, whichPool: unitpool, forWhichPlayer: player, x: real, y: real, facing: real): unit;
+declare function PlaceRandomUnit(whichPool: unitpool, forWhichPlayer: player, x: real, y: real, facing: real): unit;
 
 /**
  */
-declare function CreateItemPool(this: void): itempool;
+declare function CreateItemPool(): itempool;
 
 /**
  * @param whichItemPool
  */
-declare function DestroyItemPool(this: void, whichItemPool: itempool): nothing;
+declare function DestroyItemPool(whichItemPool: itempool): nothing;
 
 /**
  * @param whichItemPool
  * @param itemId
  * @param weight
  */
-declare function ItemPoolAddItemType(this: void, whichItemPool: itempool, itemId: integer, weight: real): nothing;
+declare function ItemPoolAddItemType(whichItemPool: itempool, itemId: integer, weight: real): nothing;
 
 /**
  * @param whichItemPool
  * @param itemId
  */
-declare function ItemPoolRemoveItemType(this: void, whichItemPool: itempool, itemId: integer): nothing;
+declare function ItemPoolRemoveItemType(whichItemPool: itempool, itemId: integer): nothing;
 
 /**
  * @param whichItemPool
  * @param x
  * @param y
  */
-declare function PlaceRandomItem(this: void, whichItemPool: itempool, x: real, y: real): item;
+declare function PlaceRandomItem(whichItemPool: itempool, x: real, y: real): item;
 
 /**
  * @param level
  */
-declare function ChooseRandomCreep(this: void, level: integer): integer;
+declare function ChooseRandomCreep(level: integer): integer;
 
 /**
  */
-declare function ChooseRandomNPBuilding(this: void): integer;
+declare function ChooseRandomNPBuilding(): integer;
 
 /**
  * @param level
  */
-declare function ChooseRandomItem(this: void, level: integer): integer;
+declare function ChooseRandomItem(level: integer): integer;
 
 /**
  * @param whichType
  * @param level
  */
-declare function ChooseRandomItemEx(this: void, whichType: itemtype, level: integer): integer;
+declare function ChooseRandomItemEx(whichType: itemtype, level: integer): integer;
 
 /**
  * @param seed
  */
-declare function SetRandomSeed(this: void, seed: integer): nothing;
+declare function SetRandomSeed(seed: integer): nothing;
 
 /**
  * @param a
@@ -13738,11 +13739,11 @@ declare function SetRandomSeed(this: void, seed: integer): nothing;
  * @param d
  * @param e
  */
-declare function SetTerrainFog(this: void, a: real, b: real, c: real, d: real, e: real): nothing;
+declare function SetTerrainFog(a: real, b: real, c: real, d: real, e: real): nothing;
 
 /**
  */
-declare function ResetTerrainFog(this: void): nothing;
+declare function ResetTerrainFog(): nothing;
 
 /**
  * @param a
@@ -13751,7 +13752,7 @@ declare function ResetTerrainFog(this: void): nothing;
  * @param d
  * @param e
  */
-declare function SetUnitFog(this: void, a: real, b: real, c: real, d: real, e: real): nothing;
+declare function SetUnitFog(a: real, b: real, c: real, d: real, e: real): nothing;
 
 /**
  * @param style
@@ -13762,7 +13763,7 @@ declare function SetUnitFog(this: void, a: real, b: real, c: real, d: real, e: r
  * @param green
  * @param blue
  */
-declare function SetTerrainFogEx(this: void, style: integer, zstart: real, zend: real, density: real, red: real, green: real, blue: real): nothing;
+declare function SetTerrainFogEx(style: integer, zstart: real, zend: real, density: real, red: real, green: real, blue: real): nothing;
 
 /**
  * @param toPlayer
@@ -13770,16 +13771,7 @@ declare function SetTerrainFogEx(this: void, style: integer, zstart: real, zend:
  * @param y
  * @param message
  */
-declare function DisplayTextToPlayer(this: void, toPlayer: player, x: real, y: real, message: string): nothing;
-
-/**
- * @param toPlayer
- * @param x
- * @param y
- * @param duration
- * @param message
- */
-declare function DisplayTimedTextToPlayer(this: void, toPlayer: player, x: real, y: real, duration: real, message: string): nothing;
+declare function DisplayTextToPlayer(toPlayer: player, x: real, y: real, message: string): nothing;
 
 /**
  * @param toPlayer
@@ -13788,57 +13780,66 @@ declare function DisplayTimedTextToPlayer(this: void, toPlayer: player, x: real,
  * @param duration
  * @param message
  */
-declare function DisplayTimedTextFromPlayer(this: void, toPlayer: player, x: real, y: real, duration: real, message: string): nothing;
+declare function DisplayTimedTextToPlayer(toPlayer: player, x: real, y: real, duration: real, message: string): nothing;
+
+/**
+ * @param toPlayer
+ * @param x
+ * @param y
+ * @param duration
+ * @param message
+ */
+declare function DisplayTimedTextFromPlayer(toPlayer: player, x: real, y: real, duration: real, message: string): nothing;
 
 /**
  */
-declare function ClearTextMessages(this: void): nothing;
+declare function ClearTextMessages(): nothing;
 
 /**
  * @param terrainDNCFile
  * @param unitDNCFile
  */
-declare function SetDayNightModels(this: void, terrainDNCFile: string, unitDNCFile: string): nothing;
+declare function SetDayNightModels(terrainDNCFile: string, unitDNCFile: string): nothing;
 
 /**
  * @param skyModelFile
  */
-declare function SetSkyModel(this: void, skyModelFile: string): nothing;
+declare function SetSkyModel(skyModelFile: string): nothing;
 
 /**
  * @param b
  */
-declare function EnableUserControl(this: void, b: boolean): nothing;
+declare function EnableUserControl(b: boolean): nothing;
 
 /**
  * @param b
  */
-declare function EnableUserUI(this: void, b: boolean): nothing;
+declare function EnableUserUI(b: boolean): nothing;
 
 /**
  * @param b
  */
-declare function SuspendTimeOfDay(this: void, b: boolean): nothing;
+declare function SuspendTimeOfDay(b: boolean): nothing;
 
 /**
  * @param r
  */
-declare function SetTimeOfDayScale(this: void, r: real): nothing;
+declare function SetTimeOfDayScale(r: real): nothing;
 
 /**
  */
-declare function GetTimeOfDayScale(this: void): real;
+declare function GetTimeOfDayScale(): real;
 
 /**
  * @param flag
  * @param fadeDuration
  */
-declare function ShowInterface(this: void, flag: boolean, fadeDuration: real): nothing;
+declare function ShowInterface(flag: boolean, fadeDuration: real): nothing;
 
 /**
  * @param flag
  */
-declare function PauseGame(this: void, flag: boolean): nothing;
+declare function PauseGame(flag: boolean): nothing;
 
 /**
  * @param whichUnit
@@ -13847,7 +13848,7 @@ declare function PauseGame(this: void, flag: boolean): nothing;
  * @param blue
  * @param alpha
  */
-declare function UnitAddIndicator(this: void, whichUnit: unit, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function UnitAddIndicator(whichUnit: unit, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param whichWidget
@@ -13856,14 +13857,14 @@ declare function UnitAddIndicator(this: void, whichUnit: unit, red: integer, gre
  * @param blue
  * @param alpha
  */
-declare function AddIndicator(this: void, whichWidget: widget, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function AddIndicator(whichWidget: widget, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param x
  * @param y
  * @param duration
  */
-declare function PingMinimap(this: void, x: real, y: real, duration: real): nothing;
+declare function PingMinimap(x: real, y: real, duration: real): nothing;
 
 /**
  * @param x
@@ -13874,76 +13875,76 @@ declare function PingMinimap(this: void, x: real, y: real, duration: real): noth
  * @param blue
  * @param extraEffects
  */
-declare function PingMinimapEx(this: void, x: real, y: real, duration: real, red: integer, green: integer, blue: integer, extraEffects: boolean): nothing;
+declare function PingMinimapEx(x: real, y: real, duration: real, red: integer, green: integer, blue: integer, extraEffects: boolean): nothing;
 
 /**
  * @param flag
  */
-declare function EnableOcclusion(this: void, flag: boolean): nothing;
+declare function EnableOcclusion(flag: boolean): nothing;
 
 /**
  * @param introText
  */
-declare function SetIntroShotText(this: void, introText: string): nothing;
+declare function SetIntroShotText(introText: string): nothing;
 
 /**
  * @param introModelPath
  */
-declare function SetIntroShotModel(this: void, introModelPath: string): nothing;
+declare function SetIntroShotModel(introModelPath: string): nothing;
 
 /**
  * @param b
  */
-declare function EnableWorldFogBoundary(this: void, b: boolean): nothing;
+declare function EnableWorldFogBoundary(b: boolean): nothing;
 
 /**
  * @param modelName
  */
-declare function PlayModelCinematic(this: void, modelName: string): nothing;
+declare function PlayModelCinematic(modelName: string): nothing;
 
 /**
  * @param movieName
  */
-declare function PlayCinematic(this: void, movieName: string): nothing;
+declare function PlayCinematic(movieName: string): nothing;
 
 /**
  * @param key
  */
-declare function ForceUIKey(this: void, key: string): nothing;
+declare function ForceUIKey(key: string): nothing;
 
 /**
  */
-declare function ForceUICancel(this: void): nothing;
+declare function ForceUICancel(): nothing;
 
 /**
  */
-declare function DisplayLoadDialog(this: void): nothing;
+declare function DisplayLoadDialog(): nothing;
 
 /**
  * @param iconPath
  */
-declare function SetAltMinimapIcon(this: void, iconPath: string): nothing;
+declare function SetAltMinimapIcon(iconPath: string): nothing;
 
 /**
  * @param flag
  */
-declare function DisableRestartMission(this: void, flag: boolean): nothing;
+declare function DisableRestartMission(flag: boolean): nothing;
 
 /**
  */
-declare function CreateTextTag(this: void): texttag;
+declare function CreateTextTag(): texttag;
 
 /**
  * @param t
  */
-declare function DestroyTextTag(this: void, t: texttag): nothing;
+declare function DestroyTextTag(t: texttag): nothing;
 
 /**
  * @param t
  * @param s
  * @param height
  */
-declare function SetTextTagText(this: void, t: texttag, s: string, height: real): nothing;
+declare function SetTextTagText(t: texttag, s: string, height: real): nothing;
 
 /**
  * @param t
@@ -13951,14 +13952,14 @@ declare function SetTextTagText(this: void, t: texttag, s: string, height: real)
  * @param y
  * @param heightOffset
  */
-declare function SetTextTagPos(this: void, t: texttag, x: real, y: real, heightOffset: real): nothing;
+declare function SetTextTagPos(t: texttag, x: real, y: real, heightOffset: real): nothing;
 
 /**
  * @param t
  * @param whichUnit
  * @param heightOffset
  */
-declare function SetTextTagPosUnit(this: void, t: texttag, whichUnit: unit, heightOffset: real): nothing;
+declare function SetTextTagPosUnit(t: texttag, whichUnit: unit, heightOffset: real): nothing;
 
 /**
  * @param t
@@ -13967,97 +13968,97 @@ declare function SetTextTagPosUnit(this: void, t: texttag, whichUnit: unit, heig
  * @param blue
  * @param alpha
  */
-declare function SetTextTagColor(this: void, t: texttag, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function SetTextTagColor(t: texttag, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param t
  * @param xvel
  * @param yvel
  */
-declare function SetTextTagVelocity(this: void, t: texttag, xvel: real, yvel: real): nothing;
+declare function SetTextTagVelocity(t: texttag, xvel: real, yvel: real): nothing;
 
 /**
  * @param t
  * @param flag
  */
-declare function SetTextTagVisibility(this: void, t: texttag, flag: boolean): nothing;
+declare function SetTextTagVisibility(t: texttag, flag: boolean): nothing;
 
 /**
  * @param t
  * @param flag
  */
-declare function SetTextTagSuspended(this: void, t: texttag, flag: boolean): nothing;
+declare function SetTextTagSuspended(t: texttag, flag: boolean): nothing;
 
 /**
  * @param t
  * @param flag
  */
-declare function SetTextTagPermanent(this: void, t: texttag, flag: boolean): nothing;
+declare function SetTextTagPermanent(t: texttag, flag: boolean): nothing;
 
 /**
  * @param t
  * @param age
  */
-declare function SetTextTagAge(this: void, t: texttag, age: real): nothing;
+declare function SetTextTagAge(t: texttag, age: real): nothing;
 
 /**
  * @param t
  * @param lifespan
  */
-declare function SetTextTagLifespan(this: void, t: texttag, lifespan: real): nothing;
+declare function SetTextTagLifespan(t: texttag, lifespan: real): nothing;
 
 /**
  * @param t
  * @param fadepoint
  */
-declare function SetTextTagFadepoint(this: void, t: texttag, fadepoint: real): nothing;
+declare function SetTextTagFadepoint(t: texttag, fadepoint: real): nothing;
 
 /**
  * @param reserved
  */
-declare function SetReservedLocalHeroButtons(this: void, reserved: integer): nothing;
+declare function SetReservedLocalHeroButtons(reserved: integer): nothing;
 
 /**
  */
-declare function GetAllyColorFilterState(this: void): integer;
-
-/**
- * @param state
- */
-declare function SetAllyColorFilterState(this: void, state: integer): nothing;
-
-/**
- */
-declare function GetCreepCampFilterState(this: void): boolean;
+declare function GetAllyColorFilterState(): integer;
 
 /**
  * @param state
  */
-declare function SetCreepCampFilterState(this: void, state: boolean): nothing;
+declare function SetAllyColorFilterState(state: integer): nothing;
+
+/**
+ */
+declare function GetCreepCampFilterState(): boolean;
+
+/**
+ * @param state
+ */
+declare function SetCreepCampFilterState(state: boolean): nothing;
 
 /**
  * @param enableAlly
  * @param enableCreep
  */
-declare function EnableMinimapFilterButtons(this: void, enableAlly: boolean, enableCreep: boolean): nothing;
+declare function EnableMinimapFilterButtons(enableAlly: boolean, enableCreep: boolean): nothing;
 
 /**
  * @param state
  * @param ui
  */
-declare function EnableDragSelect(this: void, state: boolean, ui: boolean): nothing;
+declare function EnableDragSelect(state: boolean, ui: boolean): nothing;
 
 /**
  * @param state
  * @param ui
  */
-declare function EnablePreSelect(this: void, state: boolean, ui: boolean): nothing;
+declare function EnablePreSelect(state: boolean, ui: boolean): nothing;
 
 /**
  * @param state
  * @param ui
  */
-declare function EnableSelect(this: void, state: boolean, ui: boolean): nothing;
+declare function EnableSelect(state: boolean, ui: boolean): nothing;
 
 /**
  * @param trackableModelPath
@@ -14065,150 +14066,150 @@ declare function EnableSelect(this: void, state: boolean, ui: boolean): nothing;
  * @param y
  * @param facing
  */
-declare function CreateTrackable(this: void, trackableModelPath: string, x: real, y: real, facing: real): trackable;
+declare function CreateTrackable(trackableModelPath: string, x: real, y: real, facing: real): trackable;
 
 /**
  */
-declare function CreateQuest(this: void): quest;
+declare function CreateQuest(): quest;
 
 /**
  * @param whichQuest
  */
-declare function DestroyQuest(this: void, whichQuest: quest): nothing;
+declare function DestroyQuest(whichQuest: quest): nothing;
 
 /**
  * @param whichQuest
  * @param title
  */
-declare function QuestSetTitle(this: void, whichQuest: quest, title: string): nothing;
+declare function QuestSetTitle(whichQuest: quest, title: string): nothing;
 
 /**
  * @param whichQuest
  * @param description
  */
-declare function QuestSetDescription(this: void, whichQuest: quest, description: string): nothing;
+declare function QuestSetDescription(whichQuest: quest, description: string): nothing;
 
 /**
  * @param whichQuest
  * @param iconPath
  */
-declare function QuestSetIconPath(this: void, whichQuest: quest, iconPath: string): nothing;
+declare function QuestSetIconPath(whichQuest: quest, iconPath: string): nothing;
 
 /**
  * @param whichQuest
  * @param required
  */
-declare function QuestSetRequired(this: void, whichQuest: quest, required: boolean): nothing;
+declare function QuestSetRequired(whichQuest: quest, required: boolean): nothing;
 
 /**
  * @param whichQuest
  * @param completed
  */
-declare function QuestSetCompleted(this: void, whichQuest: quest, completed: boolean): nothing;
+declare function QuestSetCompleted(whichQuest: quest, completed: boolean): nothing;
 
 /**
  * @param whichQuest
  * @param discovered
  */
-declare function QuestSetDiscovered(this: void, whichQuest: quest, discovered: boolean): nothing;
+declare function QuestSetDiscovered(whichQuest: quest, discovered: boolean): nothing;
 
 /**
  * @param whichQuest
  * @param failed
  */
-declare function QuestSetFailed(this: void, whichQuest: quest, failed: boolean): nothing;
+declare function QuestSetFailed(whichQuest: quest, failed: boolean): nothing;
 
 /**
  * @param whichQuest
  * @param enabled
  */
-declare function QuestSetEnabled(this: void, whichQuest: quest, enabled: boolean): nothing;
+declare function QuestSetEnabled(whichQuest: quest, enabled: boolean): nothing;
 
 /**
  * @param whichQuest
  */
-declare function IsQuestRequired(this: void, whichQuest: quest): boolean;
+declare function IsQuestRequired(whichQuest: quest): boolean;
 
 /**
  * @param whichQuest
  */
-declare function IsQuestCompleted(this: void, whichQuest: quest): boolean;
+declare function IsQuestCompleted(whichQuest: quest): boolean;
 
 /**
  * @param whichQuest
  */
-declare function IsQuestDiscovered(this: void, whichQuest: quest): boolean;
+declare function IsQuestDiscovered(whichQuest: quest): boolean;
 
 /**
  * @param whichQuest
  */
-declare function IsQuestFailed(this: void, whichQuest: quest): boolean;
+declare function IsQuestFailed(whichQuest: quest): boolean;
 
 /**
  * @param whichQuest
  */
-declare function IsQuestEnabled(this: void, whichQuest: quest): boolean;
+declare function IsQuestEnabled(whichQuest: quest): boolean;
 
 /**
  * @param whichQuest
  */
-declare function QuestCreateItem(this: void, whichQuest: quest): questitem;
+declare function QuestCreateItem(whichQuest: quest): questitem;
 
 /**
  * @param whichQuestItem
  * @param description
  */
-declare function QuestItemSetDescription(this: void, whichQuestItem: questitem, description: string): nothing;
+declare function QuestItemSetDescription(whichQuestItem: questitem, description: string): nothing;
 
 /**
  * @param whichQuestItem
  * @param completed
  */
-declare function QuestItemSetCompleted(this: void, whichQuestItem: questitem, completed: boolean): nothing;
+declare function QuestItemSetCompleted(whichQuestItem: questitem, completed: boolean): nothing;
 
 /**
  * @param whichQuestItem
  */
-declare function IsQuestItemCompleted(this: void, whichQuestItem: questitem): boolean;
+declare function IsQuestItemCompleted(whichQuestItem: questitem): boolean;
 
 /**
  */
-declare function CreateDefeatCondition(this: void): defeatcondition;
+declare function CreateDefeatCondition(): defeatcondition;
 
 /**
  * @param whichCondition
  */
-declare function DestroyDefeatCondition(this: void, whichCondition: defeatcondition): nothing;
+declare function DestroyDefeatCondition(whichCondition: defeatcondition): nothing;
 
 /**
  * @param whichCondition
  * @param description
  */
-declare function DefeatConditionSetDescription(this: void, whichCondition: defeatcondition, description: string): nothing;
+declare function DefeatConditionSetDescription(whichCondition: defeatcondition, description: string): nothing;
 
 /**
  */
-declare function FlashQuestDialogButton(this: void): nothing;
+declare function FlashQuestDialogButton(): nothing;
 
 /**
  */
-declare function ForceQuestDialogUpdate(this: void): nothing;
+declare function ForceQuestDialogUpdate(): nothing;
 
 /**
  * @param t
  */
-declare function CreateTimerDialog(this: void, t: timer): timerdialog;
+declare function CreateTimerDialog(t: timer): timerdialog;
 
 /**
  * @param whichDialog
  */
-declare function DestroyTimerDialog(this: void, whichDialog: timerdialog): nothing;
+declare function DestroyTimerDialog(whichDialog: timerdialog): nothing;
 
 /**
  * @param whichDialog
  * @param title
  */
-declare function TimerDialogSetTitle(this: void, whichDialog: timerdialog, title: string): nothing;
+declare function TimerDialogSetTitle(whichDialog: timerdialog, title: string): nothing;
 
 /**
  * @param whichDialog
@@ -14217,7 +14218,7 @@ declare function TimerDialogSetTitle(this: void, whichDialog: timerdialog, title
  * @param blue
  * @param alpha
  */
-declare function TimerDialogSetTitleColor(this: void, whichDialog: timerdialog, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function TimerDialogSetTitleColor(whichDialog: timerdialog, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param whichDialog
@@ -14226,61 +14227,61 @@ declare function TimerDialogSetTitleColor(this: void, whichDialog: timerdialog, 
  * @param blue
  * @param alpha
  */
-declare function TimerDialogSetTimeColor(this: void, whichDialog: timerdialog, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function TimerDialogSetTimeColor(whichDialog: timerdialog, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param whichDialog
  * @param speedMultFactor
  */
-declare function TimerDialogSetSpeed(this: void, whichDialog: timerdialog, speedMultFactor: real): nothing;
+declare function TimerDialogSetSpeed(whichDialog: timerdialog, speedMultFactor: real): nothing;
 
 /**
  * @param whichDialog
  * @param display
  */
-declare function TimerDialogDisplay(this: void, whichDialog: timerdialog, display: boolean): nothing;
+declare function TimerDialogDisplay(whichDialog: timerdialog, display: boolean): nothing;
 
 /**
  * @param whichDialog
  */
-declare function IsTimerDialogDisplayed(this: void, whichDialog: timerdialog): boolean;
+declare function IsTimerDialogDisplayed(whichDialog: timerdialog): boolean;
 
 /**
  * @param whichDialog
  * @param timeRemaining
  */
-declare function TimerDialogSetRealTimeRemaining(this: void, whichDialog: timerdialog, timeRemaining: real): nothing;
+declare function TimerDialogSetRealTimeRemaining(whichDialog: timerdialog, timeRemaining: real): nothing;
 
 /**
  */
-declare function CreateLeaderboard(this: void): leaderboard;
+declare function CreateLeaderboard(): leaderboard;
 
 /**
  * @param lb
  */
-declare function DestroyLeaderboard(this: void, lb: leaderboard): nothing;
+declare function DestroyLeaderboard(lb: leaderboard): nothing;
 
 /**
  * @param lb
  * @param show
  */
-declare function LeaderboardDisplay(this: void, lb: leaderboard, show: boolean): nothing;
+declare function LeaderboardDisplay(lb: leaderboard, show: boolean): nothing;
 
 /**
  * @param lb
  */
-declare function IsLeaderboardDisplayed(this: void, lb: leaderboard): boolean;
+declare function IsLeaderboardDisplayed(lb: leaderboard): boolean;
 
 /**
  * @param lb
  */
-declare function LeaderboardGetItemCount(this: void, lb: leaderboard): integer;
+declare function LeaderboardGetItemCount(lb: leaderboard): integer;
 
 /**
  * @param lb
  * @param count
  */
-declare function LeaderboardSetSizeByItemCount(this: void, lb: leaderboard, count: integer): nothing;
+declare function LeaderboardSetSizeByItemCount(lb: leaderboard, count: integer): nothing;
 
 /**
  * @param lb
@@ -14288,76 +14289,76 @@ declare function LeaderboardSetSizeByItemCount(this: void, lb: leaderboard, coun
  * @param value
  * @param p
  */
-declare function LeaderboardAddItem(this: void, lb: leaderboard, label: string, value: integer, p: player): nothing;
+declare function LeaderboardAddItem(lb: leaderboard, label: string, value: integer, p: player): nothing;
 
 /**
  * @param lb
  * @param index
  */
-declare function LeaderboardRemoveItem(this: void, lb: leaderboard, index: integer): nothing;
+declare function LeaderboardRemoveItem(lb: leaderboard, index: integer): nothing;
 
 /**
  * @param lb
  * @param p
  */
-declare function LeaderboardRemovePlayerItem(this: void, lb: leaderboard, p: player): nothing;
+declare function LeaderboardRemovePlayerItem(lb: leaderboard, p: player): nothing;
 
 /**
  * @param lb
  */
-declare function LeaderboardClear(this: void, lb: leaderboard): nothing;
-
-/**
- * @param lb
- * @param ascending
- */
-declare function LeaderboardSortItemsByValue(this: void, lb: leaderboard, ascending: boolean): nothing;
+declare function LeaderboardClear(lb: leaderboard): nothing;
 
 /**
  * @param lb
  * @param ascending
  */
-declare function LeaderboardSortItemsByPlayer(this: void, lb: leaderboard, ascending: boolean): nothing;
+declare function LeaderboardSortItemsByValue(lb: leaderboard, ascending: boolean): nothing;
 
 /**
  * @param lb
  * @param ascending
  */
-declare function LeaderboardSortItemsByLabel(this: void, lb: leaderboard, ascending: boolean): nothing;
+declare function LeaderboardSortItemsByPlayer(lb: leaderboard, ascending: boolean): nothing;
+
+/**
+ * @param lb
+ * @param ascending
+ */
+declare function LeaderboardSortItemsByLabel(lb: leaderboard, ascending: boolean): nothing;
 
 /**
  * @param lb
  * @param p
  */
-declare function LeaderboardHasPlayerItem(this: void, lb: leaderboard, p: player): boolean;
+declare function LeaderboardHasPlayerItem(lb: leaderboard, p: player): boolean;
 
 /**
  * @param lb
  * @param p
  */
-declare function LeaderboardGetPlayerIndex(this: void, lb: leaderboard, p: player): integer;
+declare function LeaderboardGetPlayerIndex(lb: leaderboard, p: player): integer;
 
 /**
  * @param lb
  * @param label
  */
-declare function LeaderboardSetLabel(this: void, lb: leaderboard, label: string): nothing;
+declare function LeaderboardSetLabel(lb: leaderboard, label: string): nothing;
 
 /**
  * @param lb
  */
-declare function LeaderboardGetLabelText(this: void, lb: leaderboard): string;
+declare function LeaderboardGetLabelText(lb: leaderboard): string;
 
 /**
  * @param toPlayer
  * @param lb
  */
-declare function PlayerSetLeaderboard(this: void, toPlayer: player, lb: leaderboard): nothing;
+declare function PlayerSetLeaderboard(toPlayer: player, lb: leaderboard): nothing;
 
 /**
  * @param toPlayer
  */
-declare function PlayerGetLeaderboard(this: void, toPlayer: player): leaderboard;
+declare function PlayerGetLeaderboard(toPlayer: player): leaderboard;
 
 /**
  * @param lb
@@ -14366,7 +14367,7 @@ declare function PlayerGetLeaderboard(this: void, toPlayer: player): leaderboard
  * @param blue
  * @param alpha
  */
-declare function LeaderboardSetLabelColor(this: void, lb: leaderboard, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function LeaderboardSetLabelColor(lb: leaderboard, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param lb
@@ -14375,7 +14376,7 @@ declare function LeaderboardSetLabelColor(this: void, lb: leaderboard, red: inte
  * @param blue
  * @param alpha
  */
-declare function LeaderboardSetValueColor(this: void, lb: leaderboard, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function LeaderboardSetValueColor(lb: leaderboard, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param lb
@@ -14384,21 +14385,21 @@ declare function LeaderboardSetValueColor(this: void, lb: leaderboard, red: inte
  * @param showValues
  * @param showIcons
  */
-declare function LeaderboardSetStyle(this: void, lb: leaderboard, showLabel: boolean, showNames: boolean, showValues: boolean, showIcons: boolean): nothing;
+declare function LeaderboardSetStyle(lb: leaderboard, showLabel: boolean, showNames: boolean, showValues: boolean, showIcons: boolean): nothing;
 
 /**
  * @param lb
  * @param whichItem
  * @param val
  */
-declare function LeaderboardSetItemValue(this: void, lb: leaderboard, whichItem: integer, val: integer): nothing;
+declare function LeaderboardSetItemValue(lb: leaderboard, whichItem: integer, val: integer): nothing;
 
 /**
  * @param lb
  * @param whichItem
  * @param val
  */
-declare function LeaderboardSetItemLabel(this: void, lb: leaderboard, whichItem: integer, val: string): nothing;
+declare function LeaderboardSetItemLabel(lb: leaderboard, whichItem: integer, val: string): nothing;
 
 /**
  * @param lb
@@ -14407,7 +14408,7 @@ declare function LeaderboardSetItemLabel(this: void, lb: leaderboard, whichItem:
  * @param showValue
  * @param showIcon
  */
-declare function LeaderboardSetItemStyle(this: void, lb: leaderboard, whichItem: integer, showLabel: boolean, showValue: boolean, showIcon: boolean): nothing;
+declare function LeaderboardSetItemStyle(lb: leaderboard, whichItem: integer, showLabel: boolean, showValue: boolean, showIcon: boolean): nothing;
 
 /**
  * @param lb
@@ -14417,7 +14418,7 @@ declare function LeaderboardSetItemStyle(this: void, lb: leaderboard, whichItem:
  * @param blue
  * @param alpha
  */
-declare function LeaderboardSetItemLabelColor(this: void, lb: leaderboard, whichItem: integer, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function LeaderboardSetItemLabelColor(lb: leaderboard, whichItem: integer, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param lb
@@ -14427,54 +14428,54 @@ declare function LeaderboardSetItemLabelColor(this: void, lb: leaderboard, which
  * @param blue
  * @param alpha
  */
-declare function LeaderboardSetItemValueColor(this: void, lb: leaderboard, whichItem: integer, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function LeaderboardSetItemValueColor(lb: leaderboard, whichItem: integer, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  */
-declare function CreateMultiboard(this: void): multiboard;
+declare function CreateMultiboard(): multiboard;
 
 /**
  * @param lb
  */
-declare function DestroyMultiboard(this: void, lb: multiboard): nothing;
+declare function DestroyMultiboard(lb: multiboard): nothing;
 
 /**
  * @param lb
  * @param show
  */
-declare function MultiboardDisplay(this: void, lb: multiboard, show: boolean): nothing;
+declare function MultiboardDisplay(lb: multiboard, show: boolean): nothing;
 
 /**
  * @param lb
  */
-declare function IsMultiboardDisplayed(this: void, lb: multiboard): boolean;
+declare function IsMultiboardDisplayed(lb: multiboard): boolean;
 
 /**
  * @param lb
  * @param minimize
  */
-declare function MultiboardMinimize(this: void, lb: multiboard, minimize: boolean): nothing;
+declare function MultiboardMinimize(lb: multiboard, minimize: boolean): nothing;
 
 /**
  * @param lb
  */
-declare function IsMultiboardMinimized(this: void, lb: multiboard): boolean;
+declare function IsMultiboardMinimized(lb: multiboard): boolean;
 
 /**
  * @param lb
  */
-declare function MultiboardClear(this: void, lb: multiboard): nothing;
+declare function MultiboardClear(lb: multiboard): nothing;
 
 /**
  * @param lb
  * @param label
  */
-declare function MultiboardSetTitleText(this: void, lb: multiboard, label: string): nothing;
+declare function MultiboardSetTitleText(lb: multiboard, label: string): nothing;
 
 /**
  * @param lb
  */
-declare function MultiboardGetTitleText(this: void, lb: multiboard): string;
+declare function MultiboardGetTitleText(lb: multiboard): string;
 
 /**
  * @param lb
@@ -14483,42 +14484,42 @@ declare function MultiboardGetTitleText(this: void, lb: multiboard): string;
  * @param blue
  * @param alpha
  */
-declare function MultiboardSetTitleTextColor(this: void, lb: multiboard, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function MultiboardSetTitleTextColor(lb: multiboard, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param lb
  */
-declare function MultiboardGetRowCount(this: void, lb: multiboard): integer;
+declare function MultiboardGetRowCount(lb: multiboard): integer;
 
 /**
  * @param lb
  */
-declare function MultiboardGetColumnCount(this: void, lb: multiboard): integer;
-
-/**
- * @param lb
- * @param count
- */
-declare function MultiboardSetColumnCount(this: void, lb: multiboard, count: integer): nothing;
+declare function MultiboardGetColumnCount(lb: multiboard): integer;
 
 /**
  * @param lb
  * @param count
  */
-declare function MultiboardSetRowCount(this: void, lb: multiboard, count: integer): nothing;
+declare function MultiboardSetColumnCount(lb: multiboard, count: integer): nothing;
+
+/**
+ * @param lb
+ * @param count
+ */
+declare function MultiboardSetRowCount(lb: multiboard, count: integer): nothing;
 
 /**
  * @param lb
  * @param showValues
  * @param showIcons
  */
-declare function MultiboardSetItemsStyle(this: void, lb: multiboard, showValues: boolean, showIcons: boolean): nothing;
+declare function MultiboardSetItemsStyle(lb: multiboard, showValues: boolean, showIcons: boolean): nothing;
 
 /**
  * @param lb
  * @param value
  */
-declare function MultiboardSetItemsValue(this: void, lb: multiboard, value: string): nothing;
+declare function MultiboardSetItemsValue(lb: multiboard, value: string): nothing;
 
 /**
  * @param lb
@@ -14527,44 +14528,44 @@ declare function MultiboardSetItemsValue(this: void, lb: multiboard, value: stri
  * @param blue
  * @param alpha
  */
-declare function MultiboardSetItemsValueColor(this: void, lb: multiboard, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function MultiboardSetItemsValueColor(lb: multiboard, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param lb
  * @param width
  */
-declare function MultiboardSetItemsWidth(this: void, lb: multiboard, width: real): nothing;
+declare function MultiboardSetItemsWidth(lb: multiboard, width: real): nothing;
 
 /**
  * @param lb
  * @param iconPath
  */
-declare function MultiboardSetItemsIcon(this: void, lb: multiboard, iconPath: string): nothing;
+declare function MultiboardSetItemsIcon(lb: multiboard, iconPath: string): nothing;
 
 /**
  * @param lb
  * @param row
  * @param column
  */
-declare function MultiboardGetItem(this: void, lb: multiboard, row: integer, column: integer): multiboarditem;
+declare function MultiboardGetItem(lb: multiboard, row: integer, column: integer): multiboarditem;
 
 /**
  * @param mbi
  */
-declare function MultiboardReleaseItem(this: void, mbi: multiboarditem): nothing;
+declare function MultiboardReleaseItem(mbi: multiboarditem): nothing;
 
 /**
  * @param mbi
  * @param showValue
  * @param showIcon
  */
-declare function MultiboardSetItemStyle(this: void, mbi: multiboarditem, showValue: boolean, showIcon: boolean): nothing;
+declare function MultiboardSetItemStyle(mbi: multiboarditem, showValue: boolean, showIcon: boolean): nothing;
 
 /**
  * @param mbi
  * @param val
  */
-declare function MultiboardSetItemValue(this: void, mbi: multiboarditem, val: string): nothing;
+declare function MultiboardSetItemValue(mbi: multiboarditem, val: string): nothing;
 
 /**
  * @param mbi
@@ -14573,36 +14574,36 @@ declare function MultiboardSetItemValue(this: void, mbi: multiboarditem, val: st
  * @param blue
  * @param alpha
  */
-declare function MultiboardSetItemValueColor(this: void, mbi: multiboarditem, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function MultiboardSetItemValueColor(mbi: multiboarditem, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param mbi
  * @param width
  */
-declare function MultiboardSetItemWidth(this: void, mbi: multiboarditem, width: real): nothing;
+declare function MultiboardSetItemWidth(mbi: multiboarditem, width: real): nothing;
 
 /**
  * @param mbi
  * @param iconFileName
  */
-declare function MultiboardSetItemIcon(this: void, mbi: multiboarditem, iconFileName: string): nothing;
+declare function MultiboardSetItemIcon(mbi: multiboarditem, iconFileName: string): nothing;
 
 /**
  * @param flag
  */
-declare function MultiboardSuppressDisplay(this: void, flag: boolean): nothing;
+declare function MultiboardSuppressDisplay(flag: boolean): nothing;
 
 /**
  * @param x
  * @param y
  */
-declare function SetCameraPosition(this: void, x: real, y: real): nothing;
+declare function SetCameraPosition(x: real, y: real): nothing;
 
 /**
  * @param x
  * @param y
  */
-declare function SetCameraQuickPosition(this: void, x: real, y: real): nothing;
+declare function SetCameraQuickPosition(x: real, y: real): nothing;
 
 /**
  * @param x1
@@ -14614,36 +14615,36 @@ declare function SetCameraQuickPosition(this: void, x: real, y: real): nothing;
  * @param x4
  * @param y4
  */
-declare function SetCameraBounds(this: void, x1: real, y1: real, x2: real, y2: real, x3: real, y3: real, x4: real, y4: real): nothing;
+declare function SetCameraBounds(x1: real, y1: real, x2: real, y2: real, x3: real, y3: real, x4: real, y4: real): nothing;
 
 /**
  */
-declare function StopCamera(this: void): nothing;
+declare function StopCamera(): nothing;
 
 /**
  * @param duration
  */
-declare function ResetToGameCamera(this: void, duration: real): nothing;
+declare function ResetToGameCamera(duration: real): nothing;
 
 /**
  * @param x
  * @param y
  */
-declare function PanCameraTo(this: void, x: real, y: real): nothing;
+declare function PanCameraTo(x: real, y: real): nothing;
 
 /**
  * @param x
  * @param y
  * @param duration
  */
-declare function PanCameraToTimed(this: void, x: real, y: real, duration: real): nothing;
+declare function PanCameraToTimed(x: real, y: real, duration: real): nothing;
 
 /**
  * @param x
  * @param y
  * @param zOffsetDest
  */
-declare function PanCameraToWithZ(this: void, x: real, y: real, zOffsetDest: real): nothing;
+declare function PanCameraToWithZ(x: real, y: real, zOffsetDest: real): nothing;
 
 /**
  * @param x
@@ -14651,12 +14652,12 @@ declare function PanCameraToWithZ(this: void, x: real, y: real, zOffsetDest: rea
  * @param zOffsetDest
  * @param duration
  */
-declare function PanCameraToTimedWithZ(this: void, x: real, y: real, zOffsetDest: real, duration: real): nothing;
+declare function PanCameraToTimedWithZ(x: real, y: real, zOffsetDest: real, duration: real): nothing;
 
 /**
  * @param cameraModelFile
  */
-declare function SetCinematicCamera(this: void, cameraModelFile: string): nothing;
+declare function SetCinematicCamera(cameraModelFile: string): nothing;
 
 /**
  * @param x
@@ -14664,21 +14665,21 @@ declare function SetCinematicCamera(this: void, cameraModelFile: string): nothin
  * @param radiansToSweep
  * @param duration
  */
-declare function SetCameraRotateMode(this: void, x: real, y: real, radiansToSweep: real, duration: real): nothing;
+declare function SetCameraRotateMode(x: real, y: real, radiansToSweep: real, duration: real): nothing;
 
 /**
  * @param whichField
  * @param value
  * @param duration
  */
-declare function SetCameraField(this: void, whichField: camerafield, value: real, duration: real): nothing;
+declare function SetCameraField(whichField: camerafield, value: real, duration: real): nothing;
 
 /**
  * @param whichField
  * @param offset
  * @param duration
  */
-declare function AdjustCameraField(this: void, whichField: camerafield, offset: real, duration: real): nothing;
+declare function AdjustCameraField(whichField: camerafield, offset: real, duration: real): nothing;
 
 /**
  * @param whichUnit
@@ -14686,18 +14687,18 @@ declare function AdjustCameraField(this: void, whichField: camerafield, offset: 
  * @param yoffset
  * @param inheritOrientation
  */
-declare function SetCameraTargetController(this: void, whichUnit: unit, xoffset: real, yoffset: real, inheritOrientation: boolean): nothing;
+declare function SetCameraTargetController(whichUnit: unit, xoffset: real, yoffset: real, inheritOrientation: boolean): nothing;
 
 /**
  * @param whichUnit
  * @param xoffset
  * @param yoffset
  */
-declare function SetCameraOrientController(this: void, whichUnit: unit, xoffset: real, yoffset: real): nothing;
+declare function SetCameraOrientController(whichUnit: unit, xoffset: real, yoffset: real): nothing;
 
 /**
  */
-declare function CreateCameraSetup(this: void): camerasetup;
+declare function CreateCameraSetup(): camerasetup;
 
 /**
  * @param whichSetup
@@ -14705,13 +14706,13 @@ declare function CreateCameraSetup(this: void): camerasetup;
  * @param value
  * @param duration
  */
-declare function CameraSetupSetField(this: void, whichSetup: camerasetup, whichField: camerafield, value: real, duration: real): nothing;
+declare function CameraSetupSetField(whichSetup: camerasetup, whichField: camerafield, value: real, duration: real): nothing;
 
 /**
  * @param whichSetup
  * @param whichField
  */
-declare function CameraSetupGetField(this: void, whichSetup: camerasetup, whichField: camerafield): real;
+declare function CameraSetupGetField(whichSetup: camerasetup, whichField: camerafield): real;
 
 /**
  * @param whichSetup
@@ -14719,95 +14720,95 @@ declare function CameraSetupGetField(this: void, whichSetup: camerasetup, whichF
  * @param y
  * @param duration
  */
-declare function CameraSetupSetDestPosition(this: void, whichSetup: camerasetup, x: real, y: real, duration: real): nothing;
+declare function CameraSetupSetDestPosition(whichSetup: camerasetup, x: real, y: real, duration: real): nothing;
 
 /**
  * @param whichSetup
  */
-declare function CameraSetupGetDestPositionLoc(this: void, whichSetup: camerasetup): location;
+declare function CameraSetupGetDestPositionLoc(whichSetup: camerasetup): location;
 
 /**
  * @param whichSetup
  */
-declare function CameraSetupGetDestPositionX(this: void, whichSetup: camerasetup): real;
+declare function CameraSetupGetDestPositionX(whichSetup: camerasetup): real;
 
 /**
  * @param whichSetup
  */
-declare function CameraSetupGetDestPositionY(this: void, whichSetup: camerasetup): real;
+declare function CameraSetupGetDestPositionY(whichSetup: camerasetup): real;
 
 /**
  * @param whichSetup
  * @param doPan
  * @param panTimed
  */
-declare function CameraSetupApply(this: void, whichSetup: camerasetup, doPan: boolean, panTimed: boolean): nothing;
+declare function CameraSetupApply(whichSetup: camerasetup, doPan: boolean, panTimed: boolean): nothing;
 
 /**
  * @param whichSetup
  * @param zDestOffset
  */
-declare function CameraSetupApplyWithZ(this: void, whichSetup: camerasetup, zDestOffset: real): nothing;
+declare function CameraSetupApplyWithZ(whichSetup: camerasetup, zDestOffset: real): nothing;
 
 /**
  * @param whichSetup
  * @param doPan
  * @param forceDuration
  */
-declare function CameraSetupApplyForceDuration(this: void, whichSetup: camerasetup, doPan: boolean, forceDuration: real): nothing;
+declare function CameraSetupApplyForceDuration(whichSetup: camerasetup, doPan: boolean, forceDuration: real): nothing;
 
 /**
  * @param whichSetup
  * @param zDestOffset
  * @param forceDuration
  */
-declare function CameraSetupApplyForceDurationWithZ(this: void, whichSetup: camerasetup, zDestOffset: real, forceDuration: real): nothing;
+declare function CameraSetupApplyForceDurationWithZ(whichSetup: camerasetup, zDestOffset: real, forceDuration: real): nothing;
 
 /**
  * @param mag
  * @param velocity
  */
-declare function CameraSetTargetNoise(this: void, mag: real, velocity: real): nothing;
+declare function CameraSetTargetNoise(mag: real, velocity: real): nothing;
 
 /**
  * @param mag
  * @param velocity
  */
-declare function CameraSetSourceNoise(this: void, mag: real, velocity: real): nothing;
-
-/**
- * @param mag
- * @param velocity
- * @param vertOnly
- */
-declare function CameraSetTargetNoiseEx(this: void, mag: real, velocity: real, vertOnly: boolean): nothing;
+declare function CameraSetSourceNoise(mag: real, velocity: real): nothing;
 
 /**
  * @param mag
  * @param velocity
  * @param vertOnly
  */
-declare function CameraSetSourceNoiseEx(this: void, mag: real, velocity: real, vertOnly: boolean): nothing;
+declare function CameraSetTargetNoiseEx(mag: real, velocity: real, vertOnly: boolean): nothing;
+
+/**
+ * @param mag
+ * @param velocity
+ * @param vertOnly
+ */
+declare function CameraSetSourceNoiseEx(mag: real, velocity: real, vertOnly: boolean): nothing;
 
 /**
  * @param factor
  */
-declare function CameraSetSmoothingFactor(this: void, factor: real): nothing;
+declare function CameraSetSmoothingFactor(factor: real): nothing;
 
 /**
  * @param filename
  */
-declare function SetCineFilterTexture(this: void, filename: string): nothing;
+declare function SetCineFilterTexture(filename: string): nothing;
 
 /**
  * @param whichMode
  */
-declare function SetCineFilterBlendMode(this: void, whichMode: blendmode): nothing;
+declare function SetCineFilterBlendMode(whichMode: blendmode): nothing;
 
 /**
  * @param whichFlags
  */
-declare function SetCineFilterTexMapFlags(this: void, whichFlags: texmapflags): nothing;
+declare function SetCineFilterTexMapFlags(whichFlags: texmapflags): nothing;
 
 /**
  * @param minu
@@ -14815,7 +14816,7 @@ declare function SetCineFilterTexMapFlags(this: void, whichFlags: texmapflags): 
  * @param maxu
  * @param maxv
  */
-declare function SetCineFilterStartUV(this: void, minu: real, minv: real, maxu: real, maxv: real): nothing;
+declare function SetCineFilterStartUV(minu: real, minv: real, maxu: real, maxv: real): nothing;
 
 /**
  * @param minu
@@ -14823,7 +14824,7 @@ declare function SetCineFilterStartUV(this: void, minu: real, minv: real, maxu: 
  * @param maxu
  * @param maxv
  */
-declare function SetCineFilterEndUV(this: void, minu: real, minv: real, maxu: real, maxv: real): nothing;
+declare function SetCineFilterEndUV(minu: real, minv: real, maxu: real, maxv: real): nothing;
 
 /**
  * @param red
@@ -14831,7 +14832,7 @@ declare function SetCineFilterEndUV(this: void, minu: real, minv: real, maxu: re
  * @param blue
  * @param alpha
  */
-declare function SetCineFilterStartColor(this: void, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function SetCineFilterStartColor(red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param red
@@ -14839,21 +14840,21 @@ declare function SetCineFilterStartColor(this: void, red: integer, green: intege
  * @param blue
  * @param alpha
  */
-declare function SetCineFilterEndColor(this: void, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function SetCineFilterEndColor(red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param duration
  */
-declare function SetCineFilterDuration(this: void, duration: real): nothing;
+declare function SetCineFilterDuration(duration: real): nothing;
 
 /**
  * @param flag
  */
-declare function DisplayCineFilter(this: void, flag: boolean): nothing;
+declare function DisplayCineFilter(flag: boolean): nothing;
 
 /**
  */
-declare function IsCineFilterDisplayed(this: void): boolean;
+declare function IsCineFilterDisplayed(): boolean;
 
 /**
  * @param portraitUnitId
@@ -14863,79 +14864,79 @@ declare function IsCineFilterDisplayed(this: void): boolean;
  * @param sceneDuration
  * @param voiceoverDuration
  */
-declare function SetCinematicScene(this: void, portraitUnitId: integer, color: playercolor, speakerTitle: string, text: string, sceneDuration: real, voiceoverDuration: real): nothing;
+declare function SetCinematicScene(portraitUnitId: integer, color: playercolor, speakerTitle: string, text: string, sceneDuration: real, voiceoverDuration: real): nothing;
 
 /**
  */
-declare function EndCinematicScene(this: void): nothing;
+declare function EndCinematicScene(): nothing;
 
 /**
  * @param flag
  */
-declare function ForceCinematicSubtitles(this: void, flag: boolean): nothing;
+declare function ForceCinematicSubtitles(flag: boolean): nothing;
 
 /**
  * @param whichMargin
  */
-declare function GetCameraMargin(this: void, whichMargin: integer): real;
+declare function GetCameraMargin(whichMargin: integer): real;
 
 /**
  */
-declare function GetCameraBoundMinX(this: void): real;
+declare function GetCameraBoundMinX(): real;
 
 /**
  */
-declare function GetCameraBoundMinY(this: void): real;
+declare function GetCameraBoundMinY(): real;
 
 /**
  */
-declare function GetCameraBoundMaxX(this: void): real;
+declare function GetCameraBoundMaxX(): real;
 
 /**
  */
-declare function GetCameraBoundMaxY(this: void): real;
+declare function GetCameraBoundMaxY(): real;
 
 /**
  * @param whichField
  */
-declare function GetCameraField(this: void, whichField: camerafield): real;
+declare function GetCameraField(whichField: camerafield): real;
 
 /**
  */
-declare function GetCameraTargetPositionX(this: void): real;
+declare function GetCameraTargetPositionX(): real;
 
 /**
  */
-declare function GetCameraTargetPositionY(this: void): real;
+declare function GetCameraTargetPositionY(): real;
 
 /**
  */
-declare function GetCameraTargetPositionZ(this: void): real;
+declare function GetCameraTargetPositionZ(): real;
 
 /**
  */
-declare function GetCameraTargetPositionLoc(this: void): location;
+declare function GetCameraTargetPositionLoc(): location;
 
 /**
  */
-declare function GetCameraEyePositionX(this: void): real;
+declare function GetCameraEyePositionX(): real;
 
 /**
  */
-declare function GetCameraEyePositionY(this: void): real;
+declare function GetCameraEyePositionY(): real;
 
 /**
  */
-declare function GetCameraEyePositionZ(this: void): real;
+declare function GetCameraEyePositionZ(): real;
 
 /**
  */
-declare function GetCameraEyePositionLoc(this: void): location;
+declare function GetCameraEyePositionLoc(): location;
 
 /**
  * @param environmentName
  */
-declare function NewSoundEnvironment(this: void, environmentName: string): nothing;
+declare function NewSoundEnvironment(environmentName: string): nothing;
 
 /**
  * @param fileName
@@ -14946,7 +14947,7 @@ declare function NewSoundEnvironment(this: void, environmentName: string): nothi
  * @param fadeOutRate
  * @param eaxSetting
  */
-declare function CreateSound(this: void, fileName: string, looping: boolean, is3D: boolean, stopwhenoutofrange: boolean, fadeInRate: integer, fadeOutRate: integer, eaxSetting: string): sound;
+declare function CreateSound(fileName: string, looping: boolean, is3D: boolean, stopwhenoutofrange: boolean, fadeInRate: integer, fadeOutRate: integer, eaxSetting: string): sound;
 
 /**
  * @param fileName
@@ -14957,7 +14958,7 @@ declare function CreateSound(this: void, fileName: string, looping: boolean, is3
  * @param fadeOutRate
  * @param SLKEntryName
  */
-declare function CreateSoundFilenameWithLabel(this: void, fileName: string, looping: boolean, is3D: boolean, stopwhenoutofrange: boolean, fadeInRate: integer, fadeOutRate: integer, SLKEntryName: string): sound;
+declare function CreateSoundFilenameWithLabel(fileName: string, looping: boolean, is3D: boolean, stopwhenoutofrange: boolean, fadeInRate: integer, fadeOutRate: integer, SLKEntryName: string): sound;
 
 /**
  * @param soundLabel
@@ -14967,57 +14968,57 @@ declare function CreateSoundFilenameWithLabel(this: void, fileName: string, loop
  * @param fadeInRate
  * @param fadeOutRate
  */
-declare function CreateSoundFromLabel(this: void, soundLabel: string, looping: boolean, is3D: boolean, stopwhenoutofrange: boolean, fadeInRate: integer, fadeOutRate: integer): sound;
+declare function CreateSoundFromLabel(soundLabel: string, looping: boolean, is3D: boolean, stopwhenoutofrange: boolean, fadeInRate: integer, fadeOutRate: integer): sound;
 
 /**
  * @param soundLabel
  * @param fadeInRate
  * @param fadeOutRate
  */
-declare function CreateMIDISound(this: void, soundLabel: string, fadeInRate: integer, fadeOutRate: integer): sound;
+declare function CreateMIDISound(soundLabel: string, fadeInRate: integer, fadeOutRate: integer): sound;
 
 /**
  * @param soundHandle
  * @param soundLabel
  */
-declare function SetSoundParamsFromLabel(this: void, soundHandle: sound, soundLabel: string): nothing;
+declare function SetSoundParamsFromLabel(soundHandle: sound, soundLabel: string): nothing;
 
 /**
  * @param soundHandle
  * @param cutoff
  */
-declare function SetSoundDistanceCutoff(this: void, soundHandle: sound, cutoff: real): nothing;
+declare function SetSoundDistanceCutoff(soundHandle: sound, cutoff: real): nothing;
 
 /**
  * @param soundHandle
  * @param channel
  */
-declare function SetSoundChannel(this: void, soundHandle: sound, channel: integer): nothing;
+declare function SetSoundChannel(soundHandle: sound, channel: integer): nothing;
 
 /**
  * @param soundHandle
  * @param volume
  */
-declare function SetSoundVolume(this: void, soundHandle: sound, volume: integer): nothing;
+declare function SetSoundVolume(soundHandle: sound, volume: integer): nothing;
 
 /**
  * @param soundHandle
  * @param pitch
  */
-declare function SetSoundPitch(this: void, soundHandle: sound, pitch: real): nothing;
+declare function SetSoundPitch(soundHandle: sound, pitch: real): nothing;
 
 /**
  * @param soundHandle
  * @param millisecs
  */
-declare function SetSoundPlayPosition(this: void, soundHandle: sound, millisecs: integer): nothing;
+declare function SetSoundPlayPosition(soundHandle: sound, millisecs: integer): nothing;
 
 /**
  * @param soundHandle
  * @param minDist
  * @param maxDist
  */
-declare function SetSoundDistances(this: void, soundHandle: sound, minDist: real, maxDist: real): nothing;
+declare function SetSoundDistances(soundHandle: sound, minDist: real, maxDist: real): nothing;
 
 /**
  * @param soundHandle
@@ -15025,7 +15026,7 @@ declare function SetSoundDistances(this: void, soundHandle: sound, minDist: real
  * @param outside
  * @param outsideVolume
  */
-declare function SetSoundConeAngles(this: void, soundHandle: sound, inside: real, outside: real, outsideVolume: integer): nothing;
+declare function SetSoundConeAngles(soundHandle: sound, inside: real, outside: real, outsideVolume: integer): nothing;
 
 /**
  * @param soundHandle
@@ -15033,7 +15034,7 @@ declare function SetSoundConeAngles(this: void, soundHandle: sound, inside: real
  * @param y
  * @param z
  */
-declare function SetSoundConeOrientation(this: void, soundHandle: sound, x: real, y: real, z: real): nothing;
+declare function SetSoundConeOrientation(soundHandle: sound, x: real, y: real, z: real): nothing;
 
 /**
  * @param soundHandle
@@ -15041,7 +15042,7 @@ declare function SetSoundConeOrientation(this: void, soundHandle: sound, x: real
  * @param y
  * @param z
  */
-declare function SetSoundPosition(this: void, soundHandle: sound, x: real, y: real, z: real): nothing;
+declare function SetSoundPosition(soundHandle: sound, x: real, y: real, z: real): nothing;
 
 /**
  * @param soundHandle
@@ -15049,136 +15050,128 @@ declare function SetSoundPosition(this: void, soundHandle: sound, x: real, y: re
  * @param y
  * @param z
  */
-declare function SetSoundVelocity(this: void, soundHandle: sound, x: real, y: real, z: real): nothing;
+declare function SetSoundVelocity(soundHandle: sound, x: real, y: real, z: real): nothing;
 
 /**
  * @param soundHandle
  * @param whichUnit
  */
-declare function AttachSoundToUnit(this: void, soundHandle: sound, whichUnit: unit): nothing;
+declare function AttachSoundToUnit(soundHandle: sound, whichUnit: unit): nothing;
 
 /**
  * @param soundHandle
  */
-declare function StartSound(this: void, soundHandle: sound): nothing;
+declare function StartSound(soundHandle: sound): nothing;
 
 /**
  * @param soundHandle
  * @param killWhenDone
  * @param fadeOut
  */
-declare function StopSound(this: void, soundHandle: sound, killWhenDone: boolean, fadeOut: boolean): nothing;
+declare function StopSound(soundHandle: sound, killWhenDone: boolean, fadeOut: boolean): nothing;
 
 /**
  * @param soundHandle
  */
-declare function KillSoundWhenDone(this: void, soundHandle: sound): nothing;
+declare function KillSoundWhenDone(soundHandle: sound): nothing;
 
 /**
  * @param musicName
  * @param random
  * @param index
  */
-declare function SetMapMusic(this: void, musicName: string, random: boolean, index: integer): nothing;
+declare function SetMapMusic(musicName: string, random: boolean, index: integer): nothing;
 
 /**
  */
-declare function ClearMapMusic(this: void): nothing;
+declare function ClearMapMusic(): nothing;
 
 /**
  * @param musicName
  */
-declare function PlayMusic(this: void, musicName: string): nothing;
+declare function PlayMusic(musicName: string): nothing;
 
 /**
  * @param musicName
  * @param frommsecs
  * @param fadeinmsecs
  */
-declare function PlayMusicEx(this: void, musicName: string, frommsecs: integer, fadeinmsecs: integer): nothing;
+declare function PlayMusicEx(musicName: string, frommsecs: integer, fadeinmsecs: integer): nothing;
 
 /**
  * @param fadeOut
  */
-declare function StopMusic(this: void, fadeOut: boolean): nothing;
+declare function StopMusic(fadeOut: boolean): nothing;
 
 /**
  */
-declare function ResumeMusic(this: void): nothing;
+declare function ResumeMusic(): nothing;
 
 /**
  * @param musicFileName
  */
-declare function PlayThematicMusic(this: void, musicFileName: string): nothing;
+declare function PlayThematicMusic(musicFileName: string): nothing;
 
 /**
  * @param musicFileName
  * @param frommsecs
  */
-declare function PlayThematicMusicEx(this: void, musicFileName: string, frommsecs: integer): nothing;
+declare function PlayThematicMusicEx(musicFileName: string, frommsecs: integer): nothing;
 
 /**
  */
-declare function EndThematicMusic(this: void): nothing;
+declare function EndThematicMusic(): nothing;
 
 /**
  * @param volume
  */
-declare function SetMusicVolume(this: void, volume: integer): nothing;
+declare function SetMusicVolume(volume: integer): nothing;
 
 /**
  * @param millisecs
  */
-declare function SetMusicPlayPosition(this: void, millisecs: integer): nothing;
+declare function SetMusicPlayPosition(millisecs: integer): nothing;
 
 /**
  * @param millisecs
  */
-declare function SetThematicMusicPlayPosition(this: void, millisecs: integer): nothing;
+declare function SetThematicMusicPlayPosition(millisecs: integer): nothing;
 
 /**
  * @param soundHandle
  * @param duration
  */
-declare function SetSoundDuration(this: void, soundHandle: sound, duration: integer): nothing;
+declare function SetSoundDuration(soundHandle: sound, duration: integer): nothing;
 
 /**
  * @param soundHandle
  */
-declare function GetSoundDuration(this: void, soundHandle: sound): integer;
+declare function GetSoundDuration(soundHandle: sound): integer;
 
 /**
  * @param musicFileName
  */
-declare function GetSoundFileDuration(this: void, musicFileName: string): integer;
+declare function GetSoundFileDuration(musicFileName: string): integer;
 
 /**
  * @param vgroup
  * @param scale
  */
-declare function VolumeGroupSetVolume(this: void, vgroup: volumegroup, scale: real): nothing;
+declare function VolumeGroupSetVolume(vgroup: volumegroup, scale: real): nothing;
 
 /**
  */
-declare function VolumeGroupReset(this: void): nothing;
-
-/**
- * @param soundHandle
- */
-declare function GetSoundIsPlaying(this: void, soundHandle: sound): boolean;
+declare function VolumeGroupReset(): nothing;
 
 /**
  * @param soundHandle
  */
-declare function GetSoundIsLoading(this: void, soundHandle: sound): boolean;
+declare function GetSoundIsPlaying(soundHandle: sound): boolean;
 
 /**
  * @param soundHandle
- * @param byPosition
- * @param rectwidth
- * @param rectheight
  */
-declare function RegisterStackedSound(this: void, soundHandle: sound, byPosition: boolean, rectwidth: real, rectheight: real): nothing;
+declare function GetSoundIsLoading(soundHandle: sound): boolean;
 
 /**
  * @param soundHandle
@@ -15186,24 +15179,32 @@ declare function RegisterStackedSound(this: void, soundHandle: sound, byPosition
  * @param rectwidth
  * @param rectheight
  */
-declare function UnregisterStackedSound(this: void, soundHandle: sound, byPosition: boolean, rectwidth: real, rectheight: real): nothing;
+declare function RegisterStackedSound(soundHandle: sound, byPosition: boolean, rectwidth: real, rectheight: real): nothing;
+
+/**
+ * @param soundHandle
+ * @param byPosition
+ * @param rectwidth
+ * @param rectheight
+ */
+declare function UnregisterStackedSound(soundHandle: sound, byPosition: boolean, rectwidth: real, rectheight: real): nothing;
 
 /**
  * @param where
  * @param effectID
  */
-declare function AddWeatherEffect(this: void, where: rect, effectID: integer): weathereffect;
+declare function AddWeatherEffect(where: rect, effectID: integer): weathereffect;
 
 /**
  * @param whichEffect
  */
-declare function RemoveWeatherEffect(this: void, whichEffect: weathereffect): nothing;
+declare function RemoveWeatherEffect(whichEffect: weathereffect): nothing;
 
 /**
  * @param whichEffect
  * @param enable
  */
-declare function EnableWeatherEffect(this: void, whichEffect: weathereffect, enable: boolean): nothing;
+declare function EnableWeatherEffect(whichEffect: weathereffect, enable: boolean): nothing;
 
 /**
  * @param x
@@ -15213,7 +15214,7 @@ declare function EnableWeatherEffect(this: void, whichEffect: weathereffect, ena
  * @param duration
  * @param permanent
  */
-declare function TerrainDeformCrater(this: void, x: real, y: real, radius: real, depth: real, duration: integer, permanent: boolean): terraindeformation;
+declare function TerrainDeformCrater(x: real, y: real, radius: real, depth: real, duration: integer, permanent: boolean): terraindeformation;
 
 /**
  * @param x
@@ -15227,7 +15228,7 @@ declare function TerrainDeformCrater(this: void, x: real, y: real, radius: real,
  * @param radiusStartPct
  * @param limitNeg
  */
-declare function TerrainDeformRipple(this: void, x: real, y: real, radius: real, depth: real, duration: integer, count: integer, spaceWaves: real, timeWaves: real, radiusStartPct: real, limitNeg: boolean): terraindeformation;
+declare function TerrainDeformRipple(x: real, y: real, radius: real, depth: real, duration: integer, count: integer, spaceWaves: real, timeWaves: real, radiusStartPct: real, limitNeg: boolean): terraindeformation;
 
 /**
  * @param x
@@ -15241,7 +15242,7 @@ declare function TerrainDeformRipple(this: void, x: real, y: real, radius: real,
  * @param trailTime
  * @param count
  */
-declare function TerrainDeformWave(this: void, x: real, y: real, dirX: real, dirY: real, distance: real, speed: real, radius: real, depth: real, trailTime: integer, count: integer): terraindeformation;
+declare function TerrainDeformWave(x: real, y: real, dirX: real, dirY: real, distance: real, speed: real, radius: real, depth: real, trailTime: integer, count: integer): terraindeformation;
 
 /**
  * @param x
@@ -15252,42 +15253,42 @@ declare function TerrainDeformWave(this: void, x: real, y: real, dirX: real, dir
  * @param duration
  * @param updateInterval
  */
-declare function TerrainDeformRandom(this: void, x: real, y: real, radius: real, minDelta: real, maxDelta: real, duration: integer, updateInterval: integer): terraindeformation;
+declare function TerrainDeformRandom(x: real, y: real, radius: real, minDelta: real, maxDelta: real, duration: integer, updateInterval: integer): terraindeformation;
 
 /**
  * @param deformation
  * @param duration
  */
-declare function TerrainDeformStop(this: void, deformation: terraindeformation, duration: integer): nothing;
+declare function TerrainDeformStop(deformation: terraindeformation, duration: integer): nothing;
 
 /**
  */
-declare function TerrainDeformStopAll(this: void): nothing;
+declare function TerrainDeformStopAll(): nothing;
 
 /**
  * @param modelName
  * @param x
  * @param y
  */
-declare function AddSpecialEffect(this: void, modelName: string, x: real, y: real): effect;
+declare function AddSpecialEffect(modelName: string, x: real, y: real): effect;
 
 /**
  * @param modelName
  * @param where
  */
-declare function AddSpecialEffectLoc(this: void, modelName: string, where: location): effect;
+declare function AddSpecialEffectLoc(modelName: string, where: location): effect;
 
 /**
  * @param modelName
  * @param targetWidget
  * @param attachPointName
  */
-declare function AddSpecialEffectTarget(this: void, modelName: string, targetWidget: widget, attachPointName: string): effect;
+declare function AddSpecialEffectTarget(modelName: string, targetWidget: widget, attachPointName: string): effect;
 
 /**
  * @param whichEffect
  */
-declare function DestroyEffect(this: void, whichEffect: effect): nothing;
+declare function DestroyEffect(whichEffect: effect): nothing;
 
 /**
  * @param abilityString
@@ -15295,14 +15296,14 @@ declare function DestroyEffect(this: void, whichEffect: effect): nothing;
  * @param x
  * @param y
  */
-declare function AddSpellEffect(this: void, abilityString: string, t: effecttype, x: real, y: real): effect;
+declare function AddSpellEffect(abilityString: string, t: effecttype, x: real, y: real): effect;
 
 /**
  * @param abilityString
  * @param t
  * @param where
  */
-declare function AddSpellEffectLoc(this: void, abilityString: string, t: effecttype, where: location): effect;
+declare function AddSpellEffectLoc(abilityString: string, t: effecttype, where: location): effect;
 
 /**
  * @param abilityId
@@ -15310,14 +15311,14 @@ declare function AddSpellEffectLoc(this: void, abilityString: string, t: effectt
  * @param x
  * @param y
  */
-declare function AddSpellEffectById(this: void, abilityId: integer, t: effecttype, x: real, y: real): effect;
+declare function AddSpellEffectById(abilityId: integer, t: effecttype, x: real, y: real): effect;
 
 /**
  * @param abilityId
  * @param t
  * @param where
  */
-declare function AddSpellEffectByIdLoc(this: void, abilityId: integer, t: effecttype, where: location): effect;
+declare function AddSpellEffectByIdLoc(abilityId: integer, t: effecttype, where: location): effect;
 
 /**
  * @param modelName
@@ -15325,7 +15326,7 @@ declare function AddSpellEffectByIdLoc(this: void, abilityId: integer, t: effect
  * @param targetWidget
  * @param attachPoint
  */
-declare function AddSpellEffectTarget(this: void, modelName: string, t: effecttype, targetWidget: widget, attachPoint: string): effect;
+declare function AddSpellEffectTarget(modelName: string, t: effecttype, targetWidget: widget, attachPoint: string): effect;
 
 /**
  * @param abilityId
@@ -15333,7 +15334,7 @@ declare function AddSpellEffectTarget(this: void, modelName: string, t: effectty
  * @param targetWidget
  * @param attachPoint
  */
-declare function AddSpellEffectTargetById(this: void, abilityId: integer, t: effecttype, targetWidget: widget, attachPoint: string): effect;
+declare function AddSpellEffectTargetById(abilityId: integer, t: effecttype, targetWidget: widget, attachPoint: string): effect;
 
 /**
  * @param codeName
@@ -15343,7 +15344,7 @@ declare function AddSpellEffectTargetById(this: void, abilityId: integer, t: eff
  * @param x2
  * @param y2
  */
-declare function AddLightning(this: void, codeName: string, checkVisibility: boolean, x1: real, y1: real, x2: real, y2: real): lightning;
+declare function AddLightning(codeName: string, checkVisibility: boolean, x1: real, y1: real, x2: real, y2: real): lightning;
 
 /**
  * @param codeName
@@ -15355,12 +15356,12 @@ declare function AddLightning(this: void, codeName: string, checkVisibility: boo
  * @param y2
  * @param z2
  */
-declare function AddLightningEx(this: void, codeName: string, checkVisibility: boolean, x1: real, y1: real, z1: real, x2: real, y2: real, z2: real): lightning;
+declare function AddLightningEx(codeName: string, checkVisibility: boolean, x1: real, y1: real, z1: real, x2: real, y2: real, z2: real): lightning;
 
 /**
  * @param whichBolt
  */
-declare function DestroyLightning(this: void, whichBolt: lightning): boolean;
+declare function DestroyLightning(whichBolt: lightning): boolean;
 
 /**
  * @param whichBolt
@@ -15370,7 +15371,7 @@ declare function DestroyLightning(this: void, whichBolt: lightning): boolean;
  * @param x2
  * @param y2
  */
-declare function MoveLightning(this: void, whichBolt: lightning, checkVisibility: boolean, x1: real, y1: real, x2: real, y2: real): boolean;
+declare function MoveLightning(whichBolt: lightning, checkVisibility: boolean, x1: real, y1: real, x2: real, y2: real): boolean;
 
 /**
  * @param whichBolt
@@ -15382,27 +15383,27 @@ declare function MoveLightning(this: void, whichBolt: lightning, checkVisibility
  * @param y2
  * @param z2
  */
-declare function MoveLightningEx(this: void, whichBolt: lightning, checkVisibility: boolean, x1: real, y1: real, z1: real, x2: real, y2: real, z2: real): boolean;
+declare function MoveLightningEx(whichBolt: lightning, checkVisibility: boolean, x1: real, y1: real, z1: real, x2: real, y2: real, z2: real): boolean;
 
 /**
  * @param whichBolt
  */
-declare function GetLightningColorA(this: void, whichBolt: lightning): real;
+declare function GetLightningColorA(whichBolt: lightning): real;
 
 /**
  * @param whichBolt
  */
-declare function GetLightningColorR(this: void, whichBolt: lightning): real;
+declare function GetLightningColorR(whichBolt: lightning): real;
 
 /**
  * @param whichBolt
  */
-declare function GetLightningColorG(this: void, whichBolt: lightning): real;
+declare function GetLightningColorG(whichBolt: lightning): real;
 
 /**
  * @param whichBolt
  */
-declare function GetLightningColorB(this: void, whichBolt: lightning): real;
+declare function GetLightningColorB(whichBolt: lightning): real;
 
 /**
  * @param whichBolt
@@ -15411,39 +15412,39 @@ declare function GetLightningColorB(this: void, whichBolt: lightning): real;
  * @param b
  * @param a
  */
-declare function SetLightningColor(this: void, whichBolt: lightning, r: real, g: real, b: real, a: real): boolean;
+declare function SetLightningColor(whichBolt: lightning, r: real, g: real, b: real, a: real): boolean;
 
 /**
  * @param abilityString
  * @param t
  * @param index
  */
-declare function GetAbilityEffect(this: void, abilityString: string, t: effecttype, index: integer): string;
+declare function GetAbilityEffect(abilityString: string, t: effecttype, index: integer): string;
 
 /**
  * @param abilityId
  * @param t
  * @param index
  */
-declare function GetAbilityEffectById(this: void, abilityId: integer, t: effecttype, index: integer): string;
+declare function GetAbilityEffectById(abilityId: integer, t: effecttype, index: integer): string;
 
 /**
  * @param abilityString
  * @param t
  */
-declare function GetAbilitySound(this: void, abilityString: string, t: soundtype): string;
+declare function GetAbilitySound(abilityString: string, t: soundtype): string;
 
 /**
  * @param abilityId
  * @param t
  */
-declare function GetAbilitySoundById(this: void, abilityId: integer, t: soundtype): string;
+declare function GetAbilitySoundById(abilityId: integer, t: soundtype): string;
 
 /**
  * @param x
  * @param y
  */
-declare function GetTerrainCliffLevel(this: void, x: real, y: real): integer;
+declare function GetTerrainCliffLevel(x: real, y: real): integer;
 
 /**
  * @param red
@@ -15451,24 +15452,24 @@ declare function GetTerrainCliffLevel(this: void, x: real, y: real): integer;
  * @param blue
  * @param alpha
  */
-declare function SetWaterBaseColor(this: void, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function SetWaterBaseColor(red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param val
  */
-declare function SetWaterDeforms(this: void, val: boolean): nothing;
+declare function SetWaterDeforms(val: boolean): nothing;
 
 /**
  * @param x
  * @param y
  */
-declare function GetTerrainType(this: void, x: real, y: real): integer;
+declare function GetTerrainType(x: real, y: real): integer;
 
 /**
  * @param x
  * @param y
  */
-declare function GetTerrainVariance(this: void, x: real, y: real): integer;
+declare function GetTerrainVariance(x: real, y: real): integer;
 
 /**
  * @param x
@@ -15478,14 +15479,14 @@ declare function GetTerrainVariance(this: void, x: real, y: real): integer;
  * @param area
  * @param shape
  */
-declare function SetTerrainType(this: void, x: real, y: real, terrainType: integer, variation: integer, area: integer, shape: integer): nothing;
+declare function SetTerrainType(x: real, y: real, terrainType: integer, variation: integer, area: integer, shape: integer): nothing;
 
 /**
  * @param x
  * @param y
  * @param t
  */
-declare function IsTerrainPathable(this: void, x: real, y: real, t: pathingtype): boolean;
+declare function IsTerrainPathable(x: real, y: real, t: pathingtype): boolean;
 
 /**
  * @param x
@@ -15493,7 +15494,7 @@ declare function IsTerrainPathable(this: void, x: real, y: real, t: pathingtype)
  * @param t
  * @param flag
  */
-declare function SetTerrainPathable(this: void, x: real, y: real, t: pathingtype, flag: boolean): nothing;
+declare function SetTerrainPathable(x: real, y: real, t: pathingtype, flag: boolean): nothing;
 
 /**
  * @param file
@@ -15508,25 +15509,25 @@ declare function SetTerrainPathable(this: void, x: real, y: real, t: pathingtype
  * @param originZ
  * @param imageType
  */
-declare function CreateImage(this: void, file: string, sizeX: real, sizeY: real, sizeZ: real, posX: real, posY: real, posZ: real, originX: real, originY: real, originZ: real, imageType: integer): image;
+declare function CreateImage(file: string, sizeX: real, sizeY: real, sizeZ: real, posX: real, posY: real, posZ: real, originX: real, originY: real, originZ: real, imageType: integer): image;
 
 /**
  * @param whichImage
  */
-declare function DestroyImage(this: void, whichImage: image): nothing;
+declare function DestroyImage(whichImage: image): nothing;
 
 /**
  * @param whichImage
  * @param flag
  */
-declare function ShowImage(this: void, whichImage: image, flag: boolean): nothing;
+declare function ShowImage(whichImage: image, flag: boolean): nothing;
 
 /**
  * @param whichImage
  * @param flag
  * @param height
  */
-declare function SetImageConstantHeight(this: void, whichImage: image, flag: boolean, height: real): nothing;
+declare function SetImageConstantHeight(whichImage: image, flag: boolean, height: real): nothing;
 
 /**
  * @param whichImage
@@ -15534,7 +15535,7 @@ declare function SetImageConstantHeight(this: void, whichImage: image, flag: boo
  * @param y
  * @param z
  */
-declare function SetImagePosition(this: void, whichImage: image, x: real, y: real, z: real): nothing;
+declare function SetImagePosition(whichImage: image, x: real, y: real, z: real): nothing;
 
 /**
  * @param whichImage
@@ -15543,32 +15544,32 @@ declare function SetImagePosition(this: void, whichImage: image, x: real, y: rea
  * @param blue
  * @param alpha
  */
-declare function SetImageColor(this: void, whichImage: image, red: integer, green: integer, blue: integer, alpha: integer): nothing;
+declare function SetImageColor(whichImage: image, red: integer, green: integer, blue: integer, alpha: integer): nothing;
 
 /**
  * @param whichImage
  * @param flag
  */
-declare function SetImageRender(this: void, whichImage: image, flag: boolean): nothing;
+declare function SetImageRender(whichImage: image, flag: boolean): nothing;
 
 /**
  * @param whichImage
  * @param flag
  */
-declare function SetImageRenderAlways(this: void, whichImage: image, flag: boolean): nothing;
+declare function SetImageRenderAlways(whichImage: image, flag: boolean): nothing;
 
 /**
  * @param whichImage
  * @param flag
  * @param useWaterAlpha
  */
-declare function SetImageAboveWater(this: void, whichImage: image, flag: boolean, useWaterAlpha: boolean): nothing;
+declare function SetImageAboveWater(whichImage: image, flag: boolean, useWaterAlpha: boolean): nothing;
 
 /**
  * @param whichImage
  * @param imageType
  */
-declare function SetImageType(this: void, whichImage: image, imageType: integer): nothing;
+declare function SetImageType(whichImage: image, imageType: integer): nothing;
 
 /**
  * @param x
@@ -15581,40 +15582,40 @@ declare function SetImageType(this: void, whichImage: image, imageType: integer)
  * @param forcePaused
  * @param noBirthTime
  */
-declare function CreateUbersplat(this: void, x: real, y: real, name: string, red: integer, green: integer, blue: integer, alpha: integer, forcePaused: boolean, noBirthTime: boolean): ubersplat;
+declare function CreateUbersplat(x: real, y: real, name: string, red: integer, green: integer, blue: integer, alpha: integer, forcePaused: boolean, noBirthTime: boolean): ubersplat;
 
 /**
  * @param whichSplat
  */
-declare function DestroyUbersplat(this: void, whichSplat: ubersplat): nothing;
+declare function DestroyUbersplat(whichSplat: ubersplat): nothing;
 
 /**
  * @param whichSplat
  */
-declare function ResetUbersplat(this: void, whichSplat: ubersplat): nothing;
+declare function ResetUbersplat(whichSplat: ubersplat): nothing;
 
 /**
  * @param whichSplat
  */
-declare function FinishUbersplat(this: void, whichSplat: ubersplat): nothing;
-
-/**
- * @param whichSplat
- * @param flag
- */
-declare function ShowUbersplat(this: void, whichSplat: ubersplat, flag: boolean): nothing;
+declare function FinishUbersplat(whichSplat: ubersplat): nothing;
 
 /**
  * @param whichSplat
  * @param flag
  */
-declare function SetUbersplatRender(this: void, whichSplat: ubersplat, flag: boolean): nothing;
+declare function ShowUbersplat(whichSplat: ubersplat, flag: boolean): nothing;
 
 /**
  * @param whichSplat
  * @param flag
  */
-declare function SetUbersplatRenderAlways(this: void, whichSplat: ubersplat, flag: boolean): nothing;
+declare function SetUbersplatRender(whichSplat: ubersplat, flag: boolean): nothing;
+
+/**
+ * @param whichSplat
+ * @param flag
+ */
+declare function SetUbersplatRenderAlways(whichSplat: ubersplat, flag: boolean): nothing;
 
 /**
  * @param whichPlayer
@@ -15623,14 +15624,14 @@ declare function SetUbersplatRenderAlways(this: void, whichSplat: ubersplat, fla
  * @param radius
  * @param addBlight
  */
-declare function SetBlight(this: void, whichPlayer: player, x: real, y: real, radius: real, addBlight: boolean): nothing;
+declare function SetBlight(whichPlayer: player, x: real, y: real, radius: real, addBlight: boolean): nothing;
 
 /**
  * @param whichPlayer
  * @param r
  * @param addBlight
  */
-declare function SetBlightRect(this: void, whichPlayer: player, r: rect, addBlight: boolean): nothing;
+declare function SetBlightRect(whichPlayer: player, r: rect, addBlight: boolean): nothing;
 
 /**
  * @param whichPlayer
@@ -15638,7 +15639,7 @@ declare function SetBlightRect(this: void, whichPlayer: player, r: rect, addBlig
  * @param y
  * @param addBlight
  */
-declare function SetBlightPoint(this: void, whichPlayer: player, x: real, y: real, addBlight: boolean): nothing;
+declare function SetBlightPoint(whichPlayer: player, x: real, y: real, addBlight: boolean): nothing;
 
 /**
  * @param whichPlayer
@@ -15646,7 +15647,7 @@ declare function SetBlightPoint(this: void, whichPlayer: player, x: real, y: rea
  * @param radius
  * @param addBlight
  */
-declare function SetBlightLoc(this: void, whichPlayer: player, whichLocation: location, radius: real, addBlight: boolean): nothing;
+declare function SetBlightLoc(whichPlayer: player, whichLocation: location, radius: real, addBlight: boolean): nothing;
 
 /**
  * @param id
@@ -15654,13 +15655,13 @@ declare function SetBlightLoc(this: void, whichPlayer: player, whichLocation: lo
  * @param y
  * @param face
  */
-declare function CreateBlightedGoldmine(this: void, id: player, x: real, y: real, face: real): unit;
+declare function CreateBlightedGoldmine(id: player, x: real, y: real, face: real): unit;
 
 /**
  * @param x
  * @param y
  */
-declare function IsPointBlighted(this: void, x: real, y: real): boolean;
+declare function IsPointBlighted(x: real, y: real): boolean;
 
 /**
  * @param x
@@ -15671,7 +15672,7 @@ declare function IsPointBlighted(this: void, x: real, y: real): boolean;
  * @param animName
  * @param animRandom
  */
-declare function SetDoodadAnimation(this: void, x: real, y: real, radius: real, doodadID: integer, nearestOnly: boolean, animName: string, animRandom: boolean): nothing;
+declare function SetDoodadAnimation(x: real, y: real, radius: real, doodadID: integer, nearestOnly: boolean, animName: string, animRandom: boolean): nothing;
 
 /**
  * @param r
@@ -15679,425 +15680,425 @@ declare function SetDoodadAnimation(this: void, x: real, y: real, radius: real, 
  * @param animName
  * @param animRandom
  */
-declare function SetDoodadAnimationRect(this: void, r: rect, doodadID: integer, animName: string, animRandom: boolean): nothing;
+declare function SetDoodadAnimationRect(r: rect, doodadID: integer, animName: string, animRandom: boolean): nothing;
 
 /**
  * @param num
  * @param script
  */
-declare function StartMeleeAI(this: void, num: player, script: string): nothing;
+declare function StartMeleeAI(num: player, script: string): nothing;
 
 /**
  * @param num
  * @param script
  */
-declare function StartCampaignAI(this: void, num: player, script: string): nothing;
+declare function StartCampaignAI(num: player, script: string): nothing;
 
 /**
  * @param num
  * @param command
  * @param data
  */
-declare function CommandAI(this: void, num: player, command: integer, data: integer): nothing;
+declare function CommandAI(num: player, command: integer, data: integer): nothing;
 
 /**
  * @param p
  * @param pause
  */
-declare function PauseCompAI(this: void, p: player, pause: boolean): nothing;
+declare function PauseCompAI(p: player, pause: boolean): nothing;
 
 /**
  * @param num
  */
-declare function GetAIDifficulty(this: void, num: player): aidifficulty;
+declare function GetAIDifficulty(num: player): aidifficulty;
 
 /**
  * @param hUnit
  */
-declare function RemoveGuardPosition(this: void, hUnit: unit): nothing;
+declare function RemoveGuardPosition(hUnit: unit): nothing;
 
 /**
  * @param hUnit
  */
-declare function RecycleGuardPosition(this: void, hUnit: unit): nothing;
+declare function RecycleGuardPosition(hUnit: unit): nothing;
 
 /**
  * @param num
  */
-declare function RemoveAllGuardPositions(this: void, num: player): nothing;
+declare function RemoveAllGuardPositions(num: player): nothing;
 
 /**
  * @param cheatStr
  */
-declare function Cheat(this: void, cheatStr: string): nothing;
+declare function Cheat(cheatStr: string): nothing;
 
 /**
  */
-declare function IsNoVictoryCheat(this: void): boolean;
+declare function IsNoVictoryCheat(): boolean;
 
 /**
  */
-declare function IsNoDefeatCheat(this: void): boolean;
+declare function IsNoDefeatCheat(): boolean;
 
 /**
  * @param filename
  */
-declare function Preload(this: void, filename: string): nothing;
+declare function Preload(filename: string): nothing;
 
 /**
  * @param timeout
  */
-declare function PreloadEnd(this: void, timeout: real): nothing;
+declare function PreloadEnd(timeout: real): nothing;
 
 /**
  */
-declare function PreloadStart(this: void): nothing;
+declare function PreloadStart(): nothing;
 
 /**
  */
-declare function PreloadRefresh(this: void): nothing;
+declare function PreloadRefresh(): nothing;
 
 /**
  */
-declare function PreloadEndEx(this: void): nothing;
+declare function PreloadEndEx(): nothing;
 
 /**
  */
-declare function PreloadGenClear(this: void): nothing;
+declare function PreloadGenClear(): nothing;
 
 /**
  */
-declare function PreloadGenStart(this: void): nothing;
-
-/**
- * @param filename
- */
-declare function PreloadGenEnd(this: void, filename: string): nothing;
+declare function PreloadGenStart(): nothing;
 
 /**
  * @param filename
  */
-declare function Preloader(this: void, filename: string): nothing;
+declare function PreloadGenEnd(filename: string): nothing;
+
+/**
+ * @param filename
+ */
+declare function Preloader(filename: string): nothing;
 
 /**
  * @param testType
  */
-declare function AutomationSetTestType(this: void, testType: string): nothing;
+declare function AutomationSetTestType(testType: string): nothing;
 
 /**
  * @param testName
  */
-declare function AutomationTestStart(this: void, testName: string): nothing;
+declare function AutomationTestStart(testName: string): nothing;
 
 /**
  */
-declare function AutomationTestEnd(this: void): nothing;
+declare function AutomationTestEnd(): nothing;
 
 /**
  */
-declare function AutomationTestingFinished(this: void): nothing;
+declare function AutomationTestingFinished(): nothing;
 
 /**
  */
-declare function BlzGetTriggerPlayerMouseX(this: void): real;
+declare function BlzGetTriggerPlayerMouseX(): real;
 
 /**
  */
-declare function BlzGetTriggerPlayerMouseY(this: void): real;
+declare function BlzGetTriggerPlayerMouseY(): real;
 
 /**
  */
-declare function BlzGetTriggerPlayerMousePosition(this: void): location;
+declare function BlzGetTriggerPlayerMousePosition(): location;
 
 /**
  */
-declare function BlzGetTriggerPlayerMouseButton(this: void): mousebuttontype;
-
-/**
- * @param abilCode
- * @param tooltip
- * @param level
- */
-declare function BlzSetAbilityTooltip(this: void, abilCode: integer, tooltip: string, level: integer): nothing;
+declare function BlzGetTriggerPlayerMouseButton(): mousebuttontype;
 
 /**
  * @param abilCode
  * @param tooltip
  * @param level
  */
-declare function BlzSetAbilityActivatedTooltip(this: void, abilCode: integer, tooltip: string, level: integer): nothing;
+declare function BlzSetAbilityTooltip(abilCode: integer, tooltip: string, level: integer): nothing;
+
+/**
+ * @param abilCode
+ * @param tooltip
+ * @param level
+ */
+declare function BlzSetAbilityActivatedTooltip(abilCode: integer, tooltip: string, level: integer): nothing;
 
 /**
  * @param abilCode
  * @param extendedTooltip
  * @param level
  */
-declare function BlzSetAbilityExtendedTooltip(this: void, abilCode: integer, extendedTooltip: string, level: integer): nothing;
+declare function BlzSetAbilityExtendedTooltip(abilCode: integer, extendedTooltip: string, level: integer): nothing;
 
 /**
  * @param abilCode
  * @param extendedTooltip
  * @param level
  */
-declare function BlzSetAbilityActivatedExtendedTooltip(this: void, abilCode: integer, extendedTooltip: string, level: integer): nothing;
+declare function BlzSetAbilityActivatedExtendedTooltip(abilCode: integer, extendedTooltip: string, level: integer): nothing;
 
 /**
  * @param abilCode
  * @param researchTooltip
  * @param level
  */
-declare function BlzSetAbilityResearchTooltip(this: void, abilCode: integer, researchTooltip: string, level: integer): nothing;
+declare function BlzSetAbilityResearchTooltip(abilCode: integer, researchTooltip: string, level: integer): nothing;
 
 /**
  * @param abilCode
  * @param researchExtendedTooltip
  * @param level
  */
-declare function BlzSetAbilityResearchExtendedTooltip(this: void, abilCode: integer, researchExtendedTooltip: string, level: integer): nothing;
+declare function BlzSetAbilityResearchExtendedTooltip(abilCode: integer, researchExtendedTooltip: string, level: integer): nothing;
 
 /**
  * @param abilCode
  * @param level
  */
-declare function BlzGetAbilityTooltip(this: void, abilCode: integer, level: integer): string;
+declare function BlzGetAbilityTooltip(abilCode: integer, level: integer): string;
 
 /**
  * @param abilCode
  * @param level
  */
-declare function BlzGetAbilityActivatedTooltip(this: void, abilCode: integer, level: integer): string;
+declare function BlzGetAbilityActivatedTooltip(abilCode: integer, level: integer): string;
 
 /**
  * @param abilCode
  * @param level
  */
-declare function BlzGetAbilityExtendedTooltip(this: void, abilCode: integer, level: integer): string;
+declare function BlzGetAbilityExtendedTooltip(abilCode: integer, level: integer): string;
 
 /**
  * @param abilCode
  * @param level
  */
-declare function BlzGetAbilityActivatedExtendedTooltip(this: void, abilCode: integer, level: integer): string;
+declare function BlzGetAbilityActivatedExtendedTooltip(abilCode: integer, level: integer): string;
 
 /**
  * @param abilCode
  * @param level
  */
-declare function BlzGetAbilityResearchTooltip(this: void, abilCode: integer, level: integer): string;
+declare function BlzGetAbilityResearchTooltip(abilCode: integer, level: integer): string;
 
 /**
  * @param abilCode
  * @param level
  */
-declare function BlzGetAbilityResearchExtendedTooltip(this: void, abilCode: integer, level: integer): string;
+declare function BlzGetAbilityResearchExtendedTooltip(abilCode: integer, level: integer): string;
 
 /**
  * @param abilCode
  * @param iconPath
  */
-declare function BlzSetAbilityIcon(this: void, abilCode: integer, iconPath: string): nothing;
+declare function BlzSetAbilityIcon(abilCode: integer, iconPath: string): nothing;
 
 /**
  * @param abilCode
  */
-declare function BlzGetAbilityIcon(this: void, abilCode: integer): string;
+declare function BlzGetAbilityIcon(abilCode: integer): string;
 
 /**
  * @param abilCode
  * @param iconPath
  */
-declare function BlzSetAbilityActivatedIcon(this: void, abilCode: integer, iconPath: string): nothing;
+declare function BlzSetAbilityActivatedIcon(abilCode: integer, iconPath: string): nothing;
 
 /**
  * @param abilCode
  */
-declare function BlzGetAbilityActivatedIcon(this: void, abilCode: integer): string;
+declare function BlzGetAbilityActivatedIcon(abilCode: integer): string;
 
 /**
  * @param abilCode
  */
-declare function BlzGetAbilityPosX(this: void, abilCode: integer): integer;
+declare function BlzGetAbilityPosX(abilCode: integer): integer;
 
 /**
  * @param abilCode
  */
-declare function BlzGetAbilityPosY(this: void, abilCode: integer): integer;
-
-/**
- * @param abilCode
- * @param x
- */
-declare function BlzSetAbilityPosX(this: void, abilCode: integer, x: integer): nothing;
-
-/**
- * @param abilCode
- * @param y
- */
-declare function BlzSetAbilityPosY(this: void, abilCode: integer, y: integer): nothing;
-
-/**
- * @param abilCode
- */
-declare function BlzGetAbilityActivatedPosX(this: void, abilCode: integer): integer;
-
-/**
- * @param abilCode
- */
-declare function BlzGetAbilityActivatedPosY(this: void, abilCode: integer): integer;
+declare function BlzGetAbilityPosY(abilCode: integer): integer;
 
 /**
  * @param abilCode
  * @param x
  */
-declare function BlzSetAbilityActivatedPosX(this: void, abilCode: integer, x: integer): nothing;
+declare function BlzSetAbilityPosX(abilCode: integer, x: integer): nothing;
 
 /**
  * @param abilCode
  * @param y
  */
-declare function BlzSetAbilityActivatedPosY(this: void, abilCode: integer, y: integer): nothing;
+declare function BlzSetAbilityPosY(abilCode: integer, y: integer): nothing;
+
+/**
+ * @param abilCode
+ */
+declare function BlzGetAbilityActivatedPosX(abilCode: integer): integer;
+
+/**
+ * @param abilCode
+ */
+declare function BlzGetAbilityActivatedPosY(abilCode: integer): integer;
+
+/**
+ * @param abilCode
+ * @param x
+ */
+declare function BlzSetAbilityActivatedPosX(abilCode: integer, x: integer): nothing;
+
+/**
+ * @param abilCode
+ * @param y
+ */
+declare function BlzSetAbilityActivatedPosY(abilCode: integer, y: integer): nothing;
 
 /**
  * @param whichUnit
  */
-declare function BlzGetUnitMaxHP(this: void, whichUnit: unit): integer;
+declare function BlzGetUnitMaxHP(whichUnit: unit): integer;
 
 /**
  * @param whichUnit
  * @param hp
  */
-declare function BlzSetUnitMaxHP(this: void, whichUnit: unit, hp: integer): nothing;
+declare function BlzSetUnitMaxHP(whichUnit: unit, hp: integer): nothing;
 
 /**
  * @param whichUnit
  */
-declare function BlzGetUnitMaxMana(this: void, whichUnit: unit): integer;
+declare function BlzGetUnitMaxMana(whichUnit: unit): integer;
 
 /**
  * @param whichUnit
  * @param mana
  */
-declare function BlzSetUnitMaxMana(this: void, whichUnit: unit, mana: integer): nothing;
+declare function BlzSetUnitMaxMana(whichUnit: unit, mana: integer): nothing;
 
 /**
  * @param whichItem
  * @param name
  */
-declare function BlzSetItemName(this: void, whichItem: item, name: string): nothing;
+declare function BlzSetItemName(whichItem: item, name: string): nothing;
 
 /**
  * @param whichItem
  * @param description
  */
-declare function BlzSetItemDescription(this: void, whichItem: item, description: string): nothing;
+declare function BlzSetItemDescription(whichItem: item, description: string): nothing;
 
 /**
  * @param whichItem
  */
-declare function BlzGetItemDescription(this: void, whichItem: item): string;
+declare function BlzGetItemDescription(whichItem: item): string;
 
 /**
  * @param whichItem
  * @param tooltip
  */
-declare function BlzSetItemTooltip(this: void, whichItem: item, tooltip: string): nothing;
+declare function BlzSetItemTooltip(whichItem: item, tooltip: string): nothing;
 
 /**
  * @param whichItem
  */
-declare function BlzGetItemTooltip(this: void, whichItem: item): string;
+declare function BlzGetItemTooltip(whichItem: item): string;
 
 /**
  * @param whichItem
  * @param extendedTooltip
  */
-declare function BlzSetItemExtendedTooltip(this: void, whichItem: item, extendedTooltip: string): nothing;
+declare function BlzSetItemExtendedTooltip(whichItem: item, extendedTooltip: string): nothing;
 
 /**
  * @param whichItem
  */
-declare function BlzGetItemExtendedTooltip(this: void, whichItem: item): string;
+declare function BlzGetItemExtendedTooltip(whichItem: item): string;
 
 /**
  * @param whichItem
  * @param iconPath
  */
-declare function BlzSetItemIconPath(this: void, whichItem: item, iconPath: string): nothing;
+declare function BlzSetItemIconPath(whichItem: item, iconPath: string): nothing;
 
 /**
  * @param whichItem
  */
-declare function BlzGetItemIconPath(this: void, whichItem: item): string;
+declare function BlzGetItemIconPath(whichItem: item): string;
 
 /**
  * @param whichUnit
  * @param name
  */
-declare function BlzSetUnitName(this: void, whichUnit: unit, name: string): nothing;
+declare function BlzSetUnitName(whichUnit: unit, name: string): nothing;
 
 /**
  * @param whichUnit
  * @param heroProperName
  */
-declare function BlzSetHeroProperName(this: void, whichUnit: unit, heroProperName: string): nothing;
+declare function BlzSetHeroProperName(whichUnit: unit, heroProperName: string): nothing;
 
 /**
  * @param whichUnit
  * @param weaponIndex
  */
-declare function BlzGetUnitBaseDamage(this: void, whichUnit: unit, weaponIndex: integer): integer;
+declare function BlzGetUnitBaseDamage(whichUnit: unit, weaponIndex: integer): integer;
 
 /**
  * @param whichUnit
  * @param baseDamage
  * @param weaponIndex
  */
-declare function BlzSetUnitBaseDamage(this: void, whichUnit: unit, baseDamage: integer, weaponIndex: integer): nothing;
+declare function BlzSetUnitBaseDamage(whichUnit: unit, baseDamage: integer, weaponIndex: integer): nothing;
 
 /**
  * @param whichUnit
  * @param weaponIndex
  */
-declare function BlzGetUnitDiceNumber(this: void, whichUnit: unit, weaponIndex: integer): integer;
+declare function BlzGetUnitDiceNumber(whichUnit: unit, weaponIndex: integer): integer;
 
 /**
  * @param whichUnit
  * @param diceNumber
  * @param weaponIndex
  */
-declare function BlzSetUnitDiceNumber(this: void, whichUnit: unit, diceNumber: integer, weaponIndex: integer): nothing;
+declare function BlzSetUnitDiceNumber(whichUnit: unit, diceNumber: integer, weaponIndex: integer): nothing;
 
 /**
  * @param whichUnit
  * @param weaponIndex
  */
-declare function BlzGetUnitDiceSides(this: void, whichUnit: unit, weaponIndex: integer): integer;
+declare function BlzGetUnitDiceSides(whichUnit: unit, weaponIndex: integer): integer;
 
 /**
  * @param whichUnit
  * @param diceSides
  * @param weaponIndex
  */
-declare function BlzSetUnitDiceSides(this: void, whichUnit: unit, diceSides: integer, weaponIndex: integer): nothing;
+declare function BlzSetUnitDiceSides(whichUnit: unit, diceSides: integer, weaponIndex: integer): nothing;
 
 /**
  * @param whichUnit
  * @param weaponIndex
  */
-declare function BlzGetUnitAttackCooldown(this: void, whichUnit: unit, weaponIndex: integer): real;
+declare function BlzGetUnitAttackCooldown(whichUnit: unit, weaponIndex: integer): real;
 
 /**
  * @param whichUnit
  * @param cooldown
  * @param weaponIndex
  */
-declare function BlzSetUnitAttackCooldown(this: void, whichUnit: unit, cooldown: real, weaponIndex: integer): nothing;
+declare function BlzSetUnitAttackCooldown(whichUnit: unit, cooldown: real, weaponIndex: integer): nothing;
 
 /**
  * @param whichEffect
  * @param whichPlayer
  */
-declare function BlzSetSpecialEffectColorByPlayer(this: void, whichEffect: effect, whichPlayer: player): nothing;
+declare function BlzSetSpecialEffectColorByPlayer(whichEffect: effect, whichPlayer: player): nothing;
 
 /**
  * @param whichEffect
@@ -16105,19 +16106,19 @@ declare function BlzSetSpecialEffectColorByPlayer(this: void, whichEffect: effec
  * @param g
  * @param b
  */
-declare function BlzSetSpecialEffectColor(this: void, whichEffect: effect, r: integer, g: integer, b: integer): nothing;
+declare function BlzSetSpecialEffectColor(whichEffect: effect, r: integer, g: integer, b: integer): nothing;
 
 /**
  * @param whichEffect
  * @param alpha
  */
-declare function BlzSetSpecialEffectAlpha(this: void, whichEffect: effect, alpha: integer): nothing;
+declare function BlzSetSpecialEffectAlpha(whichEffect: effect, alpha: integer): nothing;
 
 /**
  * @param whichEffect
  * @param scale
  */
-declare function BlzSetSpecialEffectScale(this: void, whichEffect: effect, scale: real): nothing;
+declare function BlzSetSpecialEffectScale(whichEffect: effect, scale: real): nothing;
 
 /**
  * @param whichEffect
@@ -16125,25 +16126,25 @@ declare function BlzSetSpecialEffectScale(this: void, whichEffect: effect, scale
  * @param y
  * @param z
  */
-declare function BlzSetSpecialEffectPosition(this: void, whichEffect: effect, x: real, y: real, z: real): nothing;
+declare function BlzSetSpecialEffectPosition(whichEffect: effect, x: real, y: real, z: real): nothing;
 
 /**
  * @param whichEffect
  * @param height
  */
-declare function BlzSetSpecialEffectHeight(this: void, whichEffect: effect, height: real): nothing;
+declare function BlzSetSpecialEffectHeight(whichEffect: effect, height: real): nothing;
 
 /**
  * @param whichEffect
  * @param timeScale
  */
-declare function BlzSetSpecialEffectTimeScale(this: void, whichEffect: effect, timeScale: real): nothing;
+declare function BlzSetSpecialEffectTimeScale(whichEffect: effect, timeScale: real): nothing;
 
 /**
  * @param whichEffect
  * @param time
  */
-declare function BlzSetSpecialEffectTime(this: void, whichEffect: effect, time: real): nothing;
+declare function BlzSetSpecialEffectTime(whichEffect: effect, time: real): nothing;
 
 /**
  * @param whichEffect
@@ -16151,117 +16152,117 @@ declare function BlzSetSpecialEffectTime(this: void, whichEffect: effect, time: 
  * @param pitch
  * @param roll
  */
-declare function BlzSetSpecialEffectOrientation(this: void, whichEffect: effect, yaw: real, pitch: real, roll: real): nothing;
+declare function BlzSetSpecialEffectOrientation(whichEffect: effect, yaw: real, pitch: real, roll: real): nothing;
 
 /**
  * @param whichEffect
  * @param yaw
  */
-declare function BlzSetSpecialEffectYaw(this: void, whichEffect: effect, yaw: real): nothing;
+declare function BlzSetSpecialEffectYaw(whichEffect: effect, yaw: real): nothing;
 
 /**
  * @param whichEffect
  * @param pitch
  */
-declare function BlzSetSpecialEffectPitch(this: void, whichEffect: effect, pitch: real): nothing;
+declare function BlzSetSpecialEffectPitch(whichEffect: effect, pitch: real): nothing;
 
 /**
  * @param whichEffect
  * @param roll
  */
-declare function BlzSetSpecialEffectRoll(this: void, whichEffect: effect, roll: real): nothing;
+declare function BlzSetSpecialEffectRoll(whichEffect: effect, roll: real): nothing;
 
 /**
  * @param whichEffect
  * @param x
  */
-declare function BlzSetSpecialEffectX(this: void, whichEffect: effect, x: real): nothing;
+declare function BlzSetSpecialEffectX(whichEffect: effect, x: real): nothing;
 
 /**
  * @param whichEffect
  * @param y
  */
-declare function BlzSetSpecialEffectY(this: void, whichEffect: effect, y: real): nothing;
+declare function BlzSetSpecialEffectY(whichEffect: effect, y: real): nothing;
 
 /**
  * @param whichEffect
  * @param z
  */
-declare function BlzSetSpecialEffectZ(this: void, whichEffect: effect, z: real): nothing;
+declare function BlzSetSpecialEffectZ(whichEffect: effect, z: real): nothing;
 
 /**
  * @param whichEffect
  * @param loc
  */
-declare function BlzSetSpecialEffectPositionLoc(this: void, whichEffect: effect, loc: location): nothing;
+declare function BlzSetSpecialEffectPositionLoc(whichEffect: effect, loc: location): nothing;
 
 /**
  * @param whichEffect
  */
-declare function BlzGetLocalSpecialEffectX(this: void, whichEffect: effect): real;
+declare function BlzGetLocalSpecialEffectX(whichEffect: effect): real;
 
 /**
  * @param whichEffect
  */
-declare function BlzGetLocalSpecialEffectY(this: void, whichEffect: effect): real;
+declare function BlzGetLocalSpecialEffectY(whichEffect: effect): real;
 
 /**
  * @param whichEffect
  */
-declare function BlzGetLocalSpecialEffectZ(this: void, whichEffect: effect): real;
+declare function BlzGetLocalSpecialEffectZ(whichEffect: effect): real;
 
 /**
  * @param whichEffect
  */
-declare function BlzSpecialEffectClearSubAnimations(this: void, whichEffect: effect): nothing;
-
-/**
- * @param whichEffect
- * @param whichSubAnim
- */
-declare function BlzSpecialEffectRemoveSubAnimation(this: void, whichEffect: effect, whichSubAnim: subanimtype): nothing;
+declare function BlzSpecialEffectClearSubAnimations(whichEffect: effect): nothing;
 
 /**
  * @param whichEffect
  * @param whichSubAnim
  */
-declare function BlzSpecialEffectAddSubAnimation(this: void, whichEffect: effect, whichSubAnim: subanimtype): nothing;
+declare function BlzSpecialEffectRemoveSubAnimation(whichEffect: effect, whichSubAnim: subanimtype): nothing;
+
+/**
+ * @param whichEffect
+ * @param whichSubAnim
+ */
+declare function BlzSpecialEffectAddSubAnimation(whichEffect: effect, whichSubAnim: subanimtype): nothing;
 
 /**
  * @param whichEffect
  * @param whichAnim
  */
-declare function BlzPlaySpecialEffect(this: void, whichEffect: effect, whichAnim: animtype): nothing;
+declare function BlzPlaySpecialEffect(whichEffect: effect, whichAnim: animtype): nothing;
 
 /**
  * @param whichEffect
  * @param whichAnim
  * @param timeScale
  */
-declare function BlzPlaySpecialEffectWithTimeScale(this: void, whichEffect: effect, whichAnim: animtype, timeScale: real): nothing;
+declare function BlzPlaySpecialEffectWithTimeScale(whichEffect: effect, whichAnim: animtype, timeScale: real): nothing;
 
 /**
  * @param whichAnim
  */
-declare function BlzGetAnimName(this: void, whichAnim: animtype): string;
+declare function BlzGetAnimName(whichAnim: animtype): string;
 
 /**
  * @param whichUnit
  */
-declare function BlzGetUnitArmor(this: void, whichUnit: unit): real;
+declare function BlzGetUnitArmor(whichUnit: unit): real;
 
 /**
  * @param whichUnit
  * @param armorAmount
  */
-declare function BlzSetUnitArmor(this: void, whichUnit: unit, armorAmount: real): nothing;
+declare function BlzSetUnitArmor(whichUnit: unit, armorAmount: real): nothing;
 
 /**
  * @param whichUnit
  * @param abilId
  * @param flag
  */
-declare function BlzUnitHideAbility(this: void, whichUnit: unit, abilId: integer, flag: boolean): nothing;
+declare function BlzUnitHideAbility(whichUnit: unit, abilId: integer, flag: boolean): nothing;
 
 /**
  * @param whichUnit
@@ -16269,44 +16270,44 @@ declare function BlzUnitHideAbility(this: void, whichUnit: unit, abilId: integer
  * @param flag
  * @param hideUI
  */
-declare function BlzUnitDisableAbility(this: void, whichUnit: unit, abilId: integer, flag: boolean, hideUI: boolean): nothing;
+declare function BlzUnitDisableAbility(whichUnit: unit, abilId: integer, flag: boolean, hideUI: boolean): nothing;
 
 /**
  * @param whichUnit
  */
-declare function BlzUnitCancelTimedLife(this: void, whichUnit: unit): nothing;
+declare function BlzUnitCancelTimedLife(whichUnit: unit): nothing;
 
 /**
  * @param whichUnit
  */
-declare function BlzIsUnitSelectable(this: void, whichUnit: unit): boolean;
+declare function BlzIsUnitSelectable(whichUnit: unit): boolean;
 
 /**
  * @param whichUnit
  */
-declare function BlzIsUnitInvulnerable(this: void, whichUnit: unit): boolean;
+declare function BlzIsUnitInvulnerable(whichUnit: unit): boolean;
 
 /**
  * @param whichUnit
  */
-declare function BlzUnitInterruptAttack(this: void, whichUnit: unit): nothing;
+declare function BlzUnitInterruptAttack(whichUnit: unit): nothing;
 
 /**
  * @param whichUnit
  */
-declare function BlzGetUnitCollisionSize(this: void, whichUnit: unit): real;
+declare function BlzGetUnitCollisionSize(whichUnit: unit): real;
 
 /**
  * @param abilId
  * @param level
  */
-declare function BlzGetAbilityManaCost(this: void, abilId: integer, level: integer): integer;
+declare function BlzGetAbilityManaCost(abilId: integer, level: integer): integer;
 
 /**
  * @param abilId
  * @param level
  */
-declare function BlzGetAbilityCooldown(this: void, abilId: integer, level: integer): real;
+declare function BlzGetAbilityCooldown(abilId: integer, level: integer): real;
 
 /**
  * @param whichUnit
@@ -16314,33 +16315,33 @@ declare function BlzGetAbilityCooldown(this: void, abilId: integer, level: integ
  * @param level
  * @param cooldown
  */
-declare function BlzSetUnitAbilityCooldown(this: void, whichUnit: unit, abilId: integer, level: integer, cooldown: real): nothing;
+declare function BlzSetUnitAbilityCooldown(whichUnit: unit, abilId: integer, level: integer, cooldown: real): nothing;
 
 /**
  * @param whichUnit
  * @param abilId
  * @param level
  */
-declare function BlzGetUnitAbilityCooldown(this: void, whichUnit: unit, abilId: integer, level: integer): real;
+declare function BlzGetUnitAbilityCooldown(whichUnit: unit, abilId: integer, level: integer): real;
 
 /**
  * @param whichUnit
  * @param abilId
  */
-declare function BlzGetUnitAbilityCooldownRemaining(this: void, whichUnit: unit, abilId: integer): real;
+declare function BlzGetUnitAbilityCooldownRemaining(whichUnit: unit, abilId: integer): real;
 
 /**
  * @param whichUnit
  * @param abilCode
  */
-declare function BlzEndUnitAbilityCooldown(this: void, whichUnit: unit, abilCode: integer): nothing;
+declare function BlzEndUnitAbilityCooldown(whichUnit: unit, abilCode: integer): nothing;
 
 /**
  * @param whichUnit
  * @param abilId
  * @param level
  */
-declare function BlzGetUnitAbilityManaCost(this: void, whichUnit: unit, abilId: integer, level: integer): integer;
+declare function BlzGetUnitAbilityManaCost(whichUnit: unit, abilId: integer, level: integer): integer;
 
 /**
  * @param whichUnit
@@ -16348,55 +16349,55 @@ declare function BlzGetUnitAbilityManaCost(this: void, whichUnit: unit, abilId: 
  * @param level
  * @param manaCost
  */
-declare function BlzSetUnitAbilityManaCost(this: void, whichUnit: unit, abilId: integer, level: integer, manaCost: integer): nothing;
+declare function BlzSetUnitAbilityManaCost(whichUnit: unit, abilId: integer, level: integer, manaCost: integer): nothing;
 
 /**
  * @param whichUnit
  */
-declare function BlzGetLocalUnitZ(this: void, whichUnit: unit): real;
+declare function BlzGetLocalUnitZ(whichUnit: unit): real;
 
 /**
  * @param whichPlayer
  * @param techid
  * @param levels
  */
-declare function BlzDecPlayerTechResearched(this: void, whichPlayer: player, techid: integer, levels: integer): nothing;
+declare function BlzDecPlayerTechResearched(whichPlayer: player, techid: integer, levels: integer): nothing;
 
 /**
  * @param damage
  */
-declare function BlzSetEventDamage(this: void, damage: real): nothing;
+declare function BlzSetEventDamage(damage: real): nothing;
 
 /**
  */
-declare function BlzGetEventDamageTarget(this: void): unit;
+declare function BlzGetEventDamageTarget(): unit;
 
 /**
  */
-declare function BlzGetEventAttackType(this: void): attacktype;
+declare function BlzGetEventAttackType(): attacktype;
 
 /**
  */
-declare function BlzGetEventDamageType(this: void): damagetype;
+declare function BlzGetEventDamageType(): damagetype;
 
 /**
  */
-declare function BlzGetEventWeaponType(this: void): weapontype;
+declare function BlzGetEventWeaponType(): weapontype;
 
 /**
  * @param attackType
  */
-declare function BlzSetEventAttackType(this: void, attackType: attacktype): boolean;
+declare function BlzSetEventAttackType(attackType: attacktype): boolean;
 
 /**
  * @param damageType
  */
-declare function BlzSetEventDamageType(this: void, damageType: damagetype): boolean;
+declare function BlzSetEventDamageType(damageType: damagetype): boolean;
 
 /**
  * @param weaponType
  */
-declare function BlzSetEventWeaponType(this: void, weaponType: weapontype): boolean;
+declare function BlzSetEventWeaponType(weaponType: weapontype): boolean;
 
 /**
  * @param dataType
@@ -16408,7 +16409,7 @@ declare function BlzSetEventWeaponType(this: void, weaponType: weapontype): bool
  * @param param5
  * @param param6
  */
-declare function RequestExtraIntegerData(this: void, dataType: integer, whichPlayer: player, param1: string, param2: string, param3: boolean, param4: integer, param5: integer, param6: integer): integer;
+declare function RequestExtraIntegerData(dataType: integer, whichPlayer: player, param1: string, param2: string, param3: boolean, param4: integer, param5: integer, param6: integer): integer;
 
 /**
  * @param dataType
@@ -16420,7 +16421,7 @@ declare function RequestExtraIntegerData(this: void, dataType: integer, whichPla
  * @param param5
  * @param param6
  */
-declare function RequestExtraBooleanData(this: void, dataType: integer, whichPlayer: player, param1: string, param2: string, param3: boolean, param4: integer, param5: integer, param6: integer): boolean;
+declare function RequestExtraBooleanData(dataType: integer, whichPlayer: player, param1: string, param2: string, param3: boolean, param4: integer, param5: integer, param6: integer): boolean;
 
 /**
  * @param dataType
@@ -16432,7 +16433,7 @@ declare function RequestExtraBooleanData(this: void, dataType: integer, whichPla
  * @param param5
  * @param param6
  */
-declare function RequestExtraStringData(this: void, dataType: integer, whichPlayer: player, param1: string, param2: string, param3: boolean, param4: integer, param5: integer, param6: integer): string;
+declare function RequestExtraStringData(dataType: integer, whichPlayer: player, param1: string, param2: string, param3: boolean, param4: integer, param5: integer, param6: integer): string;
 
 /**
  * @param dataType
@@ -16444,26 +16445,26 @@ declare function RequestExtraStringData(this: void, dataType: integer, whichPlay
  * @param param5
  * @param param6
  */
-declare function RequestExtraRealData(this: void, dataType: integer, whichPlayer: player, param1: string, param2: string, param3: boolean, param4: integer, param5: integer, param6: integer): real;
+declare function RequestExtraRealData(dataType: integer, whichPlayer: player, param1: string, param2: string, param3: boolean, param4: integer, param5: integer, param6: integer): real;
 
 /**
  * @param whichUnit
  */
-declare function BlzGetUnitZ(this: void, whichUnit: unit): real;
+declare function BlzGetUnitZ(whichUnit: unit): real;
 
 /**
  * @param enableSelection
  * @param enableSelectionCircle
  */
-declare function BlzEnableSelections(this: void, enableSelection: boolean, enableSelectionCircle: boolean): nothing;
+declare function BlzEnableSelections(enableSelection: boolean, enableSelectionCircle: boolean): nothing;
 
 /**
  */
-declare function BlzIsSelectionEnabled(this: void): boolean;
+declare function BlzIsSelectionEnabled(): boolean;
 
 /**
  */
-declare function BlzIsSelectionCircleEnabled(this: void): boolean;
+declare function BlzIsSelectionCircleEnabled(): boolean;
 
 /**
  * @param whichSetup
@@ -16473,32 +16474,32 @@ declare function BlzIsSelectionCircleEnabled(this: void): boolean;
  * @param easeOutDuration
  * @param smoothFactor
  */
-declare function BlzCameraSetupApplyForceDurationSmooth(this: void, whichSetup: camerasetup, doPan: boolean, forcedDuration: real, easeInDuration: real, easeOutDuration: real, smoothFactor: real): nothing;
+declare function BlzCameraSetupApplyForceDurationSmooth(whichSetup: camerasetup, doPan: boolean, forcedDuration: real, easeInDuration: real, easeOutDuration: real, smoothFactor: real): nothing;
 
 /**
  * @param enable
  */
-declare function BlzEnableTargetIndicator(this: void, enable: boolean): nothing;
+declare function BlzEnableTargetIndicator(enable: boolean): nothing;
 
 /**
  */
-declare function BlzIsTargetIndicatorEnabled(this: void): boolean;
+declare function BlzIsTargetIndicatorEnabled(): boolean;
 
 /**
  * @param frameType
  * @param index
  */
-declare function BlzGetOriginFrame(this: void, frameType: originframetype, index: integer): framehandle;
+declare function BlzGetOriginFrame(frameType: originframetype, index: integer): framehandle;
 
 /**
  * @param enable
  */
-declare function BlzEnableUIAutoPosition(this: void, enable: boolean): nothing;
+declare function BlzEnableUIAutoPosition(enable: boolean): nothing;
 
 /**
  * @param enable
  */
-declare function BlzHideOriginFrames(this: void, enable: boolean): nothing;
+declare function BlzHideOriginFrames(enable: boolean): nothing;
 
 /**
  * @param a
@@ -16506,12 +16507,12 @@ declare function BlzHideOriginFrames(this: void, enable: boolean): nothing;
  * @param g
  * @param b
  */
-declare function BlzConvertColor(this: void, a: integer, r: integer, g: integer, b: integer): integer;
+declare function BlzConvertColor(a: integer, r: integer, g: integer, b: integer): integer;
 
 /**
  * @param TOCFile
  */
-declare function BlzLoadTOCFile(this: void, TOCFile: string): boolean;
+declare function BlzLoadTOCFile(TOCFile: string): boolean;
 
 /**
  * @param name
@@ -16519,14 +16520,14 @@ declare function BlzLoadTOCFile(this: void, TOCFile: string): boolean;
  * @param priority
  * @param createContext
  */
-declare function BlzCreateFrame(this: void, name: string, owner: framehandle, priority: integer, createContext: integer): framehandle;
+declare function BlzCreateFrame(name: string, owner: framehandle, priority: integer, createContext: integer): framehandle;
 
 /**
  * @param name
  * @param owner
  * @param createContext
  */
-declare function BlzCreateSimpleFrame(this: void, name: string, owner: framehandle, createContext: integer): framehandle;
+declare function BlzCreateSimpleFrame(name: string, owner: framehandle, createContext: integer): framehandle;
 
 /**
  * @param typeName
@@ -16535,12 +16536,12 @@ declare function BlzCreateSimpleFrame(this: void, name: string, owner: framehand
  * @param inherits
  * @param createContext
  */
-declare function BlzCreateFrameByType(this: void, typeName: string, name: string, owner: framehandle, inherits: string, createContext: integer): framehandle;
+declare function BlzCreateFrameByType(typeName: string, name: string, owner: framehandle, inherits: string, createContext: integer): framehandle;
 
 /**
  * @param frame
  */
-declare function BlzDestroyFrame(this: void, frame: framehandle): nothing;
+declare function BlzDestroyFrame(frame: framehandle): nothing;
 
 /**
  * @param frame
@@ -16550,7 +16551,7 @@ declare function BlzDestroyFrame(this: void, frame: framehandle): nothing;
  * @param x
  * @param y
  */
-declare function BlzFrameSetPoint(this: void, frame: framehandle, point: framepointtype, relative: framehandle, relativePoint: framepointtype, x: real, y: real): nothing;
+declare function BlzFrameSetPoint(frame: framehandle, point: framepointtype, relative: framehandle, relativePoint: framepointtype, x: real, y: real): nothing;
 
 /**
  * @param frame
@@ -16558,115 +16559,115 @@ declare function BlzFrameSetPoint(this: void, frame: framehandle, point: framepo
  * @param x
  * @param y
  */
-declare function BlzFrameSetAbsPoint(this: void, frame: framehandle, point: framepointtype, x: real, y: real): nothing;
+declare function BlzFrameSetAbsPoint(frame: framehandle, point: framepointtype, x: real, y: real): nothing;
 
 /**
  * @param frame
  */
-declare function BlzFrameClearAllPoints(this: void, frame: framehandle): nothing;
+declare function BlzFrameClearAllPoints(frame: framehandle): nothing;
 
 /**
  * @param frame
  * @param relative
  */
-declare function BlzFrameSetAllPoints(this: void, frame: framehandle, relative: framehandle): nothing;
+declare function BlzFrameSetAllPoints(frame: framehandle, relative: framehandle): nothing;
 
 /**
  * @param frame
  * @param visible
  */
-declare function BlzFrameSetVisible(this: void, frame: framehandle, visible: boolean): nothing;
+declare function BlzFrameSetVisible(frame: framehandle, visible: boolean): nothing;
 
 /**
  * @param frame
  */
-declare function BlzFrameIsVisible(this: void, frame: framehandle): boolean;
+declare function BlzFrameIsVisible(frame: framehandle): boolean;
 
 /**
  * @param name
  * @param createContext
  */
-declare function BlzGetFrameByName(this: void, name: string, createContext: integer): framehandle;
+declare function BlzGetFrameByName(name: string, createContext: integer): framehandle;
 
 /**
  * @param frame
  */
-declare function BlzFrameGetName(this: void, frame: framehandle): string;
+declare function BlzFrameGetName(frame: framehandle): string;
 
 /**
  * @param frame
  */
-declare function BlzFrameClick(this: void, frame: framehandle): nothing;
+declare function BlzFrameClick(frame: framehandle): nothing;
 
 /**
  * @param frame
  * @param text
  */
-declare function BlzFrameSetText(this: void, frame: framehandle, text: string): nothing;
+declare function BlzFrameSetText(frame: framehandle, text: string): nothing;
 
 /**
  * @param frame
  */
-declare function BlzFrameGetText(this: void, frame: framehandle): string;
+declare function BlzFrameGetText(frame: framehandle): string;
 
 /**
  * @param frame
  * @param size
  */
-declare function BlzFrameSetTextSizeLimit(this: void, frame: framehandle, size: integer): nothing;
+declare function BlzFrameSetTextSizeLimit(frame: framehandle, size: integer): nothing;
 
 /**
  * @param frame
  */
-declare function BlzFrameGetTextSizeLimit(this: void, frame: framehandle): integer;
+declare function BlzFrameGetTextSizeLimit(frame: framehandle): integer;
 
 /**
  * @param frame
  * @param color
  */
-declare function BlzFrameSetTextColor(this: void, frame: framehandle, color: integer): nothing;
+declare function BlzFrameSetTextColor(frame: framehandle, color: integer): nothing;
 
 /**
  * @param frame
  * @param flag
  */
-declare function BlzFrameSetFocus(this: void, frame: framehandle, flag: boolean): nothing;
+declare function BlzFrameSetFocus(frame: framehandle, flag: boolean): nothing;
 
 /**
  * @param frame
  * @param modelFile
  * @param cameraIndex
  */
-declare function BlzFrameSetModel(this: void, frame: framehandle, modelFile: string, cameraIndex: integer): nothing;
+declare function BlzFrameSetModel(frame: framehandle, modelFile: string, cameraIndex: integer): nothing;
 
 /**
  * @param frame
  * @param enabled
  */
-declare function BlzFrameSetEnable(this: void, frame: framehandle, enabled: boolean): nothing;
+declare function BlzFrameSetEnable(frame: framehandle, enabled: boolean): nothing;
 
 /**
  * @param frame
  */
-declare function BlzFrameGetEnable(this: void, frame: framehandle): boolean;
+declare function BlzFrameGetEnable(frame: framehandle): boolean;
 
 /**
  * @param frame
  * @param alpha
  */
-declare function BlzFrameSetAlpha(this: void, frame: framehandle, alpha: integer): nothing;
+declare function BlzFrameSetAlpha(frame: framehandle, alpha: integer): nothing;
 
 /**
  * @param frame
  */
-declare function BlzFrameGetAlpha(this: void, frame: framehandle): integer;
+declare function BlzFrameGetAlpha(frame: framehandle): integer;
 
 /**
  * @param frame
  * @param primaryProp
  * @param flags
  */
-declare function BlzFrameSetSpriteAnimate(this: void, frame: framehandle, primaryProp: integer, flags: integer): nothing;
+declare function BlzFrameSetSpriteAnimate(frame: framehandle, primaryProp: integer, flags: integer): nothing;
 
 /**
  * @param frame
@@ -16674,89 +16675,89 @@ declare function BlzFrameSetSpriteAnimate(this: void, frame: framehandle, primar
  * @param flag
  * @param blend
  */
-declare function BlzFrameSetTexture(this: void, frame: framehandle, texFile: string, flag: integer, blend: boolean): nothing;
+declare function BlzFrameSetTexture(frame: framehandle, texFile: string, flag: integer, blend: boolean): nothing;
 
 /**
  * @param frame
  * @param scale
  */
-declare function BlzFrameSetScale(this: void, frame: framehandle, scale: real): nothing;
+declare function BlzFrameSetScale(frame: framehandle, scale: real): nothing;
 
 /**
  * @param frame
  * @param tooltip
  */
-declare function BlzFrameSetTooltip(this: void, frame: framehandle, tooltip: framehandle): nothing;
+declare function BlzFrameSetTooltip(frame: framehandle, tooltip: framehandle): nothing;
 
 /**
  * @param frame
  * @param enable
  */
-declare function BlzFrameCageMouse(this: void, frame: framehandle, enable: boolean): nothing;
+declare function BlzFrameCageMouse(frame: framehandle, enable: boolean): nothing;
 
 /**
  * @param frame
  * @param value
  */
-declare function BlzFrameSetValue(this: void, frame: framehandle, value: real): nothing;
+declare function BlzFrameSetValue(frame: framehandle, value: real): nothing;
 
 /**
  * @param frame
  */
-declare function BlzFrameGetValue(this: void, frame: framehandle): real;
+declare function BlzFrameGetValue(frame: framehandle): real;
 
 /**
  * @param frame
  * @param minValue
  * @param maxValue
  */
-declare function BlzFrameSetMinMaxValue(this: void, frame: framehandle, minValue: real, maxValue: real): nothing;
+declare function BlzFrameSetMinMaxValue(frame: framehandle, minValue: real, maxValue: real): nothing;
 
 /**
  * @param frame
  * @param stepSize
  */
-declare function BlzFrameSetStepSize(this: void, frame: framehandle, stepSize: real): nothing;
+declare function BlzFrameSetStepSize(frame: framehandle, stepSize: real): nothing;
 
 /**
  * @param frame
  * @param width
  * @param height
  */
-declare function BlzFrameSetSize(this: void, frame: framehandle, width: real, height: real): nothing;
+declare function BlzFrameSetSize(frame: framehandle, width: real, height: real): nothing;
 
 /**
  * @param frame
  * @param color
  */
-declare function BlzFrameSetVertexColor(this: void, frame: framehandle, color: integer): nothing;
+declare function BlzFrameSetVertexColor(frame: framehandle, color: integer): nothing;
 
 /**
  * @param frame
  * @param level
  */
-declare function BlzFrameSetLevel(this: void, frame: framehandle, level: integer): nothing;
+declare function BlzFrameSetLevel(frame: framehandle, level: integer): nothing;
 
 /**
  * @param frame
  * @param parent
  */
-declare function BlzFrameSetParent(this: void, frame: framehandle, parent: framehandle): nothing;
+declare function BlzFrameSetParent(frame: framehandle, parent: framehandle): nothing;
 
 /**
  * @param frame
  */
-declare function BlzFrameGetParent(this: void, frame: framehandle): framehandle;
+declare function BlzFrameGetParent(frame: framehandle): framehandle;
 
 /**
  * @param frame
  */
-declare function BlzFrameGetHeight(this: void, frame: framehandle): real;
+declare function BlzFrameGetHeight(frame: framehandle): real;
 
 /**
  * @param frame
  */
-declare function BlzFrameGetWidth(this: void, frame: framehandle): real;
+declare function BlzFrameGetWidth(frame: framehandle): real;
 
 /**
  * @param frame
@@ -16764,29 +16765,29 @@ declare function BlzFrameGetWidth(this: void, frame: framehandle): real;
  * @param height
  * @param flags
  */
-declare function BlzFrameSetFont(this: void, frame: framehandle, fileName: string, height: real, flags: integer): nothing;
+declare function BlzFrameSetFont(frame: framehandle, fileName: string, height: real, flags: integer): nothing;
 
 /**
  * @param frame
  * @param vert
  * @param horz
  */
-declare function BlzFrameSetTextAlignment(this: void, frame: framehandle, vert: textaligntype, horz: textaligntype): nothing;
+declare function BlzFrameSetTextAlignment(frame: framehandle, vert: textaligntype, horz: textaligntype): nothing;
 
 /**
  * @param whichTrigger
  * @param frame
  * @param eventId
  */
-declare function BlzTriggerRegisterFrameEvent(this: void, whichTrigger: trigger, frame: framehandle, eventId: frameeventtype): event;
+declare function BlzTriggerRegisterFrameEvent(whichTrigger: trigger, frame: framehandle, eventId: frameeventtype): event;
 
 /**
  */
-declare function BlzGetTriggerFrame(this: void): framehandle;
+declare function BlzGetTriggerFrame(): framehandle;
 
 /**
  */
-declare function BlzGetTriggerFrameEvent(this: void): frameeventtype;
+declare function BlzGetTriggerFrameEvent(): frameeventtype;
 
 /**
  * @param whichTrigger
@@ -16794,21 +16795,21 @@ declare function BlzGetTriggerFrameEvent(this: void): frameeventtype;
  * @param prefix
  * @param fromServer
  */
-declare function BlzTriggerRegisterPlayerSyncEvent(this: void, whichTrigger: trigger, whichPlayer: player, prefix: string, fromServer: boolean): event;
+declare function BlzTriggerRegisterPlayerSyncEvent(whichTrigger: trigger, whichPlayer: player, prefix: string, fromServer: boolean): event;
 
 /**
  * @param prefix
  * @param data
  */
-declare function BlzSendSyncData(this: void, prefix: string, data: string): boolean;
+declare function BlzSendSyncData(prefix: string, data: string): boolean;
 
 /**
  */
-declare function BlzGetTriggerSyncPrefix(this: void): string;
+declare function BlzGetTriggerSyncPrefix(): string;
 
 /**
  */
-declare function BlzGetTriggerSyncData(this: void): string;
+declare function BlzGetTriggerSyncData(): string;
 
 /**
  * @param whichTrigger
@@ -16817,60 +16818,60 @@ declare function BlzGetTriggerSyncData(this: void): string;
  * @param metaKey
  * @param keyDown
  */
-declare function BlzTriggerRegisterPlayerKeyEvent(this: void, whichTrigger: trigger, whichPlayer: player, key: oskeytype, metaKey: integer, keyDown: boolean): event;
+declare function BlzTriggerRegisterPlayerKeyEvent(whichTrigger: trigger, whichPlayer: player, key: oskeytype, metaKey: integer, keyDown: boolean): event;
 
 /**
  */
-declare function BlzGetTriggerPlayerKey(this: void): oskeytype;
+declare function BlzGetTriggerPlayerKey(): oskeytype;
 
 /**
  */
-declare function BlzGetTriggerPlayerMetaKey(this: void): integer;
+declare function BlzGetTriggerPlayerMetaKey(): integer;
 
 /**
  */
-declare function BlzGetTriggerPlayerIsKeyDown(this: void): boolean;
+declare function BlzGetTriggerPlayerIsKeyDown(): boolean;
 
 /**
  * @param enable
  */
-declare function BlzEnableCursor(this: void, enable: boolean): nothing;
+declare function BlzEnableCursor(enable: boolean): nothing;
 
 /**
  * @param x
  * @param y
  */
-declare function BlzSetMousePos(this: void, x: integer, y: integer): nothing;
+declare function BlzSetMousePos(x: integer, y: integer): nothing;
 
 /**
  */
-declare function BlzGetLocalClientWidth(this: void): integer;
+declare function BlzGetLocalClientWidth(): integer;
 
 /**
  */
-declare function BlzGetLocalClientHeight(this: void): integer;
+declare function BlzGetLocalClientHeight(): integer;
 
 /**
  */
-declare function BlzIsLocalClientActive(this: void): boolean;
+declare function BlzIsLocalClientActive(): boolean;
 
 /**
  */
-declare function BlzGetMouseFocusUnit(this: void): unit;
+declare function BlzGetMouseFocusUnit(): unit;
 
 /**
  * @param texFile
  */
-declare function BlzChangeMinimapTerrainTex(this: void, texFile: string): boolean;
+declare function BlzChangeMinimapTerrainTex(texFile: string): boolean;
 
 /**
  */
-declare function BlzGetLocale(this: void): string;
+declare function BlzGetLocale(): string;
 
 /**
  * @param whichEffect
  */
-declare function BlzGetSpecialEffectScale(this: void, whichEffect: effect): real;
+declare function BlzGetSpecialEffectScale(whichEffect: effect): real;
 
 /**
  * @param whichEffect
@@ -16878,115 +16879,107 @@ declare function BlzGetSpecialEffectScale(this: void, whichEffect: effect): real
  * @param y
  * @param z
  */
-declare function BlzSetSpecialEffectMatrixScale(this: void, whichEffect: effect, x: real, y: real, z: real): nothing;
+declare function BlzSetSpecialEffectMatrixScale(whichEffect: effect, x: real, y: real, z: real): nothing;
 
 /**
  * @param whichEffect
  */
-declare function BlzResetSpecialEffectMatrix(this: void, whichEffect: effect): nothing;
+declare function BlzResetSpecialEffectMatrix(whichEffect: effect): nothing;
 
 /**
  * @param whichUnit
  * @param abilId
  */
-declare function BlzGetUnitAbility(this: void, whichUnit: unit, abilId: integer): ability;
+declare function BlzGetUnitAbility(whichUnit: unit, abilId: integer): ability;
 
 /**
  * @param whichUnit
  * @param index
  */
-declare function BlzGetUnitAbilityByIndex(this: void, whichUnit: unit, index: integer): ability;
+declare function BlzGetUnitAbilityByIndex(whichUnit: unit, index: integer): ability;
 
 /**
  * @param whichPlayer
  * @param recipient
  * @param message
  */
-declare function BlzDisplayChatMessage(this: void, whichPlayer: player, recipient: integer, message: string): nothing;
+declare function BlzDisplayChatMessage(whichPlayer: player, recipient: integer, message: string): nothing;
 
 /**
  * @param whichUnit
  * @param flag
  */
-declare function BlzPauseUnitEx(this: void, whichUnit: unit, flag: boolean): nothing;
+declare function BlzPauseUnitEx(whichUnit: unit, flag: boolean): nothing;
 
 /**
  * @param x
  * @param y
  */
-declare function BlzBitOr(this: void, x: integer, y: integer): integer;
+declare function BlzBitOr(x: integer, y: integer): integer;
 
 /**
  * @param x
  * @param y
  */
-declare function BlzBitAnd(this: void, x: integer, y: integer): integer;
+declare function BlzBitAnd(x: integer, y: integer): integer;
 
 /**
  * @param x
  * @param y
  */
-declare function BlzBitXor(this: void, x: integer, y: integer): integer;
+declare function BlzBitXor(x: integer, y: integer): integer;
 
 /**
  * @param whichAbility
  * @param whichField
  */
-declare function BlzGetAbilityBooleanField(this: void, whichAbility: ability, whichField: abilitybooleanfield): boolean;
+declare function BlzGetAbilityBooleanField(whichAbility: ability, whichField: abilitybooleanfield): boolean;
 
 /**
  * @param whichAbility
  * @param whichField
  */
-declare function BlzGetAbilityIntegerField(this: void, whichAbility: ability, whichField: abilityintegerfield): integer;
+declare function BlzGetAbilityIntegerField(whichAbility: ability, whichField: abilityintegerfield): integer;
 
 /**
  * @param whichAbility
  * @param whichField
  */
-declare function BlzGetAbilityRealField(this: void, whichAbility: ability, whichField: abilityrealfield): real;
+declare function BlzGetAbilityRealField(whichAbility: ability, whichField: abilityrealfield): real;
 
 /**
  * @param whichAbility
  * @param whichField
  */
-declare function BlzGetAbilityStringField(this: void, whichAbility: ability, whichField: abilitystringfield): string;
-
-/**
- * @param whichAbility
- * @param whichField
- * @param level
- */
-declare function BlzGetAbilityBooleanLevelField(this: void, whichAbility: ability, whichField: abilitybooleanlevelfield, level: integer): boolean;
+declare function BlzGetAbilityStringField(whichAbility: ability, whichField: abilitystringfield): string;
 
 /**
  * @param whichAbility
  * @param whichField
  * @param level
  */
-declare function BlzGetAbilityIntegerLevelField(this: void, whichAbility: ability, whichField: abilityintegerlevelfield, level: integer): integer;
+declare function BlzGetAbilityBooleanLevelField(whichAbility: ability, whichField: abilitybooleanlevelfield, level: integer): boolean;
 
 /**
  * @param whichAbility
  * @param whichField
  * @param level
  */
-declare function BlzGetAbilityRealLevelField(this: void, whichAbility: ability, whichField: abilityreallevelfield, level: integer): real;
+declare function BlzGetAbilityIntegerLevelField(whichAbility: ability, whichField: abilityintegerlevelfield, level: integer): integer;
 
 /**
  * @param whichAbility
  * @param whichField
  * @param level
  */
-declare function BlzGetAbilityStringLevelField(this: void, whichAbility: ability, whichField: abilitystringlevelfield, level: integer): string;
+declare function BlzGetAbilityRealLevelField(whichAbility: ability, whichField: abilityreallevelfield, level: integer): real;
 
 /**
  * @param whichAbility
  * @param whichField
  * @param level
- * @param index
  */
-declare function BlzGetAbilityBooleanLevelArrayField(this: void, whichAbility: ability, whichField: abilitybooleanlevelarrayfield, level: integer, index: integer): boolean;
+declare function BlzGetAbilityStringLevelField(whichAbility: ability, whichField: abilitystringlevelfield, level: integer): string;
 
 /**
  * @param whichAbility
@@ -16994,7 +16987,7 @@ declare function BlzGetAbilityBooleanLevelArrayField(this: void, whichAbility: a
  * @param level
  * @param index
  */
-declare function BlzGetAbilityIntegerLevelArrayField(this: void, whichAbility: ability, whichField: abilityintegerlevelarrayfield, level: integer, index: integer): integer;
+declare function BlzGetAbilityBooleanLevelArrayField(whichAbility: ability, whichField: abilitybooleanlevelarrayfield, level: integer, index: integer): boolean;
 
 /**
  * @param whichAbility
@@ -17002,7 +16995,7 @@ declare function BlzGetAbilityIntegerLevelArrayField(this: void, whichAbility: a
  * @param level
  * @param index
  */
-declare function BlzGetAbilityRealLevelArrayField(this: void, whichAbility: ability, whichField: abilityreallevelarrayfield, level: integer, index: integer): real;
+declare function BlzGetAbilityIntegerLevelArrayField(whichAbility: ability, whichField: abilityintegerlevelarrayfield, level: integer, index: integer): integer;
 
 /**
  * @param whichAbility
@@ -17010,76 +17003,75 @@ declare function BlzGetAbilityRealLevelArrayField(this: void, whichAbility: abil
  * @param level
  * @param index
  */
-declare function BlzGetAbilityStringLevelArrayField(this: void, whichAbility: ability, whichField: abilitystringlevelarrayfield, level: integer, index: integer): string;
-
-/**
- * @param whichAbility
- * @param whichField
- * @param value
- */
-declare function BlzSetAbilityBooleanField(this: void, whichAbility: ability, whichField: abilitybooleanfield, value: boolean): boolean;
-
-/**
- * @param whichAbility
- * @param whichField
- * @param value
- */
-declare function BlzSetAbilityIntegerField(this: void, whichAbility: ability, whichField: abilityintegerfield, value: integer): boolean;
-
-/**
- * @param whichAbility
- * @param whichField
- * @param value
- */
-declare function BlzSetAbilityRealField(this: void, whichAbility: ability, whichField: abilityrealfield, value: real): boolean;
-
-/**
- * @param whichAbility
- * @param whichField
- * @param value
- */
-declare function BlzSetAbilityStringField(this: void, whichAbility: ability, whichField: abilitystringfield, value: string): boolean;
-
-/**
- * @param whichAbility
- * @param whichField
- * @param level
- * @param value
- */
-declare function BlzSetAbilityBooleanLevelField(this: void, whichAbility: ability, whichField: abilitybooleanlevelfield, level: integer, value: boolean): boolean;
-
-/**
- * @param whichAbility
- * @param whichField
- * @param level
- * @param value
- */
-declare function BlzSetAbilityIntegerLevelField(this: void, whichAbility: ability, whichField: abilityintegerlevelfield, level: integer, value: integer): boolean;
-
-/**
- * @param whichAbility
- * @param whichField
- * @param level
- * @param value
- */
-declare function BlzSetAbilityRealLevelField(this: void, whichAbility: ability, whichField: abilityreallevelfield, level: integer, value: real): boolean;
-
-/**
- * @param whichAbility
- * @param whichField
- * @param level
- * @param value
- */
-declare function BlzSetAbilityStringLevelField(this: void, whichAbility: ability, whichField: abilitystringlevelfield, level: integer, value: string): boolean;
+declare function BlzGetAbilityRealLevelArrayField(whichAbility: ability, whichField: abilityreallevelarrayfield, level: integer, index: integer): real;
 
 /**
  * @param whichAbility
  * @param whichField
  * @param level
  * @param index
+ */
+declare function BlzGetAbilityStringLevelArrayField(whichAbility: ability, whichField: abilitystringlevelarrayfield, level: integer, index: integer): string;
+
+/**
+ * @param whichAbility
+ * @param whichField
  * @param value
  */
-declare function BlzSetAbilityBooleanLevelArrayField(this: void, whichAbility: ability, whichField: abilitybooleanlevelarrayfield, level: integer, index: integer, value: boolean): boolean;
+declare function BlzSetAbilityBooleanField(whichAbility: ability, whichField: abilitybooleanfield, value: boolean): boolean;
+
+/**
+ * @param whichAbility
+ * @param whichField
+ * @param value
+ */
+declare function BlzSetAbilityIntegerField(whichAbility: ability, whichField: abilityintegerfield, value: integer): boolean;
+
+/**
+ * @param whichAbility
+ * @param whichField
+ * @param value
+ */
+declare function BlzSetAbilityRealField(whichAbility: ability, whichField: abilityrealfield, value: real): boolean;
+
+/**
+ * @param whichAbility
+ * @param whichField
+ * @param value
+ */
+declare function BlzSetAbilityStringField(whichAbility: ability, whichField: abilitystringfield, value: string): boolean;
+
+/**
+ * @param whichAbility
+ * @param whichField
+ * @param level
+ * @param value
+ */
+declare function BlzSetAbilityBooleanLevelField(whichAbility: ability, whichField: abilitybooleanlevelfield, level: integer, value: boolean): boolean;
+
+/**
+ * @param whichAbility
+ * @param whichField
+ * @param level
+ * @param value
+ */
+declare function BlzSetAbilityIntegerLevelField(whichAbility: ability, whichField: abilityintegerlevelfield, level: integer, value: integer): boolean;
+
+/**
+ * @param whichAbility
+ * @param whichField
+ * @param level
+ * @param value
+ */
+declare function BlzSetAbilityRealLevelField(whichAbility: ability, whichField: abilityreallevelfield, level: integer, value: real): boolean;
+
+/**
+ * @param whichAbility
+ * @param whichField
+ * @param level
+ * @param value
+ */
+declare function BlzSetAbilityStringLevelField(whichAbility: ability, whichField: abilitystringlevelfield, level: integer, value: string): boolean;
 
 /**
  * @param whichAbility
@@ -17088,7 +17080,7 @@ declare function BlzSetAbilityBooleanLevelArrayField(this: void, whichAbility: a
  * @param index
  * @param value
  */
-declare function BlzSetAbilityIntegerLevelArrayField(this: void, whichAbility: ability, whichField: abilityintegerlevelarrayfield, level: integer, index: integer, value: integer): boolean;
+declare function BlzSetAbilityBooleanLevelArrayField(whichAbility: ability, whichField: abilitybooleanlevelarrayfield, level: integer, index: integer, value: boolean): boolean;
 
 /**
  * @param whichAbility
@@ -17097,7 +17089,7 @@ declare function BlzSetAbilityIntegerLevelArrayField(this: void, whichAbility: a
  * @param index
  * @param value
  */
-declare function BlzSetAbilityRealLevelArrayField(this: void, whichAbility: ability, whichField: abilityreallevelarrayfield, level: integer, index: integer, value: real): boolean;
+declare function BlzSetAbilityIntegerLevelArrayField(whichAbility: ability, whichField: abilityintegerlevelarrayfield, level: integer, index: integer, value: integer): boolean;
 
 /**
  * @param whichAbility
@@ -17106,7 +17098,16 @@ declare function BlzSetAbilityRealLevelArrayField(this: void, whichAbility: abil
  * @param index
  * @param value
  */
-declare function BlzSetAbilityStringLevelArrayField(this: void, whichAbility: ability, whichField: abilitystringlevelarrayfield, level: integer, index: integer, value: string): boolean;
+declare function BlzSetAbilityRealLevelArrayField(whichAbility: ability, whichField: abilityreallevelarrayfield, level: integer, index: integer, value: real): boolean;
+
+/**
+ * @param whichAbility
+ * @param whichField
+ * @param level
+ * @param index
+ * @param value
+ */
+declare function BlzSetAbilityStringLevelArrayField(whichAbility: ability, whichField: abilitystringlevelarrayfield, level: integer, index: integer, value: string): boolean;
 
 /**
  * @param whichAbility
@@ -17114,7 +17115,7 @@ declare function BlzSetAbilityStringLevelArrayField(this: void, whichAbility: ab
  * @param level
  * @param value
  */
-declare function BlzAddAbilityBooleanLevelArrayField(this: void, whichAbility: ability, whichField: abilitybooleanlevelarrayfield, level: integer, value: boolean): boolean;
+declare function BlzAddAbilityBooleanLevelArrayField(whichAbility: ability, whichField: abilitybooleanlevelarrayfield, level: integer, value: boolean): boolean;
 
 /**
  * @param whichAbility
@@ -17122,7 +17123,7 @@ declare function BlzAddAbilityBooleanLevelArrayField(this: void, whichAbility: a
  * @param level
  * @param value
  */
-declare function BlzAddAbilityIntegerLevelArrayField(this: void, whichAbility: ability, whichField: abilityintegerlevelarrayfield, level: integer, value: integer): boolean;
+declare function BlzAddAbilityIntegerLevelArrayField(whichAbility: ability, whichField: abilityintegerlevelarrayfield, level: integer, value: integer): boolean;
 
 /**
  * @param whichAbility
@@ -17130,7 +17131,7 @@ declare function BlzAddAbilityIntegerLevelArrayField(this: void, whichAbility: a
  * @param level
  * @param value
  */
-declare function BlzAddAbilityRealLevelArrayField(this: void, whichAbility: ability, whichField: abilityreallevelarrayfield, level: integer, value: real): boolean;
+declare function BlzAddAbilityRealLevelArrayField(whichAbility: ability, whichField: abilityreallevelarrayfield, level: integer, value: real): boolean;
 
 /**
  * @param whichAbility
@@ -17138,7 +17139,7 @@ declare function BlzAddAbilityRealLevelArrayField(this: void, whichAbility: abil
  * @param level
  * @param value
  */
-declare function BlzAddAbilityStringLevelArrayField(this: void, whichAbility: ability, whichField: abilitystringlevelarrayfield, level: integer, value: string): boolean;
+declare function BlzAddAbilityStringLevelArrayField(whichAbility: ability, whichField: abilitystringlevelarrayfield, level: integer, value: string): boolean;
 
 /**
  * @param whichAbility
@@ -17146,7 +17147,7 @@ declare function BlzAddAbilityStringLevelArrayField(this: void, whichAbility: ab
  * @param level
  * @param value
  */
-declare function BlzRemoveAbilityBooleanLevelArrayField(this: void, whichAbility: ability, whichField: abilitybooleanlevelarrayfield, level: integer, value: boolean): boolean;
+declare function BlzRemoveAbilityBooleanLevelArrayField(whichAbility: ability, whichField: abilitybooleanlevelarrayfield, level: integer, value: boolean): boolean;
 
 /**
  * @param whichAbility
@@ -17154,7 +17155,7 @@ declare function BlzRemoveAbilityBooleanLevelArrayField(this: void, whichAbility
  * @param level
  * @param value
  */
-declare function BlzRemoveAbilityIntegerLevelArrayField(this: void, whichAbility: ability, whichField: abilityintegerlevelarrayfield, level: integer, value: integer): boolean;
+declare function BlzRemoveAbilityIntegerLevelArrayField(whichAbility: ability, whichField: abilityintegerlevelarrayfield, level: integer, value: integer): boolean;
 
 /**
  * @param whichAbility
@@ -17162,7 +17163,7 @@ declare function BlzRemoveAbilityIntegerLevelArrayField(this: void, whichAbility
  * @param level
  * @param value
  */
-declare function BlzRemoveAbilityRealLevelArrayField(this: void, whichAbility: ability, whichField: abilityreallevelarrayfield, level: integer, value: real): boolean;
+declare function BlzRemoveAbilityRealLevelArrayField(whichAbility: ability, whichField: abilityreallevelarrayfield, level: integer, value: real): boolean;
 
 /**
  * @param whichAbility
@@ -17170,171 +17171,163 @@ declare function BlzRemoveAbilityRealLevelArrayField(this: void, whichAbility: a
  * @param level
  * @param value
  */
-declare function BlzRemoveAbilityStringLevelArrayField(this: void, whichAbility: ability, whichField: abilitystringlevelarrayfield, level: integer, value: string): boolean;
+declare function BlzRemoveAbilityStringLevelArrayField(whichAbility: ability, whichField: abilitystringlevelarrayfield, level: integer, value: string): boolean;
 
 /**
  * @param whichItem
  * @param index
  */
-declare function BlzGetItemAbilityByIndex(this: void, whichItem: item, index: integer): ability;
-
-/**
- * @param whichItem
- * @param abilCode
- */
-declare function BlzGetItemAbility(this: void, whichItem: item, abilCode: integer): ability;
+declare function BlzGetItemAbilityByIndex(whichItem: item, index: integer): ability;
 
 /**
  * @param whichItem
  * @param abilCode
  */
-declare function BlzItemAddAbility(this: void, whichItem: item, abilCode: integer): boolean;
-
-/**
- * @param whichItem
- * @param whichField
- */
-declare function BlzGetItemBooleanField(this: void, whichItem: item, whichField: itembooleanfield): boolean;
-
-/**
- * @param whichItem
- * @param whichField
- */
-declare function BlzGetItemIntegerField(this: void, whichItem: item, whichField: itemintegerfield): integer;
-
-/**
- * @param whichItem
- * @param whichField
- */
-declare function BlzGetItemRealField(this: void, whichItem: item, whichField: itemrealfield): real;
-
-/**
- * @param whichItem
- * @param whichField
- */
-declare function BlzGetItemStringField(this: void, whichItem: item, whichField: itemstringfield): string;
-
-/**
- * @param whichItem
- * @param whichField
- * @param value
- */
-declare function BlzSetItemBooleanField(this: void, whichItem: item, whichField: itembooleanfield, value: boolean): boolean;
-
-/**
- * @param whichItem
- * @param whichField
- * @param value
- */
-declare function BlzSetItemIntegerField(this: void, whichItem: item, whichField: itemintegerfield, value: integer): boolean;
-
-/**
- * @param whichItem
- * @param whichField
- * @param value
- */
-declare function BlzSetItemRealField(this: void, whichItem: item, whichField: itemrealfield, value: real): boolean;
-
-/**
- * @param whichItem
- * @param whichField
- * @param value
- */
-declare function BlzSetItemStringField(this: void, whichItem: item, whichField: itemstringfield, value: string): boolean;
+declare function BlzGetItemAbility(whichItem: item, abilCode: integer): ability;
 
 /**
  * @param whichItem
  * @param abilCode
  */
-declare function BlzItemRemoveAbility(this: void, whichItem: item, abilCode: integer): boolean;
+declare function BlzItemAddAbility(whichItem: item, abilCode: integer): boolean;
+
+/**
+ * @param whichItem
+ * @param whichField
+ */
+declare function BlzGetItemBooleanField(whichItem: item, whichField: itembooleanfield): boolean;
+
+/**
+ * @param whichItem
+ * @param whichField
+ */
+declare function BlzGetItemIntegerField(whichItem: item, whichField: itemintegerfield): integer;
+
+/**
+ * @param whichItem
+ * @param whichField
+ */
+declare function BlzGetItemRealField(whichItem: item, whichField: itemrealfield): real;
+
+/**
+ * @param whichItem
+ * @param whichField
+ */
+declare function BlzGetItemStringField(whichItem: item, whichField: itemstringfield): string;
+
+/**
+ * @param whichItem
+ * @param whichField
+ * @param value
+ */
+declare function BlzSetItemBooleanField(whichItem: item, whichField: itembooleanfield, value: boolean): boolean;
+
+/**
+ * @param whichItem
+ * @param whichField
+ * @param value
+ */
+declare function BlzSetItemIntegerField(whichItem: item, whichField: itemintegerfield, value: integer): boolean;
+
+/**
+ * @param whichItem
+ * @param whichField
+ * @param value
+ */
+declare function BlzSetItemRealField(whichItem: item, whichField: itemrealfield, value: real): boolean;
+
+/**
+ * @param whichItem
+ * @param whichField
+ * @param value
+ */
+declare function BlzSetItemStringField(whichItem: item, whichField: itemstringfield, value: string): boolean;
+
+/**
+ * @param whichItem
+ * @param abilCode
+ */
+declare function BlzItemRemoveAbility(whichItem: item, abilCode: integer): boolean;
 
 /**
  * @param whichUnit
  * @param whichField
  */
-declare function BlzGetUnitBooleanField(this: void, whichUnit: unit, whichField: unitbooleanfield): boolean;
+declare function BlzGetUnitBooleanField(whichUnit: unit, whichField: unitbooleanfield): boolean;
 
 /**
  * @param whichUnit
  * @param whichField
  */
-declare function BlzGetUnitIntegerField(this: void, whichUnit: unit, whichField: unitintegerfield): integer;
+declare function BlzGetUnitIntegerField(whichUnit: unit, whichField: unitintegerfield): integer;
 
 /**
  * @param whichUnit
  * @param whichField
  */
-declare function BlzGetUnitRealField(this: void, whichUnit: unit, whichField: unitrealfield): real;
+declare function BlzGetUnitRealField(whichUnit: unit, whichField: unitrealfield): real;
 
 /**
  * @param whichUnit
  * @param whichField
  */
-declare function BlzGetUnitStringField(this: void, whichUnit: unit, whichField: unitstringfield): string;
+declare function BlzGetUnitStringField(whichUnit: unit, whichField: unitstringfield): string;
 
 /**
  * @param whichUnit
  * @param whichField
  * @param value
  */
-declare function BlzSetUnitBooleanField(this: void, whichUnit: unit, whichField: unitbooleanfield, value: boolean): boolean;
+declare function BlzSetUnitBooleanField(whichUnit: unit, whichField: unitbooleanfield, value: boolean): boolean;
 
 /**
  * @param whichUnit
  * @param whichField
  * @param value
  */
-declare function BlzSetUnitIntegerField(this: void, whichUnit: unit, whichField: unitintegerfield, value: integer): boolean;
+declare function BlzSetUnitIntegerField(whichUnit: unit, whichField: unitintegerfield, value: integer): boolean;
 
 /**
  * @param whichUnit
  * @param whichField
  * @param value
  */
-declare function BlzSetUnitRealField(this: void, whichUnit: unit, whichField: unitrealfield, value: real): boolean;
+declare function BlzSetUnitRealField(whichUnit: unit, whichField: unitrealfield, value: real): boolean;
 
 /**
  * @param whichUnit
  * @param whichField
  * @param value
  */
-declare function BlzSetUnitStringField(this: void, whichUnit: unit, whichField: unitstringfield, value: string): boolean;
+declare function BlzSetUnitStringField(whichUnit: unit, whichField: unitstringfield, value: string): boolean;
 
 /**
  * @param whichUnit
  * @param whichField
  * @param index
  */
-declare function BlzGetUnitWeaponBooleanField(this: void, whichUnit: unit, whichField: unitweaponbooleanfield, index: integer): boolean;
+declare function BlzGetUnitWeaponBooleanField(whichUnit: unit, whichField: unitweaponbooleanfield, index: integer): boolean;
 
 /**
  * @param whichUnit
  * @param whichField
  * @param index
  */
-declare function BlzGetUnitWeaponIntegerField(this: void, whichUnit: unit, whichField: unitweaponintegerfield, index: integer): integer;
+declare function BlzGetUnitWeaponIntegerField(whichUnit: unit, whichField: unitweaponintegerfield, index: integer): integer;
 
 /**
  * @param whichUnit
  * @param whichField
  * @param index
  */
-declare function BlzGetUnitWeaponRealField(this: void, whichUnit: unit, whichField: unitweaponrealfield, index: integer): real;
+declare function BlzGetUnitWeaponRealField(whichUnit: unit, whichField: unitweaponrealfield, index: integer): real;
 
 /**
  * @param whichUnit
  * @param whichField
  * @param index
  */
-declare function BlzGetUnitWeaponStringField(this: void, whichUnit: unit, whichField: unitweaponstringfield, index: integer): string;
-
-/**
- * @param whichUnit
- * @param whichField
- * @param index
- * @param value
- */
-declare function BlzSetUnitWeaponBooleanField(this: void, whichUnit: unit, whichField: unitweaponbooleanfield, index: integer, value: boolean): boolean;
+declare function BlzGetUnitWeaponStringField(whichUnit: unit, whichField: unitweaponstringfield, index: integer): string;
 
 /**
  * @param whichUnit
@@ -17342,7 +17335,7 @@ declare function BlzSetUnitWeaponBooleanField(this: void, whichUnit: unit, which
  * @param index
  * @param value
  */
-declare function BlzSetUnitWeaponIntegerField(this: void, whichUnit: unit, whichField: unitweaponintegerfield, index: integer, value: integer): boolean;
+declare function BlzSetUnitWeaponBooleanField(whichUnit: unit, whichField: unitweaponbooleanfield, index: integer, value: boolean): boolean;
 
 /**
  * @param whichUnit
@@ -17350,7 +17343,7 @@ declare function BlzSetUnitWeaponIntegerField(this: void, whichUnit: unit, which
  * @param index
  * @param value
  */
-declare function BlzSetUnitWeaponRealField(this: void, whichUnit: unit, whichField: unitweaponrealfield, index: integer, value: real): boolean;
+declare function BlzSetUnitWeaponIntegerField(whichUnit: unit, whichField: unitweaponintegerfield, index: integer, value: integer): boolean;
 
 /**
  * @param whichUnit
@@ -17358,4 +17351,12 @@ declare function BlzSetUnitWeaponRealField(this: void, whichUnit: unit, whichFie
  * @param index
  * @param value
  */
-declare function BlzSetUnitWeaponStringField(this: void, whichUnit: unit, whichField: unitweaponstringfield, index: integer, value: string): boolean;
+declare function BlzSetUnitWeaponRealField(whichUnit: unit, whichField: unitweaponrealfield, index: integer, value: real): boolean;
+
+/**
+ * @param whichUnit
+ * @param whichField
+ * @param index
+ * @param value
+ */
+declare function BlzSetUnitWeaponStringField(whichUnit: unit, whichField: unitweaponstringfield, index: integer, value: string): boolean;

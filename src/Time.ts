@@ -4,9 +4,10 @@ interface ITime {
     s: real;
 }
 
+/** @noSelf */
 export class Time {
 
-    public static Init(this: void): void {
+    public static Init(): void {
         Time.clock = CreateTimer();
         Time.time = 0;
         TimerStart(Time.clock, Time.interval, true, () => {
@@ -17,11 +18,11 @@ export class Time {
     /**
      * @returns in seconds
      */
-    public static GetTime(this: void): number {
+    public static GetTime(): number {
         return Time.time + TimerGetElapsed(Time.clock);
     }
 
-    public static GetTimeHMS(this: void): ITime {
+    public static GetTimeHMS(): ITime {
         let ct = Time.GetTime();
         let intct = Math.floor(ct);
         ct = ct - intct;

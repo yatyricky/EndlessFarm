@@ -156,7 +156,7 @@ return ____exports
 end,
 ["src.GlobalFuncs"] = function() --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
 local ____exports = {}
-function ____exports.Stringify(self, obj)
+function ____exports.Stringify(obj)
     return ""
 end
 function ____exports.NLerp(a, b, t)
