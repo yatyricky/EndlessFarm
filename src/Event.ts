@@ -12,7 +12,7 @@ export class Event<T> {
         this.events = [];
     }
 
-    public AddListener(thisArg: object, handler: (data: T) => void, once: boolean = false, arg: T): void {
+    public AddListener(thisArg: object, handler: (data: T | void) => void, once: boolean = false, arg?: T): void {
         for (const elem of this.events) {
             if (elem.thisArg === thisArg && elem.handler === handler) {
                 return Logger.Warn(`Event[${this.mId}]: double register`);

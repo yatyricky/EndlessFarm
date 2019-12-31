@@ -32,3 +32,11 @@ t.fire();
 new Test(0.5, "<><>").fire();
 // Logger.Log("main log");
 // print(Time.GetTime());
+
+// require("Extension")
+// require("Game/Configs/Const")
+// require("GlobalFuncs")
+// require("Logger")
+// require("Time").Init()
+// require("Locale/Locale").Init("EN")
+// require("Game/Engine").Start()

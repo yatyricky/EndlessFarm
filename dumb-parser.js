@@ -73,7 +73,7 @@ ri.on("line", function (line) {
             for (let i = 0; i < args.length; i++) {
                 const ps = args[i].trim().split(/[ \t]+/)
                 const argName = q(ps[1])
-                output.push(` * @param ${argName} ${ps[0]}`)
+                output.push(` * @param ${argName}`)
                 argList.push({ name: argName, type: ps[0] })
             }
         }

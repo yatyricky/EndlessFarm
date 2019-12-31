@@ -62,3 +62,6 @@ EndlessFarmUnity/crashlytics-build.properties
 
 # nodejs
 node_modules
+
+# windows
+desktop.ini
