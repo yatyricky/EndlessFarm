@@ -15,7 +15,7 @@ export class TestSystem implements ISystem {
     }
 
     public Start(): void {
-        Logger.Log("Test system is run");
+        Logger.Log("Test system start");
     }
 
     public Update(dt: float): void {

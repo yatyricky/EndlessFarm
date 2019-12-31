@@ -15,14 +15,14 @@ export enum CareerType {
 }
 
 export const PlayerAID = [
-    { Q: "$A0A0", W: "$A0A1", E: "$A0A2", R: "$A0A3", D: "$A0A4", F: "$A0A4" },
+    { Q: int256("A0A0"), W: int256("A0A1"), E: int256("A0A2"), R: int256("A0A3"), D: int256("A0A4"), F: int256("A0A4") },
 ];
 
 export const UTID = {
-    BladeMaster: "$Obla",
-    Paladin: "$Hpla",
-    DarkRanger: "$Nbrn",
-    DemonHunter: "$Edem",
-    Archmage: "$Hjai",
-    Warlock: "$Ogld",
+    BladeMaster: int256("Obla"),
+    Paladin: int256("Hpla"),
+    DarkRanger: int256("Nbrn"),
+    DemonHunter: int256("Edem"),
+    Archmage: int256("Hjai"),
+    Warlock: int256("Ogld"),
 };

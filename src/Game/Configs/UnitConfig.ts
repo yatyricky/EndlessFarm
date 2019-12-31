@@ -1,7 +1,7 @@
 import { AttributeType, CareerType, UTID } from "./Const";
 
 export interface IUnitConfigItem {
-    UTID: string;
+    UTID: int;
     PrimAtt: AttributeType;
     Str: int;
     Agi: int;
@@ -17,7 +17,7 @@ export interface IUnitConfigItem {
     Career: CareerType;
 }
 
-export const UnitConfig: { [key: string]: IUnitConfigItem } = {
+export const UnitConfig: { [key: number]: IUnitConfigItem } = {
     [UTID.BladeMaster]: {
         UTID: UTID.BladeMaster,
         PrimAtt: AttributeType.STR,

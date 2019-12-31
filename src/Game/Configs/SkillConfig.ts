@@ -1,3 +1,4 @@
+export const SkillConfig = {};
 // local SkillConfig = {}
 
 // SkillConfig.Type = {

@@ -4,6 +4,13 @@ const luamin = require("luamin")
 const logger = require("./logger")
 const child = require("child_process")
 
+const args = process.argv.slice(2)
+
+let mode = "-d"
+if (args[0] === "-p") {
+    mode = "-p"
+}
+
 const startMark = "--nef-inject"
 const endMark = "--nef-inject-end"
 
@@ -16,13 +23,13 @@ function injectWC3(outLua, wc3path, mode) {
     if (mode === "-p") {
         file = luamin.minify(file)
     }
-    // file = file.replace(/'(....)'/gm, (a, b) => {
-    //     const v1 = b.charCodeAt(0) << 24
-    //     const v2 = b.charCodeAt(1) << 16
-    //     const v3 = b.charCodeAt(2) << 8
-    //     const v4 = b.charCodeAt(3)
-    //     return "(" + (v1 | v2 | v3 | v4) + ")"
-    // })
+    file = file.replace(/int256\("(....)"\)/gm, (a, b) => {
+        const v1 = b.charCodeAt(0) << 24
+        const v2 = b.charCodeAt(1) << 16
+        const v3 = b.charCodeAt(2) << 8
+        const v4 = b.charCodeAt(3)
+        return "(" + (v1 | v2 | v3 | v4) + ")"
+    })
     const ri = readline.createInterface({
         input: fs.createReadStream(wc3path),
     })
@@ -63,6 +70,9 @@ function injectWC3(outLua, wc3path, mode) {
     })
 }
 
-child.execSync("tstl -p tsconfig.json")
+// ts to lua
+child.execSync(".\\node_modules\\.bin\\tstl -p .\\tsconfig.json")
 logger.success("Ts to Lua success")
-injectWC3("./out.lua", "./EndlessFarm.w3x/war3map.lua", "-p")
+
+// inject
+injectWC3("./out.lua", "./EndlessFarm.w3x/war3map.lua", mode)

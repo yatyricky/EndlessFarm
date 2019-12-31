@@ -51,27 +51,27 @@ export class Vector2 {
     /**
      * Creates a new Vector2 with values from this vector
      */
-    public static Clone(v: Vector2): Vector2 {
+    public static Clone(this: void, v: Vector2): Vector2 {
         return new Vector2(v.x, v.y);
     }
 
-    public static Add(a: Vector2, b: Vector2): Vector2 {
+    public static Add(this: void, a: Vector2, b: Vector2): Vector2 {
         return Vector2.Clone(a).Add(b);
     }
 
-    public static Sub(a: Vector2, b: Vector2): Vector2 {
+    public static Sub(this: void, a: Vector2, b: Vector2): Vector2 {
         return Vector2.Clone(a).Sub(b);
     }
 
-    public static Mul(a: Vector2, b: number): Vector2 {
+    public static Mul(this: void, a: Vector2, b: number): Vector2 {
         return Vector2.Clone(a).Mul(b);
     }
 
-    public static Div(a: Vector2, b: number): Vector2 {
+    public static Div(this: void, a: Vector2, b: number): Vector2 {
         return Vector2.Clone(a).Div(b);
     }
 
-    public static Neg(a: Vector2): Vector2 {
+    public static Neg(this: void, a: Vector2): Vector2 {
         return new Vector2(-a.x, -a.y);
     }
 
@@ -83,7 +83,7 @@ export class Vector2 {
      * @param from
      * @param to
      */
-    public static Angle(from: Vector2, to: Vector2): float {
+    public static Angle(this: void, from: Vector2, to: Vector2): float {
         let x1 = from.x;
         let y1 = from.y;
         let d = Math.sqrt(x1 * x1 + y1 * y1);
@@ -118,7 +118,7 @@ export class Vector2 {
      * @param vector
      * @param maxLength
      */
-    public static ClampMagnitude(vector: Vector2, maxLength: float): Vector2 {
+    public static ClampMagnitude(this: void, vector: Vector2, maxLength: float): Vector2 {
         let x = vector.x;
         let y = vector.y;
         const sqrMag = x * x + y * y;
@@ -138,7 +138,7 @@ export class Vector2 {
      * @param a
      * @param b
      */
-    public static Distance(a: Vector2, b: Vector2): float {
+    public static Distance(this: void, a: Vector2, b: Vector2): float {
         const dx = a.x - b.x;
         const dy = a.y - b.y;
         return Math.sqrt(dx * dx + dy * dy);
@@ -155,11 +155,11 @@ export class Vector2 {
      * @param lhs
      * @param rhs
      */
-    public static Dot(lhs: Vector2, rhs: Vector2): float {
+    public static Dot(this: void, lhs: Vector2, rhs: Vector2): float {
         return lhs.x * rhs.x + lhs.y * rhs.y;
     }
 
-    public static Cross(lhs: Vector2, rhs: Vector2): float {
+    public static Cross(this: void, lhs: Vector2, rhs: Vector2): float {
         return lhs.x * rhs.y - lhs.y * rhs.x;
     }
 
@@ -178,7 +178,7 @@ export class Vector2 {
      * @param b
      * @param t
      */
-    public static Lerp(a: Vector2, b: Vector2, t: number): Vector2 {
+    public static Lerp(this: void, a: Vector2, b: Vector2, t: number): Vector2 {
         t = NClamp(t, 0, 1);
         return new Vector2(
             NLerp(a.x, b.x, t),
@@ -198,7 +198,7 @@ export class Vector2 {
      * @param b
      * @param t
      */
-    public static LerpUnclamped(a: Vector2, b: Vector2, t: number): Vector2 {
+    public static LerpUnclamped(this: void, a: Vector2, b: Vector2, t: number): Vector2 {
         return new Vector2(
             NLerp(a.x, b.x, t),
             NLerp(a.y, b.y, t),
@@ -211,7 +211,7 @@ export class Vector2 {
      * @param lhs
      * @param rhs
      */
-    public static Max(lhs: Vector2, rhs: Vector2): Vector2 {
+    public static Max(this: void, lhs: Vector2, rhs: Vector2): Vector2 {
         return new Vector2(
             Math.max(lhs.x, rhs.x),
             Math.max(lhs.y, rhs.y),
@@ -224,7 +224,7 @@ export class Vector2 {
      * @param lhs
      * @param rhs
      */
-    public static Min(lhs: Vector2, rhs: Vector2): Vector2 {
+    public static Min(this: void, lhs: Vector2, rhs: Vector2): Vector2 {
         return new Vector2(
             Math.min(lhs.x, rhs.x),
             Math.min(lhs.y, rhs.y),
@@ -239,7 +239,7 @@ export class Vector2 {
      * @param target
      * @param maxDistanceDelta
      */
-    public static MoveTowards(current: Vector2, target: Vector2, maxDistanceDelta: float): Vector2 {
+    public static MoveTowards(this: void, current: Vector2, target: Vector2, maxDistanceDelta: float): Vector2 {
         const cx = current.x;
         const cy = current.y;
         const x = target.x - cx;
@@ -257,7 +257,7 @@ export class Vector2 {
      * @param inDirection The input direction.
      * @returns The perpendicular direction.
      */
-    public static Perpendicular(inDirection: Vector2): Vector2 {
+    public static Perpendicular(this: void, inDirection: Vector2): Vector2 {
         return new Vector2(-inDirection.y, inDirection.x);
     }
 
@@ -266,7 +266,7 @@ export class Vector2 {
      * @param inDirection
      * @param inNormal
      */
-    public static Reflect(inDirection: Vector2, inNormal: Vector2): Vector2 {
+    public static Reflect(this: void, inDirection: Vector2, inNormal: Vector2): Vector2 {
         const dx = inDirection.x;
         const dy = inDirection.y;
         const nx = inNormal.x;
@@ -282,7 +282,7 @@ export class Vector2 {
      * @param a
      * @param b
      */
-    public static Scale(a: Vector2, b: Vector2): Vector2 {
+    public static Scale(this: void, a: Vector2, b: Vector2): Vector2 {
         return new Vector2(a.x * b.x, a.y * b.y);
     }
 
@@ -294,7 +294,7 @@ export class Vector2 {
      * @param from The vector from which the angular difference is measured.
      * @param to The vector to which the angular difference is measured.
      */
-    public static SignedAngle(from: Vector2, to: Vector2): float {
+    public static SignedAngle(this: void, from: Vector2, to: Vector2): float {
         return Math.atan2(Vector2.Cross(from, to), Vector2.Dot(from, to));
     }
 
@@ -309,7 +309,7 @@ export class Vector2 {
      * @param maxSpeed Optionally allows you to clamp the maximum speed.
      * @param deltaTime The time since the last call to this function. By default Time.deltaTime.
      */
-    // public static SmoothDamp(current: Vector2, target: Vector2, /* ref*/ currentVelocity: Vector2, smoothTime: float, maxSpeed: float = 99999999, deltaTime: float = 0.0166667): Vector2 {
+    // public static SmoothDamp(this: void, current: Vector2, target: Vector2, /* ref*/ currentVelocity: Vector2, smoothTime: float, maxSpeed: float = 99999999, deltaTime: float = 0.0166667): Vector2 {
 
     // }
 

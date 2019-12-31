@@ -15,7 +15,7 @@ if (whichFile === "common") {
     output.push("declare type real = number;")
     output.push("declare type int = integer;")
     output.push("declare type float = real;")
-    output.push("declare type code = () => void;")
+    output.push("declare type code = Function;")
     output.push("")
     output.push("declare class handle { }")
 }

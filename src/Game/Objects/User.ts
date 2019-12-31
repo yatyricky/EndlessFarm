@@ -1,5 +1,5 @@
 export class User {
-    public static GetUser(id: int): User {
+    public static GetUser(this: void, id: int): User {
         return new User(); // todo
     }
 

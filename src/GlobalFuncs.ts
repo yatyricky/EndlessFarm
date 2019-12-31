@@ -10,6 +10,10 @@ export function NClamp(this: void, n: number, min: number, max: number): number 
     return Math.min(Math.max(min, n), max);
 }
 
+export function NRound(this: void, n: number): int {
+    return Math.floor(n + 0.5);
+}
+
 // n_floor = math.floor
 // n_min = math.min
 // n_max = math.max

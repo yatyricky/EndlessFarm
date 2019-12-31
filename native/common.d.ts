@@ -3,7 +3,7 @@ declare type integer = number;
 declare type real = number;
 declare type int = integer;
 declare type float = real;
-declare type code = () => void;
+declare type code = Function;
 
 declare class handle { }
 /** all reference counted objects */

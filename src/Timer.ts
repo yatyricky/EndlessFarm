@@ -1,11 +1,8 @@
-import { Logger } from "./Logger";
-
 export class Timer {
 
     private static refs: { [key: string]: Timer | null } = {};
 
-    private static Update(): void {
-        Logger.Log("update called");
+    private static Update(this: void): void {
         const self = Timer.refs[tostring(GetExpiredTimer())];
         if (self === null) {
             return;
@@ -33,7 +30,6 @@ export class Timer {
     }
 
     public Start(): Timer {
-        Logger.Log("timer start");
         TimerStart(this.nTimer, this.interval, true, Timer.Update);
         return this;
     }
