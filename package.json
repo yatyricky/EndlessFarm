@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/yatyricky/EndlessFarm#readme",
   "devDependencies": {
-    "luamin": "^1.0.4"
+    "luamin": "^1.0.4",
+    "typescript-to-lua": "^0.29.1"
   }
 }
