@@ -4,7 +4,7 @@ const readline = require("readline")
 const whichFile = process.argv[2]
 
 const ri = readline.createInterface({
-    input: fs.createReadStream("native/" + whichFile + ".j"),
+    input: fs.createReadStream("native/" + whichFile + ".jass"),
 });
 
 const output = []
