@@ -385,28 +385,6 @@ return ____exports
 end,
 ["src.Game.Configs.Const"] = function() --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
 local ____exports = {}
-____exports.AttributeType = {}
-____exports.AttributeType.STR = 1
-____exports.AttributeType[____exports.AttributeType.STR] = "STR"
-____exports.AttributeType.AGI = 2
-____exports.AttributeType[____exports.AttributeType.AGI] = "AGI"
-____exports.AttributeType.INT = 3
-____exports.AttributeType[____exports.AttributeType.INT] = "INT"
-____exports.AttributeType.NON = 4
-____exports.AttributeType[____exports.AttributeType.NON] = "NON"
-____exports.CareerType = {}
-____exports.CareerType.TANK = 1
-____exports.CareerType[____exports.CareerType.TANK] = "TANK"
-____exports.CareerType.HEALER = 2
-____exports.CareerType[____exports.CareerType.HEALER] = "HEALER"
-____exports.CareerType.DPS = 4
-____exports.CareerType[____exports.CareerType.DPS] = "DPS"
-____exports.CareerType.MINION = 8
-____exports.CareerType[____exports.CareerType.MINION] = "MINION"
-____exports.CareerType.BOSS = 16
-____exports.CareerType[____exports.CareerType.BOSS] = "BOSS"
-____exports.CareerType.CREEP = 32
-____exports.CareerType[____exports.CareerType.CREEP] = "CREEP"
 ____exports.PlayerAID = {
     {
         Q = (1093681456),
@@ -554,10 +532,30 @@ end,
 ["src.Game.Configs.UnitConfig"] = function() --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
 local ____exports = {}
 local ____Const = require("src.Game.Configs.Const")
-local AttributeType = ____Const.AttributeType
-local CareerType = ____Const.CareerType
 local UTID = ____Const.UTID
-____exports.UnitConfig = {[UTID.BladeMaster] = {UTID = UTID.BladeMaster, PrimAtt = AttributeType.STR, Str = 15, Agi = 10, Int = 5, HP = 700, MP = 50, ATK1 = 50, ATK2 = 100, Def = 0.1, SDef = 1, Dodge = 0.25, Crit = 0.1, Career = CareerType.DPS}, [UTID.DemonHunter] = {UTID = UTID.DemonHunter, PrimAtt = AttributeType.AGI, Str = 9, Agi = 12, Int = 9, HP = 600, MP = 300, ATK1 = 30, ATK2 = 100, Def = 0.15, SDef = 1, Dodge = 0.25, Crit = 0.1, Career = CareerType.DPS}, [UTID.Archmage] = {UTID = UTID.Archmage, PrimAtt = AttributeType.INT, Str = 7, Agi = 5, Int = 18, HP = 600, MP = 600, ATK1 = 20, ATK2 = 40, Def = 0.05, SDef = 1, Dodge = 0.25, Crit = 0.1, Career = CareerType.DPS}}
+____exports.AttributeType = {}
+____exports.AttributeType.STR = 1
+____exports.AttributeType[____exports.AttributeType.STR] = "STR"
+____exports.AttributeType.AGI = 2
+____exports.AttributeType[____exports.AttributeType.AGI] = "AGI"
+____exports.AttributeType.INT = 3
+____exports.AttributeType[____exports.AttributeType.INT] = "INT"
+____exports.AttributeType.NON = 4
+____exports.AttributeType[____exports.AttributeType.NON] = "NON"
+____exports.CareerType = {}
+____exports.CareerType.TANK = 1
+____exports.CareerType[____exports.CareerType.TANK] = "TANK"
+____exports.CareerType.HEALER = 2
+____exports.CareerType[____exports.CareerType.HEALER] = "HEALER"
+____exports.CareerType.DPS = 4
+____exports.CareerType[____exports.CareerType.DPS] = "DPS"
+____exports.CareerType.MINION = 8
+____exports.CareerType[____exports.CareerType.MINION] = "MINION"
+____exports.CareerType.BOSS = 16
+____exports.CareerType[____exports.CareerType.BOSS] = "BOSS"
+____exports.CareerType.CREEP = 32
+____exports.CareerType[____exports.CareerType.CREEP] = "CREEP"
+____exports.UnitConfig = {[UTID.BladeMaster] = {UTID = UTID.BladeMaster, PrimAtt = ____exports.AttributeType.STR, Str = 15, Agi = 10, Int = 5, HP = 700, MP = 50, ATK1 = 50, ATK2 = 100, Def = 0.1, SDef = 1, Dodge = 0.25, Crit = 0.1, Career = ____exports.CareerType.DPS}, [UTID.DemonHunter] = {UTID = UTID.DemonHunter, PrimAtt = ____exports.AttributeType.AGI, Str = 9, Agi = 12, Int = 9, HP = 600, MP = 300, ATK1 = 30, ATK2 = 100, Def = 0.15, SDef = 1, Dodge = 0.25, Crit = 0.1, Career = ____exports.CareerType.DPS}, [UTID.Archmage] = {UTID = UTID.Archmage, PrimAtt = ____exports.AttributeType.INT, Str = 7, Agi = 5, Int = 18, HP = 600, MP = 600, ATK1 = 20, ATK2 = 40, Def = 0.05, SDef = 1, Dodge = 0.25, Crit = 0.1, Career = ____exports.CareerType.DPS}}
 return ____exports
 end,
 ["src.Game.Objects.Skill"] = function() --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
@@ -640,8 +638,8 @@ local NClamp = ____GlobalFuncs.NClamp
 local NRound = ____GlobalFuncs.NRound
 local ____Logger = require("src.Logger")
 local Logger = ____Logger.Logger
-local ____Const = require("src.Game.Configs.Const")
-local AttributeType = ____Const.AttributeType
+local ____UnitConfig = require("src.Game.Configs.UnitConfig")
+local AttributeType = ____UnitConfig.AttributeType
 local ____UnitConfig = require("src.Game.Configs.UnitConfig")
 local UnitConfig = ____UnitConfig.UnitConfig
 local ____UnitAttr = require("src.Game.Objects.UnitAttr")
@@ -1392,6 +1390,8 @@ local Time = ____Time.Time
 Time.Init()
 Locale.Init("EN")
 Engine.Start()
+end,
+["config"] = function() --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
 end,
 ["native.emulator"] = function() --[[ Generated with https://github.com/TypeScriptToLua/TypeScriptToLua ]]
 end,

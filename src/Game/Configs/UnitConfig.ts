@@ -1,4 +1,20 @@
-import { AttributeType, CareerType, UTID } from "./Const";
+import { UTID } from "./Const";
+
+export enum AttributeType {
+    STR = 1,
+    AGI = 2,
+    INT = 3,
+    NON = 4,
+}
+
+export enum CareerType {
+    TANK = 1,
+    HEALER = 2,
+    DPS = 4,
+    MINION = 8,
+    BOSS = 16,
+    CREEP = 32,
+}
 
 export interface IUnitConfigItem {
     UTID: int;

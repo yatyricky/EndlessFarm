@@ -1,6 +1,6 @@
 import { NClamp, NRound } from "../../GlobalFuncs";
 import { Logger } from "../../Logger";
-import { AttributeType } from "../Configs/Const";
+import { AttributeType } from "../Configs/UnitConfig";
 import { IUnitConfigItem, UnitConfig } from "../Configs/UnitConfig";
 import { Skill } from "./Skill";
 import { UnitAttr } from "./UnitAttr";

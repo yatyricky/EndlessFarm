@@ -20,7 +20,7 @@ namespace WE
         NON = 4,
     }
 
-    public enum Type
+    public enum FieldType
     {
         INT,
         INT256,
@@ -31,12 +31,17 @@ namespace WE
     }
 
     [Serializable]
-    public struct Field
+    public struct FieldDefine
     {
         public string Name;
-        public Type Type;
-        public string sValue;
-        public int iValue;
-        public float fValue;
+        public FieldType Type;
+    }
+
+    [Serializable]
+    public struct Field
+    {
+        public string SValue;
+        public int IValue;
+        public float FValue;
     }
 }
