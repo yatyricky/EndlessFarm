@@ -1,37 +1,38 @@
 import { NClamp, NRound } from "../../GlobalFuncs";
 import { Logger } from "../../Logger";
+import { AuxAID } from "../Configs/IDConfig";
 import { AttributeType } from "../Configs/UnitConfig";
-import { IUnitConfigItem, UnitConfig } from "../Configs/UnitConfig";
+import { IUnitConfig, UnitConfig } from "../Configs/UnitConfig";
 import { Skill } from "./Skill";
 import { UnitAttr } from "./UnitAttr";
 
 const AttrAbilities: { [key: number]: { neg: int[]; pos: int[]; } } = {
     [UnitAttr.Strength]: {
         neg: [],
-        pos: [int256("A000"), int256("A001"), int256("A002"), int256("A003"), int256("A004"), int256("A005"), int256("A006"), int256("A007"), int256("A008"), int256("A009"), int256("A00A"), int256("A00B")],
+        pos: [AuxAID.Str0, AuxAID.Str1, AuxAID.Str2, AuxAID.Str3, AuxAID.Str4, AuxAID.Str5, AuxAID.Str6, AuxAID.Str7, AuxAID.Str8, AuxAID.Str9, AuxAID.Str10, AuxAID.Str11],
     },
     [UnitAttr.Agility]: {
         neg: [],
-        pos: [int256("A01N"), int256("A01M"), int256("A01L"), int256("A01K"), int256("A01J"), int256("A01I"), int256("A01H"), int256("A01G"), int256("A00F"), int256("A00E"), int256("A00D"), int256("A00C")],
+        pos: [AuxAID.Agi0, AuxAID.Agi1, AuxAID.Agi2, AuxAID.Agi3, AuxAID.Agi4, AuxAID.Agi5, AuxAID.Agi6, AuxAID.Agi7, AuxAID.Agi8, AuxAID.Agi9, AuxAID.Agi10, AuxAID.Agi11],
     },
     [UnitAttr.Intelligence]: {
         neg: [],
-        pos: [int256("A01P"), int256("A01Q"), int256("A01R"), int256("A01S"), int256("A01T"), int256("A01U"), int256("A01V"), int256("A01W"), int256("A01X"), int256("A01Y"), int256("A01O"), int256("A01Z")],
+        pos: [AuxAID.Int0, AuxAID.Int1, AuxAID.Int2, AuxAID.Int3, AuxAID.Int4, AuxAID.Int5, AuxAID.Int6, AuxAID.Int7, AuxAID.Int8, AuxAID.Int9, AuxAID.Int10, AuxAID.Int11],
     },
     [UnitAttr.Life]: {
         neg: [],
-        pos: [int256("A00I"), int256("A00Y"), int256("A00X"), int256("A00W"), int256("A00V"), int256("A00U"), int256("A00T"), int256("A00S"), int256("A00R"), int256("A00Q"), int256("A00P"), int256("A00O"), int256("A00N"), int256("A00M"), int256("A00L"), int256("A00K"), int256("A00G"), int256("A00H"), int256("A00Z"), int256("A00J")],
+        pos: [AuxAID.HP0, AuxAID.HP1, AuxAID.HP2, AuxAID.HP3, AuxAID.HP4, AuxAID.HP5, AuxAID.HP6, AuxAID.HP7, AuxAID.HP8, AuxAID.HP9, AuxAID.HP10, AuxAID.HP11, AuxAID.HP12, AuxAID.HP13, AuxAID.HP14, AuxAID.HP15, AuxAID.HP16, AuxAID.HP17, AuxAID.HP18, AuxAID.HP19],
     },
     [UnitAttr.Mana]: {
         neg: [],
-        pos: [int256("A016"), int256("A010"), int256("A011"), int256("A012"), int256("A013"), int256("A014"), int256("A01F"), int256("A017"), int256("A018"), int256("A019"), int256("A01A"), int256("A01B"), int256("A01C"), int256("A01D"), int256("A01E"), int256("A015")],
+        pos: [AuxAID.MP0, AuxAID.MP1, AuxAID.MP2, AuxAID.MP3, AuxAID.MP4, AuxAID.MP5, AuxAID.MP6, AuxAID.MP7, AuxAID.MP8, AuxAID.MP9, AuxAID.MP10, AuxAID.MP11, AuxAID.MP12, AuxAID.MP13, AuxAID.MP14, AuxAID.MP15],
     },
 };
 
 export class Unit {
 
     private nUnit: unit;
-    private config: IUnitConfigItem;
+    private config: IUnitConfig;
     private attrs: { [key: number]: float };
     private attrGet: { [key: number]: (isBase: boolean) => float };
     private attrSet: { [key: number]: (value: float) => void };
@@ -250,11 +251,11 @@ export class Unit {
     }
 
     public GetPrimaryAttrValue(): int {
-        if (this.config.PrimAtt === AttributeType.STR) {
+        if (this.config.PrimAtt === AttributeType.Strength) {
             return GetHeroStr(this.nUnit, true);
-        } else if (this.config.PrimAtt === AttributeType.AGI) {
+        } else if (this.config.PrimAtt === AttributeType.Agility) {
             return GetHeroAgi(this.nUnit, true);
-        } else if (this.config.PrimAtt === AttributeType.INT) {
+        } else if (this.config.PrimAtt === AttributeType.Intelligence) {
             return GetHeroInt(this.nUnit, true);
         }
         return 0;

@@ -1,6 +1,6 @@
 import { Vector2 } from "../../Math/Vector2";
 import { Timer } from "../../Timer";
-import { UTID } from "../Configs/Const";
+import { UTID } from "../Configs/IDConfig";
 import { Engine } from "../Engine";
 import { Keyboard } from "../EventCenter";
 import { UnitManager } from "../Managers/UnitManager";

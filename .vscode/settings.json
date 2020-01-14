@@ -2,5 +2,8 @@
     "luaide-lite.exclude": [
         "EndlessFarm.w3x/war3map.lua",
         "out.lua"
-    ]
+    ],
+    "files.exclude": {
+        "**/~$*": true
+    }
 }
